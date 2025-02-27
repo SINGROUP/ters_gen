@@ -56,16 +56,20 @@ class AttentionBlock3D(nn.Module):
             nn.Sigmoid()
         )
 
-
+        self.up = nn.Upsample(scale_factor=(2,2,1), mode='trilinear')
         self.relu = nn.ReLU()
 
 
     def forward(self, g,x):
+
+        g = self.up(g)
         g1 = self.W_g(g)
         x1 = self.W_x(x)
 
         psi = self.relu(g1 + x1)
         psi = self.psi(psi)
 
-        return x * psi
+        return x * psi, psi
+    
+
 
