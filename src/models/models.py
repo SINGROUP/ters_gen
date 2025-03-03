@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from src.models.layers import ResBlock, AttentionBlock3D
+from src.models.layers import ResBlock, AttentionBlock3d
 
 class UNet(nn.Module):
 
@@ -21,6 +21,7 @@ class UNet(nn.Module):
             in_channels = f
 
         self.pool = nn.MaxPool3d(kernel_size=(2,2,1), stride = (2,2,1))
+        #self.pool = nn.MaxPool3d(kernel_size=2, stride = 2)
 
         self.bottom = ResBlock(filters[-1], filters[-1], kernel_size=kernel_size[-1])
 
@@ -29,6 +30,7 @@ class UNet(nn.Module):
 
         self.decoder = nn.ModuleList()
         self.up = nn.Upsample(scale_factor=(2,2,1), mode='trilinear')
+        #self.up = nn.Upsample(scale_factor=2, mode='trilinear')
 
         decoder_filters = filters[::-1][1:]
 
@@ -95,6 +97,7 @@ class AttentionUNet(nn.Module):
             in_channels = f
 
         self.pool = nn.MaxPool3d(kernel_size=(2,2,1), stride = (2,2,1))
+        #self.pool = nn.MaxPool3d(kernel_size=2, stride =2)
 
         # Bottom block 
         self.bottom = ResBlock(filters[-1], filters[-1], kernel_size[-1])
@@ -103,19 +106,20 @@ class AttentionUNet(nn.Module):
         self.attentions = nn.ModuleList()
         self.decoder = nn.ModuleList()
         self.up = nn.Upsample(scale_factor=(2,2,1), mode='trilinear')
+        #self.up = nn.Upsample(scale_factor=2, mode='trilinear')
         prev_channel = filters[-1]
         
-        decoder_filters = filters[::-1][1:]
-        decoder_kernels = kernel_size[::-1][1:]
+        decoder_filters = filters[::-1]
+        decoder_kernels = kernel_size[::-1]
 
         for f,k in zip(decoder_filters, decoder_kernels):
 
-            self.decoder.append(
-                ResBlock(prev_channel + f, f, k)
+            self.attentions.append(
+                AttentionBlock3d(channels_x=f, channels_g=prev_channel, attention_channels=att_channels, kernel_size=3)
             )
 
-            self.attentions.append(
-                AttentionBlock3D(prev_channel, f, att_channels, kernel_size=3)
+            self.decoder.append(
+                ResBlock(prev_channel+f, f, k)
             )
 
             prev_channel = f
@@ -145,9 +149,8 @@ class AttentionUNet(nn.Module):
             attn_skip, attn_map = attn_block(x, skip)
             attention_maps.append(attn_map)
 
-            x = torch.cat((x, attn_skip), dim = 1)
-
             x = self.up(x)
+            x = torch.cat((x, attn_skip), dim = 1)
             x = resblock(x)
 
 
