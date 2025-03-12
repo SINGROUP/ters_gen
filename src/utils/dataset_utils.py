@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.covalent_radii_new import covalent_radii_new
+from src.covalent_radii import covalent_radii
 
 def compute_bonds_new(atom_pos, atomic_numbers, cutoff_scale=1.24):  # Correct 1.24
         """
