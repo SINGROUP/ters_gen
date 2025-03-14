@@ -35,6 +35,11 @@ def molecule_circular_image(xyz_string, circle_radius=3):
 
     zmax = np.max(positions[:, 2])
     positions = positions[positions[:, 2] > zmax - 1.0]
+
+    
+    atoms_data = [(e, pos) for e,pos in atoms_data if pos[2] > (zmax - 1.0)]
+
+    
     
     # Determine grid boundaries using only x and y coordinates, with a margin
     x_min, y_min = positions[:, :2].min(axis=0) - 1.0
@@ -54,6 +59,7 @@ def molecule_circular_image(xyz_string, circle_radius=3):
             continue  # Skip if no atoms of this element
         # Use only x and y coordinates
         pos = pos[:, :2]
+
     
         # Convert physical coordinates to grid indices
         x_idx = np.clip(((pos[:, 0] - x_min) / (x_max - x_min) * grid_size).astype(int), 0, grid_size - 1)
