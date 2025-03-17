@@ -1,0 +1,9 @@
+from ml_collections import config_dict
+
+def get_dataloader_config():
+    cfg = config_dict.ConfigDict()
+    cfg.batch_size = 64
+    cfg.num_workers = 4
+    cfg.shuffle = True
+
+    return cfg
