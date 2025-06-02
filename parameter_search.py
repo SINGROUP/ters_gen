@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 import argparse
 import itertools
 import os
@@ -11,13 +12,22 @@ from torch.utils.data import Dataset, DataLoader, Subset, random_split
 # Keep your original imports
 from src.models import *
 from src.trainer.trainer_image_to_image import Trainer
-from src.datasets.ters_image_to_image import Ters_dataset_filtered_skip
+#from src.datasets.ters_image_to_image import Ters_dataset_filtered_skip
+from src.datasets.ters_image_to_image_sh import Ters_dataset_filtered_skip
 from src.transforms import Normalize, MinimumToZero
+
+from src.configs.base import get_config
 
 from collections import defaultdict
 from collections import Counter
 
-import numpy as np
+
+def get_model(model_type, params):
+    
+    if model_type == "AttentionUNet":
+        return AttentionUNet(**params)
+    else:
+        raise ValueError(f"Unknown model type: {model_type}")
 
 def split_dataset(dataset, test_ratio=0.2, val_ratio=0.1, seed=0):
     # Ensure reproducibility
@@ -83,22 +93,42 @@ def main():
     print(f'Using device: {device}')
 
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('data_path', type=str, help='Path to the data folder containing the npz files of the molecules')
-    argparser.add_argument('--save_path', type=str, help='Path to save the model')
-    argparser.add_argument('--epochs', type=int, default=10, help='Number of epochs to train the model')
-    argparser.add_argument('--batch_size', type=int, nargs='+', default=[4, 8, 16, 32], help='Batch size used for training')
-    argparser.add_argument('--learning_rate', type=float, nargs='+', default=[0.001, 0.005], help='Learning rate used for training')
-    argparser.add_argument('--split_by_id', type=int, default=0, help='Split the dataset by molecule ID')
+    argparser.add_argument('--config', type = str, default=None, help='Path to YAML config file')
     args = argparser.parse_args()
 
+
+    # Load configuration
+    config = get_config(args.config)
+
+    # Extract configuration parameters
+    model_type = config.model.type
+    model_params = {k: config.model[k] for k in config.model if k!= 'type'}
+    batch_sizes = config.training.batch_sizes
+    learning_rates = config.training.learning_rates
+    loss_fn = config.training.loss_functions
+    epochs = config.training.epochs
+    data_path = config.data.path
+    split_by_id = config.data.split_by_id
+    save_path = config.save_path
+    log_path = config.log_path
+    num_channels = config.model.in_channels
+    out_channels = config.model.out_channels
+
+    sg_ch = True
+    if out_channels > 1:
+        sg_ch = False
+    
+
+
+    print("Configuration")
+    print(config)
     # Set up the hyperparameter grid
     hyperparameter_grid = {
-        'batch_size': args.batch_size,
-        'lr': args.learning_rate,
+        'batch_size': batch_sizes,
+        'lr': learning_rates,
+        'loss_fn': loss_fn
     }
 
-
-    split_by_id = args.split_by_id
 
     # ---------------------------------------------------------------------
     # 1) Define separate transforms for training vs. validation/testing
@@ -115,9 +145,11 @@ def main():
 
     # 2) Load your dataset (no transforms here, they are assigned after splitting)
     ters_set = Ters_dataset_filtered_skip(
-        filename=args.data_path,
+        filename=data_path,
         frequency_range=[0, 4000],  # adjust as needed
+        num_channels=num_channels,
         std_deviation_multiplier=2,
+        sg_ch=sg_ch,
         t_image=None,
         t_freq=None
     )
@@ -141,59 +173,31 @@ def main():
     combinations = list(itertools.product(*hyperparameter_grid.values()))
     results = []
 
-    epochs = args.epochs
-    data_path = args.data_path
-    save_path = args.save_path
+    #model = AttentionUNet(in_channels=400, out_channels=4, filters=[16, 32, 64, 128], att_channels=32, kernel_size=[3, 3, 3, 3], return_att_map=False)
+    
+    print('Data loaded')
 
     for combination in combinations:
-        batch_size, lr = combination
+        batch_size, lr, loss_fn = combination
 
+        model = get_model(model_type, model_params)
+        model.to(device)
 
-        bond_dataset = []
-        print(train_dataset.dataset.bond_map)
-    
-    
-        for i in train_dataset.indices:
-            bonds = test_dataset.dataset.bonds[i]
-            for bond in bonds:
-                bond_dataset.append(bond)
-    
-
-        counter = Counter(bond_dataset)
-        weights = []
-        print(counter)
-    
-        N = len(bond_dataset) - counter[(np.int64(8), np.int64(8))]
-    
-        for c in train_dataset.dataset.bond_map:
-            value = counter[c]
-            print(f'{c}: {value}')
-            if c == (np.int64(8), np.int64(8)):
-                weights.append(0)
-            else:
-                weights.append(N/value)
-    
-    
-        weights = torch.tensor(weights).float().to(device)
-        weights = weights/weights.sum()
-    
-        print("Class weights:", weights)
-    
-    
-        criterion = nn.BCEWithLogitsLoss(weight=weights)
-        #criterion = nn.BCEWithLogitsLoss()
 
         dataloader_args = {
             'batch_size': batch_size,
             'shuffle': True,
-            'num_workers': 8
+            'num_workers': 4
         }
         print("Training with paramaeters: ", combination)
-        trainer = Trainer(lr = lr,
+        trainer = Trainer(model,
+                          lr = lr,
+                          loss_fn = loss_fn, 
                           train_set=train_dataset,
                           validation_set=validation_dataset,
                           test_set=test_dataset,
                           save_path=save_path,
+                          log_path=log_path,
                           dataloader_args=dataloader_args,
                           device=device,
                           print_interval=100,
@@ -210,7 +214,7 @@ def main():
             'lowest_val_loss_epoch': trainer.lowest_val_loss_epoch
         })
 
-        trainer.save_final_model("_bs_{batch_size}_lr_{lr}")
+        trainer.save_final_model(f"_bs_{batch_size}_lr_{lr}_loss_{loss_fn}")
 
     sorted_results = sorted(results, key=lambda x: x['lowest_val_loss'])
     print("\nResults sorted by validation loss:")

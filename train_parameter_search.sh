@@ -1,12 +1,31 @@
 #!/bin/bash
-#SBATCH --time=24:00:00
-#SBATCH --mem=128G
+#SBATCH --time=61:00:00
+#SBATCH --mem=256G
 #SBATCH --gpus=1
 #SBATCH -c 12
-#SBATCH -o /home/sethih1/masque_new/masque_gan/log_file/slurm_%j.out
+#SBATCH --partition=gpu-h100-80g-short
+# SBATCH --partition=gpu-debug
+#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%j.out
 
 arg1=$1
 
 # Load Environments
 source /scratch/phys/sin/sethih1/venv/masque_env/bin/activate
-python parameter_search.py  /scratch/phys/sin/sethih1/data_files/balanced_group --save_path /scratch/phys/sin/sethih1/data_files/gans/ --epoch 10 
+
+# Start GPU monitoring: Log GPU usage every 2 seconds into gpu_usage.log
+nvidia-smi --query-gpu=timestamp,name,utilization.gpu,utilization.memory,temperature.gpu \
+         --format=csv -l 2 > gpu_usage.log &
+GPU_MONITOR_PID=$!
+
+# Optionally, start system resource monitoring: Log CPU, memory, etc. every 1 second
+vmstat -n 1 > resource_usage.log &
+RESOURCE_MONITOR_PID=$!
+
+# Run your main Python job
+# python parameter_search.py --config $arg1
+python hyperopt.py --config $arg1
+# python check_train.py --config $arg1
+
+# After your job finishes, stop the monitoring processes
+kill $GPU_MONITOR_PID
+kill $RESOURCE_MONITOR_PID

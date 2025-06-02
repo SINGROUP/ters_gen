@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 11, in <module>
+    from src.trainer.trainer_image_to_image import Trainer
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/__init__.py", line 1, in <module>
+    from src.trainer.trainer_image_to_image import Trainer
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 20, in <module>
+    from src.metrics import Metrics
+  File "/home/sethih1/masque_new/ters_gen/src/metrics/__init__.py", line 1, in <module>
+    from src.metrics.metrics import Metrics
+  File "/home/sethih1/masque_new/ters_gen/src/metrics/metrics.py", line 77, in <module>
+    "input": X_test,  # Test inputs
+             ^^^^^^
+NameError: name 'X_test' is not defined

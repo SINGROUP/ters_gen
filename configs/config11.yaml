@@ -1,0 +1,22 @@
+model:
+  type: AttentionUNet
+  in_channels: 400
+  out_channels: 4
+  filters: [16, 32, 64, 128]
+  att_channels: 64
+  kernel_size: [3, 3, 3, 3]
+
+
+training:
+  epochs: 50
+  batch_sizes: [32, 64, 128] # Different batch sizes to test
+  learning_rates: [0.0001]
+  loss_functions: [bce_loss, dice_loss] #, MSELoss, L1Loss]
+
+data:
+  path: /scratch/phys/sin/sethih1/data_files/planar_molecules_256  # Path to the data folder containing the npz files of the molecules
+  split_by_id: 0 # Split the dataset by molecule ID
+
+save_path: /scratch/phys/sin/sethih1/models/planar_256/config11/
+
+log_path: /scratch/phys/sin/sethih1/runs_ters/planar_256/config11/

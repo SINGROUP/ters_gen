@@ -9,13 +9,11 @@ def add_disk(image, center, radius):
       center: Tuple (row, col) indicating the center of the disk.
       radius: Radius of the disk in pixels.
     """
-    # Create coordinate grids for the image dimensions
     rows, cols = np.ogrid[:image.shape[0], :image.shape[1]]
-    # Create a mask for points within the circle
     mask = (rows - center[0])**2 + (cols - center[1])**2 <= radius**2
     image[mask] = 1  # You can adjust the intensity if needed
 
-def molecule_circular_image(xyz_string, circle_radius=3):
+def molecule_circular_image(xyz_string, flag=True, circle_radius=7):
     lines = xyz_string.strip().split("\n")[2:]  # Skip header lines
     
     atoms_data = []  # Store tuples of (element, (x, y, z))
@@ -28,29 +26,36 @@ def molecule_circular_image(xyz_string, circle_radius=3):
     
     # Define fixed channels for these elements
     fixed_elements = ["H", "C", "N", "O"]
-    grid_size = 64  # Grid resolution
+    grid_size = 256  # Grid resolution
     
     # Convert all positions to a numpy array
     positions = np.array([pos for _, pos in atoms_data])
-
     zmax = np.max(positions[:, 2])
     positions = positions[positions[:, 2] > zmax - 1.0]
-
     
-    atoms_data = [(e, pos) for e,pos in atoms_data if pos[2] > (zmax - 1.0)]
-
+    atoms_data = [(e, pos) for e, pos in atoms_data if pos[2] > (zmax - 1.0)]
     
+    # Calculate the center of the molecule (using filtered positions)
+    center_x = np.mean(positions[:, 0])
+    center_y = np.mean(positions[:, 1])
     
-    # Determine grid boundaries using only x and y coordinates, with a margin
-    x_min, y_min = positions[:, :2].min(axis=0) - 1.0
-    x_max, y_max = positions[:, :2].max(axis=0) + 1.0
+    # Set fixed grid size of 18 Å centered on the molecule
+    grid_physical_size = 18.0  # Å
+    x_min = center_x - grid_physical_size / 2  # -9 Å
+    x_max = center_x + grid_physical_size / 2  # +9 Å
+    y_min = center_y - grid_physical_size / 2  # -9 Å
+    y_max = center_y + grid_physical_size / 2  # +9 Å
     
-    # Create grid linspaces
+    # Create grid linspaces (optional, not used directly but kept for consistency)
     x_lin = np.linspace(x_min, x_max, grid_size)
     y_lin = np.linspace(y_min, y_max, grid_size)
     
     # Initialize multi-channel image array
-    multi_channel_img = np.zeros((len(fixed_elements), grid_size, grid_size))
+    if flag:
+        multi_channel_img = np.zeros((1, grid_size, grid_size))
+    else:
+        multi_channel_img = np.zeros((len(fixed_elements), grid_size, grid_size))
+    #multi_channel_img = np.zeros((1, grid_size, grid_size))
     
     for ch, elem in enumerate(fixed_elements):
         # Extract positions for atoms that match the current element
@@ -59,7 +64,6 @@ def molecule_circular_image(xyz_string, circle_radius=3):
             continue  # Skip if no atoms of this element
         # Use only x and y coordinates
         pos = pos[:, :2]
-
     
         # Convert physical coordinates to grid indices
         x_idx = np.clip(((pos[:, 0] - x_min) / (x_max - x_min) * grid_size).astype(int), 0, grid_size - 1)
@@ -68,6 +72,10 @@ def molecule_circular_image(xyz_string, circle_radius=3):
         # For each atom, add a circular disk to the image
         for x, y in zip(x_idx, y_idx):
             # Note: image indexing is (row, column) so we use (y, x)
+            if flag:
+                ch = 0
             add_disk(multi_channel_img[ch], (y, x), circle_radius)
     
     return multi_channel_img
+
+

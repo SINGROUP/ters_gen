@@ -23,7 +23,7 @@ def molecule_gaussian_image(xyz_string):
     fixed_elements = ["H", "C", "N", "O"]
 
     # Define grid parameters
-    grid_size = 64  # Grid resolution (same for all channels)
+    grid_size = 256  # Grid resolution (same for all channels)
     sigma = 1.5  # Gaussian blur intensity (adjustable)
     
     # Assume 'positions' is a numpy array of atom positions (shape: [n_atoms, 3])
@@ -57,4 +57,6 @@ def molecule_gaussian_image(xyz_string):
     
         # Apply Gaussian smoothing to spread the atomic presence
         multi_channel_img[ch] = gaussian_filter(multi_channel_img[ch], sigma=sigma)
+
+    return multi_channel_img
     

@@ -1,0 +1,29 @@
+[I 2025-05-23 17:18:34,443] A new study created in memory with name: no-name-d0a9b961-2171-4cd3-aad1-a269aedde476
+/home/sethih1/masque_new/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=128, lr=0.0009198053674669951, loss_fn=bce_loss
+Epoch    1/50, time: 55.26 s, training_loss: 0.730
+Epoch    1/50, time: 81.10 s, val_loss: 0.653
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9674
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9665
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    2/50, time: 55.81 s, training_loss: 0.520
+Epoch    2/50, time: 81.36 s, val_loss: 0.478
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+slurmstepd: error: *** JOB 7624879 ON gpu1 CANCELLED AT 2025-05-23T17:38:40 DUE TO TIME LIMIT ***

@@ -15,18 +15,22 @@ from datetime import datetime
 # Use tensorboard
 from torch.utils.tensorboard import SummaryWriter
 
+from src.losses import get_loss_function
 
+from src.metrics import Metrics
 
-from src.models import UNet, Discriminator
 
 
 
 class Trainer():
-    def __init__(self, lr,
+    def __init__(self, model,
+                 lr,
+                 loss_fn, 
                  train_set,
                  validation_set, 
                  test_set,
                  save_path=None,
+                 log_path = None, 
                  dataloader_args={
                         'batch_size': 4,
                         'shuffle': True,
@@ -40,9 +44,17 @@ class Trainer():
         self.validation_set = validation_set
         self.test_set = test_set
 
+        self.optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+        self.loss_fn = get_loss_function(loss_fn)
+        #self.loss_fn = get_loss_function('dice_loss')
+        #self.loss_fn = get_loss_function('focal_loss')
+        self.model = model
+
+        val_loader_args = {'batch_size': 64, 'shuffle': False, 'num_workers': 8}
+
         self.train_loader = DataLoader(self.train_set, **dataloader_args)
         self.validation_loader = DataLoader(self.validation_set, **dataloader_args)
-        testloader_args = {'batch_size': 1, 'shuffle': False, 'num_workers': 0}
+        testloader_args = {'batch_size': 4, 'shuffle': False, 'num_workers': 0}
         # self.test_loader = DataLoader(self.test_set, **dataloader_args)
         self.test_loader = DataLoader(self.test_set, **testloader_args)
                 
@@ -50,126 +62,252 @@ class Trainer():
         self.print_interval = print_interval
         self.dataset_bonds = dataset_bonds
         self.save_path = save_path
-        self.writer = SummaryWriter(log_dir=f"/scratch/phys/sin/sethih1/runs_ters/TERS_ML_gans/batch{dataloader_args['batch_size']}_LR{lr}/") 
+        log_path = os.path.join(log_path, f"batch{dataloader_args['batch_size']}_LR{lr}_{loss_fn}/")
+        self.writer = SummaryWriter(log_dir=log_path) 
 
-
-
-
-
-        # New parameters 
-        self.adv_criterion = nn.BCEWithLogitsLoss()
-        self.recon_criterion = nn.L1Loss()
-        self.lambda_recon = 200
-
-        input_dim = 54
-        real_dim = 3
-
-        target_shape = 64
-
-
-        device = 'cuda'
-
-        lr = lr
-        self.gen = UNet(input_dim, real_dim).to(device)
-        self.gen_opt = torch.optim.Adam(self.gen.parameters(), lr=lr)
-        self.disc = Discriminator(input_dim + real_dim).to(device) 
-        self.disc_opt = torch.optim.Adam(self.disc.parameters(), lr=lr)
 
     def train(self, epochs, early_stop_value=0.01):
         self.lowest_val_loss = float('inf')
         self.lowest_val_loss_epoch = 0
         for epoch in range(epochs):
             start = time.time()
-            gen_train_loss, disc_train_loss = self.train_epoch()
+            epoch_loss = self.train_epoch()
 
             
-            print(f"Epoch {epoch+1:4}/{epochs}, time: {time.time()-start:.2f} s, gen_loss: {gen_train_loss:.3f}, disc_loss: {disc_train_loss:.3f}")
-            self.writer.add_scalar(f"Loss/Generator",gen_train_loss,epoch)
-            self.writer.add_scalar(f"Loss/Discriminator", disc_train_loss, epoch)
+            print(f"Epoch {epoch+1:4}/{epochs}, time: {time.time()-start:.2f} s, training_loss: {epoch_loss:.3f}")
+            self.writer.add_scalar(f"Training Loss",epoch_loss, epoch)
+
+            epoch_loss = self.evaluate()
+
+            
+            print(f"Epoch {epoch+1:4}/{epochs}, time: {time.time()-start:.2f} s, val_loss: {epoch_loss:.3f}")
+            self.writer.add_scalar(f"Validation Loss",epoch_loss, epoch)
+
+            # Computing model metrics
+            self.evaluate_model_metrics(self.model, epoch)
 
 
 
         self.writer.close()
 
     def train_epoch(self):
-        self.disc.train()
-        self.gen.train()
-        epoch_gen_loss = []
-        epoch_disc_loss = []
+        
+        
+        self.model.train()
 
+        total_loss = []
         for i, batch in enumerate(self.train_loader):
+            self.optimizer.zero_grad()
             images, frequencies, tgt_image = batch
-            condition = images.to(self.device)
-            frequencies = frequencies.to(self.device)
-            real = tgt_image.to(self.device)
-            # images, bonds = self.batch_to_device(batch)
+            images = images.to(self.device)
+            tgt_image = tgt_image.to(self.device)
+
+            tgt_image = (tgt_image > 0.01).long()
+            outputs = self.model(images)
+            #tgt_image_new = torch.zeros((tgt_image.shape[0], tgt_image.shape[1] + 1, tgt_image.shape[2], tgt_image.shape[3]), device=self.device)
+            #tgt_image_new[:, 1:, :, :] = tgt_image
+            #tgt_image = tgt_image_new
+            #tgt_image = torch.argmax(tgt_image, dim=1)
+
+            loss = self.loss_fn(outputs, tgt_image)
+            loss.backward()
+            self.optimizer.step()
+            total_loss.append(loss.item())
 
 
-            # Train Discriminator
-            self.disc_opt.zero_grad()
-            with torch.no_grad():
-                fake = self.gen(condition)
-
-            disc_fake_hat = self.disc(fake.detach(), condition)
-            disc_fake_loss = self.adv_criterion(disc_fake_hat, torch.zeros_like(disc_fake_hat))
-            disc_real_hat = self.disc(real, condition)
-            disc_real_loss = self.adv_criterion(disc_real_hat, torch.ones_like(disc_real_hat))
-            disc_loss = (disc_fake_loss + disc_real_loss) / 2
-            disc_loss.backward()
-            self.disc_opt.step()
-
-
-            # Train Generator
-            self.gen_opt.zero_grad()
-            gen_loss = self.get_gen_loss(real, condition)
-            gen_loss.backward()
-            self.gen_opt.step()
-
-
-
-
-            epoch_disc_loss.append(disc_loss.item())
-            epoch_gen_loss.append(gen_loss.item())
-
-
-
-        gen_loss = np.mean(epoch_gen_loss)
-        disc_loss = np.mean(epoch_disc_loss)
-        return gen_loss, disc_loss
-
-    
-    def get_gen_loss(self, real, condition):
-
-        fake = self.gen(condition)
-        disc_fake_pred = self.disc(fake, condition)
-        gen_adv_loss = self.adv_criterion(disc_fake_pred, torch.ones_like(disc_fake_pred))
-        gen_rec_loss = self.recon_criterion(fake, real)
-        gen_loss = gen_adv_loss + self.lambda_recon * gen_rec_loss
-
-        return gen_loss
+        
+        return np.mean(total_loss)
     
 
+    def evaluate(self):
+
+        self.model.eval()
+        total_loss = []
+        with torch.no_grad():
+            for i, batch in enumerate(self.validation_loader):
+                
+                images, frequencies, tgt_image = batch
+                images = images.to(self.device)
+                tgt_image = tgt_image.to(self.device)
+    
+                tgt_image = (tgt_image > 0.01).long()
+                outputs = self.model(images)
+
+                #tgt_image_new = torch.zeros((tgt_image.shape[0], tgt_image.shape[1] + 1, tgt_image.shape[2], tgt_image.shape[3]), device=self.device)
+                #tgt_image_new[:, 1:, :, :] = tgt_image
+                #tgt_image = tgt_image_new
+                #tgt_image = torch.argmax(tgt_image, dim=1)
+                loss = self.loss_fn(outputs, tgt_image)
+                
+                total_loss.append(loss.item())
+
+        return np.mean(total_loss)
+    
+
+
+
+    def compute_metrics(self,model, data_loader):
+        """
+        Compute metrics for a given data loader (training or validation).
+        """
+        all_inputs = []
+        all_ground_truths = []
+        all_predictions = []
+
+        with torch.no_grad():
+            for batch in data_loader:
+                images, frequencies, tgt_image = batch
+                images = images.to(self.device)
+                tgt_image = tgt_image.to(self.device)
+
+                # Threshold and convert target image to long
+                tgt_image = (tgt_image > 0.01).int()
+
+                # Get model predictions
+                outputs = model(images)
+                #preds = torch.argmax(outputs, dim=1)
+
+                preds = (outputs > 0.5).int()
+
+                # Collect inputs, ground truths, and predictions
+                all_inputs.append(images.cpu().numpy())
+                all_ground_truths.append(tgt_image.cpu().numpy())
+                all_predictions.append(preds.cpu().numpy())
+
+        # Convert lists to numpy arrays
+        all_ground_truths = np.concatenate(all_ground_truths, axis=0)
+        all_predictions = np.concatenate(all_predictions, axis=0)
+
+        #print("Ground Truth: ", all_ground_truths)
+        #print("Predictions: ", all_predictions)
+
+        # Initialize Metrics class
+        metrics = Metrics(model=model, data={"pred": all_predictions, "ground_truth": all_ground_truths}, config={})
+
+        # Compute metrics
+        results = metrics.evaluate()
+
+        
+
+        return results
+    
+
+    def evaluate_model_metrics(self, model, step):
+
+
+        model.eval()
+        train_loader = self.train_loader
+        val_loader = self.validation_loader
+
+        # Compute metrics for training data
+        train_metrics = self.compute_metrics(model, train_loader)
+
+        # Compute metrics for validation data
+        val_metrics = self.compute_metrics(model, val_loader)
+
+        # Print metrics
+        print("Training Metrics:")
+        for metric, value in train_metrics.items():
+            print(f"{metric}: {value:.4f}")
+            self.writer.add_scalar(f"Train/{metric}", value, step)
+
+        print("Validation Metrics:")
+        for metric, value in val_metrics.items():
+            print(f"{metric}: {value:.4f}")
+            self.writer.add_scalar(f"Validation/{metric}", value, step)
+
+        
+    
+
+    def final_metrics(self):
+        model = self.model.eval()
+        model.eval()
+        val_loader = self.validation_loader
+
+        # Compute metrics for training data
+        val_metrics = self.compute_metrics(model, val_loader)
+
+        # Print metrics
+        print("Test Metrics:")
+        for metric, value in val_metrics.items():
+            print(f"{metric}: {value:.4f}")
+            self.writer.add_scalar(f"Test/{metric}", value, 0)
+
+        dice_coeff = val_metrics["Dice Coefficient"]
+
+        return dice_coeff
+
+            
+
+    
 
     def save_final_model(self, model_name):
         """Saving the parameters of the model after training."""
         if self.save_path:
             if not os.path.exists(self.save_path):
                 os.makedirs(self.save_path)
-            torch.save(self.gen, os.path.join(self.save_path, "gen" + model_name))
-            torch.save(self.disc, os.path.join(self.save_path, "disc" + model_name))
+            torch.save(self.model, os.path.join(self.save_path, "seg" + model_name))
+
+
 
 
     def save_image(self):
+        input_img, _, tgt_img = next(iter(self.test_loader))
+        input_img = input_img[:4]
+        tgt_img = tgt_img[:4]
+        input_img = input_img.to(self.device)
 
-        condition, _, real = next(iter(self.test_loader))
-        condition = condition.to(self.device)
-        self.gen.eval()
+        tgt_image = tgt_img
+
+        #tgt_img = (tgt_img > 0.01).long().float()
+        '''
+        tgt_image_new = torch.zeros((tgt_image.shape[0], tgt_image.shape[1] + 1, tgt_image.shape[2], tgt_image.shape[3]))
+        tgt_image_new[:, 1:, :, :] = tgt_image
+        tgt_img = tgt_image_new
+        '''
+
+        self.model.eval()
         with torch.no_grad():
-            fake = self.gen(condition)
+            seg = self.model(input_img)
+   
+        '''num_channels = 5  # H, C, N, O
 
-        grid_condition = make_grid(condition.cpu())
-        grid_fake = make_grid(real.cpu())
+        # Reshape so that channels remain contiguous per image:
+        # This changes the shape from [B, 4, H, W] to [B*4, 1, H, W].
+        seg_reshaped = seg.view(-1, 1, seg.shape[2], seg.shape[3])
+        tgt_reshaped = tgt_img.view(-1, 1, tgt_img.shape[2], tgt_img.shape[3])
 
-        self.writer.add_image('Real', grid_condition)
-        self.writer.add_image('Generated', grid_fake)
+        # Use make_grid with nrow=4: 
+        # Each row in the grid will have 4 images (i.e. channels) corresponding to one image.
+        grid_fake = make_grid(seg_reshaped.cpu(), nrow=num_channels, normalize=True, padding=2)
+        grid_real = make_grid(tgt_reshaped.cpu(), nrow=num_channels, normalize=True, padding=2)'''
+
+        #self.writer.add_image("Segmented Image", grid_fake)
+        #self.writer.add_image("True Label", grid_real)
+
+        if seg.shape[1] > 1:
+            num_channels = seg.shape[1] 
+            seg_reshaped = seg.view(-1, 1, seg.shape[2], seg.shape[3])
+            tgt_image_reshaped = tgt_image.view(-1, 1, tgt_image.shape[2], tgt_image.shape[3])
+
+            grid_fake = make_grid(seg_reshaped.cpu(), nrow=num_channels, normalize=True, padding=2)
+            grid_real = make_grid(tgt_image_reshaped.cpu(), nrow=num_channels, normalize=True, padding=2)
+
+        else:
+            
+
+        #seg = seg[:, 1:, :, :]
+        #tgt_img = tgt_img[:, 1:, :, :]
+
+            #s = (seg.cpu()*255)
+            #t = (tgt_img.cpu()*255)
+            s = seg
+            t = tgt_img
+            grid_fake = make_grid(s, normalize=True, padding=2)
+            grid_real = make_grid(t, normalize=True, padding=2)
+
+        self.writer.add_image("Segmented Image", grid_fake)
+        self.writer.add_image("True Label", grid_real)
+
+
         self.writer.close()

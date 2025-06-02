@@ -1,0 +1,410 @@
+Using device: cuda
+Configuration
+data:
+  path: /scratch/phys/sin/sethih1/data_files/planar_molecules_256
+  split_by_id: 0
+log_path: /scratch/phys/sin/sethih1/runs_ters/planar_256/config1/
+model:
+  att_channels: 32
+  filters:
+  - 16
+  - 32
+  - 64
+  - 128
+  in_channels: 100
+  kernel_size:
+  - 3
+  - 3
+  - 3
+  - 3
+  out_channels: 1
+  type: AttentionUNet
+save_path: /scratch/phys/sin/sethih1/models/planar_256/config1/
+training:
+  batch_sizes:
+  - 32
+  - 64
+  - 128
+  epochs: 30
+  learning_rates:
+  - 0.0001
+  loss_functions:
+  - bce_loss
+  - dice_loss
+
+Data Loaded
+Data loaded
+Training with paramaeters:  (32, 0.0001, 'bce_loss')
+Epoch    1/30, time: 51.59 s, training_loss: 0.433
+Epoch    1/30, time: 60.05 s, val_loss: 0.408
+Epoch    2/30, time: 31.91 s, training_loss: 0.326
+Epoch    2/30, time: 37.37 s, val_loss: 0.293
+Epoch    3/30, time: 31.73 s, training_loss: 0.283
+Epoch    3/30, time: 37.16 s, val_loss: 0.265
+Epoch    4/30, time: 31.71 s, training_loss: 0.262
+Epoch    4/30, time: 37.18 s, val_loss: 0.260
+Epoch    5/30, time: 31.92 s, training_loss: 0.249
+Epoch    5/30, time: 37.52 s, val_loss: 0.244
+Epoch    6/30, time: 31.40 s, training_loss: 0.238
+Epoch    6/30, time: 36.82 s, val_loss: 0.237
+Epoch    7/30, time: 31.75 s, training_loss: 0.229
+Epoch    7/30, time: 37.18 s, val_loss: 0.226
+Epoch    8/30, time: 31.55 s, training_loss: 0.220
+Epoch    8/30, time: 37.21 s, val_loss: 0.217
+Epoch    9/30, time: 31.61 s, training_loss: 0.212
+Epoch    9/30, time: 37.35 s, val_loss: 0.213
+Epoch   10/30, time: 31.49 s, training_loss: 0.205
+Epoch   10/30, time: 36.83 s, val_loss: 0.199
+Epoch   11/30, time: 32.16 s, training_loss: 0.199
+Epoch   11/30, time: 37.79 s, val_loss: 0.197
+Epoch   12/30, time: 31.65 s, training_loss: 0.193
+Epoch   12/30, time: 37.35 s, val_loss: 0.191
+Epoch   13/30, time: 31.91 s, training_loss: 0.187
+Epoch   13/30, time: 37.67 s, val_loss: 0.188
+Epoch   14/30, time: 31.52 s, training_loss: 0.182
+Epoch   14/30, time: 36.99 s, val_loss: 0.181
+Epoch   15/30, time: 31.26 s, training_loss: 0.176
+Epoch   15/30, time: 36.95 s, val_loss: 0.180
+Epoch   16/30, time: 31.67 s, training_loss: 0.171
+Epoch   16/30, time: 37.28 s, val_loss: 0.173
+Epoch   17/30, time: 31.87 s, training_loss: 0.166
+Epoch   17/30, time: 37.51 s, val_loss: 0.167
+Epoch   18/30, time: 32.08 s, training_loss: 0.162
+Epoch   18/30, time: 37.92 s, val_loss: 0.167
+Epoch   19/30, time: 31.90 s, training_loss: 0.163
+Epoch   19/30, time: 37.55 s, val_loss: 0.162
+Epoch   20/30, time: 32.15 s, training_loss: 0.156
+Epoch   20/30, time: 37.70 s, val_loss: 0.161
+Epoch   21/30, time: 31.83 s, training_loss: 0.150
+Epoch   21/30, time: 37.68 s, val_loss: 0.151
+Epoch   22/30, time: 31.43 s, training_loss: 0.145
+Epoch   22/30, time: 36.87 s, val_loss: 0.145
+Epoch   23/30, time: 31.48 s, training_loss: 0.141
+Epoch   23/30, time: 36.86 s, val_loss: 0.145
+Epoch   24/30, time: 31.63 s, training_loss: 0.139
+Epoch   24/30, time: 37.12 s, val_loss: 0.140
+Epoch   25/30, time: 31.35 s, training_loss: 0.134
+Epoch   25/30, time: 37.06 s, val_loss: 0.136
+Epoch   26/30, time: 31.41 s, training_loss: 0.129
+Epoch   26/30, time: 37.12 s, val_loss: 0.135
+Epoch   27/30, time: 31.68 s, training_loss: 0.125
+Epoch   27/30, time: 37.39 s, val_loss: 0.133
+Epoch   28/30, time: 31.51 s, training_loss: 0.121
+Epoch   28/30, time: 37.01 s, val_loss: 0.129
+Epoch   29/30, time: 31.46 s, training_loss: 0.117
+Epoch   29/30, time: 36.90 s, val_loss: 0.123
+Epoch   30/30, time: 31.64 s, training_loss: 0.113
+Epoch   30/30, time: 37.38 s, val_loss: 0.126
+Training with paramaeters:  (32, 0.0001, 'dice_loss')
+Epoch    1/30, time: 31.72 s, training_loss: 0.877
+Epoch    1/30, time: 37.19 s, val_loss: 0.881
+Epoch    2/30, time: 30.97 s, training_loss: 0.854
+Epoch    2/30, time: 36.43 s, val_loss: 0.839
+Epoch    3/30, time: 30.79 s, training_loss: 0.839
+Epoch    3/30, time: 36.20 s, val_loss: 0.826
+Epoch    4/30, time: 31.14 s, training_loss: 0.829
+Epoch    4/30, time: 36.53 s, val_loss: 0.823
+Epoch    5/30, time: 31.05 s, training_loss: 0.819
+Epoch    5/30, time: 36.42 s, val_loss: 0.813
+Epoch    6/30, time: 31.35 s, training_loss: 0.808
+Epoch    6/30, time: 36.85 s, val_loss: 0.823
+Epoch    7/30, time: 31.26 s, training_loss: 0.796
+Epoch    7/30, time: 36.63 s, val_loss: 0.802
+Epoch    8/30, time: 31.14 s, training_loss: 0.785
+Epoch    8/30, time: 36.65 s, val_loss: 0.763
+Epoch    9/30, time: 31.32 s, training_loss: 0.773
+Epoch    9/30, time: 36.71 s, val_loss: 0.757
+Epoch   10/30, time: 31.34 s, training_loss: 0.761
+Epoch   10/30, time: 36.65 s, val_loss: 0.769
+Epoch   11/30, time: 31.42 s, training_loss: 0.750
+Epoch   11/30, time: 36.72 s, val_loss: 0.726
+Epoch   12/30, time: 31.40 s, training_loss: 0.741
+Epoch   12/30, time: 36.80 s, val_loss: 0.740
+Epoch   13/30, time: 31.19 s, training_loss: 0.729
+Epoch   13/30, time: 36.59 s, val_loss: 0.690
+Epoch   14/30, time: 31.98 s, training_loss: 0.716
+Epoch   14/30, time: 37.50 s, val_loss: 0.705
+Epoch   15/30, time: 31.65 s, training_loss: 0.704
+Epoch   15/30, time: 37.06 s, val_loss: 0.711
+Epoch   16/30, time: 31.42 s, training_loss: 0.692
+Epoch   16/30, time: 36.76 s, val_loss: 0.691
+Epoch   17/30, time: 31.26 s, training_loss: 0.683
+Epoch   17/30, time: 36.57 s, val_loss: 0.662
+Epoch   18/30, time: 32.01 s, training_loss: 0.670
+Epoch   18/30, time: 37.66 s, val_loss: 0.645
+Epoch   19/30, time: 31.47 s, training_loss: 0.661
+Epoch   19/30, time: 37.10 s, val_loss: 0.654
+Epoch   20/30, time: 31.59 s, training_loss: 0.644
+Epoch   20/30, time: 37.23 s, val_loss: 0.633
+Epoch   21/30, time: 31.56 s, training_loss: 0.631
+Epoch   21/30, time: 37.07 s, val_loss: 0.654
+Epoch   22/30, time: 32.20 s, training_loss: 0.615
+Epoch   22/30, time: 37.69 s, val_loss: 0.611
+Epoch   23/30, time: 30.98 s, training_loss: 0.604
+Epoch   23/30, time: 36.36 s, val_loss: 0.624
+Epoch   24/30, time: 31.57 s, training_loss: 0.588
+Epoch   24/30, time: 37.18 s, val_loss: 0.594
+Epoch   25/30, time: 31.27 s, training_loss: 0.571
+Epoch   25/30, time: 36.62 s, val_loss: 0.588
+Epoch   26/30, time: 31.21 s, training_loss: 0.562
+Epoch   26/30, time: 36.68 s, val_loss: 0.572
+Epoch   27/30, time: 31.31 s, training_loss: 0.547
+Epoch   27/30, time: 36.73 s, val_loss: 0.548
+Epoch   28/30, time: 31.32 s, training_loss: 0.531
+Epoch   28/30, time: 36.72 s, val_loss: 0.561
+Epoch   29/30, time: 31.54 s, training_loss: 0.518
+Epoch   29/30, time: 37.09 s, val_loss: 0.556
+Epoch   30/30, time: 31.47 s, training_loss: 0.505
+Epoch   30/30, time: 37.02 s, val_loss: 0.555
+Training with paramaeters:  (64, 0.0001, 'bce_loss')
+Epoch    1/30, time: 35.81 s, training_loss: 0.616
+Epoch    1/30, time: 45.13 s, val_loss: 0.607
+Epoch    2/30, time: 35.41 s, training_loss: 0.487
+Epoch    2/30, time: 44.83 s, val_loss: 0.486
+Epoch    3/30, time: 34.57 s, training_loss: 0.407
+Epoch    3/30, time: 44.16 s, val_loss: 0.402
+Epoch    4/30, time: 35.15 s, training_loss: 0.356
+Epoch    4/30, time: 44.64 s, val_loss: 0.363
+Epoch    5/30, time: 34.47 s, training_loss: 0.339
+Epoch    5/30, time: 43.80 s, val_loss: 0.331
+Epoch    6/30, time: 35.36 s, training_loss: 0.320
+Epoch    6/30, time: 44.76 s, val_loss: 0.329
+Epoch    7/30, time: 35.67 s, training_loss: 0.310
+Epoch    7/30, time: 45.16 s, val_loss: 0.301
+Epoch    8/30, time: 34.74 s, training_loss: 0.299
+Epoch    8/30, time: 44.25 s, val_loss: 0.295
+Epoch    9/30, time: 34.91 s, training_loss: 0.292
+Epoch    9/30, time: 44.51 s, val_loss: 0.295
+Epoch   10/30, time: 34.71 s, training_loss: 0.288
+Epoch   10/30, time: 44.25 s, val_loss: 0.302
+Epoch   11/30, time: 35.23 s, training_loss: 0.288
+Epoch   11/30, time: 44.59 s, val_loss: 0.283
+Epoch   12/30, time: 34.73 s, training_loss: 0.279
+Epoch   12/30, time: 44.28 s, val_loss: 0.268
+Epoch   13/30, time: 35.72 s, training_loss: 0.272
+Epoch   13/30, time: 45.40 s, val_loss: 0.269
+Epoch   14/30, time: 34.97 s, training_loss: 0.267
+Epoch   14/30, time: 44.54 s, val_loss: 0.267
+Epoch   15/30, time: 34.73 s, training_loss: 0.262
+Epoch   15/30, time: 44.25 s, val_loss: 0.258
+Epoch   16/30, time: 34.77 s, training_loss: 0.259
+Epoch   16/30, time: 44.29 s, val_loss: 0.260
+Epoch   17/30, time: 35.36 s, training_loss: 0.257
+Epoch   17/30, time: 44.81 s, val_loss: 0.252
+Epoch   18/30, time: 35.01 s, training_loss: 0.252
+Epoch   18/30, time: 44.52 s, val_loss: 0.255
+Epoch   19/30, time: 35.18 s, training_loss: 0.247
+Epoch   19/30, time: 44.62 s, val_loss: 0.247
+Epoch   20/30, time: 35.15 s, training_loss: 0.243
+Epoch   20/30, time: 44.70 s, val_loss: 0.243
+Epoch   21/30, time: 34.95 s, training_loss: 0.239
+Epoch   21/30, time: 44.29 s, val_loss: 0.241
+Epoch   22/30, time: 34.62 s, training_loss: 0.236
+Epoch   22/30, time: 44.11 s, val_loss: 0.236
+Epoch   23/30, time: 35.02 s, training_loss: 0.233
+Epoch   23/30, time: 44.46 s, val_loss: 0.234
+Epoch   24/30, time: 34.70 s, training_loss: 0.230
+Epoch   24/30, time: 43.99 s, val_loss: 0.227
+Epoch   25/30, time: 35.20 s, training_loss: 0.226
+Epoch   25/30, time: 44.50 s, val_loss: 0.228
+Epoch   26/30, time: 35.23 s, training_loss: 0.223
+Epoch   26/30, time: 44.93 s, val_loss: 0.225
+Epoch   27/30, time: 35.00 s, training_loss: 0.220
+Epoch   27/30, time: 44.49 s, val_loss: 0.221
+Epoch   28/30, time: 34.80 s, training_loss: 0.216
+Epoch   28/30, time: 44.37 s, val_loss: 0.217
+Epoch   29/30, time: 35.39 s, training_loss: 0.218
+Epoch   29/30, time: 44.98 s, val_loss: 0.216
+Epoch   30/30, time: 35.23 s, training_loss: 0.221
+Epoch   30/30, time: 45.05 s, val_loss: 0.243
+Training with paramaeters:  (64, 0.0001, 'dice_loss')
+Epoch    1/30, time: 35.23 s, training_loss: 0.852
+Epoch    1/30, time: 44.96 s, val_loss: 0.926
+Epoch    2/30, time: 34.70 s, training_loss: 0.806
+Epoch    2/30, time: 44.13 s, val_loss: 0.832
+Epoch    3/30, time: 35.69 s, training_loss: 0.782
+Epoch    3/30, time: 45.03 s, val_loss: 0.794
+Epoch    4/30, time: 34.98 s, training_loss: 0.767
+Epoch    4/30, time: 44.74 s, val_loss: 0.760
+Epoch    5/30, time: 34.81 s, training_loss: 0.752
+Epoch    5/30, time: 44.36 s, val_loss: 0.769
+Epoch    6/30, time: 35.19 s, training_loss: 0.744
+Epoch    6/30, time: 44.85 s, val_loss: 0.750
+Epoch    7/30, time: 35.29 s, training_loss: 0.732
+Epoch    7/30, time: 44.97 s, val_loss: 0.718
+Epoch    8/30, time: 35.03 s, training_loss: 0.723
+Epoch    8/30, time: 44.67 s, val_loss: 0.717
+Epoch    9/30, time: 35.05 s, training_loss: 0.717
+Epoch    9/30, time: 44.54 s, val_loss: 0.702
+Epoch   10/30, time: 35.73 s, training_loss: 0.709
+Epoch   10/30, time: 45.03 s, val_loss: 0.704
+Epoch   11/30, time: 35.00 s, training_loss: 0.702
+Epoch   11/30, time: 44.67 s, val_loss: 0.688
+Epoch   12/30, time: 34.94 s, training_loss: 0.695
+Epoch   12/30, time: 44.55 s, val_loss: 0.692
+Epoch   13/30, time: 35.51 s, training_loss: 0.689
+Epoch   13/30, time: 45.06 s, val_loss: 0.675
+Epoch   14/30, time: 35.31 s, training_loss: 0.685
+Epoch   14/30, time: 44.83 s, val_loss: 0.715
+Epoch   15/30, time: 35.22 s, training_loss: 0.678
+Epoch   15/30, time: 44.56 s, val_loss: 0.673
+Epoch   16/30, time: 35.40 s, training_loss: 0.669
+Epoch   16/30, time: 44.92 s, val_loss: 0.663
+Epoch   17/30, time: 35.10 s, training_loss: 0.663
+Epoch   17/30, time: 44.42 s, val_loss: 0.683
+Epoch   18/30, time: 35.08 s, training_loss: 0.658
+Epoch   18/30, time: 44.37 s, val_loss: 0.666
+Epoch   19/30, time: 35.31 s, training_loss: 0.652
+Epoch   19/30, time: 44.83 s, val_loss: 0.650
+Epoch   20/30, time: 34.90 s, training_loss: 0.646
+Epoch   20/30, time: 44.23 s, val_loss: 0.646
+Epoch   21/30, time: 34.76 s, training_loss: 0.642
+Epoch   21/30, time: 44.22 s, val_loss: 0.645
+Epoch   22/30, time: 35.13 s, training_loss: 0.633
+Epoch   22/30, time: 44.72 s, val_loss: 0.654
+Epoch   23/30, time: 34.83 s, training_loss: 0.626
+Epoch   23/30, time: 44.12 s, val_loss: 0.629
+Epoch   24/30, time: 35.04 s, training_loss: 0.621
+Epoch   24/30, time: 44.40 s, val_loss: 0.622
+Epoch   25/30, time: 34.86 s, training_loss: 0.612
+Epoch   25/30, time: 44.25 s, val_loss: 0.624
+Epoch   26/30, time: 35.30 s, training_loss: 0.606
+Epoch   26/30, time: 44.85 s, val_loss: 0.633
+Epoch   27/30, time: 34.63 s, training_loss: 0.600
+Epoch   27/30, time: 44.14 s, val_loss: 0.600
+Epoch   28/30, time: 34.93 s, training_loss: 0.591
+Epoch   28/30, time: 44.30 s, val_loss: 0.619
+Epoch   29/30, time: 35.47 s, training_loss: 0.585
+Epoch   29/30, time: 44.99 s, val_loss: 0.618
+Epoch   30/30, time: 34.97 s, training_loss: 0.576
+Epoch   30/30, time: 44.24 s, val_loss: 0.585
+Training with paramaeters:  (128, 0.0001, 'bce_loss')
+Epoch    1/30, time: 37.02 s, training_loss: 0.468
+Epoch    1/30, time: 54.47 s, val_loss: 0.641
+Epoch    2/30, time: 37.75 s, training_loss: 0.375
+Epoch    2/30, time: 54.56 s, val_loss: 0.517
+Epoch    3/30, time: 37.82 s, training_loss: 0.337
+Epoch    3/30, time: 54.79 s, val_loss: 0.439
+Epoch    4/30, time: 37.22 s, training_loss: 0.312
+Epoch    4/30, time: 53.86 s, val_loss: 0.366
+Epoch    5/30, time: 37.57 s, training_loss: 0.293
+Epoch    5/30, time: 54.59 s, val_loss: 0.307
+Epoch    6/30, time: 37.28 s, training_loss: 0.278
+Epoch    6/30, time: 53.99 s, val_loss: 0.271
+Epoch    7/30, time: 37.41 s, training_loss: 0.265
+Epoch    7/30, time: 54.41 s, val_loss: 0.264
+Epoch    8/30, time: 37.14 s, training_loss: 0.255
+Epoch    8/30, time: 54.14 s, val_loss: 0.252
+Epoch    9/30, time: 37.36 s, training_loss: 0.246
+Epoch    9/30, time: 54.46 s, val_loss: 0.245
+Epoch   10/30, time: 37.16 s, training_loss: 0.238
+Epoch   10/30, time: 54.10 s, val_loss: 0.231
+Epoch   11/30, time: 37.13 s, training_loss: 0.233
+Epoch   11/30, time: 54.25 s, val_loss: 0.224
+Epoch   12/30, time: 37.64 s, training_loss: 0.226
+Epoch   12/30, time: 54.83 s, val_loss: 0.229
+Epoch   13/30, time: 37.37 s, training_loss: 0.221
+Epoch   13/30, time: 54.27 s, val_loss: 0.214
+Epoch   14/30, time: 37.21 s, training_loss: 0.216
+Epoch   14/30, time: 54.39 s, val_loss: 0.208
+Epoch   15/30, time: 37.50 s, training_loss: 0.213
+Epoch   15/30, time: 54.12 s, val_loss: 0.211
+Epoch   16/30, time: 37.58 s, training_loss: 0.212
+Epoch   16/30, time: 54.47 s, val_loss: 0.202
+Epoch   17/30, time: 37.15 s, training_loss: 0.208
+Epoch   17/30, time: 53.91 s, val_loss: 0.206
+Epoch   18/30, time: 36.81 s, training_loss: 0.203
+Epoch   18/30, time: 53.89 s, val_loss: 0.205
+Epoch   19/30, time: 37.39 s, training_loss: 0.200
+Epoch   19/30, time: 54.30 s, val_loss: 0.204
+Epoch   20/30, time: 37.07 s, training_loss: 0.197
+Epoch   20/30, time: 53.87 s, val_loss: 0.202
+Epoch   21/30, time: 37.77 s, training_loss: 0.195
+Epoch   21/30, time: 54.59 s, val_loss: 0.189
+Epoch   22/30, time: 37.30 s, training_loss: 0.193
+Epoch   22/30, time: 54.23 s, val_loss: 0.190
+Epoch   23/30, time: 37.90 s, training_loss: 0.195
+Epoch   23/30, time: 54.54 s, val_loss: 0.192
+Epoch   24/30, time: 37.39 s, training_loss: 0.193
+Epoch   24/30, time: 54.29 s, val_loss: 0.183
+Epoch   25/30, time: 37.82 s, training_loss: 0.189
+Epoch   25/30, time: 54.55 s, val_loss: 0.176
+Epoch   26/30, time: 37.07 s, training_loss: 0.186
+Epoch   26/30, time: 54.43 s, val_loss: 0.172
+Epoch   27/30, time: 37.34 s, training_loss: 0.183
+Epoch   27/30, time: 54.54 s, val_loss: 0.184
+Epoch   28/30, time: 37.39 s, training_loss: 0.181
+Epoch   28/30, time: 53.98 s, val_loss: 0.165
+Epoch   29/30, time: 36.93 s, training_loss: 0.179
+Epoch   29/30, time: 53.64 s, val_loss: 0.174
+Epoch   30/30, time: 37.02 s, training_loss: 0.178
+Epoch   30/30, time: 54.09 s, val_loss: 0.175
+Training with paramaeters:  (128, 0.0001, 'dice_loss')
+Epoch    1/30, time: 37.30 s, training_loss: 0.906
+Epoch    1/30, time: 54.40 s, val_loss: 0.932
+Epoch    2/30, time: 37.35 s, training_loss: 0.886
+Epoch    2/30, time: 54.07 s, val_loss: 0.920
+Epoch    3/30, time: 37.47 s, training_loss: 0.875
+Epoch    3/30, time: 54.16 s, val_loss: 0.888
+Epoch    4/30, time: 37.44 s, training_loss: 0.867
+Epoch    4/30, time: 54.34 s, val_loss: 0.895
+Epoch    5/30, time: 36.98 s, training_loss: 0.861
+Epoch    5/30, time: 54.15 s, val_loss: 0.872
+Epoch    6/30, time: 37.96 s, training_loss: 0.857
+Epoch    6/30, time: 54.99 s, val_loss: 0.857
+Epoch    7/30, time: 37.91 s, training_loss: 0.852
+Epoch    7/30, time: 54.77 s, val_loss: 0.852
+Epoch    8/30, time: 37.14 s, training_loss: 0.845
+Epoch    8/30, time: 53.74 s, val_loss: 0.840
+Epoch    9/30, time: 37.88 s, training_loss: 0.843
+Epoch    9/30, time: 54.77 s, val_loss: 0.842
+Epoch   10/30, time: 37.22 s, training_loss: 0.840
+Epoch   10/30, time: 54.30 s, val_loss: 0.853
+Epoch   11/30, time: 37.10 s, training_loss: 0.835
+Epoch   11/30, time: 53.76 s, val_loss: 0.831
+Epoch   12/30, time: 37.62 s, training_loss: 0.834
+Epoch   12/30, time: 55.13 s, val_loss: 0.847
+Epoch   13/30, time: 38.36 s, training_loss: 0.829
+Epoch   13/30, time: 55.19 s, val_loss: 0.836
+Epoch   14/30, time: 37.06 s, training_loss: 0.827
+Epoch   14/30, time: 54.01 s, val_loss: 0.830
+Epoch   15/30, time: 37.37 s, training_loss: 0.823
+Epoch   15/30, time: 54.26 s, val_loss: 0.825
+Epoch   16/30, time: 37.78 s, training_loss: 0.824
+Epoch   16/30, time: 54.73 s, val_loss: 0.829
+Epoch   17/30, time: 36.96 s, training_loss: 0.821
+Epoch   17/30, time: 53.61 s, val_loss: 0.818
+Epoch   18/30, time: 37.25 s, training_loss: 0.818
+Epoch   18/30, time: 54.63 s, val_loss: 0.820
+Epoch   19/30, time: 37.80 s, training_loss: 0.820
+Epoch   19/30, time: 54.58 s, val_loss: 0.832
+Epoch   20/30, time: 37.84 s, training_loss: 0.814
+Epoch   20/30, time: 54.80 s, val_loss: 0.857
+Epoch   21/30, time: 37.26 s, training_loss: 0.808
+Epoch   21/30, time: 54.42 s, val_loss: 0.830
+Epoch   22/30, time: 37.04 s, training_loss: 0.803
+Epoch   22/30, time: 53.77 s, val_loss: 0.835
+Epoch   23/30, time: 37.39 s, training_loss: 0.798
+Epoch   23/30, time: 56.18 s, val_loss: 0.860
+Epoch   24/30, time: 37.49 s, training_loss: 0.795
+Epoch   24/30, time: 54.02 s, val_loss: 0.841
+Epoch   25/30, time: 38.08 s, training_loss: 0.791
+Epoch   25/30, time: 54.62 s, val_loss: 0.805
+Epoch   26/30, time: 38.19 s, training_loss: 0.788
+Epoch   26/30, time: 55.22 s, val_loss: 0.857
+Epoch   27/30, time: 37.14 s, training_loss: 0.782
+Epoch   27/30, time: 54.46 s, val_loss: 0.835
+Epoch   28/30, time: 37.54 s, training_loss: 0.778
+Epoch   28/30, time: 54.59 s, val_loss: 0.859
+Epoch   29/30, time: 37.39 s, training_loss: 0.777
+Epoch   29/30, time: 54.14 s, val_loss: 0.799
+Epoch   30/30, time: 37.88 s, training_loss: 0.772
+Epoch   30/30, time: 54.86 s, val_loss: 0.858
+
+Results sorted by validation loss:
+Params: (32, 0.0001, 'bce_loss') | Lowest val Loss: inf at epoch 0
+Params: (32, 0.0001, 'dice_loss') | Lowest val Loss: inf at epoch 0
+Params: (64, 0.0001, 'bce_loss') | Lowest val Loss: inf at epoch 0
+Params: (64, 0.0001, 'dice_loss') | Lowest val Loss: inf at epoch 0
+Params: (128, 0.0001, 'bce_loss') | Lowest val Loss: inf at epoch 0
+Params: (128, 0.0001, 'dice_loss') | Lowest val Loss: inf at epoch 0

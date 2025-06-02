@@ -1,4 +1,4 @@
-covalent_radii_new = {
+covalent_radii = {
     1: 0.31,  # Hydrogen
     2: 0.28,  # Helium
     3: 1.28,  # Lithium

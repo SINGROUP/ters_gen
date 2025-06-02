@@ -63,3 +63,6 @@ def _get_element_flags(bonds: set) -> tuple:
         elif bond == (8, 8):
             contains_o = True
     return contains_c, contains_h, contains_n, contains_o
+
+
+

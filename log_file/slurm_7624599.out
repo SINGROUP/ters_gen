@@ -1,0 +1,38 @@
+[I 2025-05-23 17:12:06,902] A new study created in memory with name: no-name-3c51d200-3127-4059-aa94-bd115b6750b2
+[W 2025-05-23 17:12:06,902] Trial 0 failed with parameters: {} because of the following error: TypeError('Trial.suggest_categorical() takes 3 positional arguments but 5 were given').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 31, in objective
+    batch_size = trial.suggest_categorical("batch_size", *config.training.batch_sizes)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Trial.suggest_categorical() takes 3 positional arguments but 5 were given
+[W 2025-05-23 17:12:06,904] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 126, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in main
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 31, in objective
+    batch_size = trial.suggest_categorical("batch_size", *config.training.batch_sizes)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Trial.suggest_categorical() takes 3 positional arguments but 5 were given

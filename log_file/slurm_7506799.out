@@ -1,0 +1,95 @@
+/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 400, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 1, 256, 256])
+Eval Metrics:   0%|          | 0/41 [00:00<?, ?it/s]Eval Metrics:   2%|▏         | 1/41 [00:19<13:07, 19.68s/it]Eval Metrics:   5%|▍         | 2/41 [00:33<10:27, 16.10s/it]Eval Metrics:   7%|▋         | 3/41 [00:47<09:31, 15.04s/it]Eval Metrics:  10%|▉         | 4/41 [00:59<08:39, 14.04s/it]Eval Metrics:  12%|█▏        | 5/41 [01:11<07:59, 13.32s/it]Eval Metrics:  15%|█▍        | 6/41 [01:23<07:28, 12.82s/it]Eval Metrics:  17%|█▋        | 7/41 [01:35<07:05, 12.53s/it]Eval Metrics:  20%|█▉        | 8/41 [01:47<06:51, 12.47s/it]Eval Metrics:  22%|██▏       | 9/41 [01:59<06:30, 12.20s/it]Eval Metrics:  24%|██▍       | 10/41 [02:10<06:09, 11.90s/it]Eval Metrics:  27%|██▋       | 11/41 [02:22<05:54, 11.81s/it]Eval Metrics:  29%|██▉       | 12/41 [02:33<05:38, 11.68s/it]Eval Metrics:  32%|███▏      | 13/41 [02:45<05:30, 11.81s/it]Eval Metrics:  34%|███▍      | 14/41 [02:57<05:21, 11.91s/it]Eval Metrics:  37%|███▋      | 15/41 [03:10<05:18, 12.24s/it]Eval Metrics:  39%|███▉      | 16/41 [03:22<05:04, 12.19s/it]Eval Metrics:  41%|████▏     | 17/41 [03:34<04:51, 12.16s/it]Eval Metrics:  44%|████▍     | 18/41 [03:47<04:39, 12.17s/it]Eval Metrics:  46%|████▋     | 19/41 [03:59<04:27, 12.15s/it]Eval Metrics:  49%|████▉     | 20/41 [04:11<04:15, 12.16s/it]Eval Metrics:  51%|█████     | 21/41 [04:23<04:04, 12.25s/it]Eval Metrics:  54%|█████▎    | 22/41 [04:36<03:55, 12.38s/it]Eval Metrics:  56%|█████▌    | 23/41 [04:49<03:47, 12.66s/it]Eval Metrics:  59%|█████▊    | 24/41 [05:01<03:31, 12.41s/it]Eval Metrics:  61%|██████    | 25/41 [05:14<03:18, 12.42s/it]Eval Metrics:  63%|██████▎   | 26/41 [05:25<03:03, 12.23s/it]Eval Metrics:  66%|██████▌   | 27/41 [05:37<02:49, 12.14s/it]Eval Metrics:  68%|██████▊   | 28/41 [05:49<02:37, 12.12s/it]Eval Metrics:  71%|███████   | 29/41 [06:02<02:25, 12.14s/it]Eval Metrics:  73%|███████▎  | 30/41 [06:13<02:11, 11.99s/it]Eval Metrics:  76%|███████▌  | 31/41 [06:26<02:00, 12.07s/it]Eval Metrics:  78%|███████▊  | 32/41 [06:38<01:48, 12.07s/it]Eval Metrics:  80%|████████  | 33/41 [06:50<01:36, 12.02s/it]Eval Metrics:  83%|████████▎ | 34/41 [07:01<01:23, 11.95s/it]Eval Metrics:  85%|████████▌ | 35/41 [07:15<01:14, 12.40s/it]Eval Metrics:  88%|████████▊ | 36/41 [07:27<01:01, 12.37s/it]Eval Metrics:  90%|█████████ | 37/41 [07:40<00:49, 12.39s/it]Eval Metrics:  93%|█████████▎| 38/41 [07:53<00:38, 12.69s/it]Eval Metrics:  95%|█████████▌| 39/41 [08:04<00:24, 12.19s/it]Eval Metrics:  98%|█████████▊| 40/41 [08:16<00:12, 12.27s/it]Eval Metrics: 100%|██████████| 41/41 [08:26<00:00, 11.33s/it]Eval Metrics: 100%|██████████| 41/41 [08:26<00:00, 12.34s/it]
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([20, 400, 256, 256])
+torch.Size([20, 1, 256, 256])
+Mean IoU over 1300 samples: 0.5231
+Mean Dice Coefficient over 1300 samples: 0.6453
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/check_accuracy.py", line 22, in <module>
+    ters_subset = Subset(ters_set, indices = range(32))  # every other sample
+                  ^^^^^^
+NameError: name 'Subset' is not defined

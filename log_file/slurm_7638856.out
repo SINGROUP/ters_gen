@@ -1,0 +1,63 @@
+[I 2025-05-24 13:39:33,198] A new study created in memory with name: no-name-a57919d3-6245-40fc-949b-40453382895a
+/home/sethih1/masque_new/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=64, lr=0.0009806652631510996, loss_fn=bce_loss
+[W 2025-05-24 13:40:28,163] Trial 0 failed with parameters: {'batch_size': 64, 'lr': 0.0009806652631510996, 'loss_fn': 'bce_loss'} because of the following error: OutOfMemoryError('CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 15.77 GiB of which 504.44 MiB is free. Including non-PyTorch memory, this process has 15.27 GiB memory in use. Of the allocated memory 12.23 GiB is allocated by PyTorch, and 2.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 94, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 72, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 111, in train_epoch
+    loss.backward()
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 15.77 GiB of which 504.44 MiB is free. Including non-PyTorch memory, this process has 15.27 GiB memory in use. Of the allocated memory 12.23 GiB is allocated by PyTorch, and 2.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[W 2025-05-24 13:40:28,172] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 126, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in main
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 94, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 72, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 111, in train_epoch
+    loss.backward()
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 15.77 GiB of which 504.44 MiB is free. Including non-PyTorch memory, this process has 15.27 GiB memory in use. Of the allocated memory 12.23 GiB is allocated by PyTorch, and 2.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

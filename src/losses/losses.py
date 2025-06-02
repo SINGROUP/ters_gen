@@ -54,7 +54,28 @@ def focal_loss(logits:torch.Tensor, labels:torch.Tensor, gamma:float=2.0, alpha:
     return loss.mean()
 
 
-def dice_loss(logits:torch.Tensor, labels:torch.Tensor, eps:float=1e-6):
+def dice_loss(pred, target, smooth=1e-6):
+    """
+    pred: predicted probabilities after sigmoid with shape [N, C, H, W]
+    target: ground truth binary masks with shape [N, C, H, W]
+    """
+    # Apply sigmoid to obtain probabilities in the [0, 1] range
+    pred = torch.sigmoid(pred)
+    
+    # Flatten the predictions and target masks per batch
+    pred_flat = pred.view(pred.size(0), -1)
+    target_flat = target.view(target.size(0), -1)
+    
+    # Calculate the intersection and union
+    intersection = (pred_flat * target_flat).sum(1)
+    union = pred_flat.sum(1) + target_flat.sum(1)
+    
+    # Compute the Dice coefficient and then the Dice loss
+    dice_score = (2.0 * intersection + smooth) / (union + smooth)
+    loss = 1 - dice_score.mean()
+    return loss
+
+'''def dice_loss(logits:torch.Tensor, labels:torch.Tensor, eps:float=1e-6):
     """
     Dice loss for multi-class segmentation
     Args:
@@ -80,7 +101,30 @@ def dice_loss(logits:torch.Tensor, labels:torch.Tensor, eps:float=1e-6):
     dice_per_class = (2.0 * intersection + eps) / (union + eps)
     mean_dice_loss = 1.0 - dice_per_class.mean()
     return mean_dice_loss
+'''
 
+
+def bce_loss(pred, target, smooth=1e-6):
+    """
+    logits: raw model outputs with shape [N, C, H, W]
+    target: ground truth binary masks with shape [N, C, H, W]
+    smooth: small constant to prevent log(0)
+    """
+    # Apply sigmoid to convert logits to probabilities
+    pred = torch.sigmoid(pred)
+    
+    # Flatten per channel
+    pred_flat = pred.view(pred.size(0), pred.size(1), -1)
+    target_flat = target.view(target.size(0), target.size(1), -1)
+    
+    # Clamp predictions to avoid numerical instability
+    pred_flat = pred_flat.clamp(smooth, 1. - smooth)
+    
+    # Calculate BCE loss: -[y*log(p) + (1-y)*log(1-p)]
+    loss = -(target_flat * torch.log(pred_flat) + (1. - target_flat) * torch.log(1. - pred_flat))
+    
+    # Average over all dimensions (pixels, channels, and batch)
+    return loss.mean()
 
 def get_loss_function(loss_fn:str):
 
@@ -93,6 +137,8 @@ def get_loss_function(loss_fn:str):
         return kl_div
     elif loss_fn == "cross_entropy":
         return cross_entropy
+    elif loss_fn == "bce_loss":
+        return bce_loss
     elif loss_fn == "focal_loss":
         return focal_loss
     elif loss_fn == "dice_loss":

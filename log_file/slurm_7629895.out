@@ -1,0 +1,327 @@
+[I 2025-05-24 01:56:49,190] A new study created in memory with name: no-name-eadf1a58-1085-4979-b1cf-88b3eaaad1c2
+/home/sethih1/masque_new/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=64, lr=0.00037930320818713994, loss_fn=dice_loss
+Epoch    1/50, time: 135.13 s, training_loss: 0.844
+Epoch    1/50, time: 170.74 s, val_loss: 0.921
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    2/50, time: 111.82 s, training_loss: 0.796
+Epoch    2/50, time: 143.10 s, val_loss: 0.851
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    3/50, time: 126.88 s, training_loss: 0.771
+Epoch    3/50, time: 158.83 s, val_loss: 0.771
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    4/50, time: 130.79 s, training_loss: 0.749
+Epoch    4/50, time: 162.75 s, val_loss: 0.750
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    5/50, time: 123.19 s, training_loss: 0.730
+Epoch    5/50, time: 154.99 s, val_loss: 0.724
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    6/50, time: 122.50 s, training_loss: 0.711
+Epoch    6/50, time: 154.70 s, val_loss: 0.733
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    7/50, time: 122.76 s, training_loss: 0.694
+Epoch    7/50, time: 155.10 s, val_loss: 0.696
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    8/50, time: 126.73 s, training_loss: 0.677
+Epoch    8/50, time: 158.41 s, val_loss: 0.693
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch    9/50, time: 126.74 s, training_loss: 0.660
+Epoch    9/50, time: 158.82 s, val_loss: 0.646
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   10/50, time: 128.17 s, training_loss: 0.644
+Epoch   10/50, time: 159.90 s, val_loss: 0.638
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   11/50, time: 126.37 s, training_loss: 0.627
+Epoch   11/50, time: 158.00 s, val_loss: 0.635
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   12/50, time: 222.89 s, training_loss: 0.612
+Epoch   12/50, time: 260.76 s, val_loss: 0.612
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   13/50, time: 125.49 s, training_loss: 0.594
+Epoch   13/50, time: 158.06 s, val_loss: 0.615
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   14/50, time: 126.95 s, training_loss: 0.578
+Epoch   14/50, time: 159.18 s, val_loss: 0.586
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   15/50, time: 126.65 s, training_loss: 0.559
+Epoch   15/50, time: 158.72 s, val_loss: 0.567
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   16/50, time: 126.16 s, training_loss: 0.540
+Epoch   16/50, time: 158.39 s, val_loss: 0.555
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9642
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Validation Metrics:
+Accuracy: 0.9640
+Precision: 0.0000
+Recall: 0.0000
+F1 Score: 0.0000
+IoU: 0.0000
+Dice Coefficient: 0.0000
+Epoch   17/50, time: 123.78 s, training_loss: 0.521
+Epoch   17/50, time: 156.74 s, val_loss: 0.546
+slurmstepd: error: *** JOB 7629895 ON gpu16 CANCELLED AT 2025-05-24T11:47:31 ***

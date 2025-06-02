@@ -1,17 +1,27 @@
 from src.datasets import Ters_dataset_filtered_skip
+from src.metrics import Metrics
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+
+import numpy as np
 import matplotlib.pyplot as plt
 import os
 from collections import defaultdict
 
+from src.transforms import Normalize, MinimumToZero
+
+import torchvision.transforms as transforms
+
 # ——— Dataset & model setup ———
-data_path = "/scratch/phys/sin/sethih1/data_files/planar_molecules_256"
-data_path = "/scratch/phys/sin/sethih1/data_files/plane_third_group_images_nr_256_new/"
-suffix = 'third_group'
+suffix = 'val'
+data_path = f"/scratch/phys/sin/sethih1/data_files/planar_molecules_256/{suffix}/"
+#data_path = "/scratch/phys/sin/sethih1/data_files/plane_third_group_images_nr_256_new/"
+
 num_channels = 400
 sg_ch = True
+
+data_transform = transforms.Compose([Normalize(), MinimumToZero()])
 
 ters_set = Ters_dataset_filtered_skip(
     filename=data_path,
@@ -19,15 +29,17 @@ ters_set = Ters_dataset_filtered_skip(
     num_channels=num_channels,
     std_deviation_multiplier=2,
     sg_ch=sg_ch,
-    t_image=None,
-    t_freq=None
+    t_image=data_transform,
+    t_freq=None, 
+    flag=True
 )
 
 ters_loader = DataLoader(ters_set, batch_size=32, shuffle=False)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = torch.load(
-    '/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
+    '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images/hyperopt/config2/seg_bs_16_lr_0.00024002900476800525_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
     map_location=device
 )
 model.eval()
@@ -38,14 +50,23 @@ dice_coeffs = []
 images_list = []
 masks_list = []
 preds_list = []
+filename_list = []
+
+batch = next(iter(ters_loader))
+print(len(batch))                    # should be 6
+for i, elem in enumerate(batch):
+    print(i, type(elem), getattr(elem, 'shape', len(elem)))
 
 with torch.no_grad():
-    for images, _, masks in tqdm(ters_loader, desc="Eval Metrics"):
+    for filename, _, _, images, _, masks in tqdm(ters_loader, desc="Eval Metrics"):
+
+       
         images = images.to(device)
         masks  = masks.to(device)
 
-        logits = model(images)                            # → (B,1,H,W)
-        probs  = torch.sigmoid(logits)
+
+        probs = model(images)                            # → (B,1,H,W)
+        #probs  = torch.sigmoid(logits)
         preds  = (probs > 0.5).long().squeeze(1)          # → (B,H,W)
 
         for i in range(masks.size(0)):
@@ -66,8 +87,34 @@ with torch.no_grad():
             dice_coeffs.append(dice)
 
             images_list.append(images[i].cpu())
-            masks_list.append(mask_i.cpu())
-            preds_list.append(pred_i.cpu())
+            masks_list.append(mask_i.cpu().squeeze(0).numpy())
+            preds_list.append(pred_i.cpu().squeeze(0).numpy())
+            filename_list.append(filename[i])
+            
+        
+
+
+metrics = Metrics(model, ters_loader, config=None)  # config can be None if not used
+
+print(preds_list[0].shape, masks_list[0].shape)
+print(len(preds_list), len(masks_list))
+
+
+all_ground_truths = np.concatenate(masks_list, axis=0)
+all_predictions = np.concatenate(preds_list, axis=0)
+#print("Ground Truth: ", all_ground_truths)
+#print("Predictions: ", all_predictions)
+# Initialize Metrics class
+metrics = Metrics(model=model, data={"pred": all_predictions, "ground_truth": all_ground_truths}, config={})
+
+# Compute metrics
+results = metrics.evaluate()
+
+# Print metrics
+print("Metrics:")
+for metric, value in results.items():
+    print(f"{metric}: {value:.4f}")
+
 
 # ——— Compute and print mean IoU and Dice Coefficient ———
 mean_iou = sum(ious) / len(ious)
@@ -93,7 +140,7 @@ plt.ylabel("Count")
 plt.grid(True)
 
 plt.tight_layout()
-plt.savefig(f"iou_dice_histograms{suffix}.png")
+plt.savefig(f"iou_dice_histograms_{suffix}.png")
 plt.close()
 
 # ——— Bin samples by Dice Coefficient and save up to 5 per bin ———
@@ -121,7 +168,7 @@ for bin_idx in range(10):
         # Input = mean over spectral channels
         avg_chan = torch.mean(images_list[idx], dim=0)
         axs[0].imshow(avg_chan.squeeze(), cmap="gray")
-        axs[0].set_title("Input")
+        axs[0].set_title("Average TERS intensity observed")
 
         # Ground truth mask
         axs[1].imshow(masks_list[idx].squeeze(), cmap="gray")
@@ -134,8 +181,10 @@ for bin_idx in range(10):
         for ax in axs:
             ax.axis("off")
 
+        fig.suptitle(f'Molecule id: {filename_list[idx]}')
         plt.tight_layout()
-        fname = f"dice_bins{suffix}/{low:.1f}-{high:.1f}_rank{rank}_iou{ious[idx]:.3f}_dice{dice_coeffs[idx]:.3f}.png"
+        os.makedirs(f"dice_bins_{suffix}", exist_ok=True)
+        fname = f"dice_bins_{suffix}/{low:.1f}-{high:.1f}_rank{rank}_iou{ious[idx]:.3f}_dice{dice_coeffs[idx]:.3f}.png"
         plt.savefig(fname)
         plt.close()
 

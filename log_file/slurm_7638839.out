@@ -1,0 +1,129 @@
+[I 2025-05-24 12:45:14,458] A new study created in memory with name: no-name-9029006f-0359-496c-a590-d6b541ab4e42
+/home/sethih1/masque_new/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=128, lr=0.00025688625355307573, loss_fn=bce_loss
+[W 2025-05-24 12:47:03,912] Trial 0 failed with parameters: {'batch_size': 128, 'lr': 0.00025688625355307573, 'loss_fn': 'bce_loss'} because of the following error: OutOfMemoryError('CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 31.73 GiB of which 538.44 MiB is free. Including non-PyTorch memory, this process has 31.20 GiB memory in use. Of the allocated memory 30.71 GiB is allocated by PyTorch, and 132.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 94, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 72, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 104, in train_epoch
+    outputs = self.model(images)
+              ^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/models/models.py", line 154, in forward
+    attn_skip, attn_map = attn_block(x, skip)
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/models/layers.py", line 68, in forward
+    x1 = self.W_x(x)
+         ^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/functional.py", line 2812, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 31.73 GiB of which 538.44 MiB is free. Including non-PyTorch memory, this process has 31.20 GiB memory in use. Of the allocated memory 30.71 GiB is allocated by PyTorch, and 132.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[W 2025-05-24 12:47:03,953] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 126, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in main
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in <lambda>
+    study.optimize(lambda t: objective(t, config, device), n_trials = config.training.n_trials, n_jobs=config.training.n_jobs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 94, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 72, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 104, in train_epoch
+    outputs = self.model(images)
+              ^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/models/models.py", line 154, in forward
+    attn_skip, attn_map = attn_block(x, skip)
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/models/layers.py", line 68, in forward
+    x1 = self.W_x(x)
+         ^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/functional.py", line 2812, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 31.73 GiB of which 538.44 MiB is free. Including non-PyTorch memory, this process has 31.20 GiB memory in use. Of the allocated memory 30.71 GiB is allocated by PyTorch, and 132.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

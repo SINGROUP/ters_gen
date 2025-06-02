@@ -1,0 +1,118 @@
+/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 400, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 1, 256, 256])
+Eval Metrics:   0%|          | 0/41 [00:00<?, ?it/s]Eval Metrics:   2%|▏         | 1/41 [00:17<11:40, 17.52s/it]Eval Metrics:   5%|▍         | 2/41 [00:28<08:59, 13.84s/it]Eval Metrics:   7%|▋         | 3/41 [00:41<08:31, 13.46s/it]Eval Metrics:  10%|▉         | 4/41 [00:53<07:50, 12.73s/it]Eval Metrics:  12%|█▏        | 5/41 [01:03<07:10, 11.96s/it]Eval Metrics:  15%|█▍        | 6/41 [01:15<06:50, 11.74s/it]Eval Metrics:  17%|█▋        | 7/41 [01:26<06:34, 11.59s/it]Eval Metrics:  20%|█▉        | 8/41 [01:37<06:15, 11.37s/it]Eval Metrics:  22%|██▏       | 9/41 [01:48<05:55, 11.12s/it]Eval Metrics:  24%|██▍       | 10/41 [01:58<05:40, 10.98s/it]Eval Metrics:  27%|██▋       | 11/41 [02:09<05:27, 10.92s/it]Eval Metrics:  29%|██▉       | 12/41 [02:20<05:16, 10.91s/it]Eval Metrics:  32%|███▏      | 13/41 [02:31<05:10, 11.09s/it]Eval Metrics:  34%|███▍      | 14/41 [02:43<05:01, 11.18s/it]Eval Metrics:  37%|███▋      | 15/41 [02:54<04:52, 11.25s/it]Eval Metrics:  39%|███▉      | 16/41 [03:06<04:43, 11.35s/it]Eval Metrics:  41%|████▏     | 17/41 [03:17<04:34, 11.45s/it]Eval Metrics:  44%|████▍     | 18/41 [03:29<04:23, 11.44s/it]Eval Metrics:  46%|████▋     | 19/41 [03:41<04:13, 11.54s/it]Eval Metrics:  49%|████▉     | 20/41 [03:52<04:02, 11.57s/it]Eval Metrics:  51%|█████     | 21/41 [04:04<03:51, 11.55s/it]Eval Metrics:  54%|█████▎    | 22/41 [04:16<03:41, 11.66s/it]Eval Metrics:  56%|█████▌    | 23/41 [04:27<03:28, 11.59s/it]Eval Metrics:  59%|█████▊    | 24/41 [04:38<03:14, 11.44s/it]Eval Metrics:  61%|██████    | 25/41 [04:50<03:02, 11.42s/it]Eval Metrics:  63%|██████▎   | 26/41 [05:01<02:50, 11.35s/it]Eval Metrics:  66%|██████▌   | 27/41 [05:12<02:37, 11.24s/it]Eval Metrics:  68%|██████▊   | 28/41 [05:23<02:26, 11.28s/it]Eval Metrics:  71%|███████   | 29/41 [05:35<02:17, 11.43s/it]Eval Metrics:  73%|███████▎  | 30/41 [05:46<02:05, 11.39s/it]Eval Metrics:  76%|███████▌  | 31/41 [05:58<01:53, 11.39s/it]Eval Metrics:  78%|███████▊  | 32/41 [06:09<01:43, 11.51s/it]Eval Metrics:  80%|████████  | 33/41 [06:21<01:32, 11.51s/it]Eval Metrics:  83%|████████▎ | 34/41 [06:33<01:21, 11.65s/it]Eval Metrics:  85%|████████▌ | 35/41 [06:44<01:08, 11.49s/it]Eval Metrics:  88%|████████▊ | 36/41 [06:55<00:57, 11.44s/it]Eval Metrics:  90%|█████████ | 37/41 [07:07<00:46, 11.60s/it]Eval Metrics:  93%|█████████▎| 38/41 [07:19<00:35, 11.68s/it]Eval Metrics:  95%|█████████▌| 39/41 [07:30<00:22, 11.47s/it]Eval Metrics:  98%|█████████▊| 40/41 [07:42<00:11, 11.64s/it]Eval Metrics: 100%|██████████| 41/41 [07:51<00:00, 10.72s/it]Eval Metrics: 100%|██████████| 41/41 [07:51<00:00, 11.49s/it]
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([32, 400, 256, 256])
+torch.Size([32, 1, 256, 256])
+torch.Size([20, 400, 256, 256])
+torch.Size([20, 1, 256, 256])
+Mean IoU over 1300 samples: 0.5231
+Mean Dice Coefficient over 1300 samples: 0.6453
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py", line 150, in <module>
+    plt.savefig(fname)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/pyplot.py", line 1228, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/figure.py", line 3395, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2204, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2054, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 496, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    mpl.image.imsave(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/matplotlib/image.py", line 1676, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/PIL/Image.py", line 2600, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sethih1/masque_new/ters_gen/dice_binsthird_group/0.0-0.1_rank1_iou0.002_dice0.005.png'
