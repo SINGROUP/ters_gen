@@ -1,0 +1,1 @@
+from src.configs.base import get_config

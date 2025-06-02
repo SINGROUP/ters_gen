@@ -6,15 +6,15 @@ def load_yaml_config(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
-def get_config():
-    cfg = config_dict.ConfigDict()
-    cfg_dataloader = load_yaml_config('src/configs/dataloader.yaml')
-    cfg_dataset = load_yaml_config('src/configs/dataset.yaml')
-    cfg_model = load_yaml_config('src/configs/model.yaml')
+def get_config(config_path):
 
+    if config_path:
+        cfg_yaml = load_yaml_config(config_path)
+    else:
+        cfg_yaml = load_yaml_config('src/configs/dataloader.yaml')
 
-    cfg.dataloader = config_dict.ConfigDict(cfg_dataloader)
-    cfg.dataset = config_dict.ConfigDict(cfg_dataset)
-    cfg.model = config_dict.ConfigDict(cfg_model)
+    
+    
+    cfg = config_dict.ConfigDict(cfg_yaml)
 
     return cfg
