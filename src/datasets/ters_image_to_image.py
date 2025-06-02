@@ -9,16 +9,14 @@ import torchvision.transforms.functional as TF
 import torch.nn as nn
 
 
-from src.covalent_radii import covalent_radii_new
+from src.covalent_radii import covalent_radii
+
+
+from src.utils.molecule_gaussian_image import molecule_gaussian_image
+from src.utils.xyz_to_label import molecule_circular_image
 
 
 
-# For visualization image
-import matplotlib.pyplot as plt
-from ase import Atoms
-from ase.visualize.plot import plot_atoms
-from io import BytesIO
-from PIL import Image
 
 
 # Dictionary to convert atomic number to atomic symbols
@@ -33,97 +31,52 @@ atomic_symbols = {
     8: "O",   # Oxygen
     9: "F",   # Fluorine
     10: "Ne", # Neon
-    11: "Na", # Sodium
-    12: "Mg", # Magnesium
-    13: "Al", # Aluminum
-    14: "Si", # Silicon
-    15: "P",  # Phosphorus
-    16: "S",  # Sulfur
-    17: "Cl", # Chlorine
-    18: "Ar", # Argon
-    19: "K",  # Potassium
-    20: "Ca", # Calcium
-    21: "Sc", # Scandium
-    22: "Ti", # Titanium
-    23: "V",  # Vanadium
-    24: "Cr", # Chromium
-    25: "Mn", # Manganese
-    26: "Fe", # Iron
-    27: "Co", # Cobalt
-    28: "Ni", # Nickel
-    29: "Cu", # Copper
-    30: "Zn", # Zinc
-    31: "Ga", # Gallium
-    32: "Ge", # Germanium
-    33: "As", # Arsenic
-    34: "Se", # Selenium
-    35: "Br", # Bromine
-    36: "Kr", # Krypton
-    37: "Rb", # Rubidium
-    38: "Sr", # Strontium
-    39: "Y",  # Yttrium
-    40: "Zr", # Zirconium
-}
-
-
-# Define a fixed color map for the four elements
-color_map = {
-    "C": "black",    # Carbon
-    "H": "lightgray", # Hydrogen
-    "O": "red",      # Oxygen
-    "N": "blue"      # Nitrogen
 }
 
 
 def padding(spectrums, frequencies):
+    
     freq_pad = torch.zeros(54) # 54 is the maximum number of frequency modes possible for a molecule with 20 atoms
     img_pad = torch.zeros((54, 64, 64)) # 54 images with 64x64 pixels
 
     # Pad the images and frequencies to have the same length
-    img_pad[:spectrums.shape[0], :, :] = spectrums
+    #img_pad[:spectrums.shape[0], :, :] = spectrums
     freq_pad[:len(frequencies)] = frequencies
 
     return img_pad, freq_pad
 
-# Useful function
-def xyz_string_to_image_array(xyz_string, img_size=(64, 64)):
-    """Convert XYZ data (string) to a NumPy image array of size 224×224."""
-    lines = xyz_string.strip().split("\n")[2:]  # Skip first two lines (comment and atom count)
-    
-    elements = []
-    positions = []
-    
-    for line in lines:
-        parts = line.split()
-        elements.append(parts[0])  # First entry is the element
-        positions.append([float(x) for x in parts[1:4]])  # Next three are coordinates
-    
-    positions = np.array(positions)
-    mol = Atoms(elements, positions=positions)
-    
-    atom_colors = [color_map.get(atom, "gray") for atom in mol.get_chemical_symbols()]  # Assign colors
-    
-    # Plot molecule
-    fig, ax = plt.subplots(figsize=(3, 3))
-    plot_atoms(mol, ax, radii=0.3, colors=atom_colors)
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_frame_on(False)
 
-    # Save image to an in-memory buffer
-    buf = BytesIO()
-    plt.savefig(buf, format='png', dpi=300, bbox_inches='tight', pad_inches=0)
-    plt.close(fig)
-
-    # Convert image to 224×224 NumPy array
-    buf.seek(0)
-    image = Image.open(buf).convert("RGB")  # Ensure it's RGB
-    image = image.resize(img_size, Image.LANCZOS)  # Resize to 224×224
-    image_array = np.array(image)  # Convert to NumPy array (H, W, C)
-    image_array = image_array/255
+def uniform_channels(spectrums, frequencies):
+    '''Function to create uniform channels for the spectrums'''
     
-    return image_array  # Directly return NumPy array
+    
 
+    max_freq = 4000
+    num_channels = 400
+    step = max_freq // num_channels
+
+    grid_size = spectrums.shape[1]
+    channels = np.zeros((grid_size, grid_size, num_channels))
+
+    mean = np.mean(spectrums, axis = (0,1))
+    std = np.std(spectrums, axis=(0,1))
+    spectrums = (spectrums - mean)/std
+    
+
+    count = 0 
+    for i in range(1, max_freq, step):
+        indices =  (frequencies > i) & (frequencies < i+step)
+        selected_spectrums = spectrums[:, :, indices]
+        if np.all(selected_spectrums == 0):
+            count += 1
+            continue
+        if selected_spectrums.size == 0:
+            count += 1
+            continue
+        channels[:, :, count] = np.mean(selected_spectrums, axis = 2)
+        count += 1
+
+    return channels
 
 
 class Ters_dataset_filtered_skip(Dataset):
@@ -159,17 +112,27 @@ class Ters_dataset_filtered_skip(Dataset):
 
         for npz_file in npz_files:
             self.names.append(os.path.basename(npz_file))
-            with np.load(npz_file) as data:
+            with np.load(npz_file, mmap_mode='r') as data:
                 atom_pos = data['atom_pos']
                 atomic_numbers = data['atomic_numbers']
                 frequencies = data['frequencies']
                 spectrums = data['spectrums']
+
+            if np.any(frequencies <= 0):
+                continue
+
 
             # Filter images based on the given frequency range
             indices = [i for i, freq in enumerate(frequencies) if self.frequency_range[0] <= freq <= self.frequency_range[1]]
             filtered_frequencies = [frequencies[i] for i in indices]
             filtered_spectrums = spectrums[:, :, indices]
             
+            #channels = uniform_channels(spectrums, frequencies)
+            filtered_spectrums = uniform_channels(filtered_spectrums, np.array(filtered_frequencies))
+
+
+            #filtered_spectrums = channels
+
             self.frequencies.append(filtered_frequencies)
             self.images.append(filtered_spectrums)
 
@@ -186,7 +149,9 @@ class Ters_dataset_filtered_skip(Dataset):
                 pos_str = "\t".join(f"{coord:.6f}" for coord in pos)
                 text += atomic_symbols[atom] + "\t" +  pos_str + "\n"
 
-            image = xyz_string_to_image_array(text)
+            #image = xyz_string_to_image_array(text)
+            #image = molecule_gaussian_image(text)
+            image = molecule_circular_image(text)
             self.target_images.append(image)
 
             
@@ -211,7 +176,6 @@ class Ters_dataset_filtered_skip(Dataset):
                 raise ValueError("Loop stopped but still in the loop")
 
             self.length_counter += 1
-
             length = len(self.frequencies[i])
             self.min_length = min(self.min_length, length)
             self.max_length = max(self.max_length, length)
@@ -304,7 +268,7 @@ class Ters_dataset_filtered_skip(Dataset):
                 distance = np.linalg.norm(atom_pos[i] - atom_pos[j])
                 
                 # Calculate cutoff distance based on covalent radii
-                cutoff = cutoff_scale * (covalent_radii_new[atomic_numbers[i]] + covalent_radii_new[atomic_numbers[j]])
+                cutoff = cutoff_scale * (covalent_radii[atomic_numbers[i]] + covalent_radii[atomic_numbers[j]])
                 
                 if distance <= cutoff:
                     bonds.add((atomic_numbers[i], atomic_numbers[j]))
@@ -324,7 +288,7 @@ class Ters_dataset_filtered_skip(Dataset):
         
         target_image = torch.from_numpy(target_image).float()
 
-        target_image = target_image.permute(2, 0, 1)
+        #target_image = target_image.permute(2, 0, 1)
 
         selected_images = [images[:,:, i] for i in range(images.shape[2])]
         selected_images = [torch.from_numpy(image).float() for image in selected_images]
@@ -344,7 +308,7 @@ class Ters_dataset_filtered_skip(Dataset):
 
 
 
-        selected_images, selected_frequencies = padding(selected_images, selected_frequencies)
+        _, selected_frequencies = padding(selected_images, selected_frequencies)
         mol_images_tensor = selected_images
 
         bonds = torch.zeros(self.bond_count)
@@ -352,5 +316,6 @@ class Ters_dataset_filtered_skip(Dataset):
         bonds[bond_indices] = 1
 
         # selected_frequencies = selected_frequencies / self.max_freq
+
 
         return mol_images_tensor, selected_frequencies, target_image

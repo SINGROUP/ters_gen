@@ -1,1 +1,2 @@
-from src.datasets.ters_image_to_image import Ters_dataset_filtered_skip
+#from src.datasets.ters_image_to_image import Ters_dataset_filtered_skip
+from src.datasets.ters_image_to_image_sh import Ters_dataset_filtered_skip
