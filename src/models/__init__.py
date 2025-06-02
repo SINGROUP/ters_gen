@@ -1,1 +1,1 @@
-from src.models.GAN import Discriminator, UNet
+from src.models.models import UNet, AttentionUNet

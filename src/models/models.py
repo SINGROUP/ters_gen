@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from src.models.layers import ResBlock, AttentionBlock3d
+from src.models.layers import ResBlock, AttentionBlock2d
 
 class UNet(nn.Module):
 
@@ -20,8 +20,8 @@ class UNet(nn.Module):
 
             in_channels = f
 
-        self.pool = nn.MaxPool3d(kernel_size=(2,2,1), stride = (2,2,1))
-        #self.pool = nn.MaxPool3d(kernel_size=2, stride = 2)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride = 2)
+        #self.pool = nn.MaxPool2d(kernel_size=2, stride = 2)
 
         self.bottom = ResBlock(filters[-1], filters[-1], kernel_size=kernel_size[-1])
 
@@ -29,8 +29,8 @@ class UNet(nn.Module):
         # Decoder block
 
         self.decoder = nn.ModuleList()
-        self.up = nn.Upsample(scale_factor=(2,2,1), mode='trilinear')
-        #self.up = nn.Upsample(scale_factor=2, mode='trilinear')
+        self.up = nn.Upsample(scale_factor=2, mode='bilinear')
+        #self.up = nn.Upsample(scale_factor=2, mode='bilinear')
 
         decoder_filters = filters[::-1][1:]
 
@@ -49,12 +49,13 @@ class UNet(nn.Module):
 
         self.final_resblock = ResBlock(prev_channels, filters[0], kernel_size[0])
 
-        self.output_conv = nn.Conv3d(filters[0], out_channels, kernel_size=1)
+        self.output_conv = nn.Conv2d(filters[0], out_channels, kernel_size=1)
 
 
     def forward(self, x):
 
         skips = []
+        
 
         # Encoder pass
         for resblock in self.encoder:
@@ -87,6 +88,8 @@ class AttentionUNet(nn.Module):
 
         self.return_att_map = return_att_map
 
+        self.conv = nn.Conv2d(in_channels, 64, kernel_size=1, stride=1)
+        in_channels = 64
         # Encoder block
         self.encoder = nn.ModuleList()
         for f,k in zip(filters, kernel_size):
@@ -96,8 +99,8 @@ class AttentionUNet(nn.Module):
             )
             in_channels = f
 
-        self.pool = nn.MaxPool3d(kernel_size=(2,2,1), stride = (2,2,1))
-        #self.pool = nn.MaxPool3d(kernel_size=2, stride =2)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride = 2)
+        #self.pool = nn.MaxPool2d(kernel_size=2, stride =2)
 
         # Bottom block 
         self.bottom = ResBlock(filters[-1], filters[-1], kernel_size[-1])
@@ -105,8 +108,8 @@ class AttentionUNet(nn.Module):
         # Decoder block with attention
         self.attentions = nn.ModuleList()
         self.decoder = nn.ModuleList()
-        self.up = nn.Upsample(scale_factor=(2,2,1), mode='trilinear')
-        #self.up = nn.Upsample(scale_factor=2, mode='trilinear')
+        self.up = nn.Upsample(scale_factor=2, mode='bilinear')
+        #self.up = nn.Upsample(scale_factor=2, mode='bilinear')
         prev_channel = filters[-1]
         
         decoder_filters = filters[::-1]
@@ -115,7 +118,7 @@ class AttentionUNet(nn.Module):
         for f,k in zip(decoder_filters, decoder_kernels):
 
             self.attentions.append(
-                AttentionBlock3d(channels_x=f, channels_g=prev_channel, attention_channels=att_channels, kernel_size=3)
+                AttentionBlock2d(channels_x=f, channels_g=prev_channel, attention_channels=att_channels, kernel_size=3)
             )
 
             self.decoder.append(
@@ -126,13 +129,15 @@ class AttentionUNet(nn.Module):
 
         self.final_resblock = ResBlock(prev_channel, filters[0], kernel_size[0])
 
-        self.output_conv = nn.Conv3d(filters[0], out_channels, kernel_size=1)
+        self.output_conv = nn.Conv2d(filters[0], out_channels, kernel_size=1)
 
 
     def forward(self, x):
 
         attention_maps = []
         skips = []
+
+        x = self.conv(x)
 
         # Encoder pass
         for resblock in self.encoder:
