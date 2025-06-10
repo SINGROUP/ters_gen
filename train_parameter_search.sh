@@ -5,7 +5,7 @@
 #SBATCH -c 12
 #SBATCH --partition=gpu-h100-80g-short
 # SBATCH --partition=gpu-debug
-#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%j.out
+#SBATCH -o /home/sethih1/masque_new/composnet/ters_gen/log_file/slurm_%j.out
 
 arg1=$1
 

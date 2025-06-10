@@ -1,0 +1,4 @@
+  File "/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py", line 222
+    print(np.unique(np.argmax(masks_list[idx], axis=0), return_counts=True)
+         ^
+SyntaxError: '(' was never closed

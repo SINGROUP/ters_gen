@@ -45,6 +45,7 @@ def objective(trial, config, device):
         num_channels=config.model.in_channels,
         std_deviation_multiplier=2, 
         sg_ch=(config.model.out_channels == 1), 
+        circle_radius=config.data.circle_radius,
         t_image=data_transform
     )
 
@@ -55,6 +56,7 @@ def objective(trial, config, device):
         num_channels=config.model.in_channels,
         std_deviation_multiplier=2, 
         sg_ch=(config.model.out_channels == 1), 
+        circle_radius=config.data.circle_radius,
         t_image=data_transform
     )
 

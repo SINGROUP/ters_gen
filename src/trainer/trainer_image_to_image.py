@@ -50,10 +50,10 @@ class Trainer():
         #self.loss_fn = get_loss_function('focal_loss')
         self.model = model
 
-        val_loader_args = {'batch_size': 64, 'shuffle': False, 'num_workers': 8}
+        val_loader_args = {'batch_size': 64, 'shuffle': True, 'num_workers': 8}
 
         self.train_loader = DataLoader(self.train_set, **dataloader_args)
-        self.validation_loader = DataLoader(self.validation_set, **dataloader_args)
+        self.validation_loader = DataLoader(self.validation_set, **val_loader_args)
         testloader_args = {'batch_size': 4, 'shuffle': False, 'num_workers': 0}
         # self.test_loader = DataLoader(self.test_set, **dataloader_args)
         self.test_loader = DataLoader(self.test_set, **testloader_args)
@@ -84,7 +84,9 @@ class Trainer():
             self.writer.add_scalar(f"Validation Loss",epoch_loss, epoch)
 
             # Computing model metrics
-            self.evaluate_model_metrics(self.model, epoch)
+
+            if epoch % 10 == 0 or epoch == epochs - 1:
+                self.evaluate_model_metrics(self.model, epoch)
 
 
 
@@ -108,6 +110,7 @@ class Trainer():
             #tgt_image_new[:, 1:, :, :] = tgt_image
             #tgt_image = tgt_image_new
             #tgt_image = torch.argmax(tgt_image, dim=1)
+
 
             loss = self.loss_fn(outputs, tgt_image)
             loss.backward()
