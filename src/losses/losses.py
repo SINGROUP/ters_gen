@@ -54,6 +54,26 @@ def focal_loss(logits:torch.Tensor, labels:torch.Tensor, gamma:float=2.0, alpha:
     return loss.mean()
 
 
+
+def dice_loss_multi_class(pred, target, smooth=1e-6):
+
+    pred = torch.softmax(pred, dim=1)  # Apply softmax to get probabilities
+
+    # Flatten the predictions and target masks per batch
+    pred_flat = pred.view(pred.size(0), pred.size(1), -1)
+    target_flat = target.view(target.size(0), target.size(1), -1)
+
+    # Calculate the intersection and union
+    intersection = (pred_flat * target_flat).sum(2)
+    union = pred_flat.sum(1) + target_flat.sum(2)
+
+    # Compute the Dice coefficient and then the Dice loss
+    dice_score = (2.0 * intersection + smooth) / (union + smooth)
+    loss = 1 - dice_score.mean()
+    return loss.mean()
+
+
+
 def dice_loss(pred, target, smooth=1e-6):
     """
     pred: predicted probabilities after sigmoid with shape [N, C, H, W]
