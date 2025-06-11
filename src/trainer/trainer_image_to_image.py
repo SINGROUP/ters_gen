@@ -46,16 +46,14 @@ class Trainer():
 
         self.optimizer = torch.optim.Adam(model.parameters(), lr=lr)
         self.loss_fn = get_loss_function(loss_fn)
-        #self.loss_fn = get_loss_function('dice_loss')
-        #self.loss_fn = get_loss_function('focal_loss')
+
         self.model = model
 
-        val_loader_args = {'batch_size': 64, 'shuffle': True, 'num_workers': 8}
+        val_loader_args = {'batch_size': 64, 'shuffle': True, 'num_workers': 4}
 
         self.train_loader = DataLoader(self.train_set, **dataloader_args)
         self.validation_loader = DataLoader(self.validation_set, **val_loader_args)
         testloader_args = {'batch_size': 4, 'shuffle': False, 'num_workers': 0}
-        # self.test_loader = DataLoader(self.test_set, **dataloader_args)
         self.test_loader = DataLoader(self.test_set, **testloader_args)
                 
         self.device = device
@@ -164,13 +162,16 @@ class Trainer():
                 tgt_image = tgt_image.to(self.device)
 
                 # Threshold and convert target image to long
-                tgt_image = (tgt_image > 0.01).int()
+                #tgt_image = (tgt_image > 0.01).int()
+                tgt_image = torch.argmax(tgt_image, dim=1)
 
                 # Get model predictions
                 outputs = model(images)
                 #preds = torch.argmax(outputs, dim=1)
 
-                preds = (outputs > 0.5).int()
+                #preds = (outputs > 0.5).int()
+
+                preds = torch.argmax(outputs, dim=1)
 
                 # Collect inputs, ground truths, and predictions
                 all_inputs.append(images.cpu().numpy())
@@ -220,7 +221,6 @@ class Trainer():
             self.writer.add_scalar(f"Validation/{metric}", value, step)
 
         
-    
 
     def final_metrics(self):
         model = self.model.eval()
