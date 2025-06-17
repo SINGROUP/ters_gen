@@ -17,6 +17,18 @@ from src.utils.xyz_to_label import molecule_circular_image
 
 
 
+# For augmentations
+
+from src.transforms import AugmentTransform
+import albumentations as A 
+from albumentations.pytorch import ToTensorV2
+
+
+#import kornia.augmentation as k
+
+
+
+
 
 
 # Dictionary to convert atomic number to atomic symbols
@@ -36,8 +48,7 @@ atomic_symbols = {
 
 def padding(spectrums, frequencies):
     
-    #freq_pad = torch.zeros(100) # 54 is the maximum number of frequency modes possible for a molecule with 20 atoms
-    freq_pad = torch.zeros(100)
+    freq_pad = torch.zeros(100) # 54 is the maximum number of frequency modes possible for a molecule with 20 atoms
     img_pad = torch.zeros((54, 64, 64)) # 54 images with 64x64 pixels
 
     # Pad the images and frequencies to have the same length
@@ -81,7 +92,7 @@ def uniform_channels(spectrums, frequencies, num_channels=400):
 
 
 class Ters_dataset_filtered_skip(Dataset):
-    def __init__(self, filename, frequency_range, num_channels, std_deviation_multiplier=2, sg_ch = True, circle_radius = 5, t_image=None, t_freq=None, flag = False):
+    def __init__(self, filename, frequency_range, num_channels, std_deviation_multiplier=2, sg_ch = True, circle_radius = 5, t_image=None, t_freq=None, flag = False, train_aug = False):
         super(Ters_dataset_filtered_skip, self).__init__()
         self.filename = filename
         self.frequency_range = frequency_range
@@ -90,9 +101,8 @@ class Ters_dataset_filtered_skip(Dataset):
         self.t_freq = t_freq
         self.flag = flag
 
-        self.circle_radius = circle_radius
-
         self.sg_ch = sg_ch
+        self.circle_radius = circle_radius
 
         # Use glob to get a list of all .npz files in the directory
         file_pattern = os.path.join(filename, '*.npz')
@@ -117,8 +127,33 @@ class Ters_dataset_filtered_skip(Dataset):
         lengths = []  # List to store the lengths of images for each molecule
         self.target_images = []
 
+        self.train_aug = train_aug
+
+
+
+        # Adding augmentations (noise, rotation, etc.) to the images
+        self.aug_image = AugmentTransform(gauss_std_range=(0.01, 0.1))
+
+        '''self.aug_image = A.Compose([
+            A.RandomRotate90(p=0.5),
+            A.HorizontalFlip(p=0.5),
+            A.VerticalFlip(p=0.5),
+            A.GaussNoise(var_limit=(10, 50), p=0.5),
+            ToTensorV2(p=1.0),
+        ])
+
+        self.aug_image = torch.nn.Sequential(
+            K.RandomHorizontalFlip(p=0.5),
+            K.random.VerticalFlip(p=0.5),
+            K.RandomRotat
+        )'''
+
+
+
         for npz_file in npz_files:
             self.names.append(npz_file)
+
+
             
 
         
@@ -206,6 +241,13 @@ class Ters_dataset_filtered_skip(Dataset):
         
         selected_images  = torch.stack(selected_images, dim = 0)
 
+        if self.train_aug:
+            selected_images, target_image = self.aug_image(img=selected_images, mask = target_image)
+            '''
+            augmented = self.aug_image(image=selected_images.permute(1,2,0).cpu().numpy(), mask = target_image.permute(1,2,0).cpu().numpy())
+            selected_images = augmented["image"]
+            target_image = augmented["mask"]
+            '''
 
 
         _, selected_frequencies = padding(selected_images, selected_frequencies)
