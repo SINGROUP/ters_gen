@@ -1,0 +1,5 @@
+[I 2025-06-06 14:56:17,749] A new study created in memory with name: no-name-c98133d0-1812-4b81-a12d-a03da960ac2a
+/home/sethih1/masque_new/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=32, lr=0.0006898835408097487, loss_fn=dice_loss
+slurmstepd: error: *** JOB 7994573 ON dgx2 CANCELLED AT 2025-06-06T14:56:49 ***

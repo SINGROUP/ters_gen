@@ -36,12 +36,13 @@ atomic_symbols = {
 
 def padding(spectrums, frequencies):
     
-    freq_pad = torch.zeros(100) # 54 is the maximum number of frequency modes possible for a molecule with 20 atoms
+    #freq_pad = torch.zeros(100) # 54 is the maximum number of frequency modes possible for a molecule with 20 atoms
+    freq_pad = torch.zeros(100)
     img_pad = torch.zeros((54, 64, 64)) # 54 images with 64x64 pixels
 
     # Pad the images and frequencies to have the same length
     #img_pad[:spectrums.shape[0], :, :] = spectrums
-    freq_pad[:len(frequencies)] = frequencies
+    #freq_pad[:len(frequencies)] = frequencies
 
     return img_pad, freq_pad
 
@@ -80,7 +81,7 @@ def uniform_channels(spectrums, frequencies, num_channels=400):
 
 
 class Ters_dataset_filtered_skip(Dataset):
-    def __init__(self, filename, frequency_range, num_channels, std_deviation_multiplier=2, sg_ch = True, t_image=None, t_freq=None, flag = False):
+    def __init__(self, filename, frequency_range, num_channels, std_deviation_multiplier=2, sg_ch = True, circle_radius = 5, t_image=None, t_freq=None, flag = False):
         super(Ters_dataset_filtered_skip, self).__init__()
         self.filename = filename
         self.frequency_range = frequency_range
@@ -88,6 +89,8 @@ class Ters_dataset_filtered_skip(Dataset):
         self.t_image = t_image
         self.t_freq = t_freq
         self.flag = flag
+
+        self.circle_radius = circle_radius
 
         self.sg_ch = sg_ch
 
@@ -169,7 +172,7 @@ class Ters_dataset_filtered_skip(Dataset):
             pos_str = "\t".join(f"{coord:.6f}" for coord in pos)
             text += atomic_symbols[atom] + "\t" +  pos_str + "\n"
 
-        target_image = molecule_circular_image(text, flag=self.sg_ch) # (224, 224, 3)
+        target_image = molecule_circular_image(text, flag=self.sg_ch, circle_radius=self.circle_radius) # (224, 224, 3)
         
             
 

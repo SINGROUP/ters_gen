@@ -1,0 +1,23 @@
+/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py:46: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+Number of samples: 1164
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 400, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 1, 256, 256])
+Eval Metrics:   0%|          | 0/37 [00:00<?, ?it/s]Eval Metrics:   3%|▎         | 1/37 [00:18<11:08, 18.57s/it]Eval Metrics:   5%|▌         | 2/37 [00:41<12:21, 21.19s/it]Eval Metrics:   8%|▊         | 3/37 [01:03<12:03, 21.29s/it]Eval Metrics:  11%|█         | 4/37 [01:25<11:52, 21.58s/it]Eval Metrics:  14%|█▎        | 5/37 [01:44<11:03, 20.74s/it]Eval Metrics:  16%|█▌        | 6/37 [02:01<10:07, 19.59s/it]Eval Metrics:  19%|█▉        | 7/37 [02:20<09:38, 19.30s/it]Eval Metrics:  22%|██▏       | 8/37 [02:39<09:22, 19.40s/it]Eval Metrics:  24%|██▍       | 9/37 [03:03<09:39, 20.70s/it]Eval Metrics:  27%|██▋       | 10/37 [03:21<08:55, 19.83s/it]Eval Metrics:  30%|██▉       | 11/37 [03:40<08:29, 19.59s/it]Eval Metrics:  32%|███▏      | 12/37 [04:01<08:22, 20.09s/it]Eval Metrics:  35%|███▌      | 13/37 [04:25<08:28, 21.17s/it]Eval Metrics:  38%|███▊      | 14/37 [04:45<08:01, 20.92s/it]Eval Metrics:  41%|████      | 15/37 [05:06<07:36, 20.74s/it]Eval Metrics:  43%|████▎     | 16/37 [05:26<07:12, 20.61s/it]Eval Metrics:  46%|████▌     | 17/37 [05:46<06:51, 20.59s/it]Eval Metrics:  49%|████▊     | 18/37 [06:05<06:22, 20.14s/it]Eval Metrics:  51%|█████▏    | 19/37 [06:27<06:08, 20.45s/it]Eval Metrics:  54%|█████▍    | 20/37 [06:47<05:45, 20.33s/it]Eval Metrics:  57%|█████▋    | 21/37 [07:07<05:25, 20.32s/it]Eval Metrics:  59%|█████▉    | 22/37 [07:25<04:55, 19.72s/it]Eval Metrics:  62%|██████▏   | 23/37 [07:45<04:37, 19.83s/it]Eval Metrics:  65%|██████▍   | 24/37 [08:05<04:17, 19.81s/it]Eval Metrics:  68%|██████▊   | 25/37 [08:30<04:16, 21.35s/it]Eval Metrics:  70%|███████   | 26/37 [08:48<03:44, 20.45s/it]Eval Metrics:  73%|███████▎  | 27/37 [09:08<03:22, 20.21s/it]Eval Metrics:  76%|███████▌  | 28/37 [09:27<02:57, 19.74s/it]Eval Metrics:  78%|███████▊  | 29/37 [09:45<02:34, 19.29s/it]Eval Metrics:  81%|████████  | 30/37 [10:04<02:13, 19.12s/it]Eval Metrics:  84%|████████▍ | 31/37 [10:24<01:57, 19.57s/it]Eval Metrics:  86%|████████▋ | 32/37 [10:43<01:35, 19.17s/it]Eval Metrics:  89%|████████▉ | 33/37 [11:02<01:16, 19.12s/it]Eval Metrics:  92%|█████████▏| 34/37 [11:21<00:57, 19.30s/it]Eval Metrics:  95%|█████████▍| 35/37 [11:40<00:38, 19.16s/it]Eval Metrics:  97%|█████████▋| 36/37 [11:59<00:19, 19.21s/it]Eval Metrics: 100%|██████████| 37/37 [12:07<00:00, 15.61s/it]Eval Metrics: 100%|██████████| 37/37 [12:07<00:00, 19.65s/it]
+(256, 256) (256, 256)
+1164 1164
+Metrics:
+Accuracy: 0.9947
+Precision: 0.8616
+Recall: 0.8714
+F1 Score: 0.8664
+IoU: 0.7643
+Dice Coefficient: 0.8664
+Mean IoU over 1164 samples: 0.7623
+Mean Dice Coefficient over 1164 samples: 0.8622
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'

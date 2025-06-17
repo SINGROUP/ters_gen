@@ -50,7 +50,7 @@ class Trainer():
         #self.loss_fn = get_loss_function('focal_loss')
         self.model = model
 
-        val_loader_args = {'batch_size': 64, 'shuffle': True, 'num_workers': 8}
+        val_loader_args = {'batch_size': 64, 'shuffle': False, 'num_workers': 12}
 
         self.train_loader = DataLoader(self.train_set, **dataloader_args)
         self.validation_loader = DataLoader(self.validation_set, **val_loader_args)

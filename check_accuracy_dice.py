@@ -14,8 +14,12 @@ from src.transforms import Normalize, MinimumToZero
 import torchvision.transforms as transforms
 
 # ——— Dataset & model setup ———
-suffix = 'val'
-data_path = f"/scratch/phys/sin/sethih1/data_files/planar_molecules_256/{suffix}/"
+suffix = 'train'
+data_path = f"/scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/{suffix}/"
+
+#data_path = '/home/sethih1/masque_new/masque/check/'
+
+#data_path = f"/scratch/phys/sin/sethih1/data_files/planar_molecules_256/{suffix}/"
 #data_path = "/scratch/phys/sin/sethih1/data_files/plane_third_group_images_nr_256_new/"
 
 num_channels = 400
@@ -34,14 +38,22 @@ ters_set = Ters_dataset_filtered_skip(
     flag=True
 )
 
+print(f"Number of samples: {len(ters_set)}")
+
 ters_loader = DataLoader(ters_set, batch_size=32, shuffle=False)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = torch.load(
-    '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images/hyperopt/config2/seg_bs_16_lr_0.00024002900476800525_loss_dice_loss.pt',
-    #'/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/hyperopt_old/config2/seg_bs_16_lr_0.0005116967471012849_loss_dice_loss.pt',
+    '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/hyperopt/config2/seg_bs_16_lr_0.00040199284987490726_loss_dice_loss.pt',
+
     map_location=device
 )
+
+    #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/hyperopt/config2/seg_bs_32_lr_0.00045407163452873707_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images/hyperopt/config2/seg_bs_16_lr_0.00024002900476800525_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images/hyperopt/config2/seg_bs_16_lr_0.00037197401223588886_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
 model.eval()
 
 # ——— Collect IoUs, Dice coefficients, images, masks & preds ———

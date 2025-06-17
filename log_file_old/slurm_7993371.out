@@ -1,0 +1,22 @@
+/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py:42: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 400, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 1, 256, 256])
+Eval Metrics:   0%|          | 0/10 [00:00<?, ?it/s]Eval Metrics:  10%|█         | 1/10 [00:15<02:17, 15.25s/it]Eval Metrics:  20%|██        | 2/10 [00:28<01:54, 14.34s/it]Eval Metrics:  30%|███       | 3/10 [00:41<01:36, 13.74s/it]Eval Metrics:  40%|████      | 4/10 [00:55<01:22, 13.67s/it]Eval Metrics:  50%|█████     | 5/10 [01:10<01:10, 14.03s/it]Eval Metrics:  60%|██████    | 6/10 [01:23<00:55, 13.87s/it]Eval Metrics:  70%|███████   | 7/10 [01:36<00:40, 13.57s/it]Eval Metrics:  80%|████████  | 8/10 [01:49<00:26, 13.30s/it]Eval Metrics:  90%|█████████ | 9/10 [02:03<00:13, 13.59s/it]Eval Metrics: 100%|██████████| 10/10 [02:05<00:00,  9.81s/it]Eval Metrics: 100%|██████████| 10/10 [02:05<00:00, 12.50s/it]
+(256, 256) (256, 256)
+291 291
+Metrics:
+Accuracy: 0.9787
+Precision: 0.7022
+Recall: 0.6773
+F1 Score: 0.6895
+IoU: 0.5262
+Dice Coefficient: 0.6895
+Mean IoU over 291 samples: 0.5453
+Mean Dice Coefficient over 291 samples: 0.6894
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'

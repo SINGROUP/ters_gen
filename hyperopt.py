@@ -1,5 +1,6 @@
 import torch
 import argparse
+import pprint
 import random 
 import optuna
 from torch.utils.data import DataLoader, Subset, random_split
@@ -45,6 +46,7 @@ def objective(trial, config, device):
         num_channels=config.model.in_channels,
         std_deviation_multiplier=2, 
         sg_ch=(config.model.out_channels == 1), 
+        circle_radius=config.data.circle_radius,
         t_image=data_transform
     )
 
@@ -55,14 +57,16 @@ def objective(trial, config, device):
         num_channels=config.model.in_channels,
         std_deviation_multiplier=2, 
         sg_ch=(config.model.out_channels == 1), 
+        circle_radius=config.data.circle_radius,
+
         t_image=data_transform
     )
 
 
 
     # loaders
-    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=4)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=True, num_workers=4)
+    #train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=4)
+    #val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=True, num_workers=4)
 
 
     # model
@@ -114,6 +118,11 @@ def main():
 
 
     config = get_config(args.config)
+
+    print("======= Loaded Configuration =======")
+    pprint.pprint(config)
+    print("====================================")
+    
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     study = optuna.create_study(direction='maximize')

@@ -13,7 +13,7 @@ def add_disk(image, center, radius):
     mask = (rows - center[0])**2 + (cols - center[1])**2 <= radius**2
     image[mask] = 1  # You can adjust the intensity if needed
 
-def molecule_circular_image(xyz_string, flag=True, circle_radius=7):
+def molecule_circular_image(xyz_string, flag=True, circle_radius=5):
     lines = xyz_string.strip().split("\n")[2:]  # Skip header lines
     
     atoms_data = []  # Store tuples of (element, (x, y, z))
