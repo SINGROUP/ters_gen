@@ -1,0 +1,34 @@
+model:
+  type: AttentionUNet
+  in_channels: [100, 400]
+  out_channels: 1
+  filters_options:
+    - [16, 32, 64]
+    - [16, 32, 64, 128]
+    - [16, 32, 64, 128, 256]
+    - [32, 64, 128, 256, 512]
+  kernel_size_options:
+    - [3, 3, 3]
+    - [3, 3, 3, 3]
+    - [3, 3, 3, 3, 3]
+    - [3, 3, 3, 3, 3, 3]
+  att_channels_options: [16, 32, 64]
+  # activation_options: [relu] #, leaky_relu, gelu]
+
+training:
+  epochs: 50
+  batch_sizes: [16, 32, 64, 128]
+  learning_rates: [0.00001, 0.00005,  0.0001, 0.001]
+  loss_functions: [dice_loss] #focal_loss, MSELoss, L1Loss]
+  n_trials: 15
+  n_jobs: 1
+
+data:
+  train_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/train
+  val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
+  split_by_id: 0
+  circle_radius: 5
+  augmentation: [True, False]
+
+save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all/augmented/config_hypopt_all/
+log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all/augmented/config_hypopt_all/
