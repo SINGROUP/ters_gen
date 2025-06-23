@@ -1,0 +1,258 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"python/3.9"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "python/3.9"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Job started at Thu Jun 19 16:28:56 EEST 2025
+Running on host milan31.int.triton.aalto.fi
+Using 32 CPUs
+Found planar CID: 185042 | PCA=100.00% | RMSD=0.0090
+Found planar CID: 95800 | PCA=100.00% | RMSD=0.0028
+Found planar CID: 100767 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 83175 | PCA=100.00% | RMSD=0.0157
+Found planar CID: 182234 | PCA=100.00% | RMSD=0.0008
+Found planar CID: 97014 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 148353 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 65057 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 50354 | PCA=100.00% | RMSD=0.0021
+Found planar CID: 209854 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 219827 | PCA=100.00% | RMSD=0.0017
+Found planar CID: 222706 | PCA=100.00% | RMSD=0.0074
+Found planar CID: 4757 | PCA=100.00% | RMSD=0.0004
+Found planar CID: 70387 | PCA=100.00% | RMSD=0.0041
+Found planar CID: 96306 | PCA=100.00% | RMSD=0.0094
+Found planar CID: 9171 | PCA=100.00% | RMSD=0.0039
+Found planar CID: 78147 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 195906 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 207893 | PCA=100.00% | RMSD=0.0073
+Found planar CID: 94860 | PCA=100.00% | RMSD=0.0020
+Found planar CID: 3022 | PCA=100.00% | RMSD=0.0027
+Found planar CID: 228615 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 47237 | PCA=100.00% | RMSD=0.0020
+Found planar CID: 137968 | PCA=100.00% | RMSD=0.0017
+Found planar CID: 17743 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 183943 | PCA=100.00% | RMSD=0.0055
+Found planar CID: 67461 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 154722 | PCA=100.00% | RMSD=0.0014
+Found planar CID: 44284 | PCA=100.00% | RMSD=0.0034
+Found planar CID: 15276 | PCA=99.99% | RMSD=0.0401
+Found planar CID: 995 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 179447 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 69913 | PCA=100.00% | RMSD=0.0026
+Found planar CID: 98760 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 75505 | PCA=99.97% | RMSD=0.0813
+Found planar CID: 186422 | PCA=99.99% | RMSD=0.0302
+Found planar CID: 189313 | PCA=100.00% | RMSD=0.0232
+Found planar CID: 232848 | PCA=100.00% | RMSD=0.0012
+Found planar CID: 115167 | PCA=100.00% | RMSD=0.0014
+Found planar CID: 160698 | PCA=100.00% | RMSD=0.0021
+Found planar CID: 217217 | PCA=100.00% | RMSD=0.0026
+Found planar CID: 128982 | PCA=100.00% | RMSD=0.0018
+Found planar CID: 98574 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 126664 | PCA=99.98% | RMSD=0.0600
+Found planar CID: 171660 | PCA=100.00% | RMSD=0.0012
+Found planar CID: 238953 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 152071 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 228832 | PCA=100.00% | RMSD=0.0008
+Found planar CID: 124862 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 240800 | PCA=100.00% | RMSD=0.0096
+Found planar CID: 13926 | PCA=100.00% | RMSD=0.0080
+Found planar CID: 158898 | PCA=100.00% | RMSD=0.0158
+Found planar CID: 94906 | PCA=100.00% | RMSD=0.0016
+Found planar CID: 18503 | PCA=100.00% | RMSD=0.0031
+Found planar CID: 237822 | PCA=100.00% | RMSD=0.0036
+Found planar CID: 9131 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 2015 | PCA=100.00% | RMSD=0.0022
+Found planar CID: 10187 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 5004 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 150887 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 98834 | PCA=100.00% | RMSD=0.0116
+Found planar CID: 28206 | PCA=100.00% | RMSD=0.0015
+Found planar CID: 101219 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 95731 | PCA=100.00% | RMSD=0.0015
+Found planar CID: 568 | PCA=100.00% | RMSD=0.0018
+Found planar CID: 173398 | PCA=100.00% | RMSD=0.0096
+Found planar CID: 232641 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 21707 | PCA=99.99% | RMSD=0.0453
+Found planar CID: 140328 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 127847 | PCA=100.00% | RMSD=0.0186
+Found planar CID: 60743 | PCA=100.00% | RMSD=0.0008
+Found planar CID: 99507 | PCA=99.96% | RMSD=0.0622
+Found planar CID: 181936 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 81336 | PCA=100.00% | RMSD=0.0012
+Found planar CID: 70821 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 188875 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 130803 | PCA=99.96% | RMSD=0.0747
+Found planar CID: 85466 | PCA=99.99% | RMSD=0.0336
+Found planar CID: 149344 | PCA=100.00% | RMSD=0.0016
+Found planar CID: 8511 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 239966 | PCA=100.00% | RMSD=0.0144
+Found planar CID: 75180 | PCA=100.00% | RMSD=0.0113
+Found planar CID: 65739 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 9191 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 20450 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 249068 | PCA=99.97% | RMSD=0.0569
+Found planar CID: 25759 | PCA=100.00% | RMSD=0.0010
+Found planar CID: 148832 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 192744 | PCA=100.00% | RMSD=0.0134
+Found planar CID: 111198 | PCA=100.00% | RMSD=0.0013
+Found planar CID: 52272 | PCA=100.00% | RMSD=0.0209
+Found planar CID: 200087 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 6854 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 6293 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 6688 | PCA=100.00% | RMSD=0.0053
+Found planar CID: 75531 | PCA=99.99% | RMSD=0.0301
+Found planar CID: 167212 | PCA=100.00% | RMSD=0.0227
+Found planar CID: 145608 | PCA=100.00% | RMSD=0.0218
+Found planar CID: 84651 | PCA=99.98% | RMSD=0.0462
+Found planar CID: 149432 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 147517 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 9154 | PCA=100.00% | RMSD=0.0006
+Found planar CID: 190232 | PCA=99.99% | RMSD=0.0307
+Found planar CID: 193288 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 65365 | PCA=100.00% | RMSD=0.0210
+Found planar CID: 193838 | PCA=100.00% | RMSD=0.0084
+Found planar CID: 239150 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 90620 | PCA=100.00% | RMSD=0.0035
+Found planar CID: 9152 | PCA=100.00% | RMSD=0.0039
+Found planar CID: 32787 | PCA=100.00% | RMSD=0.0008
+Found planar CID: 155600 | PCA=100.00% | RMSD=0.0025
+Found planar CID: 240855 | PCA=100.00% | RMSD=0.0030
+Found planar CID: 84193 | PCA=100.00% | RMSD=0.0025
+Found planar CID: 189320 | PCA=99.99% | RMSD=0.0407
+Found planar CID: 223853 | PCA=99.98% | RMSD=0.0857
+Found planar CID: 160333 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 242578 | PCA=100.00% | RMSD=0.0087
+Found planar CID: 9146 | PCA=100.00% | RMSD=0.0023
+Found planar CID: 145667 | PCA=100.00% | RMSD=0.0058
+Found planar CID: 101486 | PCA=100.00% | RMSD=0.0160
+Found planar CID: 67463 | PCA=100.00% | RMSD=0.0007
+Found planar CID: 184046 | PCA=100.00% | RMSD=0.0004
+Found planar CID: 140870 | PCA=100.00% | RMSD=0.0088
+Found planar CID: 201640 | PCA=100.00% | RMSD=0.0025
+Found planar CID: 97766 | PCA=99.97% | RMSD=0.0729
+Found planar CID: 125394 | PCA=100.00% | RMSD=0.0004
+Found planar CID: 95443 | PCA=99.99% | RMSD=0.0615
+Found planar CID: 248578 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 236491 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 241428 | PCA=100.00% | RMSD=0.0091
+Found planar CID: 66862 | PCA=99.97% | RMSD=0.0706
+Found planar CID: 10215 | PCA=100.00% | RMSD=0.0032
+Found planar CID: 146422 | PCA=100.00% | RMSD=0.0165
+Found planar CID: 67476 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 17190 | PCA=99.96% | RMSD=0.0690
+Found planar CID: 6796 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 148245 | PCA=100.00% | RMSD=0.0026
+Found planar CID: 160579 | PCA=100.00% | RMSD=0.0026
+Found planar CID: 29650 | PCA=99.98% | RMSD=0.0505
+Found planar CID: 77125 | PCA=100.00% | RMSD=0.0014
+Found planar CID: 146494 | PCA=100.00% | RMSD=0.0252
+Found planar CID: 151557 | PCA=100.00% | RMSD=0.0078
+Found planar CID: 181581 | PCA=99.99% | RMSD=0.0245
+Found planar CID: 69750 | PCA=100.00% | RMSD=0.0154
+Found planar CID: 69743 | PCA=100.00% | RMSD=0.0033
+Found planar CID: 174201 | PCA=99.99% | RMSD=0.0259
+Found planar CID: 239526 | PCA=99.98% | RMSD=0.0632
+Found planar CID: 29159 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 121026 | PCA=100.00% | RMSD=0.0032
+Found planar CID: 199411 | PCA=100.00% | RMSD=0.0009
+Found planar CID: 238924 | PCA=100.00% | RMSD=0.0008
+Found planar CID: 67450 | PCA=100.00% | RMSD=0.0225
+Found planar CID: 242018 | PCA=100.00% | RMSD=0.0086
+Found planar CID: 178753 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 155679 | PCA=100.00% | RMSD=0.0003
+Found planar CID: 9362 | PCA=100.00% | RMSD=0.0004
+Found planar CID: 119256 | PCA=100.00% | RMSD=0.0070
+Found planar CID: 71146 | PCA=100.00% | RMSD=0.0010
+Found planar CID: 129734 | PCA=99.98% | RMSD=0.0594
+Found planar CID: 99128 | PCA=99.98% | RMSD=0.0481
+Found planar CID: 199968 | PCA=100.00% | RMSD=0.0002
+Found planar CID: 41664 | PCA=99.98% | RMSD=0.0561
+Found planar CID: 2046 | PCA=100.00% | RMSD=0.0011
+Found planar CID: 158929 | PCA=100.00% | RMSD=0.0005
+Found planar CID: 11803 | PCA=100.00% | RMSD=0.0033
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='69.12.4.38', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/server_download/copy_server.py", line 162, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/server_download/copy_server.py", line 137, in main
+    mol = CIDHelper.get_xyz(cid)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/server_download/copy_server.py", line 54, in get_xyz
+    rsp = requests.get(url, verify=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='69.12.4.38', port=443): Read timed out. (read timeout=None)
+Job finished at Thu Jun 19 19:50:54 EEST 2025
