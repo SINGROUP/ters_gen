@@ -1,0 +1,69 @@
+Epoch   49/50, time: 38.80 s, training_loss: 0.281
+Epoch   40/50, time: 35.74 s, training_loss: 0.266
+Epoch   49/50, time: 15.45 s, val_loss: 0.304
+Epoch    9/50, time: 32.80 s, training_loss: 0.591
+Epoch   40/50, time: 13.68 s, val_loss: 0.270
+Epoch    1/50, time: 33.09 s, training_loss: 0.855
+Epoch    9/50, time: 14.70 s, val_loss: 0.566
+Epoch    1/50, time: 14.62 s, val_loss: 0.797
+Epoch   41/50, time: 31.93 s, training_loss: 0.266
+Epoch   50/50, time: 43.22 s, training_loss: 0.288
+Epoch   50/50, time: 11.66 s, val_loss: 0.286
+Epoch   41/50, time: 13.54 s, val_loss: 0.284
+Epoch   10/50, time: 34.19 s, training_loss: 0.559
+Epoch   10/50, time: 13.63 s, val_loss: 0.565
+Training Metrics:
+Accuracy: 0.7665
+Precision: 0.0735
+Recall: 0.9387
+F1 Score: 0.1363
+IoU: 0.0731
+Dice Coefficient: 0.1363
+Validation Metrics:
+Accuracy: 0.8946
+Precision: 0.1466
+Recall: 0.9444
+F1 Score: 0.2537
+IoU: 0.1453
+Dice Coefficient: 0.2537
+Epoch   11/50, time: 37.10 s, training_loss: 0.527
+Training Metrics:
+Accuracy: 0.9893
+Precision: 0.7108
+Recall: 0.7638
+F1 Score: 0.7363
+IoU: 0.5827
+Dice Coefficient: 0.7363
+Validation Metrics:
+Accuracy: 0.9892
+Precision: 0.7027
+Recall: 0.7454
+F1 Score: 0.7234
+IoU: 0.5667
+Dice Coefficient: 0.7234
+Epoch   11/50, time: 13.12 s, val_loss: 0.525
+Epoch    2/50, time: 32.86 s, training_loss: 0.791
+Training Metrics:
+Accuracy: 0.9888
+Precision: 0.6816
+Recall: 0.8105
+F1 Score: 0.7404
+IoU: 0.5879
+Dice Coefficient: 0.7404
+Validation Metrics:
+Accuracy: 0.9885
+Precision: 0.6686
+Recall: 0.7761
+F1 Score: 0.7183
+IoU: 0.5605
+Dice Coefficient: 0.7183
+Epoch    2/50, time: 14.18 s, val_loss: 0.772
+Test Metrics:
+Accuracy: 0.9885
+Precision: 0.6686
+Recall: 0.7761
+F1 Score: 0.7183
+IoU: 0.5605
+Dice Coefficient: 0.7183
+[I 2025-07-03 19:17:01,100] Trial 27 finished with value: 0.7183231390991632 and parameters: {'batch_size': 64, 'lr': 0.0005326889441529706, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32}. Best is trial 22 with value: 0.7584785155927672.
+wandb: Finishing previous runs because reinit is set to True.

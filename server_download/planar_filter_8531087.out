@@ -1,0 +1,8 @@
+Job started at Thu Jul  3 00:50:03 EEST 2025
+Running on host milan31.int.triton.aalto.fi
+Using 32 CPUs
+Attempt 1/3 failed: HTTPSConnectionPool(host='69.12.4.38', port=443): Max retries exceeded with url: /CCSD/CIDs (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1505d1330d10>, 'Connection to 69.12.4.38 timed out. (connect timeout=10)'))
+Attempt 2/3 failed: HTTPSConnectionPool(host='69.12.4.38', port=443): Max retries exceeded with url: /CCSD/CIDs (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1505d1333ad0>, 'Connection to 69.12.4.38 timed out. (connect timeout=10)'))
+Attempt 3/3 failed: HTTPSConnectionPool(host='69.12.4.38', port=443): Max retries exceeded with url: /CCSD/CIDs (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1505d1329990>, 'Connection to 69.12.4.38 timed out. (connect timeout=10)'))
+Failed to fetch CIDs after retries.
+Job finished at Thu Jul  3 00:50:40 EEST 2025

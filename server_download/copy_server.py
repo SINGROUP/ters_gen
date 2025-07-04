@@ -1,12 +1,17 @@
-import base64
-import io
 import os
 import sys
+import ctypes
+import time
+from multiprocessing import Pool, Value
+
 import numpy as np
 import requests
 
 # Disable SSL warnings (not recommended for production)
 requests.packages.urllib3.disable_warnings()
+
+# Shared global counter for logging progress
+screened_counter = None
 
 # Map atomic numbers to chemical symbols
 ATOMIC_SYMBOLS = {
@@ -18,6 +23,7 @@ ATOMIC_SYMBOLS = {
 class CIDHelper:
     """
     Helper class to interact with remote CCSD database and fetch molecules.
+    Implements retry logic on timeouts.
     """
     SERVER = 'https://69.12.4.38/CCSD'
     CIDs = []
@@ -34,42 +40,47 @@ class CIDHelper:
         return data
 
     @classmethod
-    def init(cls):
-        """Fetch and store all available CIDs."""
+    def init(cls, timeout=10, retries=2, backoff=2):
+        """Fetch and store all available CIDs with retry on failure."""
         url = f"{cls.SERVER}/CIDs"
-        rsp = requests.get(url, verify=False)
-        data = cls.process_response(rsp)
-        if data and 'CIDs' in data:
-            cls.CIDs = data['CIDs']
-        else:
-            print("No CIDs retrieved.")
+        for attempt in range(retries + 1):
+            try:
+                rsp = requests.get(url, verify=False, timeout=timeout)
+                data = cls.process_response(rsp)
+                if data and 'CIDs' in data:
+                    cls.CIDs = data['CIDs']
+                    return
+                print("No CIDs retrieved.")
+                return
+            except requests.RequestException as e:
+                print(f"Attempt {attempt+1}/{retries+1} failed: {e}")
+                if attempt < retries:
+                    time.sleep(backoff)
+        print("Failed to fetch CIDs after retries.")
 
-    @classmethod
-    def get_xyz(cls, cid):
-        """Download atomic numbers (Z) and coordinates (xyz) for the given CID."""
-        if cid not in cls.CIDs:
-            print(f"CID {cid} not available.")
-            return None
-        url = f"{cls.SERVER}/molecule/xyz/{cid}"
-        rsp = requests.get(url, verify=False)
-        data = cls.process_response(rsp)
-        if not data:
-            return None
-        try:
-            data['Z'] = np.asarray(data['Z'], dtype=int)
-            data['xyz'] = np.asarray(data['xyz'], dtype=float)
-        except Exception as e:
-            print(f"Error parsing XYZ data for CID {cid}: {e}")
-            return None
-        data['CID'] = cid
-        return data
+    @staticmethod
+    def get_xyz(cid, timeout=10, retries=2, backoff=2):
+        """Download atomic numbers (Z) and coordinates (xyz) for the given CID with retries."""
+        url = f"{CIDHelper.SERVER}/molecule/xyz/{cid}"
+        for attempt in range(retries + 1):
+            try:
+                rsp = requests.get(url, verify=False, timeout=timeout)
+                data = CIDHelper.process_response(rsp)
+                if not data:
+                    return None
+                data['Z'] = np.asarray(data['Z'], dtype=int)
+                data['xyz'] = np.asarray(data['xyz'], dtype=float)
+                data['CID'] = cid
+                return data
+            except (requests.RequestException, ValueError) as e:
+                print(f"CID {cid} attempt {attempt+1}/{retries+1} failed: {e}")
+                if attempt < retries:
+                    time.sleep(backoff)
+        print(f"Failed to fetch data for CID {cid} after retries.")
+        return None
 
 
 def pca(coords):
-    """
-    Perform PCA on centered coordinates.
-    Returns eigenvalues, eigenvectors, and centered data matrix X.
-    """
     N = coords.shape[0]
     centroid = coords.mean(axis=0)
     X = coords - centroid
@@ -79,21 +90,11 @@ def pca(coords):
 
 
 def planarity(eigvals, eigvecs, X):
-    """
-    Compute planarity metrics:
-      - planarity_pca: % variance in first two PCs
-      - planarity_rms: % flatness relative to planar span
-      - rmsd: root-mean-square deviation from best-fit plane
-    """
-    # Sort eigenvalues/vectors descending
     idx = np.argsort(eigvals)[::-1]
     eigvals = eigvals[idx]
     eigvecs = eigvecs[:, idx]
 
-    # PCA-based planarity: variance explained by first two components
     planarity_pca = 100 * (eigvals[0] + eigvals[1]) / eigvals.sum()
-
-    # Compute RMSD from the best-fit plane
     normal = eigvecs[:, 2]
     distances = (X @ normal) / np.linalg.norm(normal)
     rmsd = np.sqrt(np.mean(distances**2))
@@ -104,59 +105,91 @@ def planarity(eigvals, eigvecs, X):
 
 
 def print_gaussian_input(cid, molecule_data, nproc=32, method_line="# PBEPBE/6-31G(d) NoSymm freq=raman"):
-    """
-    Print Gaussian .com input for a molecule to stdout.
-    """
     Z = molecule_data['Z']
     xyz = molecule_data['xyz']
-    print(f"%nproc={nproc}")
-    print(f"%chk={cid}.chk")
-    print(method_line, end="\n\n")
-    print(f"This is molecule {cid}\n")
-    print("0 1")  # charge and multiplicity
+    lines = [
+        f"%nproc={nproc}",
+        f"%chk={cid}.chk",
+        method_line,
+        "",
+        f"This is molecule {cid}",
+        "",
+        "0 1"
+    ]
     for atomic_num, coord in zip(Z, xyz):
         symbol = ATOMIC_SYMBOLS.get(atomic_num, str(atomic_num))
         x, y, z = coord
-        print(f"{symbol} {x:.6f} {y:.6f} {z:.6f}")
-    print()
+        lines.append(f"{symbol} {x:.6f} {y:.6f} {z:.6f}")
+    lines.append("")
+    return "\n".join(lines)
 
 
-def main(threshold_pca=99.0, threshold_rms=98.0, max_rmsd=0.1, max_atoms=50, min_atoms=30):
-    """
-    Main routine to download, filter for planar molecules, and write Gaussian input files.
-    Filters out molecules with <= max_atoms atoms.
-    """
+def _init_worker(counter):
+    global screened_counter
+    screened_counter = counter
+
+
+def process_cid(args):
+    cid, max_rmsd, max_atoms, min_atoms, print_interval = args
+    global screened_counter
+
+    with screened_counter.get_lock():
+        screened_counter.value += 1
+        if screened_counter.value % print_interval == 0:
+            print(f"Screened {screened_counter.value} molecules...")
+
+    mol = CIDHelper.get_xyz(cid)
+    if mol is None:
+        return (cid, False, False, None, None)
+
+    n_atoms = mol['Z'].shape[0]
+    in_range = (min_atoms <= n_atoms <= max_atoms)
+    if not in_range:
+        return (cid, False, False, None, None)
+
+    eigvals, eigvecs, X = pca(mol['xyz'])
+    _, _, rmsd = planarity(eigvals, eigvecs, X)
+
+    if rmsd <= max_rmsd:
+        return (cid, True, True, None, rmsd)
+    return (cid, True, False, None, None)
+
+
+def main(max_rmsd=0.1, max_atoms=60, min_atoms=50,
+         outdir="/scratch/phys/sin/sethih1/planar_molecules_gaussian",
+         nproc=os.cpu_count(), print_interval=100):
+    global screened_counter
+    screened_counter = Value(ctypes.c_int, 0)
+
     CIDHelper.init()
     if not CIDHelper.CIDs:
         return
 
-    #os.makedirs("planar_inputs", exist_ok=True)
-    planar_cids = []
+    total_molecules = len(CIDHelper.CIDs)
+    os.makedirs(outdir, exist_ok=True)
+    print(f"Using {nproc} CPUs to screen {total_molecules} molecules with atom range [{min_atoms}, {max_atoms}] and RMSD ≤ {max_rmsd}")
 
-    for cid in CIDHelper.CIDs:
+    args = [
+        (cid, max_rmsd, max_atoms, min_atoms, print_interval)
+        for cid in CIDHelper.CIDs
+    ]
+
+    with Pool(processes=nproc, initializer=_init_worker, initargs=(screened_counter,)) as pool:
+        results = pool.map(process_cid, args)
+
+    in_range_count = sum(1 for _, in_range, _, _, _ in results if in_range)
+    planar = [r for r in results if r[2]]
+
+    print(f"\nMolecules in atom range: {in_range_count}")
+    print(f"Total molecules screened: {total_molecules}")
+    print(f"Total planar molecules (RMSD ≤ {max_rmsd}): {len(planar)}")
+
+    for cid, _, _, _, rmsd in planar:
+        print(f"Found planar CID: {cid} | RMSD={rmsd:.4f}")
         mol = CIDHelper.get_xyz(cid)
-        if mol is None:
-            continue
-        # Exclude small molecules (<= max_atoms)
-        if mol['Z'].shape[0] > max_atoms and mol['Z'].shape[0] < min_atoms:
-            continue
-        # Only light atoms (H through O)
-        if not all(num < 9 for num in mol['Z']):
-            continue
-
-        eigvals, eigvecs, X = pca(mol['xyz'])
-        pca_score, rms_score, rmsd = planarity(eigvals, eigvecs, X)
-
-        if pca_score >= threshold_pca and rms_score >= threshold_rms and rmsd <= max_rmsd:
-            planar_cids.append(cid)
-            print(f"Found planar CID: {cid} | PCA={pca_score:.2f}% | RMSD={rmsd:.4f}")
-            out_path = os.path.join("/scratch/phys/sin/sethih1/planar_molecules_gaussian/", f"{cid}.com")
-            with open(out_path, "w") as f:
-                sys.stdout = f
-                print_gaussian_input(cid, mol)
-                sys.stdout = sys.__stdout__
-
-    print(f"\nTotal planar molecules: {len(planar_cids)}. Files saved in '/scratch/phys/sin/sethih1/planar_molecules_gaussian/' directory.")
+        out_path = os.path.join(outdir, f"{cid}.com")
+        with open(out_path, "w") as f:
+            f.write(print_gaussian_input(cid, mol))
 
 if __name__ == "__main__":
     main()

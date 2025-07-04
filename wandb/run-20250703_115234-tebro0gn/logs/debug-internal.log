@@ -1,0 +1,16 @@
+{"time":"2025-07-03T11:52:35.982005128+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250703_115234-tebro0gn/logs/debug-core.log"}
+{"time":"2025-07-03T11:52:36.274489016+03:00","level":"INFO","msg":"stream: created new stream","id":"tebro0gn"}
+{"time":"2025-07-03T11:52:36.274523507+03:00","level":"INFO","msg":"stream: started","id":"tebro0gn"}
+{"time":"2025-07-03T11:52:36.274530217+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"tebro0gn"}
+{"time":"2025-07-03T11:52:36.274536347+03:00","level":"INFO","msg":"handler: started","stream_id":"tebro0gn"}
+{"time":"2025-07-03T11:52:36.274553449+03:00","level":"INFO","msg":"sender: started","stream_id":"tebro0gn"}
+{"time":"2025-07-03T11:52:36.53009236+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-03T12:25:08.409635802+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-03T12:25:08.409753112+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-03T12:25:09.4120802+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.58416744},{"desc":"uploading output.log","runtime_seconds":0.584109963},{"desc":"uploading wandb-summary.json","runtime_seconds":0.584091604}],"total_operations":3}}
+{"time":"2025-07-03T12:25:14.18128188+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-03T12:25:14.545387924+03:00","level":"INFO","msg":"stream: closing","id":"tebro0gn"}
+{"time":"2025-07-03T12:25:14.545402435+03:00","level":"INFO","msg":"handler: closed","stream_id":"tebro0gn"}
+{"time":"2025-07-03T12:25:14.545411698+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tebro0gn"}
+{"time":"2025-07-03T12:25:14.54543499+03:00","level":"INFO","msg":"sender: closed","stream_id":"tebro0gn"}
+{"time":"2025-07-03T12:25:14.545672464+03:00","level":"INFO","msg":"stream: closed","id":"tebro0gn"}

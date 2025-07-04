@@ -1,0 +1,2693 @@
+Job started at Mon Jun 23 23:57:48 EEST 2025
+Running on host milan25.int.triton.aalto.fi
+Using 32 CPUs
+Using 128 CPUs to screen 93757 molecules with atom range [20, 30] and RMSD ≤ 0.1
+Screened 6500 molecules...
+Screened 13200 molecules...
+Screened 18600 molecules...
+Screened 19100 molecules...
+Screened 37900 molecules...
+Screened 62600 molecules...
+Screened 65900 molecules...
+Screened 70000 molecules...
+Screened 9800 molecules...
+Screened 26000 molecules...
+Screened 66800 molecules...
+Screened 68200 molecules...
+Screened 20800 molecules...
+Screened 51600 molecules...
+Screened 62900 molecules...
+Screened 65500 molecules...
+Screened 72900 molecules...
+Screened 89300 molecules...
+Screened 15400 molecules...
+Screened 23500 molecules...
+Screened 29900 molecules...
+Screened 31800 molecules...
+Screened 41600 molecules...
+Screened 57900 molecules...
+Screened 58400 molecules...
+Screened 60800 molecules...
+Screened 88800 molecules...
+Screened 90700 molecules...
+Screened 600 molecules...
+Screened 1600 molecules...
+Screened 33500 molecules...
+Screened 39500 molecules...
+Screened 45000 molecules...
+Screened 50600 molecules...
+Screened 53400 molecules...
+Screened 57000 molecules...
+Screened 64300 molecules...
+Screened 68500 molecules...
+Screened 82600 molecules...
+Screened 5400 molecules...
+Screened 7300 molecules...
+Screened 10100 molecules...
+Screened 19500 molecules...
+Screened 26400 molecules...
+Screened 40400 molecules...
+Screened 51500 molecules...
+Screened 56000 molecules...
+Screened 68700 molecules...
+Screened 87700 molecules...
+Screened 4100 molecules...
+Screened 23000 molecules...
+Screened 31100 molecules...
+Screened 35400 molecules...
+Screened 40600 molecules...
+Screened 51800 molecules...
+Screened 57200 molecules...
+Screened 64700 molecules...
+Screened 68800 molecules...
+Screened 38100 molecules...
+Screened 44600 molecules...
+Screened 47300 molecules...
+Screened 59000 molecules...
+Screened 65100 molecules...
+Screened 80300 molecules...
+Screened 84200 molecules...
+Screened 15700 molecules...
+Screened 24300 molecules...
+Screened 43000 molecules...
+Screened 59600 molecules...
+Screened 61500 molecules...
+Screened 71700 molecules...
+Screened 73200 molecules...
+Screened 75200 molecules...
+Screened 82100 molecules...
+Screened 84600 molecules...
+Screened 3900 molecules...
+Screened 19300 molecules...
+Screened 29300 molecules...
+Screened 34500 molecules...
+Screened 47700 molecules...
+Screened 50100 molecules...
+Screened 51900 molecules...
+Screened 84000 molecules...
+Screened 4300 molecules...
+Screened 4800 molecules...
+Screened 11500 molecules...
+Screened 22800 molecules...
+Screened 87500 molecules...
+Screened 33200 molecules...
+Screened 38000 molecules...
+Screened 70900 molecules...
+Screened 93300 molecules...
+Screened 3400 molecules...
+Screened 20700 molecules...
+Screened 24200 molecules...
+Screened 26700 molecules...
+Screened 28100 molecules...
+Screened 30000 molecules...
+Screened 49500 molecules...
+Screened 4500 molecules...
+Screened 11400 molecules...
+Screened 28900 molecules...
+Screened 45400 molecules...
+Screened 46600 molecules...
+Screened 53000 molecules...
+Screened 54400 molecules...
+Screened 60000 molecules...
+Screened 37600 molecules...
+Screened 39000 molecules...
+Screened 69700 molecules...
+Screened 80600 molecules...
+Screened 7100 molecules...
+Screened 14300 molecules...
+Screened 17600 molecules...
+Screened 22700 molecules...
+Screened 27100 molecules...
+Screened 29400 molecules...
+Screened 56300 molecules...
+Screened 78900 molecules...
+Screened 25200 molecules...
+Screened 34800 molecules...
+Screened 56200 molecules...
+Screened 61400 molecules...
+Screened 63100 molecules...
+Screened 81100 molecules...
+Screened 81600 molecules...
+Screened 27400 molecules...
+Screened 37000 molecules...
+Screened 41400 molecules...
+Screened 66400 molecules...
+Screened 70600 molecules...
+Screened 700 molecules...
+Screened 15000 molecules...
+Screened 67200 molecules...
+Screened 75600 molecules...
+Screened 79000 molecules...
+Screened 3100 molecules...
+Screened 10400 molecules...
+Screened 69800 molecules...
+Screened 80100 molecules...
+Screened 81500 molecules...
+Screened 10900 molecules...
+Screened 36100 molecules...
+Screened 46200 molecules...
+Screened 63300 molecules...
+Screened 85800 molecules...
+Screened 9500 molecules...
+Screened 27500 molecules...
+Screened 34600 molecules...
+Screened 37300 molecules...
+Screened 51000 molecules...
+Screened 67000 molecules...
+Screened 5100 molecules...
+Screened 6900 molecules...
+Screened 10200 molecules...
+Screened 30700 molecules...
+Screened 65700 molecules...
+Screened 81700 molecules...
+Screened 84700 molecules...
+Screened 16000 molecules...
+Screened 32500 molecules...
+Screened 55300 molecules...
+Screened 87300 molecules...
+Screened 90800 molecules...
+Screened 12100 molecules...
+Screened 16400 molecules...
+Screened 36000 molecules...
+Screened 49700 molecules...
+Screened 52900 molecules...
+Screened 92600 molecules...
+Screened 10600 molecules...
+Screened 11100 molecules...
+Screened 11600 molecules...
+Screened 21000 molecules...
+Screened 30500 molecules...
+Screened 44400 molecules...
+Screened 53500 molecules...
+Screened 54900 molecules...
+Screened 55400 molecules...
+Screened 66900 molecules...
+Screened 86700 molecules...
+Screened 90600 molecules...
+Screened 11700 molecules...
+Screened 15900 molecules...
+Screened 27200 molecules...
+Screened 52100 molecules...
+Screened 84800 molecules...
+Screened 88400 molecules...
+Screened 92500 molecules...
+Screened 3600 molecules...
+Screened 14400 molecules...
+Screened 19600 molecules...
+Screened 30900 molecules...
+Screened 31700 molecules...
+Screened 37800 molecules...
+Screened 43400 molecules...
+Screened 58000 molecules...
+Screened 72400 molecules...
+Screened 89600 molecules...
+Screened 92200 molecules...
+Screened 9200 molecules...
+Screened 35000 molecules...
+Screened 38700 molecules...
+Screened 44200 molecules...
+Screened 49900 molecules...
+Screened 53100 molecules...
+Screened 55700 molecules...
+Screened 74500 molecules...
+Screened 86600 molecules...
+Screened 93200 molecules...
+Screened 5600 molecules...
+Screened 33600 molecules...
+Screened 50300 molecules...
+Screened 58800 molecules...
+Screened 3700 molecules...
+Screened 5000 molecules...
+Screened 5800 molecules...
+Screened 13600 molecules...
+Screened 20200 molecules...
+Screened 36700 molecules...
+Screened 43100 molecules...
+Screened 45700 molecules...
+Screened 47900 molecules...
+Screened 68000 molecules...
+Screened 77000 molecules...
+Screened 84400 molecules...
+Screened 88500 molecules...
+Screened 800 molecules...
+Screened 2900 molecules...
+Screened 6400 molecules...
+Screened 16200 molecules...
+Screened 17800 molecules...
+Screened 18700 molecules...
+Screened 23100 molecules...
+Screened 24100 molecules...
+Screened 31000 molecules...
+Screened 33400 molecules...
+Screened 38300 molecules...
+Screened 64800 molecules...
+Screened 67100 molecules...
+Screened 72600 molecules...
+Screened 21600 molecules...
+Screened 24400 molecules...
+Screened 30100 molecules...
+Screened 34900 molecules...
+Screened 53600 molecules...
+Screened 57700 molecules...
+Screened 65400 molecules...
+Screened 80800 molecules...
+Screened 37700 molecules...
+Screened 42800 molecules...
+Screened 46100 molecules...
+Screened 62500 molecules...
+Screened 1200 molecules...
+Screened 7500 molecules...
+Screened 12500 molecules...
+Screened 58300 molecules...
+Screened 83300 molecules...
+Screened 17700 molecules...
+Screened 23300 molecules...
+Screened 31600 molecules...
+Screened 52700 molecules...
+Screened 61300 molecules...
+Screened 64400 molecules...
+Screened 80500 molecules...
+Screened 19000 molecules...
+Screened 29600 molecules...
+Screened 30600 molecules...
+Screened 35900 molecules...
+Screened 48600 molecules...
+Screened 50900 molecules...
+Screened 69200 molecules...
+Screened 70500 molecules...
+Screened 75800 molecules...
+Screened 2300 molecules...
+Screened 14600 molecules...
+Screened 22000 molecules...
+Screened 61600 molecules...
+Screened 67500 molecules...
+Screened 77100 molecules...
+Screened 17900 molecules...
+Screened 22500 molecules...
+Screened 28200 molecules...
+Screened 33900 molecules...
+Screened 45600 molecules...
+Screened 48200 molecules...
+Screened 53300 molecules...
+Screened 66200 molecules...
+Screened 69000 molecules...
+Screened 77200 molecules...
+Screened 77700 molecules...
+Screened 78200 molecules...
+Screened 84500 molecules...
+Screened 8200 molecules...
+Screened 41900 molecules...
+Screened 42900 molecules...
+Screened 75300 molecules...
+Screened 82700 molecules...
+Screened 89000 molecules...
+Screened 89500 molecules...
+Screened 1300 molecules...
+Screened 19200 molecules...
+Screened 31200 molecules...
+Screened 71900 molecules...
+Screened 83600 molecules...
+Screened 87100 molecules...
+Screened 7800 molecules...
+Screened 13400 molecules...
+Screened 27900 molecules...
+Screened 38800 molecules...
+Screened 44300 molecules...
+Screened 54000 molecules...
+Screened 71000 molecules...
+Screened 2100 molecules...
+Screened 24000 molecules...
+Screened 32000 molecules...
+Screened 43200 molecules...
+Screened 48400 molecules...
+Screened 51700 molecules...
+Screened 79500 molecules...
+Screened 80000 molecules...
+Screened 31300 molecules...
+Screened 35100 molecules...
+Screened 54500 molecules...
+Screened 56800 molecules...
+Screened 62800 molecules...
+Screened 78300 molecules...
+Screened 83200 molecules...
+Screened 87200 molecules...
+Screened 92100 molecules...
+Screened 21500 molecules...
+Screened 51300 molecules...
+Screened 54600 molecules...
+Screened 60100 molecules...
+Screened 93100 molecules...
+Screened 8300 molecules...
+Screened 39700 molecules...
+Screened 45200 molecules...
+Screened 56600 molecules...
+Screened 62200 molecules...
+Screened 9600 molecules...
+Screened 14200 molecules...
+Screened 16700 molecules...
+Screened 20300 molecules...
+Screened 42400 molecules...
+Screened 46800 molecules...
+Screened 70400 molecules...
+Screened 81000 molecules...
+Screened 7000 molecules...
+Screened 9400 molecules...
+Screened 27000 molecules...
+Screened 32900 molecules...
+Screened 45900 molecules...
+Screened 60300 molecules...
+Screened 65300 molecules...
+Screened 10500 molecules...
+Screened 17000 molecules...
+Screened 22400 molecules...
+Screened 56100 molecules...
+Screened 59900 molecules...
+Screened 60400 molecules...
+Screened 67600 molecules...
+Screened 73700 molecules...
+Screened 74700 molecules...
+Screened 46400 molecules...
+Screened 53800 molecules...
+Screened 58600 molecules...
+Screened 65800 molecules...
+Screened 88900 molecules...
+Screened 300 molecules...
+Screened 13900 molecules...
+Screened 21100 molecules...
+Screened 22100 molecules...
+Screened 26100 molecules...
+Screened 71800 molecules...
+Screened 74300 molecules...
+Screened 76200 molecules...
+Screened 78100 molecules...
+Screened 24500 molecules...
+Screened 26900 molecules...
+Screened 29100 molecules...
+Screened 30400 molecules...
+Screened 34200 molecules...
+Screened 46900 molecules...
+Screened 62300 molecules...
+Screened 87400 molecules...
+Screened 91900 molecules...
+Screened 54800 molecules...
+Screened 63000 molecules...
+Screened 69500 molecules...
+Screened 86800 molecules...
+Screened 90900 molecules...
+Screened 91400 molecules...
+Screened 93400 molecules...
+Screened 5500 molecules...
+Screened 58100 molecules...
+Screened 64200 molecules...
+Screened 91800 molecules...
+Screened 17100 molecules...
+Screened 28500 molecules...
+Screened 49000 molecules...
+Screened 76500 molecules...
+Screened 82400 molecules...
+Screened 7200 molecules...
+Screened 11900 molecules...
+Screened 57100 molecules...
+Screened 19800 molecules...
+Screened 25000 molecules...
+Screened 36400 molecules...
+Screened 39200 molecules...
+Screened 54100 molecules...
+Screened 1800 molecules...
+Screened 7400 molecules...
+Screened 12600 molecules...
+Screened 43800 molecules...
+Screened 54700 molecules...
+Screened 72100 molecules...
+Screened 79800 molecules...
+Screened 4000 molecules...
+Screened 7700 molecules...
+Screened 15500 molecules...
+Screened 28000 molecules...
+Screened 33700 molecules...
+Screened 41300 molecules...
+Screened 47800 molecules...
+Screened 52800 molecules...
+Screened 58900 molecules...
+Screened 62000 molecules...
+Screened 77600 molecules...
+Screened 89900 molecules...
+Screened 2400 molecules...
+Screened 16800 molecules...
+Screened 18200 molecules...
+Screened 39400 molecules...
+Screened 66500 molecules...
+Screened 79700 molecules...
+Screened 85500 molecules...
+Screened 21900 molecules...
+Screened 27600 molecules...
+Screened 29000 molecules...
+Screened 46500 molecules...
+Screened 69300 molecules...
+Screened 74100 molecules...
+Screened 74600 molecules...
+Screened 90200 molecules...
+Screened 14500 molecules...
+Screened 18300 molecules...
+Screened 19700 molecules...
+Screened 42000 molecules...
+Screened 42500 molecules...
+Screened 51200 molecules...
+Screened 63200 molecules...
+Screened 74000 molecules...
+Screened 76900 molecules...
+Screened 28700 molecules...
+Screened 29700 molecules...
+Screened 32100 molecules...
+Screened 10800 molecules...
+Screened 11300 molecules...
+Screened 24800 molecules...
+Screened 25300 molecules...
+Screened 46000 molecules...
+Screened 63600 molecules...
+Screened 67700 molecules...
+Screened 69100 molecules...
+Screened 85200 molecules...
+Screened 20500 molecules...
+Screened 26500 molecules...
+Screened 36600 molecules...
+Screened 40700 molecules...
+Screened 59400 molecules...
+Screened 73600 molecules...
+Screened 91700 molecules...
+Screened 8700 molecules...
+Screened 16500 molecules...
+Screened 23200 molecules...
+Screened 23900 molecules...
+Screened 25400 molecules...
+Screened 43300 molecules...
+Screened 59300 molecules...
+Screened 72700 molecules...
+Screened 82300 molecules...
+Screened 87900 molecules...
+Screened 8000 molecules...
+Screened 39800 molecules...
+Screened 45500 molecules...
+Screened 2800 molecules...
+Screened 22600 molecules...
+Screened 27700 molecules...
+Screened 30300 molecules...
+Screened 53200 molecules...
+Screened 55900 molecules...
+Screened 58700 molecules...
+Screened 76700 molecules...
+Screened 83900 molecules...
+Screened 3000 molecules...
+Screened 14800 molecules...
+Screened 39100 molecules...
+Screened 54200 molecules...
+Screened 60900 molecules...
+Screened 63700 molecules...
+Screened 82800 molecules...
+Screened 3500 molecules...
+Screened 27300 molecules...
+Screened 31900 molecules...
+Screened 50200 molecules...
+Screened 56900 molecules...
+Screened 66000 molecules...
+Screened 84300 molecules...
+Screened 86900 molecules...
+Screened 200 molecules...
+Screened 2700 molecules...
+Screened 5700 molecules...
+Screened 48500 molecules...
+Screened 64000 molecules...
+Screened 72300 molecules...
+Screened 76300 molecules...
+Screened 85100 molecules...
+Screened 88700 molecules...
+Screened 89200 molecules...
+Screened 8600 molecules...
+Screened 9100 molecules...
+Screened 47400 molecules...
+Screened 50700 molecules...
+Screened 70100 molecules...
+Screened 80400 molecules...
+Screened 2600 molecules...
+Screened 9300 molecules...
+Screened 11200 molecules...
+Screened 21200 molecules...
+Screened 63400 molecules...
+Screened 77900 molecules...
+Screened 400 molecules...
+Screened 38400 molecules...
+Screened 16600 molecules...
+Screened 17300 molecules...
+Screened 27800 molecules...
+Screened 32800 molecules...
+Screened 35500 molecules...
+Screened 37400 molecules...
+Screened 44700 molecules...
+Screened 49600 molecules...
+Screened 52300 molecules...
+Screened 53700 molecules...
+Screened 76400 molecules...
+Screened 81800 molecules...
+Screened 92700 molecules...
+Screened 12900 molecules...
+Screened 18500 molecules...
+Screened 30800 molecules...
+Screened 34100 molecules...
+Screened 38600 molecules...
+Screened 60500 molecules...
+Screened 61900 molecules...
+Screened 80200 molecules...
+Screened 15800 molecules...
+Screened 26300 molecules...
+Screened 35200 molecules...
+Screened 36200 molecules...
+Screened 58500 molecules...
+Screened 82200 molecules...
+Screened 83100 molecules...
+Screened 89100 molecules...
+Screened 2200 molecules...
+Screened 19900 molecules...
+Screened 23700 molecules...
+Screened 28400 molecules...
+Screened 29800 molecules...
+Screened 49800 molecules...
+Screened 54300 molecules...
+Screened 10000 molecules...
+Screened 15100 molecules...
+Screened 22900 molecules...
+Screened 23400 molecules...
+Screened 64100 molecules...
+Screened 14900 molecules...
+Screened 16300 molecules...
+Screened 32400 molecules...
+Screened 59500 molecules...
+Screened 62700 molecules...
+Screened 75500 molecules...
+Screened 78400 molecules...
+Screened 83800 molecules...
+Screened 88200 molecules...
+Screened 22300 molecules...
+Screened 31400 molecules...
+Screened 40200 molecules...
+Screened 70300 molecules...
+Screened 74400 molecules...
+Screened 74900 molecules...
+Screened 78800 molecules...
+Screened 84100 molecules...
+Screened 88600 molecules...
+Screened 3800 molecules...
+Screened 25600 molecules...
+Screened 61700 molecules...
+Screened 72000 molecules...
+Screened 77400 molecules...
+Screened 1700 molecules...
+Screened 19400 molecules...
+Screened 25700 molecules...
+Screened 29500 molecules...
+Screened 35800 molecules...
+Screened 53900 molecules...
+Screened 60700 molecules...
+Screened 65200 molecules...
+Screened 70200 molecules...
+Screened 75000 molecules...
+Screened 8800 molecules...
+Screened 13700 molecules...
+Screened 28600 molecules...
+Screened 35700 molecules...
+Screened 68600 molecules...
+Screened 88100 molecules...
+Screened 91200 molecules...
+Screened 2000 molecules...
+Screened 13000 molecules...
+Screened 16900 molecules...
+Screened 21800 molecules...
+Screened 50400 molecules...
+Screened 73100 molecules...
+Screened 76000 molecules...
+Screened 9700 molecules...
+Screened 12200 molecules...
+Screened 56400 molecules...
+Screened 67400 molecules...
+Screened 1100 molecules...
+Screened 8100 molecules...
+Screened 15600 molecules...
+Screened 76100 molecules...
+Screened 80900 molecules...
+Screened 14700 molecules...
+Screened 18900 molecules...
+Screened 43600 molecules...
+Screened 92900 molecules...
+Screened 4400 molecules...
+Screened 10700 molecules...
+Screened 26600 molecules...
+Screened 29200 molecules...
+Screened 57300 molecules...
+Screened 73900 molecules...
+Screened 77300 molecules...
+Screened 11800 molecules...
+Screened 15200 molecules...
+Screened 18000 molecules...
+Screened 22200 molecules...
+Screened 34000 molecules...
+Screened 79300 molecules...
+Screened 85000 molecules...
+Screened 1400 molecules...
+Screened 1900 molecules...
+Screened 6300 molecules...
+Screened 16100 molecules...
+Screened 52000 molecules...
+Screened 63500 molecules...
+Screened 69600 molecules...
+Screened 92300 molecules...
+Screened 21300 molecules...
+Screened 36800 molecules...
+Screened 40000 molecules...
+Screened 47600 molecules...
+Screened 60200 molecules...
+Screened 67900 molecules...
+Screened 78000 molecules...
+Screened 78500 molecules...
+Screened 92800 molecules...
+Screened 9000 molecules...
+Screened 12700 molecules...
+Screened 25500 molecules...
+Screened 37200 molecules...
+Screened 44100 molecules...
+Screened 56500 molecules...
+Screened 59700 molecules...
+Screened 66600 molecules...
+Screened 71200 molecules...
+Screened 76600 molecules...
+Screened 82500 molecules...
+Screened 83000 molecules...
+Screened 83500 molecules...
+Screened 7900 molecules...
+Screened 36900 molecules...
+Screened 42600 molecules...
+Screened 61800 molecules...
+Screened 73400 molecules...
+Screened 75400 molecules...
+Screened 75900 molecules...
+Screened 86000 molecules...
+Screened 91300 molecules...
+Screened 7600 molecules...
+Screened 12000 molecules...
+Screened 20600 molecules...
+Screened 25800 molecules...
+Screened 40500 molecules...
+Screened 57500 molecules...
+Screened 63900 molecules...
+Screened 66700 molecules...
+Screened 71400 molecules...
+Screened 75100 molecules...
+Screened 21400 molecules...
+Screened 44800 molecules...
+Screened 59200 molecules...
+Screened 72500 molecules...
+Screened 81200 molecules...
+Screened 2500 molecules...
+Screened 6100 molecules...
+Screened 6600 molecules...
+Screened 24900 molecules...
+Screened 26800 molecules...
+Screened 33000 molecules...
+Screened 40100 molecules...
+Screened 44500 molecules...
+Screened 48000 molecules...
+Screened 49400 molecules...
+Screened 55200 molecules...
+Screened 70700 molecules...
+Screened 83700 molecules...
+Screened 89700 molecules...
+Screened 5300 molecules...
+Screened 25100 molecules...
+Screened 32600 molecules...
+Screened 65600 molecules...
+Screened 77500 molecules...
+Screened 81900 molecules...
+Screened 86400 molecules...
+Screened 89400 molecules...
+Screened 93500 molecules...
+Screened 20100 molecules...
+Screened 26200 molecules...
+Screened 30200 molecules...
+Screened 34700 molecules...
+Screened 42700 molecules...
+Screened 44000 molecules...
+Screened 47100 molecules...
+Screened 58200 molecules...
+Screened 68400 molecules...
+Screened 72200 molecules...
+Screened 18100 molecules...
+Screened 20400 molecules...
+Screened 50800 molecules...
+Screened 56700 molecules...
+Screened 87000 molecules...
+Screened 90400 molecules...
+Screened 6200 molecules...
+Screened 20900 molecules...
+Screened 24700 molecules...
+Screened 33800 molecules...
+Screened 37100 molecules...
+Screened 39300 molecules...
+Screened 50500 molecules...
+Screened 61200 molecules...
+Screened 77800 molecules...
+
+Molecules in atom range: 46531
+Total molecules screened: 93757
+Total planar molecules (RMSD ≤ 0.1): 1933
+Found planar CID: 97211 | RMSD=0.0750
+Found planar CID: 199047 | RMSD=0.0981
+Found planar CID: 145928 | RMSD=0.0003
+Found planar CID: 181620 | RMSD=0.0268
+Found planar CID: 185042 | RMSD=0.0090
+Found planar CID: 149603 | RMSD=0.0630
+Found planar CID: 235565 | RMSD=0.0010
+Found planar CID: 19646 | RMSD=0.0292
+Found planar CID: 23750 | RMSD=0.0018
+Found planar CID: 95800 | RMSD=0.0028
+Found planar CID: 37160 | RMSD=0.0113
+Found planar CID: 100767 | RMSD=0.0009
+Found planar CID: 83175 | RMSD=0.0157
+Found planar CID: 182234 | RMSD=0.0008
+Found planar CID: 97014 | RMSD=0.0009
+Found planar CID: 230771 | RMSD=0.0046
+Found planar CID: 54937 | RMSD=0.0006
+Found planar CID: 148353 | RMSD=0.0009
+Found planar CID: 51395 | RMSD=0.0055
+Found planar CID: 233869 | RMSD=0.0696
+Found planar CID: 233992 | RMSD=0.0037
+Found planar CID: 65057 | RMSD=0.0013
+Found planar CID: 322 | RMSD=0.0004
+Found planar CID: 75696 | RMSD=0.0001
+Found planar CID: 50354 | RMSD=0.0021
+Found planar CID: 131271 | RMSD=0.0795
+Found planar CID: 158067 | RMSD=0.0127
+Found planar CID: 209854 | RMSD=0.0005
+Found planar CID: 219827 | RMSD=0.0017
+Found planar CID: 222706 | RMSD=0.0074
+Found planar CID: 4757 | RMSD=0.0004
+Found planar CID: 70387 | RMSD=0.0041
+Found planar CID: 96306 | RMSD=0.0094
+Found planar CID: 9171 | RMSD=0.0039
+Found planar CID: 78147 | RMSD=0.0011
+Found planar CID: 195906 | RMSD=0.0007
+Found planar CID: 207893 | RMSD=0.0073
+Found planar CID: 94860 | RMSD=0.0020
+Found planar CID: 3022 | RMSD=0.0027
+Found planar CID: 228615 | RMSD=0.0006
+Found planar CID: 47237 | RMSD=0.0020
+Found planar CID: 137968 | RMSD=0.0017
+Found planar CID: 236487 | RMSD=0.0009
+Found planar CID: 37924 | RMSD=0.0009
+Found planar CID: 75246 | RMSD=0.0055
+Found planar CID: 17743 | RMSD=0.0013
+Found planar CID: 183943 | RMSD=0.0055
+Found planar CID: 154722 | RMSD=0.0014
+Found planar CID: 185610 | RMSD=0.0012
+Found planar CID: 6856 | RMSD=0.0023
+Found planar CID: 10658 | RMSD=0.0003
+Found planar CID: 15276 | RMSD=0.0401
+Found planar CID: 995 | RMSD=0.0006
+Found planar CID: 59153 | RMSD=0.0005
+Found planar CID: 152217 | RMSD=0.0997
+Found planar CID: 179447 | RMSD=0.0011
+Found planar CID: 38500 | RMSD=0.0745
+Found planar CID: 119445 | RMSD=0.0028
+Found planar CID: 69913 | RMSD=0.0026
+Found planar CID: 226259 | RMSD=0.0065
+Found planar CID: 248086 | RMSD=0.0005
+Found planar CID: 96844 | RMSD=0.0011
+Found planar CID: 98760 | RMSD=0.0006
+Found planar CID: 75590 | RMSD=0.0007
+Found planar CID: 97726 | RMSD=0.0521
+Found planar CID: 76381 | RMSD=0.0034
+Found planar CID: 186422 | RMSD=0.0302
+Found planar CID: 189313 | RMSD=0.0232
+Found planar CID: 232768 | RMSD=0.0245
+Found planar CID: 230981 | RMSD=0.0021
+Found planar CID: 232848 | RMSD=0.0012
+Found planar CID: 154783 | RMSD=0.0003
+Found planar CID: 115167 | RMSD=0.0014
+Found planar CID: 160698 | RMSD=0.0021
+Found planar CID: 55121 | RMSD=0.0004
+Found planar CID: 217217 | RMSD=0.0026
+Found planar CID: 128982 | RMSD=0.0018
+Found planar CID: 98574 | RMSD=0.0011
+Found planar CID: 27626 | RMSD=0.0346
+Found planar CID: 126664 | RMSD=0.0600
+Found planar CID: 9198 | RMSD=0.0001
+Found planar CID: 129090 | RMSD=0.0633
+Found planar CID: 171660 | RMSD=0.0012
+Found planar CID: 110614 | RMSD=0.0116
+Found planar CID: 238953 | RMSD=0.0006
+Found planar CID: 224110 | RMSD=0.0015
+Found planar CID: 228832 | RMSD=0.0008
+Found planar CID: 124862 | RMSD=0.0011
+Found planar CID: 157630 | RMSD=0.0013
+Found planar CID: 128913 | RMSD=0.0004
+Found planar CID: 223653 | RMSD=0.0190
+Found planar CID: 245500 | RMSD=0.0046
+Found planar CID: 42842 | RMSD=0.0001
+Found planar CID: 240800 | RMSD=0.0096
+Found planar CID: 13926 | RMSD=0.0080
+Found planar CID: 35750 | RMSD=0.0734
+Found planar CID: 158898 | RMSD=0.0158
+Found planar CID: 94906 | RMSD=0.0016
+Found planar CID: 205679 | RMSD=0.0035
+Found planar CID: 18503 | RMSD=0.0031
+Found planar CID: 237822 | RMSD=0.0036
+Found planar CID: 2015 | RMSD=0.0022
+Found planar CID: 10187 | RMSD=0.0009
+Found planar CID: 5004 | RMSD=0.0007
+Found planar CID: 150887 | RMSD=0.0002
+Found planar CID: 6711 | RMSD=0.0020
+Found planar CID: 146301 | RMSD=0.0737
+Found planar CID: 98834 | RMSD=0.0116
+Found planar CID: 28206 | RMSD=0.0015
+Found planar CID: 101219 | RMSD=0.0005
+Found planar CID: 95731 | RMSD=0.0015
+Found planar CID: 568 | RMSD=0.0018
+Found planar CID: 213892 | RMSD=0.0043
+Found planar CID: 30399 | RMSD=0.0746
+Found planar CID: 232641 | RMSD=0.0006
+Found planar CID: 21707 | RMSD=0.0453
+Found planar CID: 140328 | RMSD=0.0007
+Found planar CID: 248624 | RMSD=0.0009
+Found planar CID: 127847 | RMSD=0.0186
+Found planar CID: 248092 | RMSD=0.0088
+Found planar CID: 109896 | RMSD=0.0653
+Found planar CID: 96016 | RMSD=0.0004
+Found planar CID: 33226 | RMSD=0.0006
+Found planar CID: 249686 | RMSD=0.0711
+Found planar CID: 129954 | RMSD=0.0377
+Found planar CID: 60743 | RMSD=0.0008
+Found planar CID: 99507 | RMSD=0.0622
+Found planar CID: 181936 | RMSD=0.0007
+Found planar CID: 137200 | RMSD=0.0009
+Found planar CID: 81336 | RMSD=0.0012
+Found planar CID: 93552 | RMSD=0.0004
+Found planar CID: 35619 | RMSD=0.0406
+Found planar CID: 70821 | RMSD=0.0006
+Found planar CID: 188875 | RMSD=0.0011
+Found planar CID: 186095 | RMSD=0.0061
+Found planar CID: 85466 | RMSD=0.0336
+Found planar CID: 149344 | RMSD=0.0016
+Found planar CID: 8511 | RMSD=0.0013
+Found planar CID: 239966 | RMSD=0.0144
+Found planar CID: 75180 | RMSD=0.0113
+Found planar CID: 193631 | RMSD=0.0780
+Found planar CID: 65739 | RMSD=0.0011
+Found planar CID: 9191 | RMSD=0.0003
+Found planar CID: 20450 | RMSD=0.0013
+Found planar CID: 154840 | RMSD=0.0010
+Found planar CID: 7057 | RMSD=0.0837
+Found planar CID: 249068 | RMSD=0.0569
+Found planar CID: 25759 | RMSD=0.0010
+Found planar CID: 148832 | RMSD=0.0013
+Found planar CID: 97716 | RMSD=0.0373
+Found planar CID: 249385 | RMSD=0.0664
+Found planar CID: 192744 | RMSD=0.0134
+Found planar CID: 19213 | RMSD=0.0011
+Found planar CID: 30939 | RMSD=0.0004
+Found planar CID: 72789 | RMSD=0.0649
+Found planar CID: 29128 | RMSD=0.0016
+Found planar CID: 200087 | RMSD=0.0002
+Found planar CID: 6854 | RMSD=0.0002
+Found planar CID: 20813 | RMSD=0.0009
+Found planar CID: 238536 | RMSD=0.0816
+Found planar CID: 6293 | RMSD=0.0003
+Found planar CID: 53524 | RMSD=0.0002
+Found planar CID: 6688 | RMSD=0.0053
+Found planar CID: 242879 | RMSD=0.0303
+Found planar CID: 75531 | RMSD=0.0301
+Found planar CID: 12896 | RMSD=0.0941
+Found planar CID: 84651 | RMSD=0.0462
+Found planar CID: 104936 | RMSD=0.0993
+Found planar CID: 149432 | RMSD=0.0007
+Found planar CID: 67483 | RMSD=0.0055
+Found planar CID: 147517 | RMSD=0.0003
+Found planar CID: 249687 | RMSD=0.0008
+Found planar CID: 9154 | RMSD=0.0006
+Found planar CID: 146683 | RMSD=0.0461
+Found planar CID: 55123 | RMSD=0.0010
+Found planar CID: 190232 | RMSD=0.0307
+Found planar CID: 154873 | RMSD=0.0014
+Found planar CID: 234665 | RMSD=0.0017
+Found planar CID: 193288 | RMSD=0.0005
+Found planar CID: 65365 | RMSD=0.0210
+Found planar CID: 126468 | RMSD=0.0460
+Found planar CID: 193838 | RMSD=0.0084
+Found planar CID: 239150 | RMSD=0.0003
+Found planar CID: 187834 | RMSD=0.0022
+Found planar CID: 49970 | RMSD=0.0776
+Found planar CID: 153621 | RMSD=0.0197
+Found planar CID: 249387 | RMSD=0.0651
+Found planar CID: 245787 | RMSD=0.0035
+Found planar CID: 123242 | RMSD=0.0098
+Found planar CID: 90620 | RMSD=0.0035
+Found planar CID: 32787 | RMSD=0.0008
+Found planar CID: 122989 | RMSD=0.0042
+Found planar CID: 42954 | RMSD=0.0004
+Found planar CID: 155600 | RMSD=0.0025
+Found planar CID: 240855 | RMSD=0.0030
+Found planar CID: 84193 | RMSD=0.0025
+Found planar CID: 149103 | RMSD=0.0061
+Found planar CID: 160333 | RMSD=0.0002
+Found planar CID: 29238 | RMSD=0.0136
+Found planar CID: 242578 | RMSD=0.0087
+Found planar CID: 145667 | RMSD=0.0058
+Found planar CID: 184046 | RMSD=0.0004
+Found planar CID: 223669 | RMSD=0.0005
+Found planar CID: 140870 | RMSD=0.0088
+Found planar CID: 201640 | RMSD=0.0025
+Found planar CID: 76893 | RMSD=0.0753
+Found planar CID: 169216 | RMSD=0.0432
+Found planar CID: 115206 | RMSD=0.0019
+Found planar CID: 125394 | RMSD=0.0004
+Found planar CID: 235823 | RMSD=0.0004
+Found planar CID: 248578 | RMSD=0.0011
+Found planar CID: 158074 | RMSD=0.0009
+Found planar CID: 236491 | RMSD=0.0005
+Found planar CID: 241428 | RMSD=0.0091
+Found planar CID: 66862 | RMSD=0.0706
+Found planar CID: 153389 | RMSD=0.0946
+Found planar CID: 10215 | RMSD=0.0032
+Found planar CID: 68485 | RMSD=0.0008
+Found planar CID: 146422 | RMSD=0.0165
+Found planar CID: 67476 | RMSD=0.0002
+Found planar CID: 6796 | RMSD=0.0002
+Found planar CID: 220630 | RMSD=0.0689
+Found planar CID: 148245 | RMSD=0.0026
+Found planar CID: 160579 | RMSD=0.0026
+Found planar CID: 77125 | RMSD=0.0014
+Found planar CID: 14355 | RMSD=0.0015
+Found planar CID: 146494 | RMSD=0.0252
+Found planar CID: 118643 | RMSD=0.0124
+Found planar CID: 151557 | RMSD=0.0078
+Found planar CID: 18865 | RMSD=0.0958
+Found planar CID: 181581 | RMSD=0.0245
+Found planar CID: 69750 | RMSD=0.0154
+Found planar CID: 69743 | RMSD=0.0033
+Found planar CID: 174201 | RMSD=0.0259
+Found planar CID: 29159 | RMSD=0.0005
+Found planar CID: 138704 | RMSD=0.0771
+Found planar CID: 121026 | RMSD=0.0032
+Found planar CID: 199411 | RMSD=0.0009
+Found planar CID: 139087 | RMSD=0.0348
+Found planar CID: 181788 | RMSD=0.0002
+Found planar CID: 238924 | RMSD=0.0008
+Found planar CID: 100304 | RMSD=0.0477
+Found planar CID: 18031 | RMSD=0.0170
+Found planar CID: 242949 | RMSD=0.0901
+Found planar CID: 178753 | RMSD=0.0005
+Found planar CID: 200861 | RMSD=0.0680
+Found planar CID: 21510 | RMSD=0.0003
+Found planar CID: 155679 | RMSD=0.0003
+Found planar CID: 9362 | RMSD=0.0004
+Found planar CID: 235922 | RMSD=0.0040
+Found planar CID: 71146 | RMSD=0.0010
+Found planar CID: 96252 | RMSD=0.0828
+Found planar CID: 129734 | RMSD=0.0594
+Found planar CID: 6749 | RMSD=0.0172
+Found planar CID: 53144 | RMSD=0.0006
+Found planar CID: 99128 | RMSD=0.0481
+Found planar CID: 74100 | RMSD=0.0022
+Found planar CID: 199968 | RMSD=0.0002
+Found planar CID: 182228 | RMSD=0.0714
+Found planar CID: 41664 | RMSD=0.0561
+Found planar CID: 2046 | RMSD=0.0011
+Found planar CID: 158929 | RMSD=0.0005
+Found planar CID: 11803 | RMSD=0.0033
+Found planar CID: 18354 | RMSD=0.0002
+Found planar CID: 245129 | RMSD=0.0009
+Found planar CID: 11411 | RMSD=0.0450
+Found planar CID: 155407 | RMSD=0.0009
+Found planar CID: 37925 | RMSD=0.0012
+Found planar CID: 6051 | RMSD=0.0684
+Found planar CID: 11768 | RMSD=0.0006
+Found planar CID: 34444 | RMSD=0.0261
+Found planar CID: 153622 | RMSD=0.0003
+Found planar CID: 242579 | RMSD=0.0762
+Found planar CID: 28422 | RMSD=0.0944
+Found planar CID: 19698 | RMSD=0.0872
+Found planar CID: 62134 | RMSD=0.0007
+Found planar CID: 225930 | RMSD=0.0257
+Found planar CID: 16820 | RMSD=0.0002
+Found planar CID: 63337 | RMSD=0.0028
+Found planar CID: 85557 | RMSD=0.0007
+Found planar CID: 241981 | RMSD=0.0556
+Found planar CID: 161492 | RMSD=0.0006
+Found planar CID: 55126 | RMSD=0.0014
+Found planar CID: 177587 | RMSD=0.0655
+Found planar CID: 40322 | RMSD=0.0012
+Found planar CID: 42613 | RMSD=0.0003
+Found planar CID: 163936 | RMSD=0.0083
+Found planar CID: 150664 | RMSD=0.0015
+Found planar CID: 93470 | RMSD=0.0019
+Found planar CID: 66491 | RMSD=0.0007
+Found planar CID: 35842 | RMSD=0.0040
+Found planar CID: 238900 | RMSD=0.0097
+Found planar CID: 158075 | RMSD=0.0011
+Found planar CID: 84568 | RMSD=0.0008
+Found planar CID: 186694 | RMSD=0.0055
+Found planar CID: 145720 | RMSD=0.0037
+Found planar CID: 66589 | RMSD=0.0016
+Found planar CID: 7080 | RMSD=0.0010
+Found planar CID: 143045 | RMSD=0.1000
+Found planar CID: 133155 | RMSD=0.0051
+Found planar CID: 7595 | RMSD=0.0008
+Found planar CID: 214614 | RMSD=0.0016
+Found planar CID: 100489 | RMSD=0.0030
+Found planar CID: 27481 | RMSD=0.0395
+Found planar CID: 12069 | RMSD=0.0003
+Found planar CID: 96327 | RMSD=0.0022
+Found planar CID: 249674 | RMSD=0.0658
+Found planar CID: 53430 | RMSD=0.0035
+Found planar CID: 7020 | RMSD=0.0005
+Found planar CID: 221609 | RMSD=0.0027
+Found planar CID: 222552 | RMSD=0.0967
+Found planar CID: 18357 | RMSD=0.0734
+Found planar CID: 79918 | RMSD=0.0877
+Found planar CID: 186153 | RMSD=0.0051
+Found planar CID: 104988 | RMSD=0.0317
+Found planar CID: 140496 | RMSD=0.0075
+Found planar CID: 154726 | RMSD=0.0037
+Found planar CID: 249137 | RMSD=0.0989
+Found planar CID: 74445 | RMSD=0.0013
+Found planar CID: 204782 | RMSD=0.0007
+Found planar CID: 10141 | RMSD=0.0001
+Found planar CID: 101245 | RMSD=0.0112
+Found planar CID: 92948 | RMSD=0.0194
+Found planar CID: 94723 | RMSD=0.0033
+Found planar CID: 42130 | RMSD=0.0008
+Found planar CID: 10310 | RMSD=0.0006
+Found planar CID: 106481 | RMSD=0.0014
+Found planar CID: 186197 | RMSD=0.0125
+Found planar CID: 228031 | RMSD=0.0229
+Found planar CID: 37487 | RMSD=0.0106
+Found planar CID: 73745 | RMSD=0.0486
+Found planar CID: 200980 | RMSD=0.0861
+Found planar CID: 215899 | RMSD=0.0615
+Found planar CID: 76138 | RMSD=0.0532
+Found planar CID: 38193 | RMSD=0.0024
+Found planar CID: 84548 | RMSD=0.0415
+Found planar CID: 70848 | RMSD=0.0044
+Found planar CID: 182504 | RMSD=0.0059
+Found planar CID: 165333 | RMSD=0.0004
+Found planar CID: 153117 | RMSD=0.0024
+Found planar CID: 88450 | RMSD=0.0006
+Found planar CID: 96730 | RMSD=0.0011
+Found planar CID: 31420 | RMSD=0.0007
+Found planar CID: 7686 | RMSD=0.0003
+Found planar CID: 14330 | RMSD=0.0005
+Found planar CID: 232489 | RMSD=0.0051
+Found planar CID: 220843 | RMSD=0.0013
+Found planar CID: 238939 | RMSD=0.0024
+Found planar CID: 12861 | RMSD=0.0934
+Found planar CID: 245112 | RMSD=0.0010
+Found planar CID: 22849 | RMSD=0.0010
+Found planar CID: 58035 | RMSD=0.0933
+Found planar CID: 137145 | RMSD=0.0810
+Found planar CID: 182483 | RMSD=0.0564
+Found planar CID: 55119 | RMSD=0.0002
+Found planar CID: 105578 | RMSD=0.0049
+Found planar CID: 2053 | RMSD=0.0068
+Found planar CID: 244284 | RMSD=0.0650
+Found planar CID: 219752 | RMSD=0.0623
+Found planar CID: 11077 | RMSD=0.0025
+Found planar CID: 235576 | RMSD=0.0375
+Found planar CID: 55507 | RMSD=0.0038
+Found planar CID: 99617 | RMSD=0.0687
+Found planar CID: 96017 | RMSD=0.0004
+Found planar CID: 147575 | RMSD=0.0005
+Found planar CID: 105022 | RMSD=0.0205
+Found planar CID: 12856 | RMSD=0.0146
+Found planar CID: 96305 | RMSD=0.0040
+Found planar CID: 115017 | RMSD=0.0007
+Found planar CID: 32437 | RMSD=0.0005
+Found planar CID: 224102 | RMSD=0.0008
+Found planar CID: 14547 | RMSD=0.0110
+Found planar CID: 136048 | RMSD=0.0005
+Found planar CID: 1884 | RMSD=0.0004
+Found planar CID: 159957 | RMSD=0.0007
+Found planar CID: 154790 | RMSD=0.0016
+Found planar CID: 249993 | RMSD=0.0046
+Found planar CID: 55490 | RMSD=0.0015
+Found planar CID: 121025 | RMSD=0.0343
+Found planar CID: 186251 | RMSD=0.0041
+Found planar CID: 159627 | RMSD=0.0009
+Found planar CID: 67469 | RMSD=0.0098
+Found planar CID: 68445 | RMSD=0.0005
+Found planar CID: 98598 | RMSD=0.0331
+Found planar CID: 150151 | RMSD=0.0015
+Found planar CID: 235758 | RMSD=0.0015
+Found planar CID: 217664 | RMSD=0.0033
+Found planar CID: 146573 | RMSD=0.0017
+Found planar CID: 217195 | RMSD=0.0005
+Found planar CID: 89952 | RMSD=0.0258
+Found planar CID: 162883 | RMSD=0.0008
+Found planar CID: 182098 | RMSD=0.0011
+Found planar CID: 169678 | RMSD=0.0014
+Found planar CID: 219429 | RMSD=0.0984
+Found planar CID: 192719 | RMSD=0.0004
+Found planar CID: 54849 | RMSD=0.0038
+Found planar CID: 231378 | RMSD=0.0007
+Found planar CID: 187317 | RMSD=0.0899
+Found planar CID: 137754 | RMSD=0.0032
+Found planar CID: 10677 | RMSD=0.0026
+Found planar CID: 118849 | RMSD=0.0005
+Found planar CID: 176661 | RMSD=0.0008
+Found planar CID: 135262 | RMSD=0.0005
+Found planar CID: 11080 | RMSD=0.0009
+Found planar CID: 221013 | RMSD=0.0018
+Found planar CID: 2950 | RMSD=0.0005
+Found planar CID: 160449 | RMSD=0.0008
+Found planar CID: 55571 | RMSD=0.0012
+Found planar CID: 150156 | RMSD=0.0012
+Found planar CID: 233069 | RMSD=0.0644
+Found planar CID: 158064 | RMSD=0.0016
+Found planar CID: 229082 | RMSD=0.0580
+Found planar CID: 114764 | RMSD=0.0013
+Found planar CID: 197142 | RMSD=0.0047
+Found planar CID: 101512 | RMSD=0.0056
+Found planar CID: 249097 | RMSD=0.0016
+Found planar CID: 164562 | RMSD=0.0013
+Found planar CID: 90072 | RMSD=0.0017
+Found planar CID: 204404 | RMSD=0.0174
+Found planar CID: 192752 | RMSD=0.0023
+Found planar CID: 16260 | RMSD=0.0013
+Found planar CID: 238845 | RMSD=0.0424
+Found planar CID: 60059 | RMSD=0.0005
+Found planar CID: 101481 | RMSD=0.0055
+Found planar CID: 152931 | RMSD=0.0593
+Found planar CID: 78560 | RMSD=0.0002
+Found planar CID: 181108 | RMSD=0.0009
+Found planar CID: 226507 | RMSD=0.0009
+Found planar CID: 183245 | RMSD=0.0054
+Found planar CID: 62805 | RMSD=0.0730
+Found planar CID: 74995 | RMSD=0.0641
+Found planar CID: 147195 | RMSD=0.0924
+Found planar CID: 150567 | RMSD=0.0046
+Found planar CID: 85076 | RMSD=0.0490
+Found planar CID: 186402 | RMSD=0.0004
+Found planar CID: 16897 | RMSD=0.0297
+Found planar CID: 240021 | RMSD=0.0458
+Found planar CID: 236625 | RMSD=0.0004
+Found planar CID: 127580 | RMSD=0.0453
+Found planar CID: 120189 | RMSD=0.0001
+Found planar CID: 184047 | RMSD=0.0003
+Found planar CID: 79416 | RMSD=0.0115
+Found planar CID: 122886 | RMSD=0.0850
+Found planar CID: 41131 | RMSD=0.0004
+Found planar CID: 7105 | RMSD=0.0021
+Found planar CID: 100604 | RMSD=0.0017
+Found planar CID: 9216 | RMSD=0.0004
+Found planar CID: 97206 | RMSD=0.0764
+Found planar CID: 17748 | RMSD=0.0005
+Found planar CID: 77865 | RMSD=0.0009
+Found planar CID: 227819 | RMSD=0.0091
+Found planar CID: 149977 | RMSD=0.0581
+Found planar CID: 205688 | RMSD=0.0092
+Found planar CID: 54551 | RMSD=0.0003
+Found planar CID: 237966 | RMSD=0.0091
+Found planar CID: 240857 | RMSD=0.0034
+Found planar CID: 56045 | RMSD=0.0017
+Found planar CID: 47426 | RMSD=0.0007
+Found planar CID: 66579 | RMSD=0.0086
+Found planar CID: 178502 | RMSD=0.0711
+Found planar CID: 42838 | RMSD=0.0038
+Found planar CID: 1320 | RMSD=0.0024
+Found planar CID: 233601 | RMSD=0.0324
+Found planar CID: 6686 | RMSD=0.0024
+Found planar CID: 13251 | RMSD=0.0970
+Found planar CID: 14160 | RMSD=0.0040
+Found planar CID: 67496 | RMSD=0.0046
+Found planar CID: 160478 | RMSD=0.0026
+Found planar CID: 170891 | RMSD=0.0105
+Found planar CID: 47425 | RMSD=0.0006
+Found planar CID: 148496 | RMSD=0.0658
+Found planar CID: 88918 | RMSD=0.0155
+Found planar CID: 81567 | RMSD=0.0069
+Found planar CID: 249842 | RMSD=0.0144
+Found planar CID: 5699 | RMSD=0.0003
+Found planar CID: 230930 | RMSD=0.0008
+Found planar CID: 11296 | RMSD=0.0202
+Found planar CID: 154724 | RMSD=0.0016
+Found planar CID: 181245 | RMSD=0.0019
+Found planar CID: 30127 | RMSD=0.0386
+Found planar CID: 128945 | RMSD=0.0012
+Found planar CID: 77035 | RMSD=0.0012
+Found planar CID: 5954 | RMSD=0.0035
+Found planar CID: 6701 | RMSD=0.0024
+Found planar CID: 148829 | RMSD=0.0376
+Found planar CID: 99231 | RMSD=0.0023
+Found planar CID: 227505 | RMSD=0.0211
+Found planar CID: 74503 | RMSD=0.0147
+Found planar CID: 11392 | RMSD=0.0046
+Found planar CID: 26592 | RMSD=0.0029
+Found planar CID: 130802 | RMSD=0.0014
+Found planar CID: 53177 | RMSD=0.0003
+Found planar CID: 1779 | RMSD=0.0018
+Found planar CID: 103956 | RMSD=0.0120
+Found planar CID: 67475 | RMSD=0.0004
+Found planar CID: 126381 | RMSD=0.0541
+Found planar CID: 56777 | RMSD=0.0003
+Found planar CID: 235681 | RMSD=0.0384
+Found planar CID: 90295 | RMSD=0.0821
+Found planar CID: 7108 | RMSD=0.0013
+Found planar CID: 118568 | RMSD=0.0024
+Found planar CID: 84481 | RMSD=0.0216
+Found planar CID: 148370 | RMSD=0.0015
+Found planar CID: 112837 | RMSD=0.0525
+Found planar CID: 72765 | RMSD=0.0667
+Found planar CID: 21035 | RMSD=0.0001
+Found planar CID: 10638 | RMSD=0.0008
+Found planar CID: 9408 | RMSD=0.0009
+Found planar CID: 194214 | RMSD=0.0111
+Found planar CID: 40546 | RMSD=0.0003
+Found planar CID: 95778 | RMSD=0.0067
+Found planar CID: 19991 | RMSD=0.0390
+Found planar CID: 9156 | RMSD=0.0006
+Found planar CID: 154905 | RMSD=0.0022
+Found planar CID: 145787 | RMSD=0.0031
+Found planar CID: 95301 | RMSD=0.0899
+Found planar CID: 8601 | RMSD=0.0071
+Found planar CID: 24103 | RMSD=0.0037
+Found planar CID: 76730 | RMSD=0.0021
+Found planar CID: 72790 | RMSD=0.0012
+Found planar CID: 187533 | RMSD=0.0017
+Found planar CID: 123077 | RMSD=0.0003
+Found planar CID: 147616 | RMSD=0.0009
+Found planar CID: 29886 | RMSD=0.0011
+Found planar CID: 120527 | RMSD=0.0767
+Found planar CID: 154258 | RMSD=0.0028
+Found planar CID: 123357 | RMSD=0.0006
+Found planar CID: 149183 | RMSD=0.0009
+Found planar CID: 41117 | RMSD=0.0005
+Found planar CID: 143587 | RMSD=0.0004
+Found planar CID: 244439 | RMSD=0.0017
+Found planar CID: 140950 | RMSD=0.0054
+Found planar CID: 84870 | RMSD=0.0558
+Found planar CID: 248610 | RMSD=0.0652
+Found planar CID: 135596 | RMSD=0.0028
+Found planar CID: 191878 | RMSD=0.0013
+Found planar CID: 248091 | RMSD=0.0025
+Found planar CID: 69065 | RMSD=0.0054
+Found planar CID: 78857 | RMSD=0.0024
+Found planar CID: 212817 | RMSD=0.0132
+Found planar CID: 185309 | RMSD=0.0005
+Found planar CID: 8322 | RMSD=0.0062
+Found planar CID: 238843 | RMSD=0.0027
+Found planar CID: 214304 | RMSD=0.0075
+Found planar CID: 189238 | RMSD=0.0009
+Found planar CID: 55117 | RMSD=0.0006
+Found planar CID: 21082 | RMSD=0.0593
+Found planar CID: 227249 | RMSD=0.0027
+Found planar CID: 187427 | RMSD=0.0489
+Found planar CID: 8323 | RMSD=0.0028
+Found planar CID: 136018 | RMSD=0.0005
+Found planar CID: 74062 | RMSD=0.0017
+Found planar CID: 74691 | RMSD=0.0756
+Found planar CID: 93379 | RMSD=0.0153
+Found planar CID: 236394 | RMSD=0.0210
+Found planar CID: 219826 | RMSD=0.0013
+Found planar CID: 226030 | RMSD=0.0008
+Found planar CID: 149172 | RMSD=0.0003
+Found planar CID: 65590 | RMSD=0.0079
+Found planar CID: 59730 | RMSD=0.0044
+Found planar CID: 74473 | RMSD=0.0539
+Found planar CID: 44621 | RMSD=0.0848
+Found planar CID: 193202 | RMSD=0.0010
+Found planar CID: 139030 | RMSD=0.0004
+Found planar CID: 69744 | RMSD=0.0008
+Found planar CID: 33245 | RMSD=0.0027
+Found planar CID: 245883 | RMSD=0.0012
+Found planar CID: 68436 | RMSD=0.0025
+Found planar CID: 136051 | RMSD=0.0015
+Found planar CID: 96856 | RMSD=0.0102
+Found planar CID: 15957 | RMSD=0.0114
+Found planar CID: 136754 | RMSD=0.0137
+Found planar CID: 193286 | RMSD=0.0025
+Found planar CID: 157149 | RMSD=0.0008
+Found planar CID: 43370 | RMSD=0.0017
+Found planar CID: 77489 | RMSD=0.0003
+Found planar CID: 230772 | RMSD=0.0211
+Found planar CID: 18874 | RMSD=0.0253
+Found planar CID: 34542 | RMSD=0.0453
+Found planar CID: 143273 | RMSD=0.0003
+Found planar CID: 55573 | RMSD=0.0007
+Found planar CID: 137842 | RMSD=0.0265
+Found planar CID: 101377 | RMSD=0.0315
+Found planar CID: 67030 | RMSD=0.0005
+Found planar CID: 4985 | RMSD=0.0498
+Found planar CID: 231363 | RMSD=0.0216
+Found planar CID: 148213 | RMSD=0.0659
+Found planar CID: 69440 | RMSD=0.0085
+Found planar CID: 96508 | RMSD=0.0260
+Found planar CID: 190911 | RMSD=0.0046
+Found planar CID: 232969 | RMSD=0.0373
+Found planar CID: 242881 | RMSD=0.0574
+Found planar CID: 35622 | RMSD=0.0143
+Found planar CID: 72725 | RMSD=0.0011
+Found planar CID: 182676 | RMSD=0.0003
+Found planar CID: 26728 | RMSD=0.0003
+Found planar CID: 7088 | RMSD=0.0018
+Found planar CID: 145774 | RMSD=0.0046
+Found planar CID: 80361 | RMSD=0.0943
+Found planar CID: 230754 | RMSD=0.0004
+Found planar CID: 25762 | RMSD=0.0017
+Found planar CID: 89196 | RMSD=0.0207
+Found planar CID: 220654 | RMSD=0.0017
+Found planar CID: 246387 | RMSD=0.0021
+Found planar CID: 11138 | RMSD=0.0014
+Found planar CID: 67012 | RMSD=0.0005
+Found planar CID: 33248 | RMSD=0.0077
+Found planar CID: 201327 | RMSD=0.0075
+Found planar CID: 5955 | RMSD=0.0005
+Found planar CID: 151701 | RMSD=0.0005
+Found planar CID: 3023 | RMSD=0.0010
+Found planar CID: 153168 | RMSD=0.0019
+Found planar CID: 96030 | RMSD=0.0807
+Found planar CID: 181954 | RMSD=0.0004
+Found planar CID: 177585 | RMSD=0.0770
+Found planar CID: 17459 | RMSD=0.0849
+Found planar CID: 123542 | RMSD=0.0035
+Found planar CID: 224856 | RMSD=0.0145
+Found planar CID: 243391 | RMSD=0.0019
+Found planar CID: 179928 | RMSD=0.0005
+Found planar CID: 187044 | RMSD=0.0011
+Found planar CID: 19955 | RMSD=0.0401
+Found planar CID: 6199 | RMSD=0.0009
+Found planar CID: 116929 | RMSD=0.0243
+Found planar CID: 9188 | RMSD=0.0007
+Found planar CID: 99612 | RMSD=0.0047
+Found planar CID: 165144 | RMSD=0.0373
+Found planar CID: 75253 | RMSD=0.0551
+Found planar CID: 117659 | RMSD=0.0500
+Found planar CID: 97602 | RMSD=0.0804
+Found planar CID: 10731 | RMSD=0.0017
+Found planar CID: 181113 | RMSD=0.0010
+Found planar CID: 1894 | RMSD=0.0011
+Found planar CID: 40116 | RMSD=0.0838
+Found planar CID: 35146 | RMSD=0.0072
+Found planar CID: 114640 | RMSD=0.0203
+Found planar CID: 223843 | RMSD=0.0008
+Found planar CID: 10390 | RMSD=0.0058
+Found planar CID: 74902 | RMSD=0.0207
+Found planar CID: 135830 | RMSD=0.0205
+Found planar CID: 2052 | RMSD=0.0286
+Found planar CID: 40860 | RMSD=0.0064
+Found planar CID: 63202 | RMSD=0.0021
+Found planar CID: 13090 | RMSD=0.0007
+Found planar CID: 17884 | RMSD=0.0062
+Found planar CID: 240801 | RMSD=0.0322
+Found planar CID: 236271 | RMSD=0.0035
+Found planar CID: 35864 | RMSD=0.0056
+Found planar CID: 98494 | RMSD=0.0005
+Found planar CID: 155627 | RMSD=0.0027
+Found planar CID: 1474 | RMSD=0.0079
+Found planar CID: 219988 | RMSD=0.0049
+Found planar CID: 99253 | RMSD=0.0002
+Found planar CID: 72897 | RMSD=0.0037
+Found planar CID: 99167 | RMSD=0.0049
+Found planar CID: 68063 | RMSD=0.0018
+Found planar CID: 9155 | RMSD=0.0006
+Found planar CID: 71072 | RMSD=0.0004
+Found planar CID: 97511 | RMSD=0.0819
+Found planar CID: 219483 | RMSD=0.0192
+Found planar CID: 220706 | RMSD=0.0032
+Found planar CID: 9192 | RMSD=0.0003
+Found planar CID: 189315 | RMSD=0.0725
+Found planar CID: 87734 | RMSD=0.0164
+Found planar CID: 181787 | RMSD=0.0006
+Found planar CID: 80977 | RMSD=0.0111
+Found planar CID: 176774 | RMSD=0.0310
+Found planar CID: 72705 | RMSD=0.0831
+Found planar CID: 32363 | RMSD=0.0010
+Found planar CID: 54762 | RMSD=0.0016
+Found planar CID: 97893 | RMSD=0.0112
+Found planar CID: 148470 | RMSD=0.0052
+Found planar CID: 240700 | RMSD=0.0021
+Found planar CID: 67497 | RMSD=0.0002
+Found planar CID: 226039 | RMSD=0.0526
+Found planar CID: 147888 | RMSD=0.0062
+Found planar CID: 94880 | RMSD=0.0007
+Found planar CID: 22966 | RMSD=0.0102
+Found planar CID: 154780 | RMSD=0.0007
+Found planar CID: 40302 | RMSD=0.0879
+Found planar CID: 230935 | RMSD=0.0030
+Found planar CID: 55431 | RMSD=0.0021
+Found planar CID: 149607 | RMSD=0.0011
+Found planar CID: 192833 | RMSD=0.0004
+Found planar CID: 226811 | RMSD=0.0129
+Found planar CID: 149116 | RMSD=0.0029
+Found planar CID: 9174 | RMSD=0.0004
+Found planar CID: 98847 | RMSD=0.0021
+Found planar CID: 164572 | RMSD=0.0019
+Found planar CID: 241979 | RMSD=0.0350
+Found planar CID: 147585 | RMSD=0.0014
+Found planar CID: 132811 | RMSD=0.0495
+Found planar CID: 98663 | RMSD=0.0514
+Found planar CID: 186960 | RMSD=0.0060
+Found planar CID: 147007 | RMSD=0.0003
+Found planar CID: 153019 | RMSD=0.0021
+Found planar CID: 58710 | RMSD=0.0037
+Found planar CID: 16231 | RMSD=0.0916
+Found planar CID: 41631 | RMSD=0.0064
+Found planar CID: 160444 | RMSD=0.0018
+Found planar CID: 219207 | RMSD=0.0463
+Found planar CID: 93572 | RMSD=0.0144
+Found planar CID: 8592 | RMSD=0.0108
+Found planar CID: 219558 | RMSD=0.0035
+Found planar CID: 66637 | RMSD=0.0078
+Found planar CID: 19495 | RMSD=0.0071
+Found planar CID: 249176 | RMSD=0.0010
+Found planar CID: 97411 | RMSD=0.0134
+Found planar CID: 52241 | RMSD=0.0913
+Found planar CID: 88446 | RMSD=0.0020
+Found planar CID: 119405 | RMSD=0.0013
+Found planar CID: 15822 | RMSD=0.0363
+Found planar CID: 69131 | RMSD=0.0013
+Found planar CID: 241578 | RMSD=0.0013
+Found planar CID: 224502 | RMSD=0.0150
+Found planar CID: 92599 | RMSD=0.0303
+Found planar CID: 46664 | RMSD=0.0047
+Found planar CID: 6780 | RMSD=0.0001
+Found planar CID: 84211 | RMSD=0.0006
+Found planar CID: 146567 | RMSD=0.0073
+Found planar CID: 158393 | RMSD=0.0028
+Found planar CID: 34643 | RMSD=0.0123
+Found planar CID: 201324 | RMSD=0.0002
+Found planar CID: 21387 | RMSD=0.0139
+Found planar CID: 18485 | RMSD=0.0006
+Found planar CID: 21397 | RMSD=0.0096
+Found planar CID: 79740 | RMSD=0.0003
+Found planar CID: 235720 | RMSD=0.0167
+Found planar CID: 67459 | RMSD=0.0011
+Found planar CID: 16139 | RMSD=0.0004
+Found planar CID: 149147 | RMSD=0.0150
+Found planar CID: 72902 | RMSD=0.0011
+Found planar CID: 139410 | RMSD=0.0424
+Found planar CID: 52644 | RMSD=0.0031
+Found planar CID: 150330 | RMSD=0.0301
+Found planar CID: 114834 | RMSD=0.0002
+Found planar CID: 99210 | RMSD=0.0960
+Found planar CID: 190279 | RMSD=0.0006
+Found planar CID: 72837 | RMSD=0.0179
+Found planar CID: 147555 | RMSD=0.0683
+Found planar CID: 223847 | RMSD=0.0139
+Found planar CID: 2101 | RMSD=0.0058
+Found planar CID: 242279 | RMSD=0.0840
+Found planar CID: 164775 | RMSD=0.0311
+Found planar CID: 224963 | RMSD=0.0670
+Found planar CID: 96792 | RMSD=0.0504
+Found planar CID: 135632 | RMSD=0.0006
+Found planar CID: 154576 | RMSD=0.0033
+Found planar CID: 249355 | RMSD=0.0968
+Found planar CID: 67472 | RMSD=0.0001
+Found planar CID: 154242 | RMSD=0.0003
+Found planar CID: 149708 | RMSD=0.0120
+Found planar CID: 149345 | RMSD=0.0008
+Found planar CID: 151300 | RMSD=0.0090
+Found planar CID: 120586 | RMSD=0.0031
+Found planar CID: 9180 | RMSD=0.0029
+Found planar CID: 50605 | RMSD=0.0017
+Found planar CID: 146109 | RMSD=0.0032
+Found planar CID: 130800 | RMSD=0.0003
+Found planar CID: 87158 | RMSD=0.0097
+Found planar CID: 164569 | RMSD=0.0009
+Found planar CID: 244844 | RMSD=0.0616
+Found planar CID: 74079 | RMSD=0.0023
+Found planar CID: 98475 | RMSD=0.0630
+Found planar CID: 174669 | RMSD=0.0002
+Found planar CID: 163098 | RMSD=0.0013
+Found planar CID: 98841 | RMSD=0.0115
+Found planar CID: 160331 | RMSD=0.0006
+Found planar CID: 149709 | RMSD=0.0013
+Found planar CID: 240919 | RMSD=0.0024
+Found planar CID: 132918 | RMSD=0.0091
+Found planar CID: 68463 | RMSD=0.0003
+Found planar CID: 151225 | RMSD=0.0059
+Found planar CID: 137218 | RMSD=0.0033
+Found planar CID: 84866 | RMSD=0.0013
+Found planar CID: 186330 | RMSD=0.0002
+Found planar CID: 104305 | RMSD=0.0660
+Found planar CID: 96843 | RMSD=0.0031
+Found planar CID: 226045 | RMSD=0.0007
+Found planar CID: 152522 | RMSD=0.0898
+Found planar CID: 35252 | RMSD=0.0389
+Found planar CID: 154842 | RMSD=0.0007
+Found planar CID: 225973 | RMSD=0.0013
+Found planar CID: 236925 | RMSD=0.0131
+Found planar CID: 99746 | RMSD=0.0063
+Found planar CID: 55570 | RMSD=0.0013
+Found planar CID: 190542 | RMSD=0.0003
+Found planar CID: 240805 | RMSD=0.0980
+Found planar CID: 101848 | RMSD=0.0010
+Found planar CID: 249189 | RMSD=0.0903
+Found planar CID: 9148 | RMSD=0.0003
+Found planar CID: 99573 | RMSD=0.0004
+Found planar CID: 4879 | RMSD=0.0657
+Found planar CID: 77339 | RMSD=0.0005
+Found planar CID: 88248 | RMSD=0.0004
+Found planar CID: 221792 | RMSD=0.0014
+Found planar CID: 89992 | RMSD=0.0287
+Found planar CID: 236697 | RMSD=0.0022
+Found planar CID: 89369 | RMSD=0.0119
+Found planar CID: 53427 | RMSD=0.0014
+Found planar CID: 101482 | RMSD=0.0020
+Found planar CID: 38253 | RMSD=0.0009
+Found planar CID: 214303 | RMSD=0.0185
+Found planar CID: 11385 | RMSD=0.0732
+Found planar CID: 19405 | RMSD=0.0835
+Found planar CID: 42131 | RMSD=0.0006
+Found planar CID: 9215 | RMSD=0.0007
+Found planar CID: 134912 | RMSD=0.0821
+Found planar CID: 9143 | RMSD=0.0008
+Found planar CID: 190322 | RMSD=0.0063
+Found planar CID: 96671 | RMSD=0.0157
+Found planar CID: 248405 | RMSD=0.0263
+Found planar CID: 153619 | RMSD=0.0007
+Found planar CID: 97176 | RMSD=0.0008
+Found planar CID: 80943 | RMSD=0.0041
+Found planar CID: 234605 | RMSD=0.0640
+Found planar CID: 63347 | RMSD=0.0947
+Found planar CID: 88273 | RMSD=0.0020
+Found planar CID: 11798 | RMSD=0.0757
+Found planar CID: 247398 | RMSD=0.0014
+Found planar CID: 28401 | RMSD=0.0002
+Found planar CID: 129485 | RMSD=0.0983
+Found planar CID: 74082 | RMSD=0.0891
+Found planar CID: 217307 | RMSD=0.0313
+Found planar CID: 78583 | RMSD=0.0055
+Found planar CID: 249405 | RMSD=0.0025
+Found planar CID: 176779 | RMSD=0.0009
+Found planar CID: 228464 | RMSD=0.0119
+Found planar CID: 213010 | RMSD=0.0004
+Found planar CID: 247841 | RMSD=0.0058
+Found planar CID: 152118 | RMSD=0.0964
+Found planar CID: 98573 | RMSD=0.0373
+Found planar CID: 136347 | RMSD=0.0007
+Found planar CID: 235564 | RMSD=0.0003
+Found planar CID: 199002 | RMSD=0.0978
+Found planar CID: 230316 | RMSD=0.0120
+Found planar CID: 69504 | RMSD=0.0656
+Found planar CID: 249386 | RMSD=0.0055
+Found planar CID: 6708 | RMSD=0.0002
+Found planar CID: 70028 | RMSD=0.0013
+Found planar CID: 199103 | RMSD=0.0366
+Found planar CID: 222304 | RMSD=0.0122
+Found planar CID: 199530 | RMSD=0.0942
+Found planar CID: 180787 | RMSD=0.0001
+Found planar CID: 72866 | RMSD=0.0092
+Found planar CID: 1628 | RMSD=0.0506
+Found planar CID: 96928 | RMSD=0.0025
+Found planar CID: 70361 | RMSD=0.0816
+Found planar CID: 148031 | RMSD=0.0537
+Found planar CID: 7640 | RMSD=0.0795
+Found planar CID: 214642 | RMSD=0.0006
+Found planar CID: 70030 | RMSD=0.0012
+Found planar CID: 236860 | RMSD=0.0004
+Found planar CID: 153373 | RMSD=0.0009
+Found planar CID: 80527 | RMSD=0.0057
+Found planar CID: 9212 | RMSD=0.0010
+Found planar CID: 80769 | RMSD=0.0027
+Found planar CID: 153605 | RMSD=0.0069
+Found planar CID: 72901 | RMSD=0.0006
+Found planar CID: 156209 | RMSD=0.0004
+Found planar CID: 93422 | RMSD=0.0052
+Found planar CID: 227124 | RMSD=0.0168
+Found planar CID: 157180 | RMSD=0.0019
+Found planar CID: 80971 | RMSD=0.0058
+Found planar CID: 215898 | RMSD=0.0623
+Found planar CID: 211266 | RMSD=0.0010
+Found planar CID: 149145 | RMSD=0.0065
+Found planar CID: 11318 | RMSD=0.0465
+Found planar CID: 1318 | RMSD=0.0007
+Found planar CID: 139157 | RMSD=0.0050
+Found planar CID: 34339 | RMSD=0.0014
+Found planar CID: 76603 | RMSD=0.0265
+Found planar CID: 154720 | RMSD=0.0050
+Found planar CID: 6678 | RMSD=0.0008
+Found planar CID: 46661 | RMSD=0.0973
+Found planar CID: 234474 | RMSD=0.0220
+Found planar CID: 108745 | RMSD=0.0070
+Found planar CID: 74725 | RMSD=0.0018
+Found planar CID: 137077 | RMSD=0.0003
+Found planar CID: 135005 | RMSD=0.0009
+Found planar CID: 1853 | RMSD=0.0001
+Found planar CID: 99324 | RMSD=0.0986
+Found planar CID: 55120 | RMSD=0.0051
+Found planar CID: 159141 | RMSD=0.0012
+Found planar CID: 214640 | RMSD=0.0010
+Found planar CID: 9133 | RMSD=0.0006
+Found planar CID: 93471 | RMSD=0.0006
+Found planar CID: 74032 | RMSD=0.0056
+Found planar CID: 234666 | RMSD=0.0112
+Found planar CID: 213880 | RMSD=0.0339
+Found planar CID: 7091 | RMSD=0.0002
+Found planar CID: 164629 | RMSD=0.0962
+Found planar CID: 40552 | RMSD=0.0002
+Found planar CID: 47299 | RMSD=0.0006
+Found planar CID: 21579 | RMSD=0.0005
+Found planar CID: 17599 | RMSD=0.0883
+Found planar CID: 60293 | RMSD=0.0032
+Found planar CID: 214654 | RMSD=0.0297
+Found planar CID: 55124 | RMSD=0.0005
+Found planar CID: 151916 | RMSD=0.0067
+Found planar CID: 11796 | RMSD=0.0004
+Found planar CID: 136691 | RMSD=0.0006
+Found planar CID: 8515 | RMSD=0.0043
+Found planar CID: 242560 | RMSD=0.0007
+Found planar CID: 70382 | RMSD=0.0023
+Found planar CID: 181746 | RMSD=0.0438
+Found planar CID: 66833 | RMSD=0.0741
+Found planar CID: 226657 | RMSD=0.0008
+Found planar CID: 88729 | RMSD=0.0029
+Found planar CID: 68462 | RMSD=0.0007
+Found planar CID: 200609 | RMSD=0.0584
+Found planar CID: 239149 | RMSD=0.0009
+Found planar CID: 67222 | RMSD=0.0005
+Found planar CID: 77350 | RMSD=0.0253
+Found planar CID: 67477 | RMSD=0.0003
+Found planar CID: 124311 | RMSD=0.0492
+Found planar CID: 229008 | RMSD=0.0027
+Found planar CID: 245044 | RMSD=0.0102
+Found planar CID: 94868 | RMSD=0.0116
+Found planar CID: 146276 | RMSD=0.0003
+Found planar CID: 42651 | RMSD=0.0020
+Found planar CID: 181244 | RMSD=0.0016
+Found planar CID: 97316 | RMSD=0.0004
+Found planar CID: 16987 | RMSD=0.0129
+Found planar CID: 154782 | RMSD=0.0002
+Found planar CID: 67278 | RMSD=0.0013
+Found planar CID: 97317 | RMSD=0.0010
+Found planar CID: 114651 | RMSD=0.0373
+Found planar CID: 135832 | RMSD=0.0013
+Found planar CID: 121137 | RMSD=0.0037
+Found planar CID: 9197 | RMSD=0.0139
+Found planar CID: 100816 | RMSD=0.0070
+Found planar CID: 79771 | RMSD=0.0004
+Found planar CID: 137385 | RMSD=0.0035
+Found planar CID: 74222 | RMSD=0.0683
+Found planar CID: 6774 | RMSD=0.0011
+Found planar CID: 38252 | RMSD=0.0009
+Found planar CID: 156143 | RMSD=0.0002
+Found planar CID: 66900 | RMSD=0.0771
+Found planar CID: 235124 | RMSD=0.0035
+Found planar CID: 95746 | RMSD=0.0010
+Found planar CID: 236898 | RMSD=0.0046
+Found planar CID: 176558 | RMSD=0.0013
+Found planar CID: 84196 | RMSD=0.0039
+Found planar CID: 66910 | RMSD=0.0389
+Found planar CID: 21536 | RMSD=0.0017
+Found planar CID: 6764 | RMSD=0.0016
+Found planar CID: 150314 | RMSD=0.0008
+Found planar CID: 186361 | RMSD=0.0029
+Found planar CID: 145690 | RMSD=0.0011
+Found planar CID: 149102 | RMSD=0.0088
+Found planar CID: 111637 | RMSD=0.0009
+Found planar CID: 14558 | RMSD=0.0028
+Found planar CID: 201134 | RMSD=0.0613
+Found planar CID: 96102 | RMSD=0.0101
+Found planar CID: 32092 | RMSD=0.0024
+Found planar CID: 147635 | RMSD=0.0677
+Found planar CID: 235932 | RMSD=0.0007
+Found planar CID: 123045 | RMSD=0.0004
+Found planar CID: 143198 | RMSD=0.0009
+Found planar CID: 181527 | RMSD=0.0426
+Found planar CID: 8352 | RMSD=0.0558
+Found planar CID: 90693 | RMSD=0.0062
+Found planar CID: 82703 | RMSD=0.0911
+Found planar CID: 85075 | RMSD=0.0032
+Found planar CID: 96842 | RMSD=0.0048
+Found planar CID: 199048 | RMSD=0.0950
+Found planar CID: 67460 | RMSD=0.0006
+Found planar CID: 220206 | RMSD=0.0297
+Found planar CID: 15080 | RMSD=0.0942
+Found planar CID: 153654 | RMSD=0.0012
+Found planar CID: 144259 | RMSD=0.0003
+Found planar CID: 17279 | RMSD=0.0013
+Found planar CID: 69875 | RMSD=0.0015
+Found planar CID: 100782 | RMSD=0.0119
+Found planar CID: 128675 | RMSD=0.0155
+Found planar CID: 119537 | RMSD=0.0836
+Found planar CID: 244642 | RMSD=0.0974
+Found planar CID: 219186 | RMSD=0.0321
+Found planar CID: 13453 | RMSD=0.0211
+Found planar CID: 50197 | RMSD=0.0019
+Found planar CID: 186763 | RMSD=0.0009
+Found planar CID: 29113 | RMSD=0.0157
+Found planar CID: 147403 | RMSD=0.0021
+Found planar CID: 52617 | RMSD=0.0015
+Found planar CID: 10184 | RMSD=0.0002
+Found planar CID: 94714 | RMSD=0.0065
+Found planar CID: 119556 | RMSD=0.0001
+Found planar CID: 97372 | RMSD=0.0428
+Found planar CID: 68091 | RMSD=0.0002
+Found planar CID: 150548 | RMSD=0.0050
+Found planar CID: 13273 | RMSD=0.0068
+Found planar CID: 9144 | RMSD=0.0011
+Found planar CID: 206681 | RMSD=0.0977
+Found planar CID: 165849 | RMSD=0.0118
+Found planar CID: 22244 | RMSD=0.0424
+Found planar CID: 155820 | RMSD=0.0071
+Found planar CID: 164552 | RMSD=0.0007
+Found planar CID: 226038 | RMSD=0.0054
+Found planar CID: 181140 | RMSD=0.0002
+Found planar CID: 56969 | RMSD=0.0011
+Found planar CID: 249015 | RMSD=0.0036
+Found planar CID: 71104 | RMSD=0.0697
+Found planar CID: 98903 | RMSD=0.0012
+Found planar CID: 95523 | RMSD=0.0008
+Found planar CID: 68830 | RMSD=0.0006
+Found planar CID: 67351 | RMSD=0.0008
+Found planar CID: 196978 | RMSD=0.0010
+Found planar CID: 124516 | RMSD=0.0013
+Found planar CID: 154671 | RMSD=0.0039
+Found planar CID: 221115 | RMSD=0.0420
+Found planar CID: 234271 | RMSD=0.0006
+Found planar CID: 148360 | RMSD=0.0038
+Found planar CID: 148246 | RMSD=0.0396
+Found planar CID: 81935 | RMSD=0.0034
+Found planar CID: 247655 | RMSD=0.0013
+Found planar CID: 100650 | RMSD=0.0002
+Found planar CID: 95913 | RMSD=0.0175
+Found planar CID: 157063 | RMSD=0.0022
+Found planar CID: 154930 | RMSD=0.0005
+Found planar CID: 149409 | RMSD=0.0764
+Found planar CID: 135748 | RMSD=0.0749
+Found planar CID: 23533 | RMSD=0.0002
+Found planar CID: 7123 | RMSD=0.0015
+Found planar CID: 232809 | RMSD=0.0006
+Found planar CID: 75583 | RMSD=0.0014
+Found planar CID: 237848 | RMSD=0.0571
+Found planar CID: 93551 | RMSD=0.0003
+Found planar CID: 118848 | RMSD=0.0053
+Found planar CID: 50202 | RMSD=0.0066
+Found planar CID: 150753 | RMSD=0.0009
+Found planar CID: 176953 | RMSD=0.0007
+Found planar CID: 158068 | RMSD=0.0005
+Found planar CID: 149176 | RMSD=0.0086
+Found planar CID: 153585 | RMSD=0.0650
+Found planar CID: 224457 | RMSD=0.0568
+Found planar CID: 6697 | RMSD=0.0005
+Found planar CID: 31419 | RMSD=0.0016
+Found planar CID: 158853 | RMSD=0.0635
+Found planar CID: 164553 | RMSD=0.0008
+Found planar CID: 185908 | RMSD=0.0009
+Found planar CID: 96371 | RMSD=0.0050
+Found planar CID: 73919 | RMSD=0.0832
+Found planar CID: 153106 | RMSD=0.0005
+Found planar CID: 19756 | RMSD=0.0015
+Found planar CID: 229087 | RMSD=0.0385
+Found planar CID: 13269 | RMSD=0.0036
+Found planar CID: 234543 | RMSD=0.0014
+Found planar CID: 150157 | RMSD=0.0025
+Found planar CID: 96005 | RMSD=0.0006
+Found planar CID: 7941 | RMSD=0.0123
+Found planar CID: 47424 | RMSD=0.0050
+Found planar CID: 73777 | RMSD=0.0819
+Found planar CID: 160447 | RMSD=0.0001
+Found planar CID: 225906 | RMSD=0.0039
+Found planar CID: 96939 | RMSD=0.0003
+Found planar CID: 225174 | RMSD=0.0012
+Found planar CID: 59909 | RMSD=0.0009
+Found planar CID: 107781 | RMSD=0.0003
+Found planar CID: 51119 | RMSD=0.0009
+Found planar CID: 167034 | RMSD=0.0038
+Found planar CID: 96857 | RMSD=0.0020
+Found planar CID: 97011 | RMSD=0.0016
+Found planar CID: 56228 | RMSD=0.0149
+Found planar CID: 230298 | RMSD=0.0007
+Found planar CID: 139143 | RMSD=0.0008
+Found planar CID: 9170 | RMSD=0.0001
+Found planar CID: 67456 | RMSD=0.0007
+Found planar CID: 124656 | RMSD=0.0017
+Found planar CID: 17222 | RMSD=0.0424
+Found planar CID: 192750 | RMSD=0.0010
+Found planar CID: 58260 | RMSD=0.0010
+Found planar CID: 17253 | RMSD=0.0513
+Found planar CID: 147613 | RMSD=0.0007
+Found planar CID: 97237 | RMSD=0.0004
+Found planar CID: 221385 | RMSD=0.0088
+Found planar CID: 27688 | RMSD=0.0099
+Found planar CID: 53154 | RMSD=0.0003
+Found planar CID: 10316 | RMSD=0.0914
+Found planar CID: 174843 | RMSD=0.0967
+Found planar CID: 227186 | RMSD=0.0093
+Found planar CID: 80664 | RMSD=0.0017
+Found planar CID: 31532 | RMSD=0.0008
+Found planar CID: 146572 | RMSD=0.0011
+Found planar CID: 152453 | RMSD=0.0957
+Found planar CID: 11353 | RMSD=0.0558
+Found planar CID: 151462 | RMSD=0.0743
+Found planar CID: 239695 | RMSD=0.0022
+Found planar CID: 41118 | RMSD=0.0004
+Found planar CID: 119283 | RMSD=0.0618
+Found planar CID: 220875 | RMSD=0.0128
+Found planar CID: 77971 | RMSD=0.0836
+Found planar CID: 9189 | RMSD=0.0006
+Found planar CID: 125395 | RMSD=0.0057
+Found planar CID: 9194 | RMSD=0.0002
+Found planar CID: 69061 | RMSD=0.0008
+Found planar CID: 180933 | RMSD=0.0003
+Found planar CID: 136056 | RMSD=0.0003
+Found planar CID: 141043 | RMSD=0.0192
+Found planar CID: 97027 | RMSD=0.0698
+Found planar CID: 153617 | RMSD=0.0955
+Found planar CID: 69462 | RMSD=0.0029
+Found planar CID: 101259 | RMSD=0.0938
+Found planar CID: 9206 | RMSD=0.0003
+Found planar CID: 82495 | RMSD=0.0097
+Found planar CID: 136238 | RMSD=0.0020
+Found planar CID: 186693 | RMSD=0.0095
+Found planar CID: 55293 | RMSD=0.0015
+Found planar CID: 139896 | RMSD=0.0004
+Found planar CID: 95223 | RMSD=0.0007
+Found planar CID: 9214 | RMSD=0.0007
+Found planar CID: 2006 | RMSD=0.0032
+Found planar CID: 120166 | RMSD=0.0006
+Found planar CID: 214646 | RMSD=0.0023
+Found planar CID: 159363 | RMSD=0.0920
+Found planar CID: 146905 | RMSD=0.0185
+Found planar CID: 68478 | RMSD=0.0004
+Found planar CID: 133931 | RMSD=0.0007
+Found planar CID: 99826 | RMSD=0.0028
+Found planar CID: 201242 | RMSD=0.0104
+Found planar CID: 8513 | RMSD=0.0005
+Found planar CID: 193908 | RMSD=0.0631
+Found planar CID: 4625 | RMSD=0.0034
+Found planar CID: 244537 | RMSD=0.0051
+Found planar CID: 42649 | RMSD=0.0011
+Found planar CID: 154918 | RMSD=0.0019
+Found planar CID: 205130 | RMSD=0.0540
+Found planar CID: 148828 | RMSD=0.0788
+Found planar CID: 245492 | RMSD=0.0006
+Found planar CID: 237429 | RMSD=0.0194
+Found planar CID: 27278 | RMSD=0.0088
+Found planar CID: 92451 | RMSD=0.0009
+Found planar CID: 34318 | RMSD=0.0583
+Found planar CID: 216909 | RMSD=0.0984
+Found planar CID: 151802 | RMSD=0.0024
+Found planar CID: 155310 | RMSD=0.0048
+Found planar CID: 55118 | RMSD=0.0039
+Found planar CID: 71688 | RMSD=0.0820
+Found planar CID: 67474 | RMSD=0.0003
+Found planar CID: 135457 | RMSD=0.0010
+Found planar CID: 85608 | RMSD=0.0691
+Found planar CID: 233285 | RMSD=0.0003
+Found planar CID: 9181 | RMSD=0.0040
+Found planar CID: 138928 | RMSD=0.0981
+Found planar CID: 148358 | RMSD=0.0007
+Found planar CID: 161593 | RMSD=0.0031
+Found planar CID: 165218 | RMSD=0.0007
+Found planar CID: 81343 | RMSD=0.0691
+Found planar CID: 67478 | RMSD=0.0010
+Found planar CID: 154697 | RMSD=0.0178
+Found planar CID: 201136 | RMSD=0.0599
+Found planar CID: 189239 | RMSD=0.0014
+Found planar CID: 241366 | RMSD=0.0488
+Found planar CID: 160445 | RMSD=0.0021
+Found planar CID: 90619 | RMSD=0.0007
+Found planar CID: 89102 | RMSD=0.0030
+Found planar CID: 193274 | RMSD=0.0008
+Found planar CID: 1839 | RMSD=0.0040
+Found planar CID: 44565 | RMSD=0.0202
+Found planar CID: 76909 | RMSD=0.0052
+Found planar CID: 171154 | RMSD=0.0032
+Found planar CID: 98904 | RMSD=0.0037
+Found planar CID: 189744 | RMSD=0.0207
+Found planar CID: 19910 | RMSD=0.0029
+Found planar CID: 21556 | RMSD=0.0061
+Found planar CID: 38722 | RMSD=0.0266
+Found planar CID: 146732 | RMSD=0.0053
+Found planar CID: 184059 | RMSD=0.0004
+Found planar CID: 179904 | RMSD=0.0005
+Found planar CID: 187461 | RMSD=0.0730
+Found planar CID: 149292 | RMSD=0.0011
+Found planar CID: 97345 | RMSD=0.0619
+Found planar CID: 187316 | RMSD=0.0005
+Found planar CID: 80291 | RMSD=0.0009
+Found planar CID: 132389 | RMSD=0.0754
+Found planar CID: 185848 | RMSD=0.0057
+Found planar CID: 48888 | RMSD=0.0041
+Found planar CID: 148359 | RMSD=0.0022
+Found planar CID: 67571 | RMSD=0.0002
+Found planar CID: 206684 | RMSD=0.0939
+Found planar CID: 34586 | RMSD=0.0003
+Found planar CID: 6683 | RMSD=0.0013
+Found planar CID: 35171 | RMSD=0.0024
+Found planar CID: 50282 | RMSD=0.0016
+Found planar CID: 42841 | RMSD=0.0006
+Found planar CID: 148023 | RMSD=0.0052
+Found planar CID: 6724 | RMSD=0.0004
+Found planar CID: 58102 | RMSD=0.0192
+Found planar CID: 32436 | RMSD=0.0004
+Found planar CID: 11496 | RMSD=0.0340
+Found planar CID: 68392 | RMSD=0.0049
+Found planar CID: 92928 | RMSD=0.0725
+Found planar CID: 74515 | RMSD=0.0089
+Found planar CID: 15912 | RMSD=0.0134
+Found planar CID: 225487 | RMSD=0.0485
+Found planar CID: 78582 | RMSD=0.0289
+Found planar CID: 18356 | RMSD=0.0027
+Found planar CID: 165184 | RMSD=0.0479
+Found planar CID: 54936 | RMSD=0.0005
+Found planar CID: 233143 | RMSD=0.0003
+Found planar CID: 151460 | RMSD=0.0010
+Found planar CID: 73227 | RMSD=0.0795
+Found planar CID: 164554 | RMSD=0.0023
+Found planar CID: 233991 | RMSD=0.0011
+Found planar CID: 132875 | RMSD=0.0023
+Found planar CID: 66587 | RMSD=0.0003
+Found planar CID: 242632 | RMSD=0.0901
+Found planar CID: 35293 | RMSD=0.0588
+Found planar CID: 243245 | RMSD=0.0043
+Found planar CID: 147615 | RMSD=0.0010
+Found planar CID: 182626 | RMSD=0.0998
+Found planar CID: 118901 | RMSD=0.0024
+Found planar CID: 98912 | RMSD=0.0005
+Found planar CID: 97666 | RMSD=0.0014
+Found planar CID: 154785 | RMSD=0.0006
+Found planar CID: 245295 | RMSD=0.0062
+Found planar CID: 67111 | RMSD=0.0538
+Found planar CID: 69064 | RMSD=0.0180
+Found planar CID: 221121 | RMSD=0.0869
+Found planar CID: 208374 | RMSD=0.0051
+Found planar CID: 82105 | RMSD=0.0001
+Found planar CID: 96128 | RMSD=0.0279
+Found planar CID: 225737 | RMSD=0.0015
+Found planar CID: 67586 | RMSD=0.0065
+Found planar CID: 244830 | RMSD=0.0012
+Found planar CID: 104516 | RMSD=0.0208
+Found planar CID: 154096 | RMSD=0.0029
+Found planar CID: 189269 | RMSD=0.0998
+Found planar CID: 14586 | RMSD=0.0030
+Found planar CID: 229927 | RMSD=0.0168
+Found planar CID: 15529 | RMSD=0.0378
+Found planar CID: 120170 | RMSD=0.0303
+Found planar CID: 128171 | RMSD=0.0034
+Found planar CID: 99627 | RMSD=0.0848
+Found planar CID: 128872 | RMSD=0.0850
+Found planar CID: 194859 | RMSD=0.0034
+Found planar CID: 245095 | RMSD=0.0049
+Found planar CID: 51120 | RMSD=0.0020
+Found planar CID: 235271 | RMSD=0.0655
+Found planar CID: 180896 | RMSD=0.0011
+Found planar CID: 9132 | RMSD=0.0005
+Found planar CID: 68389 | RMSD=0.0008
+Found planar CID: 249844 | RMSD=0.0049
+Found planar CID: 236357 | RMSD=0.0007
+Found planar CID: 202443 | RMSD=0.0085
+Found planar CID: 68390 | RMSD=0.0720
+Found planar CID: 51192 | RMSD=0.0097
+Found planar CID: 223849 | RMSD=0.0478
+Found planar CID: 156324 | RMSD=0.0697
+Found planar CID: 70176 | RMSD=0.0002
+Found planar CID: 10271 | RMSD=0.0040
+Found planar CID: 104716 | RMSD=0.0617
+Found planar CID: 150739 | RMSD=0.0050
+Found planar CID: 99551 | RMSD=0.0958
+Found planar CID: 150130 | RMSD=0.0019
+Found planar CID: 38501 | RMSD=0.0698
+Found planar CID: 72810 | RMSD=0.0045
+Found planar CID: 55572 | RMSD=0.0007
+Found planar CID: 124967 | RMSD=0.0012
+Found planar CID: 99585 | RMSD=0.0011
+Found planar CID: 164574 | RMSD=0.0047
+Found planar CID: 94963 | RMSD=0.0029
+Found planar CID: 66122 | RMSD=0.0289
+Found planar CID: 234475 | RMSD=0.0854
+Found planar CID: 53423 | RMSD=0.0026
+Found planar CID: 6709 | RMSD=0.0016
+Found planar CID: 198439 | RMSD=0.0034
+Found planar CID: 152168 | RMSD=0.0042
+Found planar CID: 82085 | RMSD=0.0004
+Found planar CID: 148300 | RMSD=0.0008
+Found planar CID: 25757 | RMSD=0.0733
+Found planar CID: 9172 | RMSD=0.0005
+Found planar CID: 186069 | RMSD=0.0011
+Found planar CID: 72909 | RMSD=0.0014
+Found planar CID: 68866 | RMSD=0.0046
+Found planar CID: 81386 | RMSD=0.0003
+Found planar CID: 74084 | RMSD=0.0035
+Found planar CID: 67042 | RMSD=0.0005
+Found planar CID: 219206 | RMSD=0.0989
+Found planar CID: 95072 | RMSD=0.0038
+Found planar CID: 135671 | RMSD=0.0716
+Found planar CID: 70655 | RMSD=0.0008
+Found planar CID: 158066 | RMSD=0.0090
+Found planar CID: 41165 | RMSD=0.0005
+Found planar CID: 9193 | RMSD=0.0010
+Found planar CID: 94719 | RMSD=0.0024
+Found planar CID: 31423 | RMSD=0.0002
+Found planar CID: 214643 | RMSD=0.0011
+Found planar CID: 70047 | RMSD=0.0019
+Found planar CID: 42647 | RMSD=0.0006
+Found planar CID: 13230 | RMSD=0.0423
+Found planar CID: 106482 | RMSD=0.0194
+Found planar CID: 157245 | RMSD=0.0012
+Found planar CID: 40321 | RMSD=0.0106
+Found planar CID: 28308 | RMSD=0.0002
+Found planar CID: 42652 | RMSD=0.0064
+Found planar CID: 31744 | RMSD=0.0068
+Found planar CID: 16543 | RMSD=0.0003
+Found planar CID: 211601 | RMSD=0.0823
+Found planar CID: 32764 | RMSD=0.0004
+Found planar CID: 94765 | RMSD=0.0482
+Found planar CID: 151997 | RMSD=0.0033
+Found planar CID: 164570 | RMSD=0.0007
+Found planar CID: 63226 | RMSD=0.0177
+Found planar CID: 40513 | RMSD=0.0673
+Found planar CID: 99561 | RMSD=0.0003
+Found planar CID: 96896 | RMSD=0.0002
+Found planar CID: 74787 | RMSD=0.0167
+Found planar CID: 115267 | RMSD=0.0011
+Found planar CID: 10229 | RMSD=0.0008
+Found planar CID: 217201 | RMSD=0.0014
+Found planar CID: 112089 | RMSD=0.0072
+Found planar CID: 10241 | RMSD=0.0009
+Found planar CID: 228831 | RMSD=0.0009
+Found planar CID: 154784 | RMSD=0.0005
+Found planar CID: 156980 | RMSD=0.0123
+Found planar CID: 233109 | RMSD=0.0426
+Found planar CID: 148540 | RMSD=0.0019
+Found planar CID: 156262 | RMSD=0.0002
+Found planar CID: 9157 | RMSD=0.0002
+Found planar CID: 55125 | RMSD=0.0005
+Found planar CID: 101325 | RMSD=0.0005
+Found planar CID: 71852 | RMSD=0.0493
+Found planar CID: 68119 | RMSD=0.0638
+Found planar CID: 134561 | RMSD=0.0690
+Found planar CID: 18866 | RMSD=0.0013
+Found planar CID: 90029 | RMSD=0.0002
+Found planar CID: 246851 | RMSD=0.0935
+Found planar CID: 10174 | RMSD=0.0012
+Found planar CID: 120282 | RMSD=0.0187
+Found planar CID: 34809 | RMSD=0.0005
+Found planar CID: 18194 | RMSD=0.0046
+Found planar CID: 35073 | RMSD=0.0675
+Found planar CID: 35071 | RMSD=0.0780
+Found planar CID: 233557 | RMSD=0.0154
+Found planar CID: 193447 | RMSD=0.0282
+Found planar CID: 146710 | RMSD=0.0006
+Found planar CID: 165840 | RMSD=0.0021
+Found planar CID: 6201 | RMSD=0.0003
+Found planar CID: 224601 | RMSD=0.0013
+Found planar CID: 8328 | RMSD=0.0004
+Found planar CID: 71035 | RMSD=0.0005
+Found planar CID: 206682 | RMSD=0.0899
+Found planar CID: 11342 | RMSD=0.0509
+Found planar CID: 136166 | RMSD=0.0091
+Found planar CID: 110389 | RMSD=0.0008
+Found planar CID: 99747 | RMSD=0.0124
+Found planar CID: 229747 | RMSD=0.0169
+Found planar CID: 211450 | RMSD=0.0093
+Found planar CID: 7124 | RMSD=0.0019
+Found planar CID: 1919 | RMSD=0.0081
+Found planar CID: 95724 | RMSD=0.0007
+Found planar CID: 9187 | RMSD=0.0005
+Found planar CID: 35463 | RMSD=0.0006
+Found planar CID: 94996 | RMSD=0.0055
+Found planar CID: 181953 | RMSD=0.0004
+Found planar CID: 153330 | RMSD=0.0006
+Found planar CID: 30682 | RMSD=0.0990
+Found planar CID: 146268 | RMSD=0.0746
+Found planar CID: 2061 | RMSD=0.0311
+Found planar CID: 97205 | RMSD=0.0703
+Found planar CID: 164561 | RMSD=0.0003
+Found planar CID: 9179 | RMSD=0.0006
+Found planar CID: 60060 | RMSD=0.0002
+Found planar CID: 151154 | RMSD=0.0010
+Found planar CID: 95780 | RMSD=0.0503
+Found planar CID: 136343 | RMSD=0.0001
+Found planar CID: 95745 | RMSD=0.0514
+Found planar CID: 6771 | RMSD=0.0004
+Found planar CID: 76139 | RMSD=0.0714
+Found planar CID: 237851 | RMSD=0.0637
+Found planar CID: 78437 | RMSD=0.0051
+Found planar CID: 81533 | RMSD=0.0011
+Found planar CID: 247486 | RMSD=0.0002
+Found planar CID: 147612 | RMSD=0.0012
+Found planar CID: 217228 | RMSD=0.0274
+Found planar CID: 173262 | RMSD=0.0008
+Found planar CID: 136695 | RMSD=0.0018
+Found planar CID: 138251 | RMSD=0.0003
+Found planar CID: 11050 | RMSD=0.0008
+Found planar CID: 92438 | RMSD=0.0046
+Found planar CID: 248606 | RMSD=0.0026
+Found planar CID: 95224 | RMSD=0.0333
+Found planar CID: 201226 | RMSD=0.0060
+Found planar CID: 77524 | RMSD=0.0022
+Found planar CID: 21481 | RMSD=0.0004
+Found planar CID: 15699 | RMSD=0.0004
+Found planar CID: 8580 | RMSD=0.0008
+Found planar CID: 32346 | RMSD=0.0042
+Found planar CID: 8512 | RMSD=0.0004
+Found planar CID: 147627 | RMSD=0.0020
+Found planar CID: 13462 | RMSD=0.0045
+Found planar CID: 247053 | RMSD=0.0454
+Found planar CID: 167074 | RMSD=0.0008
+Found planar CID: 94854 | RMSD=0.0006
+Found planar CID: 66857 | RMSD=0.0794
+Found planar CID: 155625 | RMSD=0.0003
+Found planar CID: 148230 | RMSD=0.0186
+Found planar CID: 8418 | RMSD=0.0002
+Found planar CID: 99845 | RMSD=0.0011
+Found planar CID: 73510 | RMSD=0.0646
+Found planar CID: 21694 | RMSD=0.0196
+Found planar CID: 221080 | RMSD=0.0035
+Found planar CID: 151224 | RMSD=0.0959
+Found planar CID: 31119 | RMSD=0.0017
+Found planar CID: 136045 | RMSD=0.0017
+Found planar CID: 156225 | RMSD=0.0005
+Found planar CID: 81547 | RMSD=0.0010
+Found planar CID: 25714 | RMSD=0.0032
+Found planar CID: 165173 | RMSD=0.0007
+Found planar CID: 189538 | RMSD=0.0131
+Found planar CID: 31629 | RMSD=0.0699
+Found planar CID: 67486 | RMSD=0.0013
+Found planar CID: 22806 | RMSD=0.0302
+Found planar CID: 23699 | RMSD=0.0145
+Found planar CID: 151524 | RMSD=0.0005
+Found planar CID: 237426 | RMSD=0.0117
+Found planar CID: 14553 | RMSD=0.0007
+Found planar CID: 76503 | RMSD=0.0032
+Found planar CID: 97203 | RMSD=0.0011
+Found planar CID: 191875 | RMSD=0.0592
+Found planar CID: 15614 | RMSD=0.0173
+Found planar CID: 100446 | RMSD=0.0057
+Found planar CID: 82198 | RMSD=0.0007
+Found planar CID: 11800 | RMSD=0.0005
+Found planar CID: 97313 | RMSD=0.0044
+Found planar CID: 128832 | RMSD=0.0757
+Found planar CID: 190265 | RMSD=0.0038
+Found planar CID: 145728 | RMSD=0.0288
+Found planar CID: 65090 | RMSD=0.0010
+Found planar CID: 55054 | RMSD=0.0005
+Found planar CID: 24056 | RMSD=0.0016
+Found planar CID: 20612 | RMSD=0.0545
+Found planar CID: 190304 | RMSD=0.0056
+Found planar CID: 144369 | RMSD=0.0004
+Found planar CID: 9202 | RMSD=0.0004
+Found planar CID: 146052 | RMSD=0.0975
+Found planar CID: 84626 | RMSD=0.0015
+Found planar CID: 153205 | RMSD=0.0004
+Found planar CID: 29972 | RMSD=0.0009
+Found planar CID: 11960 | RMSD=0.0535
+Found planar CID: 219133 | RMSD=0.0034
+Found planar CID: 137247 | RMSD=0.0081
+Found planar CID: 20349 | RMSD=0.0066
+Found planar CID: 219962 | RMSD=0.0022
+Found planar CID: 164557 | RMSD=0.0136
+Found planar CID: 240918 | RMSD=0.0038
+Found planar CID: 241491 | RMSD=0.0093
+Found planar CID: 126360 | RMSD=0.0003
+Found planar CID: 3845 | RMSD=0.0004
+Found planar CID: 56776 | RMSD=0.0009
+Found planar CID: 95706 | RMSD=0.0019
+Found planar CID: 16819 | RMSD=0.0019
+Found planar CID: 67848 | RMSD=0.0015
+Found planar CID: 95752 | RMSD=0.0793
+Found planar CID: 80524 | RMSD=0.0010
+Found planar CID: 182216 | RMSD=0.0002
+Found planar CID: 21437 | RMSD=0.0043
+Found planar CID: 17403 | RMSD=0.0627
+Found planar CID: 139114 | RMSD=0.0122
+Found planar CID: 247048 | RMSD=0.0007
+Found planar CID: 38502 | RMSD=0.0912
+Found planar CID: 187833 | RMSD=0.0008
+Found planar CID: 240093 | RMSD=0.0981
+Found planar CID: 170518 | RMSD=0.0001
+Found planar CID: 90391 | RMSD=0.0004
+Found planar CID: 97617 | RMSD=0.0087
+Found planar CID: 183650 | RMSD=0.0018
+Found planar CID: 2102 | RMSD=0.0041
+Found planar CID: 223664 | RMSD=0.0149
+Found planar CID: 222687 | RMSD=0.0338
+Found planar CID: 238903 | RMSD=0.0002
+Found planar CID: 236222 | RMSD=0.0252
+Found planar CID: 155824 | RMSD=0.0682
+Found planar CID: 233028 | RMSD=0.0296
+Found planar CID: 2741 | RMSD=0.0013
+Found planar CID: 69083 | RMSD=0.0766
+Found planar CID: 8327 | RMSD=0.0082
+Found planar CID: 143458 | RMSD=0.0599
+Found planar CID: 98547 | RMSD=0.0019
+Found planar CID: 249459 | RMSD=0.0010
+Found planar CID: 66732 | RMSD=0.0823
+Found planar CID: 154841 | RMSD=0.0004
+Found planar CID: 56780 | RMSD=0.0002
+Found planar CID: 97240 | RMSD=0.0021
+Found planar CID: 164566 | RMSD=0.0007
+Found planar CID: 30760 | RMSD=0.0803
+Found planar CID: 165004 | RMSD=0.0659
+Found planar CID: 23522 | RMSD=0.0006
+Found planar CID: 70156 | RMSD=0.0992
+Found planar CID: 19168 | RMSD=0.0037
+Found planar CID: 170006 | RMSD=0.0042
+Found planar CID: 16884 | RMSD=0.0039
+Found planar CID: 148831 | RMSD=0.0002
+Found planar CID: 12480 | RMSD=0.0082
+Found planar CID: 56109 | RMSD=0.0108
+Found planar CID: 100795 | RMSD=0.0031
+Found planar CID: 237070 | RMSD=0.0023
+Found planar CID: 13694 | RMSD=0.0004
+Found planar CID: 4756 | RMSD=0.0670
+Found planar CID: 66504 | RMSD=0.0020
+Found planar CID: 9161 | RMSD=0.0006
+Found planar CID: 5430 | RMSD=0.0009
+Found planar CID: 10374 | RMSD=0.0951
+Found planar CID: 132876 | RMSD=0.0005
+Found planar CID: 239967 | RMSD=0.0777
+Found planar CID: 153586 | RMSD=0.0003
+Found planar CID: 220758 | RMSD=0.0660
+Found planar CID: 50219 | RMSD=0.0005
+Found planar CID: 134457 | RMSD=0.0018
+Found planar CID: 95859 | RMSD=0.0010
+Found planar CID: 43255 | RMSD=0.0004
+Found planar CID: 103748 | RMSD=0.0550
+Found planar CID: 104251 | RMSD=0.0570
+Found planar CID: 91654 | RMSD=0.0008
+Found planar CID: 161657 | RMSD=0.0005
+Found planar CID: 154781 | RMSD=0.0002
+Found planar CID: 176894 | RMSD=0.0009
+Found planar CID: 9190 | RMSD=0.0002
+Found planar CID: 10177 | RMSD=0.0341
+Found planar CID: 190489 | RMSD=0.0375
+Found planar CID: 147290 | RMSD=0.0001
+Found planar CID: 18286 | RMSD=0.0003
+Found planar CID: 22413 | RMSD=0.0009
+Found planar CID: 77672 | RMSD=0.0021
+Found planar CID: 70169 | RMSD=0.0055
+Found planar CID: 236489 | RMSD=0.0006
+Found planar CID: 194530 | RMSD=0.0950
+Found planar CID: 139041 | RMSD=0.0019
+Found planar CID: 148464 | RMSD=0.0005
+Found planar CID: 585 | RMSD=0.0004
+Found planar CID: 7104 | RMSD=0.0004
+Found planar CID: 54774 | RMSD=0.0033
+Found planar CID: 54730 | RMSD=0.0063
+Found planar CID: 164563 | RMSD=0.0005
+Found planar CID: 96768 | RMSD=0.0012
+Found planar CID: 88958 | RMSD=0.0008
+Found planar CID: 6693 | RMSD=0.0006
+Found planar CID: 92130 | RMSD=0.0365
+Found planar CID: 81989 | RMSD=0.0034
+Found planar CID: 170562 | RMSD=0.0114
+Found planar CID: 156484 | RMSD=0.0005
+Found planar CID: 64114 | RMSD=0.0188
+Found planar CID: 186121 | RMSD=0.0193
+Found planar CID: 67484 | RMSD=0.0006
+Found planar CID: 189314 | RMSD=0.0712
+Found planar CID: 168750 | RMSD=0.0858
+Found planar CID: 46390 | RMSD=0.0252
+Found planar CID: 53155 | RMSD=0.0013
+Found planar CID: 16173 | RMSD=0.0007
+Found planar CID: 13685 | RMSD=0.0037
+Found planar CID: 12823 | RMSD=0.0518
+Found planar CID: 21107 | RMSD=0.0014
+Found planar CID: 148335 | RMSD=0.0004
+Found planar CID: 195044 | RMSD=0.0015
+Found planar CID: 28496 | RMSD=0.0264
+Found planar CID: 153425 | RMSD=0.0002
+Found planar CID: 8553 | RMSD=0.0004
+Found planar CID: 94739 | RMSD=0.0020
+Found planar CID: 219391 | RMSD=0.0006
+Found planar CID: 202164 | RMSD=0.1000
+Found planar CID: 134641 | RMSD=0.0008
+Found planar CID: 12819 | RMSD=0.0751
+Found planar CID: 55114 | RMSD=0.0006
+Found planar CID: 68438 | RMSD=0.0005
+Found planar CID: 235512 | RMSD=0.0017
+Found planar CID: 232000 | RMSD=0.0025
+Found planar CID: 102283 | RMSD=0.0334
+Found planar CID: 65087 | RMSD=0.0983
+Found planar CID: 213925 | RMSD=0.0968
+Found planar CID: 154129 | RMSD=0.0098
+Found planar CID: 56370 | RMSD=0.0031
+Found planar CID: 73549 | RMSD=0.0007
+Found planar CID: 221427 | RMSD=0.0227
+Found planar CID: 18311 | RMSD=0.0002
+Found planar CID: 219992 | RMSD=0.0420
+Found planar CID: 154787 | RMSD=0.0007
+Found planar CID: 243139 | RMSD=0.0722
+Found planar CID: 238860 | RMSD=0.0569
+Found planar CID: 12135 | RMSD=0.0674
+Found planar CID: 87806 | RMSD=0.0050
+Found planar CID: 59952 | RMSD=0.0007
+Found planar CID: 227508 | RMSD=0.0612
+Found planar CID: 35666 | RMSD=0.0040
+Found planar CID: 94758 | RMSD=0.0067
+Found planar CID: 126043 | RMSD=0.0004
+Found planar CID: 76295 | RMSD=0.0024
+Found planar CID: 9203 | RMSD=0.0005
+Found planar CID: 238751 | RMSD=0.0850
+Found planar CID: 76414 | RMSD=0.0003
+Found planar CID: 230582 | RMSD=0.0340
+Found planar CID: 37207 | RMSD=0.0002
+Found planar CID: 154788 | RMSD=0.0005
+Found planar CID: 35086 | RMSD=0.0117
+Found planar CID: 11823 | RMSD=0.0097
+Found planar CID: 121965 | RMSD=0.0781
+Found planar CID: 237071 | RMSD=0.0353
+Found planar CID: 244329 | RMSD=0.0353
+Found planar CID: 245968 | RMSD=0.0055
+Found planar CID: 215375 | RMSD=0.0007
+Found planar CID: 191769 | RMSD=0.0108
+Found planar CID: 230933 | RMSD=0.0533
+Found planar CID: 147884 | RMSD=0.0073
+Found planar CID: 88733 | RMSD=0.0696
+Found planar CID: 80990 | RMSD=0.0027
+Found planar CID: 18310 | RMSD=0.0023
+Found planar CID: 240054 | RMSD=0.0012
+Found planar CID: 148859 | RMSD=0.0010
+Found planar CID: 101288 | RMSD=0.0791
+Found planar CID: 16803 | RMSD=0.0004
+Found planar CID: 227347 | RMSD=0.0047
+Found planar CID: 76411 | RMSD=0.0031
+Found planar CID: 36613 | RMSD=0.0021
+Found planar CID: 3799 | RMSD=0.0923
+Found planar CID: 243224 | RMSD=0.0024
+Found planar CID: 128946 | RMSD=0.0008
+Found planar CID: 99503 | RMSD=0.0001
+Found planar CID: 155464 | RMSD=0.0007
+Found planar CID: 73697 | RMSD=0.0013
+Found planar CID: 47423 | RMSD=0.0003
+Found planar CID: 152026 | RMSD=0.0621
+Found planar CID: 118850 | RMSD=0.0794
+Found planar CID: 231433 | RMSD=0.0218
+Found planar CID: 6776 | RMSD=0.0005
+Found planar CID: 240799 | RMSD=0.0124
+Found planar CID: 122458 | RMSD=0.0546
+Found planar CID: 157775 | RMSD=0.0007
+Found planar CID: 84627 | RMSD=0.0038
+Found planar CID: 137048 | RMSD=0.0605
+Found planar CID: 73863 | RMSD=0.0406
+Found planar CID: 148311 | RMSD=0.0020
+Found planar CID: 6195 | RMSD=0.0011
+Found planar CID: 97319 | RMSD=0.0039
+Found planar CID: 100263 | RMSD=0.0015
+Found planar CID: 20061 | RMSD=0.0784
+Found planar CID: 214645 | RMSD=0.0021
+Found planar CID: 82090 | RMSD=0.0144
+Found planar CID: 95674 | RMSD=0.0020
+Found planar CID: 183760 | RMSD=0.0029
+Found planar CID: 225674 | RMSD=0.0445
+Found planar CID: 98578 | RMSD=0.0002
+Found planar CID: 190483 | RMSD=0.0011
+Found planar CID: 57196 | RMSD=0.0008
+Found planar CID: 214616 | RMSD=0.0033
+Found planar CID: 82263 | RMSD=0.0020
+Found planar CID: 211110 | RMSD=0.0093
+Found planar CID: 196330 | RMSD=0.0016
+Found planar CID: 11818 | RMSD=0.0006
+Found planar CID: 11309 | RMSD=0.0014
+Found planar CID: 199506 | RMSD=0.0271
+Found planar CID: 85983 | RMSD=0.0942
+Found planar CID: 230660 | RMSD=0.0387
+Found planar CID: 26419 | RMSD=0.0526
+Found planar CID: 68931 | RMSD=0.0269
+Found planar CID: 237965 | RMSD=0.0109
+Found planar CID: 150318 | RMSD=0.0825
+Found planar CID: 72691 | RMSD=0.0183
+Found planar CID: 149604 | RMSD=0.0133
+Found planar CID: 135582 | RMSD=0.0701
+Found planar CID: 77692 | RMSD=0.0063
+Found planar CID: 156208 | RMSD=0.0747
+Found planar CID: 96004 | RMSD=0.0051
+Found planar CID: 96767 | RMSD=0.0025
+Found planar CID: 44619 | RMSD=0.0797
+Found planar CID: 33743 | RMSD=0.0005
+Found planar CID: 200964 | RMSD=0.0128
+Found planar CID: 148355 | RMSD=0.0012
+Found planar CID: 71013 | RMSD=0.0009
+Found planar CID: 219452 | RMSD=0.0942
+Found planar CID: 68249 | RMSD=0.0005
+Found planar CID: 25116 | RMSD=0.0033
+Found planar CID: 232527 | RMSD=0.0020
+Found planar CID: 156210 | RMSD=0.0018
+Found planar CID: 182864 | RMSD=0.0178
+Found planar CID: 247357 | RMSD=0.0005
+Found planar CID: 124519 | RMSD=0.0005
+Found planar CID: 55122 | RMSD=0.0015
+Found planar CID: 159464 | RMSD=0.0137
+Found planar CID: 6849 | RMSD=0.0013
+Found planar CID: 8557 | RMSD=0.0799
+Found planar CID: 228611 | RMSD=0.0007
+Found planar CID: 74708 | RMSD=0.0011
+Found planar CID: 174372 | RMSD=0.0022
+Found planar CID: 94240 | RMSD=0.0629
+Found planar CID: 151373 | RMSD=0.0091
+Found planar CID: 95861 | RMSD=0.0550
+Found planar CID: 155966 | RMSD=0.0021
+Found planar CID: 11937 | RMSD=0.0761
+Found planar CID: 245882 | RMSD=0.0005
+Found planar CID: 186029 | RMSD=0.0005
+Found planar CID: 182764 | RMSD=0.0034
+Found planar CID: 76574 | RMSD=0.0015
+Found planar CID: 38044 | RMSD=0.0185
+Found planar CID: 187605 | RMSD=0.0112
+Found planar CID: 35290 | RMSD=0.0897
+Found planar CID: 244206 | RMSD=0.0495
+Found planar CID: 136663 | RMSD=0.0238
+Found planar CID: 239412 | RMSD=0.0697
+Found planar CID: 83646 | RMSD=0.0033
+Found planar CID: 243776 | RMSD=0.0013
+Found planar CID: 245118 | RMSD=0.0003
+Found planar CID: 76630 | RMSD=0.0846
+Found planar CID: 72826 | RMSD=0.0015
+Found planar CID: 214647 | RMSD=0.0014
+Found planar CID: 21820 | RMSD=0.0773
+Found planar CID: 198831 | RMSD=0.0040
+Found planar CID: 247257 | RMSD=0.0008
+Found planar CID: 149971 | RMSD=0.0003
+Found planar CID: 35291 | RMSD=0.0506
+Found planar CID: 130252 | RMSD=0.0437
+Found planar CID: 219339 | RMSD=0.0919
+Found planar CID: 216006 | RMSD=0.0662
+Found planar CID: 101244 | RMSD=0.0182
+Found planar CID: 148507 | RMSD=0.0011
+Found planar CID: 149165 | RMSD=0.0010
+Found planar CID: 167922 | RMSD=0.0046
+Found planar CID: 243961 | RMSD=0.0852
+Found planar CID: 147344 | RMSD=0.0238
+Found planar CID: 80719 | RMSD=0.0628
+Found planar CID: 213879 | RMSD=0.0089
+Found planar CID: 136403 | RMSD=0.0030
+Found planar CID: 108967 | RMSD=0.0006
+Found planar CID: 220406 | RMSD=0.0070
+Found planar CID: 2041 | RMSD=0.0012
+Found planar CID: 88772 | RMSD=0.0005
+Found planar CID: 144146 | RMSD=0.0001
+Found planar CID: 157064 | RMSD=0.0031
+Found planar CID: 69747 | RMSD=0.0247
+Found planar CID: 150609 | RMSD=0.0006
+Found planar CID: 201224 | RMSD=0.0076
+Found planar CID: 245043 | RMSD=0.0063
+Found planar CID: 69457 | RMSD=0.0008
+Found planar CID: 154615 | RMSD=0.0734
+Found planar CID: 247058 | RMSD=0.0359
+Found planar CID: 73542 | RMSD=0.0501
+Found planar CID: 7541 | RMSD=0.0037
+Found planar CID: 184272 | RMSD=0.0777
+Found planar CID: 213897 | RMSD=0.0109
+Found planar CID: 140406 | RMSD=0.0054
+Found planar CID: 88602 | RMSD=0.0007
+Found planar CID: 134487 | RMSD=0.0009
+Found planar CID: 248609 | RMSD=0.0003
+Found planar CID: 47298 | RMSD=0.0004
+Found planar CID: 101496 | RMSD=0.0308
+Found planar CID: 66493 | RMSD=0.0031
+Found planar CID: 65044 | RMSD=0.0638
+Found planar CID: 78544 | RMSD=0.0017
+Found planar CID: 9151 | RMSD=0.0279
+Found planar CID: 66041 | RMSD=0.0206
+Found planar CID: 146650 | RMSD=0.0015
+Found planar CID: 104777 | RMSD=0.0070
+Found planar CID: 234524 | RMSD=0.0010
+Found planar CID: 67585 | RMSD=0.0004
+Found planar CID: 231608 | RMSD=0.0005
+Found planar CID: 13094 | RMSD=0.0863
+Found planar CID: 154843 | RMSD=0.0002
+Found planar CID: 148357 | RMSD=0.0010
+Found planar CID: 154919 | RMSD=0.0091
+Found planar CID: 96137 | RMSD=0.0005
+Found planar CID: 182005 | RMSD=0.0006
+Found planar CID: 160814 | RMSD=0.0002
+Found planar CID: 55038 | RMSD=0.0003
+Found planar CID: 151035 | RMSD=0.0004
+Found planar CID: 151706 | RMSD=0.0012
+Found planar CID: 149780 | RMSD=0.0216
+Found planar CID: 136948 | RMSD=0.0008
+Found planar CID: 142060 | RMSD=0.0015
+Found planar CID: 21172 | RMSD=0.0824
+Found planar CID: 204271 | RMSD=0.0937
+Found planar CID: 136031 | RMSD=0.0021
+Found planar CID: 68092 | RMSD=0.0764
+Found planar CID: 15396 | RMSD=0.0013
+Found planar CID: 124512 | RMSD=0.0015
+Found planar CID: 66482 | RMSD=0.0008
+Found planar CID: 10752 | RMSD=0.0140
+Found planar CID: 21963 | RMSD=0.0003
+Found planar CID: 142836 | RMSD=0.0006
+Found planar CID: 235822 | RMSD=0.0005
+Found planar CID: 20616 | RMSD=0.0886
+Found planar CID: 224103 | RMSD=0.0034
+Found planar CID: 249139 | RMSD=0.0901
+Found planar CID: 82571 | RMSD=0.0009
+Found planar CID: 123043 | RMSD=0.0008
+Found planar CID: 74747 | RMSD=0.0284
+Found planar CID: 186692 | RMSD=0.0039
+Found planar CID: 135528 | RMSD=0.0017
+Found planar CID: 25760 | RMSD=0.0004
+Found planar CID: 68083 | RMSD=0.0010
+Found planar CID: 98077 | RMSD=0.0578
+Found planar CID: 11384 | RMSD=0.0764
+Found planar CID: 107762 | RMSD=0.0703
+Found planar CID: 2518 | RMSD=0.0539
+Found planar CID: 20331 | RMSD=0.0966
+Found planar CID: 101376 | RMSD=0.0804
+Found planar CID: 244081 | RMSD=0.0801
+Found planar CID: 137647 | RMSD=0.0074
+Found planar CID: 31171 | RMSD=0.0753
+Found planar CID: 81268 | RMSD=0.0240
+Found planar CID: 208005 | RMSD=0.0119
+Found planar CID: 74488 | RMSD=0.0990
+Found planar CID: 14357 | RMSD=0.0024
+Found planar CID: 42129 | RMSD=0.0002
+Found planar CID: 141384 | RMSD=0.0012
+Found planar CID: 236861 | RMSD=0.0011
+Found planar CID: 122597 | RMSD=0.0005
+Found planar CID: 6825 | RMSD=0.0690
+Found planar CID: 228614 | RMSD=0.0011
+Found planar CID: 12888 | RMSD=0.0007
+Found planar CID: 22091 | RMSD=0.0043
+Found planar CID: 248136 | RMSD=0.0034
+Found planar CID: 241129 | RMSD=0.0479
+Found planar CID: 4407 | RMSD=0.0020
+Found planar CID: 20500 | RMSD=0.0005
+Found planar CID: 32781 | RMSD=0.0005
+Found planar CID: 9173 | RMSD=0.0027
+Found planar CID: 96594 | RMSD=0.0009
+Found planar CID: 16721 | RMSD=0.0093
+Found planar CID: 245128 | RMSD=0.0009
+Found planar CID: 100430 | RMSD=0.0397
+Found planar CID: 2054 | RMSD=0.0043
+Found planar CID: 135744 | RMSD=0.0013
+Found planar CID: 42846 | RMSD=0.0035
+Found planar CID: 143044 | RMSD=0.0008
+Found planar CID: 15193 | RMSD=0.0006
+Found planar CID: 148471 | RMSD=0.0070
+Found planar CID: 16804 | RMSD=0.0003
+Found planar CID: 244578 | RMSD=0.0028
+Found planar CID: 228613 | RMSD=0.0038
+Found planar CID: 4511 | RMSD=0.0762
+Found planar CID: 98617 | RMSD=0.0007
+Found planar CID: 228612 | RMSD=0.0011
+Found planar CID: 136692 | RMSD=0.0204
+Found planar CID: 220275 | RMSD=0.0022
+Found planar CID: 6710 | RMSD=0.0079
+Found planar CID: 22196 | RMSD=0.0003
+Found planar CID: 13452 | RMSD=0.0391
+Found planar CID: 18824 | RMSD=0.0432
+Found planar CID: 150329 | RMSD=0.0031
+Found planar CID: 81409 | RMSD=0.0015
+Found planar CID: 185534 | RMSD=0.0003
+Found planar CID: 6844 | RMSD=0.0495
+Found planar CID: 149184 | RMSD=0.0841
+Found planar CID: 227241 | RMSD=0.0076
+Found planar CID: 178808 | RMSD=0.0006
+Found planar CID: 31907 | RMSD=0.0075
+Found planar CID: 158065 | RMSD=0.0016
+Found planar CID: 237861 | RMSD=0.0027
+Found planar CID: 121711 | RMSD=0.0110
+Found planar CID: 233032 | RMSD=0.0526
+Found planar CID: 21398 | RMSD=0.0880
+Found planar CID: 124180 | RMSD=0.0012
+Found planar CID: 187502 | RMSD=0.0262
+Found planar CID: 189537 | RMSD=0.0254
+Found planar CID: 233029 | RMSD=0.0544
+Found planar CID: 22157 | RMSD=0.0720
+Found planar CID: 98122 | RMSD=0.0024
+Found planar CID: 53156 | RMSD=0.0021
+Found planar CID: 9196 | RMSD=0.0011
+Found planar CID: 154364 | RMSD=0.0009
+Found planar CID: 135498 | RMSD=0.0688
+Found planar CID: 149837 | RMSD=0.0015
+Found planar CID: 243435 | RMSD=0.0395
+Found planar CID: 64961 | RMSD=0.0004
+Found planar CID: 99159 | RMSD=0.0031
+Found planar CID: 74024 | RMSD=0.0023
+Found planar CID: 11397 | RMSD=0.0002
+Found planar CID: 10832 | RMSD=0.0569
+Found planar CID: 160712 | RMSD=0.0036
+Found planar CID: 25761 | RMSD=0.0005
+Found planar CID: 162770 | RMSD=0.0016
+Found planar CID: 177310 | RMSD=0.0012
+Found planar CID: 154786 | RMSD=0.0002
+Found planar CID: 147346 | RMSD=0.0638
+Found planar CID: 147442 | RMSD=0.0014
+Found planar CID: 119260 | RMSD=0.0936
+Found planar CID: 40087 | RMSD=0.0047
+Found planar CID: 72486 | RMSD=0.0005
+Found planar CID: 32486 | RMSD=0.0122
+Found planar CID: 242631 | RMSD=0.0927
+Found planar CID: 135618 | RMSD=0.0765
+Found planar CID: 96637 | RMSD=0.0920
+Found planar CID: 225436 | RMSD=0.0004
+Found planar CID: 69756 | RMSD=0.0020
+Found planar CID: 108227 | RMSD=0.0009
+Found planar CID: 229079 | RMSD=0.0002
+Found planar CID: 94997 | RMSD=0.0917
+Found planar CID: 93472 | RMSD=0.0019
+Found planar CID: 136028 | RMSD=0.0009
+Found planar CID: 170017 | RMSD=0.0351
+Found planar CID: 31854 | RMSD=0.0079
+Found planar CID: 136812 | RMSD=0.0010
+Found planar CID: 199166 | RMSD=0.0019
+Found planar CID: 248030 | RMSD=0.0211
+Found planar CID: 19697 | RMSD=0.0675
+Found planar CID: 246039 | RMSD=0.0023
+Found planar CID: 80663 | RMSD=0.0003
+Found planar CID: 87462 | RMSD=0.0003
+Found planar CID: 247149 | RMSD=0.0133
+Found planar CID: 79363 | RMSD=0.0006
+Found planar CID: 96894 | RMSD=0.0020
+Found planar CID: 153438 | RMSD=0.0021
+Found planar CID: 140331 | RMSD=0.0036
+Found planar CID: 66510 | RMSD=0.0041
+Found planar CID: 50627 | RMSD=0.0005
+Found planar CID: 178745 | RMSD=0.0011
+Found planar CID: 67029 | RMSD=0.0556
+Found planar CID: 164565 | RMSD=0.0002
+Found planar CID: 92584 | RMSD=0.0006
+Found planar CID: 154183 | RMSD=0.0099
+Found planar CID: 154789 | RMSD=0.0004
+Found planar CID: 248029 | RMSD=0.0024
+Found planar CID: 17797 | RMSD=0.0659
+Found planar CID: 22864 | RMSD=0.0688
+Found planar CID: 98490 | RMSD=0.0297
+Found planar CID: 220594 | RMSD=0.0009
+Found planar CID: 243443 | RMSD=0.0046
+Found planar CID: 40549 | RMSD=0.0048
+Found planar CID: 34341 | RMSD=0.0022
+Found planar CID: 8341 | RMSD=0.0586
+Found planar CID: 156519 | RMSD=0.0016
+Found planar CID: 10295 | RMSD=0.0021
+Found planar CID: 98141 | RMSD=0.0045
+Found planar CID: 67473 | RMSD=0.0011
+Found planar CID: 96400 | RMSD=0.0159
+Found planar CID: 12444 | RMSD=0.0014
+Found planar CID: 71030 | RMSD=0.0013
+Found planar CID: 11802 | RMSD=0.0927
+Found planar CID: 236319 | RMSD=0.0936
+Found planar CID: 200672 | RMSD=0.0007
+Found planar CID: 11968 | RMSD=0.0129
+Found planar CID: 6763 | RMSD=0.0032
+Found planar CID: 119084 | RMSD=0.0007
+Found planar CID: 179408 | RMSD=0.0007
+Job finished at Tue Jun 24 01:01:31 EEST 2025

@@ -1,0 +1,30 @@
+Epoch   10/50, time: 36.80 s, training_loss: 0.547
+Epoch   10/50, time: 12.48 s, val_loss: 0.513
+Training Metrics:
+Accuracy: 0.8669
+Precision: 0.1058
+Recall: 0.7756
+F1 Score: 0.1862
+IoU: 0.1027
+Dice Coefficient: 0.1862
+Validation Metrics:
+Accuracy: 0.9689
+Precision: 0.3449
+Recall: 0.7107
+F1 Score: 0.4645
+IoU: 0.3025
+Dice Coefficient: 0.4645
+Epoch    1/50, time: 34.19 s, training_loss: 0.884
+Epoch   45/50, time: 121.33 s, training_loss: 0.618
+Epoch   11/50, time: 33.86 s, training_loss: 0.528
+Epoch    1/50, time: 13.53 s, val_loss: 0.811
+Epoch   11/50, time: 12.74 s, val_loss: 0.520
+Test Metrics:
+Accuracy: 0.9689
+Precision: 0.3449
+Recall: 0.7107
+F1 Score: 0.4645
+IoU: 0.3025
+Dice Coefficient: 0.4645
+[I 2025-07-03 15:44:23,941] Trial 9 finished with value: 0.4644661751661569 and parameters: {'batch_size': 128, 'lr': 0.0003626030476282551, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 400, 'att_channels': 16}. Best is trial 11 with value: 0.7402355519748856.
+wandb: Finishing previous runs because reinit is set to True.

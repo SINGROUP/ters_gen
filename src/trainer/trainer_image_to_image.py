@@ -50,7 +50,7 @@ class Trainer():
         #self.loss_fn = get_loss_function('focal_loss')
         self.model = model
 
-        val_loader_args = {'batch_size': 64, 'shuffle': False, 'num_workers': 12}
+        val_loader_args = {'batch_size': 64, 'shuffle': False, 'num_workers': 8}
 
         self.train_loader = DataLoader(self.train_set, **dataloader_args)
         self.validation_loader = DataLoader(self.validation_set, **val_loader_args)
@@ -77,6 +77,7 @@ class Trainer():
             print(f"Epoch {epoch+1:4}/{epochs}, time: {time.time()-start:.2f} s, training_loss: {epoch_loss:.3f}")
             self.writer.add_scalar(f"Training Loss",epoch_loss, epoch)
 
+            start = time.time()
             epoch_loss = self.evaluate()
 
             

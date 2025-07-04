@@ -1,11 +1,15 @@
 #!/bin/bash
-#SBATCH --time=61:00:00
-#SBATCH --mem=256G
-#SBATCH --gpus=1
-#SBATCH -c 16
+#SBATCH --time=120:00:00
+#SBATCH --mem=512G
+#SBATCH --gpus=4
+#SBATCH -c 64
+# SBATCH --mem-per-cpu=8G
 #SBATCH --partition=gpu-h100-80g-short
+# SBATCH --partition=gpu-a100-80g
 # SBATCH --partition=gpu-debug
-#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%x.out
+#SBATCH --partition=gpu-h200-141g-short
+# SBATCH --partition=gpu-h200-141g-ellis
+#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%config_hypopt_all.out
 
 arg1=$1
 
@@ -23,7 +27,9 @@ RESOURCE_MONITOR_PID=$!
 
 # Run your main Python job
 # python parameter_search.py --config $arg1
-python /home/sethih1/masque_new/ters_gen/hyperopt.py --config $arg1
+
+export WANDB_API_KEY=8e4e0db2307a46c329b7d30d5f7ab11a176ba158
+python /home/sethih1/masque_new/ters_gen/hyperopt.py --config $arg1 --use_wandb 
 # python check_train.py --config $arg1
 
 # After your job finishes, stop the monitoring processes

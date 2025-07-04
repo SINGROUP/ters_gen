@@ -1,0 +1,62 @@
+Epoch   31/50, time: 17.37 s, val_loss: 0.328
+Epoch   50/50, time: 43.07 s, training_loss: 0.247
+Epoch   10/50, time: 42.33 s, training_loss: 0.552
+Epoch    1/50, time: 39.11 s, training_loss: 0.920
+Epoch   50/50, time: 12.66 s, val_loss: 0.284
+Epoch   10/50, time: 13.06 s, val_loss: 0.546
+Epoch    1/50, time: 13.06 s, val_loss: 0.940
+Training Metrics:
+Accuracy: 0.9876
+Precision: 0.6818
+Recall: 0.6938
+F1 Score: 0.6877
+IoU: 0.5241
+Dice Coefficient: 0.6877
+Validation Metrics:
+Accuracy: 0.9877
+Precision: 0.6761
+Recall: 0.6774
+F1 Score: 0.6767
+IoU: 0.5114
+Dice Coefficient: 0.6767
+Epoch   11/50, time: 42.33 s, training_loss: 0.532
+Epoch   11/50, time: 13.61 s, val_loss: 0.532
+Epoch   32/50, time: 34.65 s, training_loss: 0.312
+Training Metrics:
+Accuracy: 0.9894
+Precision: 0.7080
+Recall: 0.7827
+F1 Score: 0.7435
+IoU: 0.5917
+Dice Coefficient: 0.7435
+Validation Metrics:
+Accuracy: 0.9891
+Precision: 0.6950
+Recall: 0.7560
+F1 Score: 0.7242
+IoU: 0.5677
+Dice Coefficient: 0.7242
+Training Metrics:
+Accuracy: 0.9301
+Precision: 0.1328
+Recall: 0.4634
+F1 Score: 0.2065
+IoU: 0.1151
+Dice Coefficient: 0.2065
+Validation Metrics:
+Accuracy: 0.8907
+Precision: 0.1273
+Recall: 0.8129
+F1 Score: 0.2201
+IoU: 0.1236
+Dice Coefficient: 0.2201
+Epoch   32/50, time: 14.31 s, val_loss: 0.301
+Test Metrics:
+Accuracy: 0.9891
+Precision: 0.6950
+Recall: 0.7560
+F1 Score: 0.7242
+IoU: 0.5677
+Dice Coefficient: 0.7242
+[I 2025-07-03 17:32:01,731] Trial 20 finished with value: 0.7242303465261318 and parameters: {'batch_size': 16, 'lr': 0.0009385543162378598, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32}. Best is trial 19 with value: 0.7574663879512975.
+wandb: Finishing previous runs because reinit is set to True.
