@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "/home/sethih1/masque_new/ters_gen/check_accuracy.py", line 23, in <module>
-    ters_set[:32],
-    ~~~~~~~~^^^^^
-  File "/home/sethih1/masque_new/ters_gen/src/datasets/ters_image_to_image_sh.py", line 148, in __getitem__
-    filename = os.path.splitext(os.path.basename(npz_file))[0]
-                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen posixpath>", line 142, in basename
-TypeError: expected str, bytes or os.PathLike object, not list
