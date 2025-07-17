@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py", line 46, in <module>
+    model = torch.load(
+            ^^^^^^^^^^^
+TypeError: load() got multiple values for argument 'map_location'

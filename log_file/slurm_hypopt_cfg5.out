@@ -1,0 +1,26 @@
+[I 2025-06-12 11:24:04,677] A new study created in memory with name: no-name-b9f6ec16-85f1-4743-8da5-305914913f96
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=128, lr=0.00014126685330391117, loss_fn=dice_loss
+Epoch    1/50, time: 117.89 s, training_loss: 0.681
+Epoch    1/50, time: 29.46 s, val_loss: 0.695
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.0064
+Precision: 0.0021
+Recall: 0.2011
+F1 Score: 0.0038
+IoU: 0.0061
+Dice Coefficient: 0.0031
+Validation Metrics:
+Accuracy: 0.0063
+Precision: 0.0022
+Recall: 0.2013
+F1 Score: 0.0038
+IoU: 0.0057
+Dice Coefficient: 0.0029
+Epoch    2/50, time: 120.48 s, training_loss: 0.637
+slurmstepd: error: *** JOB 8086987 ON gpu15 CANCELLED AT 2025-06-12T13:02:03 ***

@@ -1,0 +1,128 @@
+data:
+  augmentation:
+  - true
+  - false
+  circle_radius: 5
+  split_by_id: 0
+  train_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/train
+  val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
+log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/composnet_hyperopt_all_multi_class/config_hypopt_all/
+model:
+  att_channels_options:
+  - 16
+  - 32
+  - 64
+  filters_options:
+  - - 16
+    - 32
+    - 64
+  - - 16
+    - 32
+    - 64
+    - 128
+  - - 16
+    - 32
+    - 64
+    - 128
+    - 256
+  - - 32
+    - 64
+    - 128
+    - 256
+    - 512
+  in_channels:
+  - 100
+  - 400
+  kernel_size_options:
+  - - 3
+    - 3
+    - 3
+  - - 3
+    - 3
+    - 3
+    - 3
+  - - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  out_channels: 5
+  type: AttentionUNet
+save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/composnet_hyperopt_all_multi_class/config_hypopt_all/
+training:
+  batch_sizes:
+  - 16
+  - 32
+  - 64
+  - 128
+  epochs: 50
+  gpu_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  learning_rates:
+  - 1.0e-05
+  - 5.0e-05
+  - 0.0001
+  - 0.001
+  loss_functions:
+  - dice_loss_multi_class
+  - focal_loss
+  n_jobs: 4
+  n_trials: 48
+  use_parallel: true
+
+[I 2025-06-19 17:49:31,853] A new study created in memory with name: no-name-561f8d62-7670-4d30-8a24-85ccdd396d99
+wandb: Currently logged in as: sethih10 (sethih10-epfl) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/composnet/ters_gen/wandb/run-20250619_174932-v925o58v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs_128_lr_4e-04_dice_loss_multi_class
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Composnet_multi_class
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Composnet_multi_class/runs/v925o58v
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/composnet/ters_gen/wandb/run-20250619_174932-p0g8b6ja
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_2_bs_32_lr_4e-05_focal_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Composnet_multi_class
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Composnet_multi_class/runs/p0g8b6ja
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/composnet/ters_gen/wandb/run-20250619_174932-z599gpxx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_3_bs_32_lr_3e-04_dice_loss_multi_class
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Composnet_multi_class
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Composnet_multi_class/runs/z599gpxx
+wandb: creating run
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64, 128] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [32, 64, 128, 256, 512] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64, 128, 256] which is of type list.
+  warnings.warn(message)
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/composnet/ters_gen/wandb/run-20250619_174932-o325njw0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_0_bs_16_lr_2e-05_focal_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Composnet_multi_class
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Composnet_multi_class/runs/o325njw0
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/50, time: 81.15 s, training_loss: 0.375
+Epoch    1/50, time: 83.53 s, training_loss: 0.879
+Epoch    1/50, time: 17.78 s, val_loss: 0.906
+Epoch    1/50, time: 20.29 s, val_loss: 0.322
+Epoch    1/50, time: 108.61 s, training_loss: 0.480
+Epoch    1/50, time: 44.31 s, val_loss: 0.408
+Epoch    1/50, time: 154.83 s, training_loss: 0.841
+Epoch    1/50, time: 31.97 s, val_loss: 0.818
+/var/spool/slurmd/job8269574/slurm_script: line 31: 1852373 Killed                  python /home/sethih1/masque_new/composnet/ters_gen/hyperopt_multigpu.py --config $arg1 --use_wandb
+slurmstepd: error: Detected 1 oom_kill event in StepId=8269574.batch. Some of the step tasks have been OOM Killed.

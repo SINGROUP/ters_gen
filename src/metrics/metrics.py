@@ -21,19 +21,19 @@ class Metrics:
         """
         Compute precision.
         """
-        return precision_score(y_true.flatten(), y_pred.flatten(), average='binary')
+        return precision_score(y_true.flatten(), y_pred.flatten(), average='macro')
 
     def compute_recall(self, y_true, y_pred):
         """
         Compute recall.
         """
-        return recall_score(y_true.flatten(), y_pred.flatten(), average='binary')
+        return recall_score(y_true.flatten(), y_pred.flatten(), average='macro')
 
     def compute_f1_score(self, y_true, y_pred):
         """
         Compute F1-score.
         """
-        return f1_score(y_true.flatten(), y_pred.flatten(), average='binary')
+        return f1_score(y_true.flatten(), y_pred.flatten(), average='macro')
 
     def compute_iou(self, y_true, y_pred):
         """

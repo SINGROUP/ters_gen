@@ -1,0 +1,273 @@
+/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py:46: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 100, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 4, 256, 256])
+Eval Metrics:   0%|          | 0/10 [00:00<?, ?it/s]Eval Metrics:  10%|█         | 1/10 [00:05<00:45,  5.04s/it]Eval Metrics:  20%|██        | 2/10 [00:10<00:40,  5.09s/it]Eval Metrics:  30%|███       | 3/10 [00:14<00:33,  4.79s/it]Eval Metrics:  40%|████      | 4/10 [00:20<00:31,  5.24s/it]Eval Metrics:  50%|█████     | 5/10 [00:25<00:26,  5.26s/it]Eval Metrics:  60%|██████    | 6/10 [00:31<00:21,  5.25s/it]Eval Metrics:  70%|███████   | 7/10 [00:36<00:15,  5.21s/it]Eval Metrics:  80%|████████  | 8/10 [00:41<00:10,  5.14s/it]Eval Metrics:  90%|█████████ | 9/10 [00:46<00:05,  5.13s/it]Eval Metrics: 100%|██████████| 10/10 [00:46<00:00,  3.72s/it]Eval Metrics: 100%|██████████| 10/10 [00:46<00:00,  4.68s/it]
+(4, 256, 256) (4, 256, 256)
+291 291
+Mean IoU over 291 samples: 0.4776
+Mean Dice Coefficient over 291 samples: 0.6308
+Unique values in GT and Pred maps:
+[0 1 4] [0]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 2 3 4] [0 1]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 3 4] [0 1]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 3 4] [0 1]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 4] [0 1]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2 3 4] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Unique values in GT and Pred maps:
+[0 1 2] [0 1 2]
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'

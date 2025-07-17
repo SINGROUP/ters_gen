@@ -1,0 +1,1176 @@
+/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py:46: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+2 <class 'torch.Tensor'> torch.Size([32, 54, 64, 64])
+3 <class 'torch.Tensor'> torch.Size([32, 100, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 100])
+5 <class 'torch.Tensor'> torch.Size([32, 4, 256, 256])
+Eval Metrics:   0%|          | 0/10 [00:00<?, ?it/s]Eval Metrics:  10%|█         | 1/10 [00:06<00:57,  6.39s/it]Eval Metrics:  20%|██        | 2/10 [00:11<00:46,  5.82s/it]Eval Metrics:  30%|███       | 3/10 [00:16<00:38,  5.47s/it]Eval Metrics:  40%|████      | 4/10 [00:22<00:33,  5.58s/it]Eval Metrics:  50%|█████     | 5/10 [00:28<00:28,  5.62s/it]Eval Metrics:  60%|██████    | 6/10 [00:33<00:21,  5.40s/it]Eval Metrics:  70%|███████   | 7/10 [00:38<00:15,  5.32s/it]Eval Metrics:  80%|████████  | 8/10 [00:43<00:10,  5.23s/it]Eval Metrics:  90%|█████████ | 9/10 [00:48<00:05,  5.26s/it]Eval Metrics: 100%|██████████| 10/10 [00:49<00:00,  3.80s/it]Eval Metrics: 100%|██████████| 10/10 [00:49<00:00,  4.93s/it]
+(4, 256, 256) (4, 256, 256)
+291 291
+Mean IoU over 291 samples: 0.4776
+Mean Dice Coefficient over 291 samples: 0.6308
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 3]), array([65455,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([65050,   162,   162,   162]))
+Channel 1
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0, 1]), array([65528,     8]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64969,   324,    81,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([64817,   719]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([64681,   855]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1]), array([65293,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65282,   254]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65240,   296]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 2, 3]), array([65374,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65423,   113]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 2, 3]), array([65374,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65424,   112]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 3]), array([65455,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65513,    23]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([65293,    81,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65490,    46]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65426,   110]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64726,   405,   243,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65210,   326]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0, 1]), array([64803,   733]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 2]), array([65293,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65419,   117]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0, 1]), array([65352,   184]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64078,   486,   486,   486]))
+Channel 1
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0, 1]), array([65503,    33]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64180,  1356]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2]), array([65374,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65406,   130]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65406,   130]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2]), array([64726,   162,   648]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65307,   229]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([64978,   558]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([64888,   648]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64645,   405,   324,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65119,   417]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0, 1]), array([64685,   851]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([65212,   162,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65078,   458]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65240,   296]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([65293,    81,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65350,   186]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65424,   112]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64645,   324,   324,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65191,   345]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65065,   471]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64969,    81,   243,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65158,   378]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65224,   312]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([65050,   243,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65247,   289]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65134,   402]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 2]), array([65293,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65217,   319]))
+Channel 2
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0, 1]), array([65342,   194]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([65374,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65430,   106]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0, 1]), array([65455,    81]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1]), array([64564,   972]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64928,   608]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64564,   972]))
+Pred
+(array([0, 1]), array([64273,  1263]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64888,   162,   324,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65353,   183]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65215,   321]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2]), array([64969,   486,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0, 1]), array([64961,   575]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64654,   882]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64321,   567,   243,   405]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65260,   276]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64933,   603]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([65131,   324,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65173,   363]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65197,   339]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([64969,   324,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0, 1]), array([65313,   223]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([64979,   557]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64402,   486,   243,   405]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0, 1]), array([65225,   311]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64682,   854]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64726,   486,   162,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65137,   399]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64882,   654]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([63916,  1215,   162,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64888,   648]))
+Pred
+(array([0, 1]), array([64723,   813]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64321,  1215]))
+Pred
+(array([0, 1]), array([64208,  1328]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64159,   972,   243,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64807,   729]))
+Pred
+(array([0, 1]), array([64783,   753]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64564,   972]))
+Pred
+(array([0, 1]), array([64300,  1236]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64321,   810,   162,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65143,   393]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64726,   810]))
+Pred
+(array([0, 1]), array([64519,  1017]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64645,   486,    81,   324]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64851,   685]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64785,   751]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([64888,   405,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65189,   347]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0, 1]), array([65004,   532]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([64726,   567,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([64970,   566]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64790,   746]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64321,   810,    81,   324]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64923,   613]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64726,   810]))
+Pred
+(array([0, 1]), array([64585,   951]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([64726,   567,   243]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65050,   486]))
+Pred
+(array([0, 1]), array([65021,   515]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64869,   667]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64159,   972,   243,   162]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64807,   729]))
+Pred
+(array([0, 1]), array([64710,   826]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64564,   972]))
+Pred
+(array([0, 1]), array([64452,  1084]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65293,   243]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65374,   162]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2]), array([64240,  1215,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64807,   729]))
+Pred
+(array([0, 1]), array([64738,   798]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64321,  1215]))
+Pred
+(array([0, 1]), array([64158,  1378]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2]), array([64888,   567,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65131,   405]))
+Pred
+(array([0, 1]), array([65127,   409]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64976,   560]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 3]), array([64726,   729,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64888,   648]))
+Pred
+(array([0, 1]), array([64800,   736]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64807,   729]))
+Pred
+(array([0, 1]), array([64690,   846]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1, 2, 3]), array([64645,   729,    81,    81]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([64969,   567]))
+Pred
+(array([0, 1]), array([64979,   557]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([64807,   729]))
+Pred
+(array([0, 1]), array([64752,   784]))
+Channel 3
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0., 1.], dtype=float32), array([65455,    81]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+shape
+(4, 256, 256) (4, 256, 256)
+(array([0, 1]), array([65212,   324]))
+Channel 1
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65183,   353]))
+Channel 2
+GT
+(array([0., 1.], dtype=float32), array([65212,   324]))
+Pred
+(array([0, 1]), array([65201,   335]))
+Channel 3
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Channel 4
+GT
+(array([0.], dtype=float32), array([65536]))
+Pred
+(array([0]), array([65536]))
+Class H: Acc=0.997, IoU=0.624, Dice=0.769
+Class C: Acc=0.995, IoU=0.570, Dice=0.726
+Class N: Acc=0.998, IoU=0.000, Dice=0.000
+Class O: Acc=0.998, IoU=0.000, Dice=0.000
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'

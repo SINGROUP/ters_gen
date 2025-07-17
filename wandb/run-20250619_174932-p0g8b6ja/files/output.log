@@ -1,0 +1,23 @@
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64, 128] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [32, 64, 128, 256, 512] which is of type list.
+  warnings.warn(message)
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/distributions.py:515: UserWarning: Choices for a categorical distribution should be a tuple of None, bool, int, float and str for persistent storage but contains [16, 32, 64, 128, 256] which is of type list.
+  warnings.warn(message)
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/composnet/ters_gen/wandb/run-20250619_174932-o325njw0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_0_bs_16_lr_2e-05_focal_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Composnet_multi_class
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Composnet_multi_class/runs/o325njw0
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/50, time: 81.15 s, training_loss: 0.375
+Epoch    1/50, time: 83.53 s, training_loss: 0.879
+Epoch    1/50, time: 17.78 s, val_loss: 0.906
+Epoch    1/50, time: 20.29 s, val_loss: 0.322
+Epoch    1/50, time: 108.61 s, training_loss: 0.480
+Epoch    1/50, time: 44.31 s, val_loss: 0.408
+Epoch    1/50, time: 154.83 s, training_loss: 0.841
+Epoch    1/50, time: 31.97 s, val_loss: 0.818

@@ -1,0 +1,31 @@
+# circular size : 5
+
+model:
+  type: AttentionUNet
+  in_channels: 400
+  out_channels: 5
+  filters: [16, 32, 64, 128, 256]
+  att_channels: 32
+  kernel_size: [3, 3, 3, 3, 3]
+
+
+training:
+  epochs: 50
+  batch_sizes: [16, 32, 64, 128] # Different batch sizes to test
+  learning_rates: [0.0001, 0.001]
+  loss_functions: [dice_loss] #, MSELoss, L1Loss]
+  n_trials: 15
+  n_jobs: 1
+
+
+data:
+  train_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/train  # Path to the data folder containing the npz files of the molecules
+  val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
+  split_by_id: 0 # Split the dataset by molecule ID
+  circle_radius: 5
+  augmentation: True # Enable data augmentation
+
+save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/composnet/hyperopt/augmented/config5/
+
+log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/composnet/hyperopt/augmented/config5/
+

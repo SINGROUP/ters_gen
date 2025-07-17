@@ -38,6 +38,8 @@ def objective(trial, config, device):
 
     print(f"[Trial {trial.number}] Trying batch_size={batch_size}, lr={lr}, loss_fn={loss_name}")
 
+
+
     ## Make it train, val and test dataset here!
     train_ds = Ters_dataset_filtered_skip(
         filename=config.data.train_path,
@@ -46,7 +48,8 @@ def objective(trial, config, device):
         std_deviation_multiplier=2, 
         sg_ch=(config.model.out_channels == 1), 
         circle_radius=config.data.circle_radius,
-        t_image=data_transform
+        t_image=data_transform, 
+        train_aug=config.data.augmentation,
     )
 
 
@@ -94,7 +97,7 @@ def objective(trial, config, device):
 
     # run training
     trainer.train(epochs=config.training.epochs)
-    trainer.save_final_model(f"_bs_{batch_size}_lr_{lr}_loss_{loss_name}")
+    trainer.save_final_model(f"_bs_{batch_size}_lr_{lr}_loss_{loss_name}.pt")
     dice_coeff = trainer.final_metrics()
 
     print(f"[Trial {trial.number}] Finished with val_loss={trainer.lowest_val_loss}")

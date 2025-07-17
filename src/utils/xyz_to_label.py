@@ -54,7 +54,7 @@ def molecule_circular_image(xyz_string, flag=True, circle_radius=5):
     if flag:
         multi_channel_img = np.zeros((1, grid_size, grid_size))
     else:
-        multi_channel_img = np.zeros((len(fixed_elements) + 1, grid_size, grid_size))
+        multi_channel_img = np.zeros((len(fixed_elements)+1, grid_size, grid_size))
     #multi_channel_img = np.zeros((1, grid_size, grid_size))
     
     for ch, elem in enumerate(fixed_elements):

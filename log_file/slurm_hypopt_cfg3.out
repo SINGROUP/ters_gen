@@ -1,0 +1,905 @@
+[I 2025-06-12 10:24:41,371] A new study created in memory with name: no-name-30361ea8-800f-4b6a-9ad8-c7047f747c95
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=32, lr=0.0002781346640705684, loss_fn=dice_loss
+Epoch    1/50, time: 38.99 s, training_loss: 0.593
+Epoch    1/50, time: 11.98 s, val_loss: 0.562
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.7631
+Precision: 0.2062
+Recall: 0.3264
+F1 Score: 0.1869
+IoU: 0.8458
+Dice Coefficient: 0.2358
+Validation Metrics:
+Accuracy: 0.7765
+Precision: 0.2064
+Recall: 0.3310
+F1 Score: 0.1889
+IoU: 0.8551
+Dice Coefficient: 0.2368
+Epoch    2/50, time: 26.28 s, training_loss: 0.534
+Epoch    2/50, time: 9.13 s, val_loss: 0.467
+Epoch    3/50, time: 25.84 s, training_loss: 0.490
+Epoch    3/50, time: 9.04 s, val_loss: 0.478
+Epoch    4/50, time: 26.98 s, training_loss: 0.457
+Epoch    4/50, time: 8.94 s, val_loss: 0.410
+Epoch    5/50, time: 27.61 s, training_loss: 0.428
+Epoch    5/50, time: 8.81 s, val_loss: 0.321
+Epoch    6/50, time: 26.54 s, training_loss: 0.395
+Epoch    6/50, time: 9.54 s, val_loss: 0.463
+Epoch    7/50, time: 26.55 s, training_loss: 0.365
+Epoch    7/50, time: 9.00 s, val_loss: 0.404
+Epoch    8/50, time: 26.41 s, training_loss: 0.335
+Epoch    8/50, time: 8.70 s, val_loss: 0.419
+Epoch    9/50, time: 26.07 s, training_loss: 0.303
+Epoch    9/50, time: 8.44 s, val_loss: 0.340
+Epoch   10/50, time: 26.77 s, training_loss: 0.274
+Epoch   10/50, time: 9.01 s, val_loss: 0.248
+Epoch   11/50, time: 26.53 s, training_loss: 0.249
+Epoch   11/50, time: 8.66 s, val_loss: 0.269
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.6804
+Precision: 0.1996
+Recall: 0.2067
+F1 Score: 0.1684
+IoU: 0.8234
+Dice Coefficient: 0.2404
+Validation Metrics:
+Accuracy: 0.7019
+Precision: 0.1995
+Recall: 0.2088
+F1 Score: 0.1711
+IoU: 0.8112
+Dice Coefficient: 0.2349
+Epoch   12/50, time: 26.40 s, training_loss: 0.226
+Epoch   12/50, time: 8.61 s, val_loss: 0.255
+Epoch   13/50, time: 26.10 s, training_loss: 0.195
+Epoch   13/50, time: 8.50 s, val_loss: 0.195
+Epoch   14/50, time: 25.85 s, training_loss: 0.166
+Epoch   14/50, time: 8.72 s, val_loss: 0.342
+Epoch   15/50, time: 26.13 s, training_loss: 0.143
+Epoch   15/50, time: 8.39 s, val_loss: 0.111
+Epoch   16/50, time: 26.17 s, training_loss: 0.126
+Epoch   16/50, time: 8.56 s, val_loss: 0.187
+Epoch   17/50, time: 26.80 s, training_loss: 0.120
+Epoch   17/50, time: 8.27 s, val_loss: 0.125
+Epoch   18/50, time: 26.75 s, training_loss: 0.100
+Epoch   18/50, time: 8.22 s, val_loss: 0.109
+Epoch   19/50, time: 26.19 s, training_loss: 0.093
+Epoch   19/50, time: 8.60 s, val_loss: 0.067
+Epoch   20/50, time: 25.94 s, training_loss: 0.080
+Epoch   20/50, time: 9.09 s, val_loss: 0.065
+Epoch   21/50, time: 26.13 s, training_loss: 0.070
+Epoch   21/50, time: 8.52 s, val_loss: 0.061
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9799
+Precision: 0.1990
+Recall: 0.2002
+F1 Score: 0.1984
+IoU: 0.9930
+Dice Coefficient: 0.2501
+Validation Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+Epoch   22/50, time: 27.28 s, training_loss: 0.062
+Epoch   22/50, time: 8.66 s, val_loss: 0.057
+Epoch   23/50, time: 26.16 s, training_loss: 0.056
+Epoch   23/50, time: 8.63 s, val_loss: 0.051
+Epoch   24/50, time: 25.73 s, training_loss: 0.051
+Epoch   24/50, time: 8.32 s, val_loss: 0.047
+Epoch   25/50, time: 26.21 s, training_loss: 0.047
+Epoch   25/50, time: 8.61 s, val_loss: 0.043
+Epoch   26/50, time: 26.93 s, training_loss: 0.044
+Epoch   26/50, time: 8.87 s, val_loss: 0.054
+Epoch   27/50, time: 26.84 s, training_loss: 0.043
+Epoch   27/50, time: 8.48 s, val_loss: 0.038
+Epoch   28/50, time: 26.44 s, training_loss: 0.039
+Epoch   28/50, time: 9.15 s, val_loss: 0.037
+Epoch   29/50, time: 26.47 s, training_loss: 0.037
+Epoch   29/50, time: 8.79 s, val_loss: 0.035
+Epoch   30/50, time: 26.06 s, training_loss: 0.036
+Epoch   30/50, time: 8.78 s, val_loss: 0.034
+Epoch   31/50, time: 26.73 s, training_loss: 0.035
+Epoch   31/50, time: 8.86 s, val_loss: 0.035
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9778
+Precision: 0.2005
+Recall: 0.2016
+F1 Score: 0.2006
+IoU: 0.9905
+Dice Coefficient: 0.2498
+Validation Metrics:
+Accuracy: 0.9797
+Precision: 0.2009
+Recall: 0.2009
+F1 Score: 0.1998
+IoU: 0.9922
+Dice Coefficient: 0.2500
+Epoch   32/50, time: 27.61 s, training_loss: 0.035
+Epoch   32/50, time: 8.85 s, val_loss: 0.034
+Epoch   33/50, time: 27.45 s, training_loss: 0.033
+Epoch   33/50, time: 8.69 s, val_loss: 0.031
+Epoch   34/50, time: 26.40 s, training_loss: 0.031
+Epoch   34/50, time: 9.69 s, val_loss: 0.031
+Epoch   35/50, time: 26.07 s, training_loss: 0.030
+Epoch   35/50, time: 8.70 s, val_loss: 0.031
+Epoch   36/50, time: 26.58 s, training_loss: 0.029
+Epoch   36/50, time: 8.78 s, val_loss: 0.028
+Epoch   37/50, time: 27.59 s, training_loss: 0.029
+Epoch   37/50, time: 8.68 s, val_loss: 0.027
+Epoch   38/50, time: 27.40 s, training_loss: 0.028
+Epoch   38/50, time: 9.46 s, val_loss: 0.027
+Epoch   39/50, time: 26.59 s, training_loss: 0.028
+Epoch   39/50, time: 9.54 s, val_loss: 0.027
+Epoch   40/50, time: 26.74 s, training_loss: 0.028
+Epoch   40/50, time: 9.33 s, val_loss: 0.026
+Epoch   41/50, time: 26.30 s, training_loss: 0.028
+Epoch   41/50, time: 9.40 s, val_loss: 0.026
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9794
+Precision: 0.2001
+Recall: 0.2005
+F1 Score: 0.1992
+IoU: 0.9924
+Dice Coefficient: 0.2501
+Validation Metrics:
+Accuracy: 0.9805
+Precision: 0.2028
+Recall: 0.2006
+F1 Score: 0.1993
+IoU: 0.9931
+Dice Coefficient: 0.2501
+Epoch   42/50, time: 26.95 s, training_loss: 0.027
+Epoch   42/50, time: 8.94 s, val_loss: 0.025
+Epoch   43/50, time: 26.56 s, training_loss: 0.026
+Epoch   43/50, time: 9.08 s, val_loss: 0.026
+Epoch   44/50, time: 26.74 s, training_loss: 0.026
+Epoch   44/50, time: 8.99 s, val_loss: 0.024
+Epoch   45/50, time: 27.12 s, training_loss: 0.025
+Epoch   45/50, time: 8.92 s, val_loss: 0.025
+Epoch   46/50, time: 27.17 s, training_loss: 0.025
+Epoch   46/50, time: 9.38 s, val_loss: 0.024
+Epoch   47/50, time: 26.84 s, training_loss: 0.025
+Epoch   47/50, time: 8.81 s, val_loss: 0.025
+Epoch   48/50, time: 26.55 s, training_loss: 0.024
+Epoch   48/50, time: 8.94 s, val_loss: 0.023
+Epoch   49/50, time: 27.24 s, training_loss: 0.024
+Epoch   49/50, time: 8.70 s, val_loss: 0.024
+Epoch   50/50, time: 27.62 s, training_loss: 0.024
+Epoch   50/50, time: 9.02 s, val_loss: 0.025
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9798
+Precision: 0.2643
+Recall: 0.2000
+F1 Score: 0.1983
+IoU: 0.9928
+Dice Coefficient: 0.2501
+Validation Metrics:
+Accuracy: 0.9806
+Precision: 0.1979
+Recall: 0.2001
+F1 Score: 0.1983
+IoU: 0.9931
+Dice Coefficient: 0.2501
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-06-12 10:59:26,860] Trial 0 finished with value: 0.2501193768252726 and parameters: {'batch_size': 32, 'lr': 0.0002781346640705684, 'loss_fn': 'dice_loss'}. Best is trial 0 with value: 0.2501193768252726.
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+Test Metrics:
+Accuracy: 0.9806
+Precision: 0.1979
+Recall: 0.2001
+F1 Score: 0.1983
+IoU: 0.9931
+Dice Coefficient: 0.2501
+[Trial 0] Finished with val_loss=inf
+[Trial 0] Finished with dice_coeff=0.2501193768252726
+[Trial 1] Trying batch_size=32, lr=0.0006631862667979038, loss_fn=dice_loss
+Epoch    1/50, time: 27.09 s, training_loss: 0.530
+Epoch    1/50, time: 9.12 s, val_loss: 0.499
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.8951
+Precision: 0.2126
+Recall: 0.3600
+F1 Score: 0.2143
+IoU: 0.9634
+Dice Coefficient: 0.2508
+Validation Metrics:
+Accuracy: 0.9045
+Precision: 0.2121
+Recall: 0.3416
+F1 Score: 0.2142
+IoU: 0.9668
+Dice Coefficient: 0.2508
+Epoch    2/50, time: 27.43 s, training_loss: 0.410
+Epoch    2/50, time: 9.63 s, val_loss: 0.322
+Epoch    3/50, time: 26.41 s, training_loss: 0.311
+Epoch    3/50, time: 9.20 s, val_loss: 0.232
+Epoch    4/50, time: 27.20 s, training_loss: 0.238
+Epoch    4/50, time: 9.18 s, val_loss: 0.227
+Epoch    5/50, time: 26.73 s, training_loss: 0.183
+Epoch    5/50, time: 8.67 s, val_loss: 0.195
+Epoch    6/50, time: 26.82 s, training_loss: 0.139
+Epoch    6/50, time: 8.87 s, val_loss: 0.260
+Epoch    7/50, time: 26.15 s, training_loss: 0.119
+Epoch    7/50, time: 9.01 s, val_loss: 0.123
+Epoch    8/50, time: 27.14 s, training_loss: 0.102
+Epoch    8/50, time: 9.03 s, val_loss: 0.119
+Epoch    9/50, time: 26.21 s, training_loss: 0.082
+Epoch    9/50, time: 9.06 s, val_loss: 0.167
+Epoch   10/50, time: 26.62 s, training_loss: 0.069
+Epoch   10/50, time: 8.59 s, val_loss: 0.088
+Epoch   11/50, time: 27.85 s, training_loss: 0.072
+Epoch   11/50, time: 9.36 s, val_loss: 0.183
+Training Metrics:
+Accuracy: 0.9059
+Precision: 0.1984
+Recall: 0.2074
+F1 Score: 0.1942
+IoU: 0.9219
+Dice Coefficient: 0.2411
+Validation Metrics:
+Accuracy: 0.8977
+Precision: 0.1986
+Recall: 0.2103
+F1 Score: 0.1935
+IoU: 0.9136
+Dice Coefficient: 0.2400
+Epoch   12/50, time: 27.62 s, training_loss: 0.062
+Epoch   12/50, time: 8.95 s, val_loss: 0.065
+Epoch   13/50, time: 27.12 s, training_loss: 0.048
+Epoch   13/50, time: 9.24 s, val_loss: 0.045
+Epoch   14/50, time: 27.94 s, training_loss: 0.042
+Epoch   14/50, time: 8.59 s, val_loss: 0.044
+Epoch   15/50, time: 26.73 s, training_loss: 0.038
+Epoch   15/50, time: 8.85 s, val_loss: 0.033
+Epoch   16/50, time: 28.13 s, training_loss: 0.035
+Epoch   16/50, time: 9.52 s, val_loss: 0.031
+Epoch   17/50, time: 27.47 s, training_loss: 0.035
+Epoch   17/50, time: 9.03 s, val_loss: 0.030
+Epoch   18/50, time: 28.00 s, training_loss: 0.031
+Epoch   18/50, time: 9.11 s, val_loss: 0.029
+Epoch   19/50, time: 28.55 s, training_loss: 0.030
+Epoch   19/50, time: 9.22 s, val_loss: 0.028
+Epoch   20/50, time: 27.09 s, training_loss: 0.029
+Epoch   20/50, time: 8.88 s, val_loss: 0.027
+Epoch   21/50, time: 27.33 s, training_loss: 0.052
+Epoch   21/50, time: 8.83 s, val_loss: 0.027
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9804
+Precision: 0.1961
+Recall: 0.2000
+F1 Score: 0.1980
+IoU: 0.9935
+Dice Coefficient: 0.2502
+Validation Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+Epoch   22/50, time: 26.22 s, training_loss: 0.028
+Epoch   22/50, time: 9.01 s, val_loss: 0.026
+Epoch   23/50, time: 27.07 s, training_loss: 0.028
+Epoch   23/50, time: 9.14 s, val_loss: 0.025
+Epoch   24/50, time: 27.56 s, training_loss: 0.026
+Epoch   24/50, time: 9.28 s, val_loss: 0.024
+Epoch   25/50, time: 27.23 s, training_loss: 0.024
+Epoch   25/50, time: 8.75 s, val_loss: 0.024
+Epoch   26/50, time: 27.83 s, training_loss: 0.024
+Epoch   26/50, time: 8.91 s, val_loss: 0.023
+Epoch   27/50, time: 27.95 s, training_loss: 0.023
+Epoch   27/50, time: 8.86 s, val_loss: 0.022
+Epoch   28/50, time: 27.31 s, training_loss: 0.023
+Epoch   28/50, time: 9.10 s, val_loss: 0.022
+Epoch   29/50, time: 26.78 s, training_loss: 0.023
+Epoch   29/50, time: 9.29 s, val_loss: 0.022
+Epoch   30/50, time: 26.83 s, training_loss: 0.023
+Epoch   30/50, time: 9.04 s, val_loss: 0.021
+Epoch   31/50, time: 27.41 s, training_loss: 0.022
+Epoch   31/50, time: 9.46 s, val_loss: 0.021
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9804
+Precision: 0.1961
+Recall: 0.2000
+F1 Score: 0.1980
+IoU: 0.9935
+Dice Coefficient: 0.2502
+Validation Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+Epoch   32/50, time: 26.25 s, training_loss: 0.022
+Epoch   32/50, time: 9.00 s, val_loss: 0.021
+Epoch   33/50, time: 26.16 s, training_loss: 0.022
+Epoch   33/50, time: 9.08 s, val_loss: 0.022
+Epoch   34/50, time: 26.15 s, training_loss: 0.022
+Epoch   34/50, time: 8.86 s, val_loss: 0.020
+Epoch   35/50, time: 25.82 s, training_loss: 0.022
+Epoch   35/50, time: 8.91 s, val_loss: 0.022
+Epoch   36/50, time: 27.24 s, training_loss: 0.021
+Epoch   36/50, time: 9.23 s, val_loss: 0.021
+Epoch   37/50, time: 27.48 s, training_loss: 0.021
+Epoch   37/50, time: 8.93 s, val_loss: 0.021
+Epoch   38/50, time: 27.22 s, training_loss: 0.021
+Epoch   38/50, time: 8.73 s, val_loss: 0.020
+Epoch   39/50, time: 26.30 s, training_loss: 0.021
+Epoch   39/50, time: 8.97 s, val_loss: 0.020
+Epoch   40/50, time: 27.24 s, training_loss: 0.021
+Epoch   40/50, time: 8.92 s, val_loss: 0.020
+Epoch   41/50, time: 26.77 s, training_loss: 0.021
+Epoch   41/50, time: 9.10 s, val_loss: 0.020
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9804
+Precision: 0.1961
+Recall: 0.2000
+F1 Score: 0.1980
+IoU: 0.9935
+Dice Coefficient: 0.2502
+Validation Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+Epoch   42/50, time: 26.92 s, training_loss: 0.021
+Epoch   42/50, time: 9.44 s, val_loss: 0.020
+Epoch   43/50, time: 28.76 s, training_loss: 0.021
+Epoch   43/50, time: 9.71 s, val_loss: 0.020
+Epoch   44/50, time: 27.15 s, training_loss: 0.021
+Epoch   44/50, time: 9.23 s, val_loss: 0.021
+Epoch   45/50, time: 28.13 s, training_loss: 0.021
+Epoch   45/50, time: 8.73 s, val_loss: 0.020
+Epoch   46/50, time: 26.97 s, training_loss: 0.021
+Epoch   46/50, time: 9.54 s, val_loss: 0.019
+Epoch   47/50, time: 27.57 s, training_loss: 0.021
+Epoch   47/50, time: 9.00 s, val_loss: 0.020
+Epoch   48/50, time: 26.76 s, training_loss: 0.021
+Epoch   48/50, time: 8.58 s, val_loss: 0.020
+Epoch   49/50, time: 27.39 s, training_loss: 0.021
+Epoch   49/50, time: 9.27 s, val_loss: 0.020
+Epoch   50/50, time: 26.85 s, training_loss: 0.021
+Epoch   50/50, time: 9.34 s, val_loss: 0.020
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9804
+Precision: 0.1961
+Recall: 0.2000
+F1 Score: 0.1980
+IoU: 0.9935
+Dice Coefficient: 0.2502
+Validation Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-06-12 11:34:34,765] Trial 1 finished with value: 0.25019048192585697 and parameters: {'batch_size': 32, 'lr': 0.0006631862667979038, 'loss_fn': 'dice_loss'}. Best is trial 1 with value: 0.25019048192585697.
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+Test Metrics:
+Accuracy: 0.9810
+Precision: 0.1962
+Recall: 0.2000
+F1 Score: 0.1981
+IoU: 0.9937
+Dice Coefficient: 0.2502
+[Trial 1] Finished with val_loss=inf
+[Trial 1] Finished with dice_coeff=0.25019048192585697
+[Trial 2] Trying batch_size=128, lr=0.0001180338095897874, loss_fn=dice_loss
+Epoch    1/50, time: 36.06 s, training_loss: 0.654
+Epoch    1/50, time: 9.36 s, val_loss: 0.674
+Training Metrics:
+Accuracy: 0.9559
+Precision: 0.2208
+Recall: 0.2522
+F1 Score: 0.2274
+IoU: 0.9931
+Dice Coefficient: 0.2525
+Validation Metrics:
+Accuracy: 0.9576
+Precision: 0.2210
+Recall: 0.2532
+F1 Score: 0.2286
+IoU: 0.9933
+Dice Coefficient: 0.2525
+Epoch    2/50, time: 35.46 s, training_loss: 0.620
+Epoch    2/50, time: 9.08 s, val_loss: 0.646
+Epoch    3/50, time: 35.48 s, training_loss: 0.605
+Epoch    3/50, time: 9.09 s, val_loss: 0.617
+Epoch    4/50, time: 35.45 s, training_loss: 0.595
+Epoch    4/50, time: 8.99 s, val_loss: 0.593
+Epoch    5/50, time: 36.17 s, training_loss: 0.588
+Epoch    5/50, time: 9.96 s, val_loss: 0.588
+Epoch    6/50, time: 35.40 s, training_loss: 0.582
+Epoch    6/50, time: 9.42 s, val_loss: 0.579
+Epoch    7/50, time: 35.76 s, training_loss: 0.577
+Epoch    7/50, time: 8.83 s, val_loss: 0.574
+Epoch    8/50, time: 35.27 s, training_loss: 0.572
+Epoch    8/50, time: 9.05 s, val_loss: 0.572
+Epoch    9/50, time: 35.60 s, training_loss: 0.567
+Epoch    9/50, time: 9.61 s, val_loss: 0.565
+Epoch   10/50, time: 35.38 s, training_loss: 0.563
+Epoch   10/50, time: 9.33 s, val_loss: 0.559
+Epoch   11/50, time: 35.48 s, training_loss: 0.558
+Epoch   11/50, time: 8.86 s, val_loss: 0.554
+Training Metrics:
+Accuracy: 0.5062
+Precision: 0.2337
+Recall: 0.4318
+F1 Score: 0.1917
+IoU: 0.7737
+Dice Coefficient: 0.2394
+Validation Metrics:
+Accuracy: 0.5155
+Precision: 0.2331
+Recall: 0.4310
+F1 Score: 0.1927
+IoU: 0.7780
+Dice Coefficient: 0.2396
+Epoch   12/50, time: 35.94 s, training_loss: 0.554
+Epoch   12/50, time: 9.08 s, val_loss: 0.552
+Epoch   13/50, time: 35.99 s, training_loss: 0.549
+Epoch   13/50, time: 9.57 s, val_loss: 0.542
+Epoch   14/50, time: 35.83 s, training_loss: 0.545
+Epoch   14/50, time: 9.10 s, val_loss: 0.537
+Epoch   15/50, time: 35.85 s, training_loss: 0.541
+Epoch   15/50, time: 9.05 s, val_loss: 0.540
+Epoch   16/50, time: 35.40 s, training_loss: 0.536
+Epoch   16/50, time: 8.97 s, val_loss: 0.535
+Epoch   17/50, time: 35.87 s, training_loss: 0.533
+Epoch   17/50, time: 9.06 s, val_loss: 0.528
+Epoch   18/50, time: 35.69 s, training_loss: 0.528
+Epoch   18/50, time: 8.94 s, val_loss: 0.523
+Epoch   19/50, time: 35.42 s, training_loss: 0.524
+Epoch   19/50, time: 9.60 s, val_loss: 0.511
+Epoch   20/50, time: 35.30 s, training_loss: 0.519
+Epoch   20/50, time: 9.35 s, val_loss: 0.508
+Epoch   21/50, time: 35.61 s, training_loss: 0.515
+Epoch   21/50, time: 9.67 s, val_loss: 0.504
+Training Metrics:
+Accuracy: 0.6186
+Precision: 0.2356
+Recall: 0.4804
+F1 Score: 0.2140
+IoU: 0.7773
+Dice Coefficient: 0.2322
+Validation Metrics:
+Accuracy: 0.6310
+Precision: 0.2353
+Recall: 0.4820
+F1 Score: 0.2156
+IoU: 0.7830
+Dice Coefficient: 0.2325
+Epoch   22/50, time: 35.84 s, training_loss: 0.512
+Epoch   22/50, time: 9.22 s, val_loss: 0.501
+Epoch   23/50, time: 35.89 s, training_loss: 0.507
+Epoch   23/50, time: 9.07 s, val_loss: 0.490
+Epoch   24/50, time: 36.62 s, training_loss: 0.503
+Epoch   24/50, time: 9.51 s, val_loss: 0.483
+Epoch   25/50, time: 36.56 s, training_loss: 0.498
+Epoch   25/50, time: 8.95 s, val_loss: 0.491
+Epoch   26/50, time: 35.30 s, training_loss: 0.492
+Epoch   26/50, time: 9.18 s, val_loss: 0.475
+Epoch   27/50, time: 35.89 s, training_loss: 0.488
+Epoch   27/50, time: 9.12 s, val_loss: 0.485
+Epoch   28/50, time: 35.74 s, training_loss: 0.485
+Epoch   28/50, time: 9.04 s, val_loss: 0.507
+Epoch   29/50, time: 35.95 s, training_loss: 0.479
+Epoch   29/50, time: 9.24 s, val_loss: 0.511
+Epoch   30/50, time: 35.57 s, training_loss: 0.474
+Epoch   30/50, time: 8.98 s, val_loss: 0.493
+Epoch   31/50, time: 35.83 s, training_loss: 0.470
+Epoch   31/50, time: 9.07 s, val_loss: 0.458
+Training Metrics:
+Accuracy: 0.6042
+Precision: 0.2391
+Recall: 0.4513
+F1 Score: 0.2165
+IoU: 0.8544
+Dice Coefficient: 0.2504
+Validation Metrics:
+Accuracy: 0.6120
+Precision: 0.2365
+Recall: 0.4488
+F1 Score: 0.2155
+IoU: 0.8394
+Dice Coefficient: 0.2464
+Epoch   32/50, time: 35.67 s, training_loss: 0.465
+Epoch   32/50, time: 9.22 s, val_loss: 0.422
+Epoch   33/50, time: 35.97 s, training_loss: 0.460
+Epoch   33/50, time: 8.82 s, val_loss: 0.449
+Epoch   34/50, time: 35.91 s, training_loss: 0.455
+Epoch   34/50, time: 9.66 s, val_loss: 0.466
+Epoch   35/50, time: 35.86 s, training_loss: 0.450
+Epoch   35/50, time: 8.75 s, val_loss: 0.465
+Epoch   36/50, time: 35.58 s, training_loss: 0.445
+Epoch   36/50, time: 9.88 s, val_loss: 0.440
+Epoch   37/50, time: 35.52 s, training_loss: 0.439
+Epoch   37/50, time: 9.27 s, val_loss: 0.444
+Epoch   38/50, time: 35.95 s, training_loss: 0.434
+Epoch   38/50, time: 8.78 s, val_loss: 0.448
+Epoch   39/50, time: 35.77 s, training_loss: 0.430
+Epoch   39/50, time: 8.66 s, val_loss: 0.396
+Epoch   40/50, time: 35.69 s, training_loss: 0.424
+Epoch   40/50, time: 9.41 s, val_loss: 0.391
+Epoch   41/50, time: 35.72 s, training_loss: 0.418
+Epoch   41/50, time: 8.72 s, val_loss: 0.421
+Training Metrics:
+Accuracy: 0.4990
+Precision: 0.2368
+Recall: 0.4330
+F1 Score: 0.1900
+IoU: 0.7543
+Dice Coefficient: 0.2356
+Validation Metrics:
+Accuracy: 0.5305
+Precision: 0.2350
+Recall: 0.4377
+F1 Score: 0.1951
+IoU: 0.7478
+Dice Coefficient: 0.2316
+Epoch   42/50, time: 35.78 s, training_loss: 0.413
+Epoch   42/50, time: 9.12 s, val_loss: 0.402
+Epoch   43/50, time: 35.98 s, training_loss: 0.410
+Epoch   43/50, time: 9.66 s, val_loss: 0.391
+Epoch   44/50, time: 36.17 s, training_loss: 0.404
+Epoch   44/50, time: 8.90 s, val_loss: 0.356
+Epoch   45/50, time: 35.53 s, training_loss: 0.403
+Epoch   45/50, time: 9.17 s, val_loss: 0.368
+Epoch   46/50, time: 35.56 s, training_loss: 0.395
+Epoch   46/50, time: 8.83 s, val_loss: 0.384
+Epoch   47/50, time: 35.71 s, training_loss: 0.390
+Epoch   47/50, time: 8.81 s, val_loss: 0.401
+Epoch   48/50, time: 35.58 s, training_loss: 0.385
+Epoch   48/50, time: 9.39 s, val_loss: 0.365
+Epoch   49/50, time: 37.07 s, training_loss: 0.381
+Epoch   49/50, time: 9.04 s, val_loss: 0.372
+Epoch   50/50, time: 35.61 s, training_loss: 0.375
+Epoch   50/50, time: 8.97 s, val_loss: 0.353
+Training Metrics:
+Accuracy: 0.6551
+Precision: 0.2331
+Recall: 0.3316
+F1 Score: 0.2145
+IoU: 0.7959
+Dice Coefficient: 0.2328
+Validation Metrics:
+Accuracy: 0.6911
+Precision: 0.2332
+Recall: 0.3272
+F1 Score: 0.2193
+IoU: 0.8455
+Dice Coefficient: 0.2411
+[I 2025-06-12 12:17:50,329] Trial 2 finished with value: 0.24110616452016526 and parameters: {'batch_size': 128, 'lr': 0.0001180338095897874, 'loss_fn': 'dice_loss'}. Best is trial 1 with value: 0.25019048192585697.
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+Test Metrics:
+Accuracy: 0.6911
+Precision: 0.2332
+Recall: 0.3272
+F1 Score: 0.2193
+IoU: 0.8455
+Dice Coefficient: 0.2411
+[Trial 2] Finished with val_loss=inf
+[Trial 2] Finished with dice_coeff=0.24110616452016526
+[Trial 3] Trying batch_size=32, lr=0.00011288975741985922, loss_fn=dice_loss
+Epoch    1/50, time: 27.79 s, training_loss: 0.601
+Epoch    1/50, time: 9.54 s, val_loss: 0.572
+Training Metrics:
+Accuracy: 0.9284
+Precision: 0.2414
+Recall: 0.2965
+F1 Score: 0.2444
+IoU: 0.9920
+Dice Coefficient: 0.2537
+Validation Metrics:
+Accuracy: 0.9314
+Precision: 0.2440
+Recall: 0.2994
+F1 Score: 0.2469
+IoU: 0.9922
+Dice Coefficient: 0.2535
+Epoch    2/50, time: 27.53 s, training_loss: 0.561
+Epoch    2/50, time: 8.99 s, val_loss: 0.548
+Epoch    3/50, time: 27.37 s, training_loss: 0.539
+Epoch    3/50, time: 8.99 s, val_loss: 0.520
+Epoch    4/50, time: 27.72 s, training_loss: 0.521
+Epoch    4/50, time: 9.08 s, val_loss: 0.510
+Epoch    5/50, time: 28.36 s, training_loss: 0.505
+Epoch    5/50, time: 9.10 s, val_loss: 0.444
+Epoch    6/50, time: 27.93 s, training_loss: 0.487
+Epoch    6/50, time: 8.90 s, val_loss: 0.436
+Epoch    7/50, time: 27.43 s, training_loss: 0.468
+Epoch    7/50, time: 9.00 s, val_loss: 0.560
+Epoch    8/50, time: 27.80 s, training_loss: 0.449
+Epoch    8/50, time: 8.87 s, val_loss: 0.433
+Epoch    9/50, time: 27.85 s, training_loss: 0.432
+Epoch    9/50, time: 8.92 s, val_loss: 0.463
+Epoch   10/50, time: 27.91 s, training_loss: 0.411
+Epoch   10/50, time: 9.14 s, val_loss: 0.440
+Epoch   11/50, time: 28.42 s, training_loss: 0.391
+Epoch   11/50, time: 9.03 s, val_loss: 0.406
+Training Metrics:
+Accuracy: 0.7721
+Precision: 0.2039
+Recall: 0.1832
+F1 Score: 0.1786
+IoU: 0.9934
+Dice Coefficient: 0.2700
+Validation Metrics:
+Accuracy: 0.7862
+Precision: 0.2020
+Recall: 0.1883
+F1 Score: 0.1810
+IoU: 0.9936
+Dice Coefficient: 0.2686
+Epoch   12/50, time: 28.10 s, training_loss: 0.372
+Epoch   12/50, time: 9.08 s, val_loss: 0.421
+Epoch   13/50, time: 27.91 s, training_loss: 0.351
+Epoch   13/50, time: 8.97 s, val_loss: 0.316
+Epoch   14/50, time: 27.29 s, training_loss: 0.334
+Epoch   14/50, time: 9.04 s, val_loss: 0.288
+Epoch   15/50, time: 27.96 s, training_loss: 0.316
+Epoch   15/50, time: 9.21 s, val_loss: 0.267
+Epoch   16/50, time: 27.34 s, training_loss: 0.300
+Epoch   16/50, time: 9.97 s, val_loss: 0.288
+Epoch   17/50, time: 28.37 s, training_loss: 0.286
+Epoch   17/50, time: 8.81 s, val_loss: 0.525
+Epoch   18/50, time: 26.98 s, training_loss: 0.275
+Epoch   18/50, time: 9.93 s, val_loss: 0.376
+Epoch   19/50, time: 27.34 s, training_loss: 0.260
+Epoch   19/50, time: 9.23 s, val_loss: 0.193
+Epoch   20/50, time: 27.15 s, training_loss: 0.246
+Epoch   20/50, time: 8.89 s, val_loss: 0.217
+Epoch   21/50, time: 27.63 s, training_loss: 0.235
+Epoch   21/50, time: 9.18 s, val_loss: 0.260
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.8671
+Precision: 0.1982
+Recall: 0.1957
+F1 Score: 0.1892
+IoU: 0.9935
+Dice Coefficient: 0.2599
+Validation Metrics:
+Accuracy: 0.8387
+Precision: 0.1984
+Recall: 0.2026
+F1 Score: 0.1867
+IoU: 0.9937
+Dice Coefficient: 0.2623
+Epoch   22/50, time: 26.26 s, training_loss: 0.221
+Epoch   22/50, time: 9.04 s, val_loss: 0.264
+Epoch   23/50, time: 27.80 s, training_loss: 0.212
+Epoch   23/50, time: 9.23 s, val_loss: 0.246
+Epoch   24/50, time: 28.29 s, training_loss: 0.200
+Epoch   24/50, time: 9.23 s, val_loss: 0.157
+Epoch   25/50, time: 27.77 s, training_loss: 0.192
+Epoch   25/50, time: 8.95 s, val_loss: 0.230
+Epoch   26/50, time: 28.44 s, training_loss: 0.183
+Epoch   26/50, time: 9.01 s, val_loss: 0.179
+Epoch   27/50, time: 28.68 s, training_loss: 0.174
+Epoch   27/50, time: 9.74 s, val_loss: 0.187
+Epoch   28/50, time: 28.04 s, training_loss: 0.166
+Epoch   28/50, time: 9.09 s, val_loss: 0.142
+Epoch   29/50, time: 27.46 s, training_loss: 0.161
+Epoch   29/50, time: 9.03 s, val_loss: 0.170
+Epoch   30/50, time: 27.81 s, training_loss: 0.152
+Epoch   30/50, time: 9.13 s, val_loss: 0.170
+Epoch   31/50, time: 27.72 s, training_loss: 0.150
+Epoch   31/50, time: 9.18 s, val_loss: 0.143
+Training Metrics:
+Accuracy: 0.9503
+Precision: 0.1983
+Recall: 0.1990
+F1 Score: 0.1979
+IoU: 0.9935
+Dice Coefficient: 0.2527
+Validation Metrics:
+Accuracy: 0.9527
+Precision: 0.1977
+Recall: 0.1981
+F1 Score: 0.1974
+IoU: 0.9937
+Dice Coefficient: 0.2525
+Epoch   32/50, time: 26.96 s, training_loss: 0.140
+Epoch   32/50, time: 9.58 s, val_loss: 0.140
+Epoch   33/50, time: 28.65 s, training_loss: 0.134
+Epoch   33/50, time: 8.88 s, val_loss: 0.161
+Epoch   34/50, time: 27.03 s, training_loss: 0.128
+Epoch   34/50, time: 9.16 s, val_loss: 0.105
+Epoch   35/50, time: 27.21 s, training_loss: 0.121
+Epoch   35/50, time: 8.96 s, val_loss: 0.112
+Epoch   36/50, time: 27.25 s, training_loss: 0.116
+Epoch   36/50, time: 9.03 s, val_loss: 0.151
+Epoch   37/50, time: 27.66 s, training_loss: 0.115
+Epoch   37/50, time: 9.01 s, val_loss: 0.130
+Epoch   38/50, time: 27.70 s, training_loss: 0.109
+Epoch   38/50, time: 9.11 s, val_loss: 0.154
+Epoch   39/50, time: 27.72 s, training_loss: 0.113
+Epoch   39/50, time: 8.96 s, val_loss: 0.101
+Epoch   40/50, time: 28.44 s, training_loss: 0.106
+Epoch   40/50, time: 9.14 s, val_loss: 0.126
+Epoch   41/50, time: 27.50 s, training_loss: 0.099
+Epoch   41/50, time: 9.37 s, val_loss: 0.099
+Training Metrics:
+Accuracy: 0.9544
+Precision: 0.2007
+Recall: 0.2022
+F1 Score: 0.2002
+IoU: 0.9935
+Dice Coefficient: 0.2524
+Validation Metrics:
+Accuracy: 0.9511
+Precision: 0.1993
+Recall: 0.2024
+F1 Score: 0.1995
+IoU: 0.9937
+Dice Coefficient: 0.2527
+Epoch   42/50, time: 27.58 s, training_loss: 0.096
+Epoch   42/50, time: 9.79 s, val_loss: 0.088
+Epoch   43/50, time: 27.23 s, training_loss: 0.093
+Epoch   43/50, time: 9.27 s, val_loss: 0.102
+Epoch   44/50, time: 27.22 s, training_loss: 0.089
+Epoch   44/50, time: 9.31 s, val_loss: 0.071
+Epoch   45/50, time: 26.85 s, training_loss: 0.087
+Epoch   45/50, time: 9.08 s, val_loss: 0.093
+Epoch   46/50, time: 27.87 s, training_loss: 0.089
+Epoch   46/50, time: 9.19 s, val_loss: 0.062
+Epoch   47/50, time: 28.27 s, training_loss: 0.086
+Epoch   47/50, time: 9.60 s, val_loss: 0.080
+Epoch   48/50, time: 26.55 s, training_loss: 0.081
+Epoch   48/50, time: 9.19 s, val_loss: 0.107
+Epoch   49/50, time: 28.01 s, training_loss: 0.078
+Epoch   49/50, time: 8.77 s, val_loss: 0.080
+Epoch   50/50, time: 27.71 s, training_loss: 0.077
+Epoch   50/50, time: 9.14 s, val_loss: 0.076
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9732
+Precision: 0.2039
+Recall: 0.2034
+F1 Score: 0.2032
+IoU: 0.9935
+Dice Coefficient: 0.2509
+Validation Metrics:
+Accuracy: 0.9700
+Precision: 0.2047
+Recall: 0.2064
+F1 Score: 0.2053
+IoU: 0.9937
+Dice Coefficient: 0.2512
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[I 2025-06-12 12:53:42,451] Trial 3 finished with value: 0.2512124333821211 and parameters: {'batch_size': 32, 'lr': 0.00011288975741985922, 'loss_fn': 'dice_loss'}. Best is trial 3 with value: 0.2512124333821211.
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+Test Metrics:
+Accuracy: 0.9700
+Precision: 0.2047
+Recall: 0.2064
+F1 Score: 0.2053
+IoU: 0.9937
+Dice Coefficient: 0.2512
+[Trial 3] Finished with val_loss=inf
+[Trial 3] Finished with dice_coeff=0.2512124333821211
+[Trial 4] Trying batch_size=32, lr=0.00016733965730178995, loss_fn=dice_loss
+Epoch    1/50, time: 27.33 s, training_loss: 0.610
+Epoch    1/50, time: 8.94 s, val_loss: 0.592
+Training Metrics:
+Accuracy: 0.7260
+Precision: 0.2224
+Recall: 0.2922
+F1 Score: 0.2079
+IoU: 0.9816
+Dice Coefficient: 0.2678
+Validation Metrics:
+Accuracy: 0.7341
+Precision: 0.2197
+Recall: 0.2937
+F1 Score: 0.2057
+IoU: 0.9819
+Dice Coefficient: 0.2671
+Epoch    2/50, time: 28.12 s, training_loss: 0.554
+Epoch    2/50, time: 9.14 s, val_loss: 0.585
+Epoch    3/50, time: 27.75 s, training_loss: 0.530
+Epoch    3/50, time: 8.73 s, val_loss: 0.581
+Epoch    4/50, time: 27.63 s, training_loss: 0.509
+Epoch    4/50, time: 9.13 s, val_loss: 0.477
+Epoch    5/50, time: 26.99 s, training_loss: 0.486
+Epoch    5/50, time: 9.73 s, val_loss: 0.572
+Epoch    6/50, time: 27.92 s, training_loss: 0.465
+Epoch    6/50, time: 9.09 s, val_loss: 0.418
+Epoch    7/50, time: 27.76 s, training_loss: 0.443
+Epoch    7/50, time: 8.99 s, val_loss: 0.490
+Epoch    8/50, time: 27.37 s, training_loss: 0.421
+Epoch    8/50, time: 8.69 s, val_loss: 0.389
+Epoch    9/50, time: 27.13 s, training_loss: 0.399
+Epoch    9/50, time: 8.90 s, val_loss: 0.375
+Epoch   10/50, time: 27.50 s, training_loss: 0.378
+Epoch   10/50, time: 8.76 s, val_loss: 0.442
+Epoch   11/50, time: 28.10 s, training_loss: 0.358
+Epoch   11/50, time: 8.72 s, val_loss: 0.359
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.7543
+Precision: 0.2202
+Recall: 0.2148
+F1 Score: 0.1961
+IoU: 0.9931
+Dice Coefficient: 0.2664
+Validation Metrics:
+Accuracy: 0.7746
+Precision: 0.2219
+Recall: 0.2186
+F1 Score: 0.1996
+IoU: 0.9932
+Dice Coefficient: 0.2649
+slurmstepd: error: *** JOB 8086985 ON gpu40 CANCELLED AT 2025-06-12T13:02:03 ***

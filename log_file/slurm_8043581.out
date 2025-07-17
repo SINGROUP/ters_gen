@@ -1,3 +1,0 @@
-  File "/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py", line 181
-    for rank, idx in enumerate(sample_idxs[:5], start=1):
-IndentationError: unexpected indent

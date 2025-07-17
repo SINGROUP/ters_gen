@@ -20,40 +20,40 @@ def cross_entropy(logits:torch.Tensor, targets:torch.Tensor):
 
 
 
-def focal_loss(logits:torch.Tensor, labels:torch.Tensor, gamma:float=2.0, alpha:float=0.25):
-    """ 
-    Focal loss for multi-class classification
-    Args:
-        logits: Tensor of shape [D, H, W, num_classes] (or any shape where the last dim is classes).
-        labels: Tensor of shape [D, H, W] with integer class labels.
-        gamma: Focusing parameter.
-        alpha: Balancing parameter.
-        
-    Returns:
-        Mean focal loss.
-    """
 
-    num_classes = logits.shape[-1]
-    logits = logits.view(-1, num_classes)
-    labels = labels.view(-1)
+def focal_loss(pred, target, alpha = 1.0, gamma = 2.0, reduction = 'mean'):
+    '''
+    pred: [B,C,H,W] tensor of raw model outputs (logits)
+    target: [B,C,H,W] or [B,H,W] tensor of ground truth binary masks (as one - hot)
+    alpha: weighting factor for rare classes (default 1.0 = no weighting)
+    gamma: focusing parameter to reduce the relative loss for well-classified examples (default 2.0)
+    reduction: specifies the reduction to apply to the output: 'none' | 'mean' | 'sum'
+    '''
 
+    pred_soft = torch.softmax(pred, dim = 1) # [B,C,H,W] tensor of probabilities
 
-    # Compute the softmax probabilities
-    probs = F.softmax(logits, dim=-1)
+    if target.dim() == 3:  # If target is [B, H, W], convert to [B, C, H, W]
+        target_one_hot = F.one_hot(target, num_classes=pred.size(1))
+        target_one_hot = target_one_hot.permute(0, 3, 1, 2).float()  # Convert to [B, C, H, W]
+    else:
+        target_one_hot = target.float()
 
-    # Create one-hot encoding of labels
-    one_hot_labels = F.one_hot(labels, num_classes).float()
+    # Clamp to prevent log(0)
+    pred_soft = pred_soft.clamp(min=1e-7, max=1.0)
 
-    # Get probabilities corresponding to the true class
-    probs = (probs*one_hot_labels).sum(dim=1)
+    # Compute the focal loss
+    ce_loss = -target_one_hot * torch.log(pred_soft) 
+    focal_term = (1 - pred_soft) ** gamma
+    alpha = torch.tensor([38.2951, 35.3427, 45.6857, 45.2584,  1.4423], device = pred.device)
+    alpha = alpha.view(1, -1, 1, 1)  # Reshape to match [B, C, H, W]
+    loss = alpha * focal_term * ce_loss
 
-    # For numerical stability, clamp probabilities
-    probs = probs.clamp(min=1e-9, max=1.0)
-
-    loss = -alpha*(1-probs)**gamma*torch.log(probs)
-    return loss.mean()
-
-
+    if reduction == 'mean':
+        return loss.mean()
+    elif reduction == 'sum':
+        return loss.sum()
+    else:
+        return loss
 
 def dice_loss_multi_class(pred, target, smooth=1e-6):
 
@@ -65,11 +65,14 @@ def dice_loss_multi_class(pred, target, smooth=1e-6):
 
     # Calculate the intersection and union
     intersection = (pred_flat * target_flat).sum(2)
-    union = pred_flat.sum(1) + target_flat.sum(2)
+    union = pred_flat.sum(2) + target_flat.sum(2)
 
     # Compute the Dice coefficient and then the Dice loss
     dice_score = (2.0 * intersection + smooth) / (union + smooth)
-    loss = 1 - dice_score.mean()
+    #weighted_dice = dice_score
+    weighted_dice = 0.99*dice_score[:-1].mean() + 0.01*dice_score[-1].mean()
+    loss = 1 - weighted_dice
+    #loss = 1 - dice_score.mean()
     return loss.mean()
 
 
@@ -92,6 +95,8 @@ def dice_loss(pred, target, smooth=1e-6):
     
     # Compute the Dice coefficient and then the Dice loss
     dice_score = (2.0 * intersection + smooth) / (union + smooth)
+
+    
     loss = 1 - dice_score.mean()
     return loss
 
@@ -163,5 +168,7 @@ def get_loss_function(loss_fn:str):
         return focal_loss
     elif loss_fn == "dice_loss":
         return dice_loss
+    elif loss_fn == "dice_loss_multi_class":
+        return dice_loss_multi_class
     else:
         raise ValueError(f"Loss function: {loss_fn} not supported")

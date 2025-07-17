@@ -1,7 +1,7 @@
 model:
   type: AttentionUNet
   in_channels: 100
-  out_channels: 1
+  out_channels: 4
   filters: [16, 32, 64, 128, 256, 512]
   att_channels: 32
   kernel_size: [3, 3, 3, 3, 3, 3]
@@ -20,8 +20,9 @@ data:
   val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
   split_by_id: 0 # Split the dataset by molecule ID
   circle_radius: 5
+  augmentation: False
 
-save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/hyperopt/config3/
+save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/composnet/hyperopt/config3/
 
-log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/hyperopt/config3/
+log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/composnet/hyperopt/config3/
 

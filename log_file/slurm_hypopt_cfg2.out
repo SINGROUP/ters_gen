@@ -1,0 +1,45 @@
+[I 2025-06-12 10:24:41,372] A new study created in memory with name: no-name-7eeefbe9-a9f0-4c2d-8610-d7e53de98278
+/home/sethih1/masque_new/composnet/ters_gen/hyperopt.py:32: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  lr = trial.suggest_loguniform('lr', config.training.learning_rates[0], config.training.learning_rates[-1])
+[Trial 0] Trying batch_size=128, lr=0.0003389886023821893, loss_fn=dice_loss
+Epoch    1/50, time: 149.96 s, training_loss: 0.591
+Epoch    1/50, time: 29.73 s, val_loss: 0.640
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Training Metrics:
+Accuracy: 0.9797
+Precision: 0.1966
+Recall: 0.1999
+F1 Score: 0.1981
+IoU: 0.9928
+Dice Coefficient: 0.2501
+Validation Metrics:
+Accuracy: 0.9806
+Precision: 0.1969
+Recall: 0.2000
+F1 Score: 0.1982
+IoU: 0.9931
+Dice Coefficient: 0.2501
+Epoch    2/50, time: 156.65 s, training_loss: 0.536
+Epoch    2/50, time: 30.58 s, val_loss: 0.551
+Epoch    3/50, time: 142.90 s, training_loss: 0.494
+Epoch    3/50, time: 30.35 s, val_loss: 0.530
+Epoch    4/50, time: 138.21 s, training_loss: 0.463
+Epoch    4/50, time: 30.53 s, val_loss: 0.483
+Epoch    5/50, time: 150.02 s, training_loss: 0.442
+Epoch    5/50, time: 30.02 s, val_loss: 0.429
+Epoch    6/50, time: 143.07 s, training_loss: 0.424
+Epoch    6/50, time: 29.82 s, val_loss: 0.464
+Epoch    7/50, time: 142.79 s, training_loss: 0.409
+Epoch    7/50, time: 31.21 s, val_loss: 0.481
+Epoch    8/50, time: 138.66 s, training_loss: 0.398
+Epoch    8/50, time: 30.80 s, val_loss: 0.456
+Epoch    9/50, time: 144.45 s, training_loss: 0.392
+Epoch    9/50, time: 30.42 s, val_loss: 0.478
+Epoch   10/50, time: 147.77 s, training_loss: 0.376
+Epoch   10/50, time: 30.91 s, val_loss: 0.369
+Epoch   11/50, time: 149.57 s, training_loss: 0.362
+Epoch   11/50, time: 30.36 s, val_loss: 0.373
+slurmstepd: error: *** JOB 8086984 ON gpu39 CANCELLED AT 2025-06-12T13:02:03 ***

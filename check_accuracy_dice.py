@@ -19,6 +19,8 @@ import torchvision.transforms as transforms
 # ——— Dataset & model setup ———
 suffix = 'val'
 data_path = f"/scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/{suffix}/"
+
+suffix = f'config7_{suffix}'
 #data_path = '/home/sethih1/masque_new/masque/check/'
 #data_path = "/scratch/phys/sin/sethih1/data_files/plane_third_group_images_nr_256_new/"
 
@@ -42,7 +44,9 @@ ters_loader = DataLoader(ters_set, batch_size=32, shuffle=False)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = torch.load(
-    '/scratch/phys/sin/sethih1/models/composnet/all_group_plane_fchk_split_images_ters/hyperopt/config3/seg_bs_16_lr_0.00015629566600182425_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/composnet/hyperopt/config3/seg_bs_16_lr_0.0005246261149425009_loss_dice_loss.pt',
+    '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/composnet/hyperopt/augmented/config7/seg_bs_16_lr_0.0008078921183289167_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/composnet/all_group_plane_fchk_split_images_ters/hyperopt/config3/seg_bs_16_lr_0.00015629566600182425_loss_dice_loss.pt',
     #'/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images/hyperopt/config2/seg_bs_16_lr_0.00024002900476800525_loss_dice_loss.pt',
     #'/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
     map_location=device
@@ -70,12 +74,12 @@ with torch.no_grad():
         masks  = masks.to(device)
 
 
-        probs = model(images)                            # → (B,1,H,W)
-        #probs  = torch.sigmoid(logits)
-        preds  = (probs > 0.5).long().squeeze(1)          # → (B,H,W)
+        probs = model(images)                           
+        probs  = torch.sigmoid(probs)  # Apply sigmoid to get probabilities
+        preds  = (probs > 0.5).long()
+        print('probs shape:', probs.shape)
+        print('preds shape:', preds.shape) 
 
-        print(preds.cpu())
-        print(masks.cpu())
 
         for i in range(masks.size(0)):
             pred_i = preds[i]
@@ -113,22 +117,8 @@ print(len(preds_list), len(masks_list))
 
 all_ground_truths = np.concatenate(masks_list, axis=0)
 all_predictions = np.concatenate(preds_list, axis=0)
-#print("Ground Truth: ", all_ground_truths)
-#print("Predictions: ", all_predictions)
-# Initialize Metrics class
 
-'''
-metrics = Metrics(model=model, data={"pred": all_predictions, "ground_truth": all_ground_truths}, config={})
 
-# Compute metrics
-results = metrics.evaluate()
-
-# Print metrics
-print("Metrics:")
-for metric, value in results.items():
-    print(f"{metric}: {value:.4f}")
-
-'''
 # ——— Compute and print mean IoU and Dice Coefficient ———
 mean_iou = sum(ious) / len(ious)
 mean_dice = sum(dice_coeffs) / len(dice_coeffs)
@@ -183,14 +173,14 @@ for bin_idx in range(10):
     (0, 0, 0),           # 0 - Background (black)
     (1.0, 1.0, 1.0),     # 1 - Hydrogen (white)
     (0.5, 0.5, 0.5),     # 2 - Carbon (grey)
-    (1.0, 0.0, 0.0),     # 3 - Oxygen (red)
-    (0.0, 0.0, 1.0)      # 4 - Nitrogen (blue)
+    (0.0, 0.0, 1.0),      # 3 - Nitrogen (blue)
+    (1.0, 0.0, 0.0),     # 4 - Oxygen (red)
     ]
     label_cmap = ListedColormap(label_colors)
 
-    class_labels = ["H", "C", "O", "N"]
+    class_labels = ["Background", "H", "C","N", "O" ]
     #colors = [plt.cm.tab20(i) for i in range(1, 5)]  # Skip background (index 0)
-    colors = label_colors[1:]
+    colors = label_colors
     # Create legend handles as dots only
     legend_handles = [
     Line2D(
@@ -204,65 +194,61 @@ for bin_idx in range(10):
     for label, col in zip(class_labels, colors)]
 
 
+    def add_bg(one_hot):
+        # one_hot: (C, H, W), C=4 (H, C, N, O)
+        bg = (one_hot.sum(axis=0) == 0)        # True where no class
+        label = np.argmax(one_hot, axis=0) + 1 # temporarily 1–4
+        label[bg] = 0                          # set empty → 0
+        return label                           # now: 0=BG, 1=H,2=C,3=N,4=O
     
-    
+
     
     for rank, idx in enumerate(sample_idxs[:5], start=1):
-        fig, axs = plt.subplots(1, 3, figsize=(25, 15))
+        fig, axs = plt.subplots(6, 3, figsize=(25, 15))
 
         # Input = mean over spectral channels
         avg_chan = torch.mean(images_list[idx], dim=0)
-        axs[0].imshow(avg_chan.squeeze(), cmap="viridis")
-        axs[0].set_title("Average TERS intensity observed")
+        axs[0, 0].imshow(avg_chan.squeeze(), cmap="viridis")
+        axs[0, 0].set_title("Average TERS intensity observed")
 
 
         # Ground truth mask
-        print("shape")
-        print(masks_list[idx].shape, preds_list[idx].shape)
-        print(np.unique(np.argmax(masks_list[idx], axis=0), return_counts=True))
-        mask = masks_list[idx]
-        mask_n = np.zeros((mask.shape[0]+1, mask.shape[1], mask.shape[2]))
-        mask_n[1:, :, :] = mask
-        axs[1].imshow(np.argmax(mask_n, axis=0), cmap=label_cmap)
-        axs[1].set_title("Ground Truth")
 
-        axs[1].legend(handles=legend_handles, loc="lower center", bbox_to_anchor=(0.5, -0.3), ncol=4)
+        mask = masks_list[idx]
+        mask_n = np.zeros((mask.shape[0]+1, mask.shape[1], mask.shape[2]), dtype=int)
+        mask_n[1:, :, :] = mask.astype(int)
+        gt_map = add_bg(masks_list[idx])
+        axs[0, 1].imshow(gt_map, cmap=label_cmap)
+        axs[0, 1].set_title("Ground Truth")
+
+        # axs[1].legend(handles=legend_handles, loc="lower center", bbox_to_anchor=(0.5, -0.3), ncol=4)
 
         # Predicted mask
         mask = preds_list[idx]
-        mask_n = np.zeros((mask.shape[0]+1, mask.shape[1], mask.shape[2]))
-        mask_n[1:, :, :] = mask
-        axs[2].imshow(np.argmax(mask_n, axis=0), cmap=label_cmap)
-        axs[2].set_title(f"Pred (IoU={ious[idx]:.3f}, Dice={dice_coeffs[idx]:.3f})")
+        mask_n = np.zeros((mask.shape[0]+1, mask.shape[1], mask.shape[2]), dtype = int)
+        mask_n[1:, :, :] = mask.astype(int)
+        pred_map = add_bg(preds_list[idx])
+        axs[0,2].imshow(pred_map, cmap=label_cmap)
+        axs[0,2].set_title(f"Pred (IoU={ious[idx]:.3f}, Dice={dice_coeffs[idx]:.3f})")
+        print("Unique values in GT and Pred maps:")
 
-        axs[2].legend(handles=legend_handles, loc="lower center", bbox_to_anchor=(0.5, -0.3), ncol=4)
+        print(np.unique(gt_map), np.unique(pred_map))
 
-        '''
-
-        print(preds_list[idx].shape, masks_list[idx].shape)
-
-        print(f"whole {i+1}")
-        print("GT")
-        print(np.unique(masks_list[idx], return_counts=True))
-        print("Pred")
-        print(np.unique(preds_list[idx], return_counts=True))
+        #axs[2].legend(handles=legend_handles, loc="lower center", bbox_to_anchor=(0.5, -0.3), ncol=4)
 
         for i in range(preds_list[idx].shape[0]):
 
-            print(f"Channel {i+1}")
-            print("GT")
-            print(np.unique(masks_list[idx][i, :, :], return_counts=True))
-            print("Pred")
-            print(np.unique(preds_list[idx][i, :, :], return_counts=True))
-            axs[i+1,0 ].imshow(masks_list[idx][i, :, :].astype(int), cmap=label_cmap)
-            axs[i+1, 0].set_title(f"Ground Truth Channel {i+1}")
-            axs[i+1, 1].imshow(preds_list[idx][i, :, :].astype(int), cmap=label_cmap)
-            axs[i+1, 1].set_title(f"Predicted Channel {i+1}")
+            gt_channel = (masks_list[idx][i, :, :] * (i+1)).astype(int)
+            pred_channel = (preds_list[idx][i, :, :] * (i+1)).astype(int)
 
-            '''
+            axs[i+1,1 ].imshow(gt_channel, cmap=label_cmap, vmin = 0, vmax = 4)
+            axs[i+1,1].set_title(f"Ground Truth Channel {class_labels[i+1]}")
+            axs[i+1,2].imshow(pred_channel, cmap=label_cmap, vmin = 0, vmax = 4)
+            axs[i+1,2].set_title(f"Predicted Channel {class_labels[i+1]}")
+
             
 
-        for ax in axs:
+        for ax in axs.flatten():
             ax.axis("off")
 
         fig.suptitle(f'Molecule id: {filename_list[idx]}')
@@ -271,5 +257,48 @@ for bin_idx in range(10):
         fname = f"dice_bins_{suffix}/{low:.1f}-{high:.1f}_rank{rank}_iou{ious[idx]:.3f}_dice{dice_coeffs[idx]:.3f}.png"
         plt.savefig(fname)
         plt.close()
+
+
+
+# ——— Per-class accuracy, IoU, Dice ———
+n_classes = masks_list[0].shape[0]
+tp = np.zeros(n_classes, dtype=np.int64)
+tn = np.zeros(n_classes, dtype=np.int64)
+fp = np.zeros(n_classes, dtype=np.int64)
+fn = np.zeros(n_classes, dtype=np.int64)
+
+for gt, pr in zip(masks_list, preds_list):
+    gt_f = gt.reshape(n_classes, -1)
+    pr_f = pr.reshape(n_classes, -1)
+    for c in range(n_classes):
+        g, p = gt_f[c], pr_f[c]
+        tp[c] += np.logical_and(p==1, g==1).sum()
+        tn[c] += np.logical_and(p==0, g==0).sum()
+        fp[c] += np.logical_and(p==1, g==0).sum()
+        fn[c] += np.logical_and(p==0, g==1).sum()
+
+acc = (tp+tn) / (tp+tn+fp+fn + 1e-12)
+iou_c = tp / (tp+fp+fn + 1e-12)
+dice_c = 2*tp / (2*tp + fp+fn + 1e-12)
+
+
+labels = class_labels[1:]   # ['H','C','N','O']
+values = dice_c             # e.g. [0.80, 0.75, 0.60, 0.45]
+x = np.arange(len(values))  # array([0,1,2,3])
+
+plt.figure(figsize=(6,4))
+plt.bar(x, values, tick_label=labels)
+plt.ylim(0,1)
+plt.xlabel('Class')
+plt.ylabel('Dice Coefficient')
+plt.title('Dice Coefficient per Class')
+
+# Optionally annotate each bar with its value
+for xi, v in zip(x, values):
+    plt.text(xi, v + 0.02, f'{v:.2f}', ha='center')
+
+plt.tight_layout()
+plt.savefig(f"dice_per_class_{suffix}.png")
+plt.show()
 
 print("Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'")

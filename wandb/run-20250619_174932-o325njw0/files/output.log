@@ -1,0 +1,9 @@
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/50, time: 81.15 s, training_loss: 0.375
+Epoch    1/50, time: 83.53 s, training_loss: 0.879
+Epoch    1/50, time: 17.78 s, val_loss: 0.906
+Epoch    1/50, time: 20.29 s, val_loss: 0.322
+Epoch    1/50, time: 108.61 s, training_loss: 0.480
+Epoch    1/50, time: 44.31 s, val_loss: 0.408
+Epoch    1/50, time: 154.83 s, training_loss: 0.841
+Epoch    1/50, time: 31.97 s, val_loss: 0.818

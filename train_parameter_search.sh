@@ -3,9 +3,10 @@
 #SBATCH --mem=256G
 #SBATCH --gpus=1
 #SBATCH -c 12
-#SBATCH --partition=gpu-h100-80g-short
+# SBATCH --partition=gpu-h100-80g-short
+#SBATCH --partition=gpu-a100-80g
 # SBATCH --partition=gpu-debug
-#SBATCH -o /home/sethih1/masque_new/composnet/ters_gen/log_file/slurm_%j.out
+#SBATCH -o /home/sethih1/masque_new/composnet/ters_gen/log_file/slurm_%cfg3_without_aug.out
 
 arg1=$1
 
@@ -23,7 +24,8 @@ RESOURCE_MONITOR_PID=$!
 
 # Run your main Python job
 # python parameter_search.py --config $arg1
-python hyperopt.py --config $arg1
+
+python /home/sethih1/masque_new/composnet/ters_gen/hyperopt.py --config $arg1
 # python check_train.py --config $arg1
 
 # After your job finishes, stop the monitoring processes

@@ -1,0 +1,4 @@
+  File "/home/sethih1/masque_new/composnet/ters_gen/check_accuracy_dice.py", line 231
+    axs[0,2].imshow(pred_map, axis = 0), cmap=label_cmap)
+                                                        ^
+SyntaxError: unmatched ')'

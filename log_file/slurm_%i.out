@@ -1,0 +1,12 @@
+Per-class pixel counts:
+  Class 0: 492561 pixels
+  Class 1: 663552 pixels
+  Class 2: 162486 pixels
+  Class 3: 178605 pixels
+  Class 4: 74786700 pixels
+
+Example α via median-frequency balancing:
+tensor([1.0000, 0.7423, 3.0314, 2.7578, 0.0066])
+
+Example α via log-inverse weighting:
+tensor([38.2951, 35.3427, 45.6857, 45.2584,  1.4423])
