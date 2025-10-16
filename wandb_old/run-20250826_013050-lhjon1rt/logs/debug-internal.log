@@ -1,0 +1,16 @@
+{"time":"2025-08-26T01:30:51.75005952+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250826_013050-lhjon1rt/logs/debug-core.log"}
+{"time":"2025-08-26T01:30:52.060350397+03:00","level":"INFO","msg":"stream: created new stream","id":"lhjon1rt"}
+{"time":"2025-08-26T01:30:52.060410613+03:00","level":"INFO","msg":"stream: started","id":"lhjon1rt"}
+{"time":"2025-08-26T01:30:52.060421043+03:00","level":"INFO","msg":"handler: started","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T01:30:52.060433849+03:00","level":"INFO","msg":"sender: started","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T01:30:52.060454945+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T01:30:52.463602188+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-26T02:05:08.208397471+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-26T02:05:08.208595884+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-26T02:05:09.18878293+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-26T02:05:09.212349498+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 413-413","runtime_seconds":0.023446396}],"total_operations":1}}
+{"time":"2025-08-26T02:05:09.453195265+03:00","level":"INFO","msg":"stream: closing","id":"lhjon1rt"}
+{"time":"2025-08-26T02:05:09.453206957+03:00","level":"INFO","msg":"handler: closed","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T02:05:09.453225047+03:00","level":"INFO","msg":"sender: closed","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T02:05:09.453214754+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lhjon1rt"}
+{"time":"2025-08-26T02:05:09.453686971+03:00","level":"INFO","msg":"stream: closed","id":"lhjon1rt"}

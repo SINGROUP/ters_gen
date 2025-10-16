@@ -1,0 +1,16 @@
+{"time":"2025-08-25T19:56:34.688613878+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250825_195633-vaep4nzf/logs/debug-core.log"}
+{"time":"2025-08-25T19:56:34.991916374+03:00","level":"INFO","msg":"stream: created new stream","id":"vaep4nzf"}
+{"time":"2025-08-25T19:56:34.991949172+03:00","level":"INFO","msg":"stream: started","id":"vaep4nzf"}
+{"time":"2025-08-25T19:56:34.991962606+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T19:56:34.991980276+03:00","level":"INFO","msg":"sender: started","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T19:56:34.991969521+03:00","level":"INFO","msg":"handler: started","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T19:56:35.334341535+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-25T20:00:26.3591807+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-25T20:00:26.359337346+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-25T20:00:27.361311121+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.643774459,"progress":"139B/139B"},{"desc":"uploading config.yaml","runtime_seconds":0.209527357,"progress":"2.9KB/2.9KB"}],"total_operations":2}}
+{"time":"2025-08-25T20:00:27.386230658+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-25T20:00:27.654120867+03:00","level":"INFO","msg":"stream: closing","id":"vaep4nzf"}
+{"time":"2025-08-25T20:00:27.654131339+03:00","level":"INFO","msg":"handler: closed","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T20:00:27.654137385+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T20:00:27.654148063+03:00","level":"INFO","msg":"sender: closed","stream_id":"vaep4nzf"}
+{"time":"2025-08-25T20:00:27.654426499+03:00","level":"INFO","msg":"stream: closed","id":"vaep4nzf"}

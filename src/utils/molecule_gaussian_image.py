@@ -24,6 +24,7 @@ def molecule_gaussian_image(xyz_string):
 
     # Define grid parameters
     grid_size = 256  # Grid resolution (same for all channels)
+    grid_size = 32  # Grid resolution (same for all channels)
     sigma = 1.5  # Gaussian blur intensity (adjustable)
     
     # Assume 'positions' is a numpy array of atom positions (shape: [n_atoms, 3])

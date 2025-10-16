@@ -1,0 +1,25 @@
+Epoch   19/50, time: 131.54 s, training_loss: 0.543
+Training Metrics:
+Accuracy: 0.8538
+Precision: 0.0960
+Recall: 0.7664
+F1 Score: 0.1706
+IoU: 0.0933
+Dice Coefficient: 0.1706
+Validation Metrics:
+Accuracy: 0.8493
+Precision: 0.0882
+Recall: 0.7441
+F1 Score: 0.1578
+IoU: 0.0856
+Dice Coefficient: 0.1578
+Epoch   19/50, time: 35.80 s, val_loss: 0.563
+Test Metrics:
+Accuracy: 0.8493
+Precision: 0.0882
+Recall: 0.7441
+F1 Score: 0.1578
+IoU: 0.0856
+Dice Coefficient: 0.1578
+[I 2025-08-05 09:32:37,205] Trial 2 finished with value: 0.15776074416031421 and parameters: {'batch_size': 32, 'lr': 1.1358751048249881e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 100, 'att_channels': 32}. Best is trial 0 with value: 0.24546043995343442.
+wandb: Finishing previous runs because reinit is set to True.

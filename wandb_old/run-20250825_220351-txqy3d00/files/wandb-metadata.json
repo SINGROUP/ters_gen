@@ -1,0 +1,108 @@
+{
+  "os": "Linux-5.14.0-503.26.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.11.6",
+  "startedAt": "2025-08-25T19:03:53.024067Z",
+  "args": [
+    "--config",
+    "config_hypopt_all.yaml",
+    "--use_wandb"
+  ],
+  "program": "/home/sethih1/masque_new/ters_gen/hyperopt.py",
+  "codePath": "hyperopt.py",
+  "git": {
+    "remote": "git@github.com:sethih10/ters_gen.git",
+    "commit": "c7b252c40a47e5842b199e5f61a1449f763d04e4"
+  },
+  "email": "sethih10@gmail.com",
+  "root": "/home/sethih1/masque_new/ters_gen",
+  "host": "gpu50.int.triton.aalto.fi",
+  "executable": "/scratch/phys/sin/sethih1/venv/masque_env/bin/python",
+  "codePathLocal": "hyperopt.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA H200",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "1080363700224",
+      "used": "4396056576"
+    }
+  },
+  "memory": {
+    "total": "2164001280000"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA H200",
+      "memoryTotal": "150754820096",
+      "cudaCores": 16896,
+      "architecture": "Hopper",
+      "uuid": "GPU-91d3aad8-5dc0-b770-1bd0-f40b07d2df3c"
+    },
+    {
+      "name": "NVIDIA H200",
+      "memoryTotal": "150754820096",
+      "cudaCores": 16896,
+      "architecture": "Hopper",
+      "uuid": "GPU-21740514-a3c9-d708-9318-e714bde48ce8"
+    },
+    {
+      "name": "NVIDIA H200",
+      "memoryTotal": "150754820096",
+      "cudaCores": 16896,
+      "architecture": "Hopper",
+      "uuid": "GPU-d53d5d35-c6fc-3bc1-4642-cde86fdd0323"
+    },
+    {
+      "name": "NVIDIA H200",
+      "memoryTotal": "150754820096",
+      "cudaCores": 16896,
+      "architecture": "Hopper",
+      "uuid": "GPU-831b7a71-c404-7aa0-5ef9-578e7a2ab9c1"
+    }
+  ],
+  "slurm": {
+    "cluster_name": "triton",
+    "conf": "/var/spool/slurmd/conf-cache/slurm.conf",
+    "cpus_on_node": "64",
+    "cpus_per_task": "64",
+    "gpus": "4",
+    "gpus_on_node": "4",
+    "gtids": "0",
+    "job_account": "aalto_users",
+    "job_cpus_per_node": "64",
+    "job_end_time": "1756560668",
+    "job_gid": "3155757",
+    "job_gpus": "0,4,5,6",
+    "job_id": "10247951",
+    "job_name": "train_parameter_search.sh",
+    "job_nodelist": "gpu50",
+    "job_num_nodes": "1",
+    "job_partition": "gpu-h200-141g-short",
+    "job_qos": "normal",
+    "job_start_time": "1756128668",
+    "job_uid": "3155757",
+    "job_user": "sethih1",
+    "jobid": "10247951",
+    "localid": "0",
+    "mem_per_node": "524288",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "gpu50",
+    "oom_kill_step": "0",
+    "prio_process": "0",
+    "procid": "0",
+    "submit_dir": "/home/sethih1/masque_new/ters_gen",
+    "submit_host": "login4.triton.aalto.fi",
+    "task_pid": "3476466",
+    "tasks_per_node": "1",
+    "topology_addr": "s0-0.s1-18.gpu50",
+    "topology_addr_pattern": "switch.switch.node",
+    "tres_per_task": "cpu=64"
+  },
+  "cudaVersion": "12.8"
+}

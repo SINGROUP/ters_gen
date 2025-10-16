@@ -1,0 +1,16 @@
+{"time":"2025-08-26T00:15:46.36945838+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250826_001546-pidxk2gv/logs/debug-core.log"}
+{"time":"2025-08-26T00:15:46.669046443+03:00","level":"INFO","msg":"stream: created new stream","id":"pidxk2gv"}
+{"time":"2025-08-26T00:15:46.669086608+03:00","level":"INFO","msg":"stream: started","id":"pidxk2gv"}
+{"time":"2025-08-26T00:15:46.669115796+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:15:46.669131928+03:00","level":"INFO","msg":"sender: started","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:15:46.669126003+03:00","level":"INFO","msg":"handler: started","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:15:46.97446739+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-26T00:25:24.004924723+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-26T00:25:24.005201923+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-26T00:25:24.645992295+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-26T00:25:24.879177311+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-26T00:25:24.882376035+03:00","level":"INFO","msg":"stream: closing","id":"pidxk2gv"}
+{"time":"2025-08-26T00:25:24.882391432+03:00","level":"INFO","msg":"handler: closed","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:25:24.88239897+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:25:24.882416572+03:00","level":"INFO","msg":"sender: closed","stream_id":"pidxk2gv"}
+{"time":"2025-08-26T00:25:24.882901032+03:00","level":"INFO","msg":"stream: closed","id":"pidxk2gv"}

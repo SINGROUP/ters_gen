@@ -213,8 +213,8 @@ class Ters_dataset_filtered_skip(Dataset):
 
 
 
-        images = filtered_spectrums # (64, 64, N_modes)
-        frequencies = filtered_frequencies # (N_modes,)
+        #images = filtered_spectrums # (64, 64, N_modes)
+        #frequencies = filtered_frequencies # (N_modes,)
 
         target_image = torch.from_numpy(target_image).float()
 
@@ -222,19 +222,21 @@ class Ters_dataset_filtered_skip(Dataset):
 
         #selected_images = torch.from_numpy(images).permute(2, 0, 1).float() # (N_modes, 64, 64)
 
-        selected_images = [torch.from_numpy(images[:,:, i]).float() for i in range(images.shape[2])]
+        #selected_images = [torch.from_numpy(images[:,:, i]).float() for i in range(images.shape[2])]
+
+        selected_images = [torch.from_numpy(filtered_spectrums[:,:, i]).float() for i in range(filtered_spectrums.shape[2])]
 
 
         #selected_images = [images[:,:, i] for i in range(images.shape[2])]
         #selected_images = [torch.from_numpy(image).float() for image in selected_images]
-        selected_frequencies = torch.tensor(frequencies).float()
+        #selected_frequencies = torch.tensor(filtered_frequencies).float()
 
         # Applying transformations to the images (and frequencies)
         if self.t_image:
             selected_images = [self.t_image(image) for image in selected_images]
 
-        if self.t_freq:
-            selected_frequencies = self.t_freq(selected_frequencies)
+        #if self.t_freq:
+        #    selected_frequencies = self.t_freq(selected_frequencies)
 
         
 
@@ -250,16 +252,39 @@ class Ters_dataset_filtered_skip(Dataset):
             '''
 
 
-        _, selected_frequencies = padding(selected_images, selected_frequencies)
+        #_, selected_frequencies = padding(selected_images, selected_frequencies)
+        selected_frequencies = torch.zeros(1)
         mol_images_tensor = selected_images
 
 
         # selected_frequencies = selected_frequencies / self.max_freq
 
         if self.flag: 
-            return filename, _, _ , mol_images_tensor, selected_frequencies, target_image
+            return filename, torch.tensor(atom_pos.shape[0]) , torch.tensor(1) , mol_images_tensor, selected_frequencies, target_image
             #return filename, atom_pos, atomic_numbers, mol_images_tensor, selected_frequencies, target_image
 
 
         return mol_images_tensor, selected_frequencies, target_image
 
+
+'''
+def ters_collate_fn(batch):
+    filenames, atom_pos_list, atomic_numbers_list = [], [], []
+    images, freqs, masks = [], [], []
+
+    for sample in batch:
+        filename, atom_pos, atomic_numbers, image, freq, mask = sample
+        filenames.append(filename)
+        atom_pos_list.append(torch.tensor(atom_pos, dtype=torch.float))         # (N_atoms, 3)
+        atomic_numbers_list.append(torch.tensor(atomic_numbers, dtype=torch.long))  # (N_atoms,)
+        images.append(image)
+        freqs.append(freq)
+        masks.append(mask)
+
+    # Stack uniform tensors
+    images = torch.stack(images)
+    freqs = torch.stack(freqs)
+    masks = torch.stack(masks)
+
+    return filenames, atom_pos_list, atomic_numbers_list, images, freqs, masks
+'''

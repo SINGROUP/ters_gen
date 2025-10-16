@@ -27,6 +27,7 @@ def molecule_circular_image(xyz_string, flag=True, circle_radius=5):
     # Define fixed channels for these elements
     fixed_elements = ["H", "C", "N", "O"]
     grid_size = 256  # Grid resolution
+    #grid_size = 32  # Grid resolution
     
     # Convert all positions to a numpy array
     positions = np.array([pos for _, pos in atoms_data])

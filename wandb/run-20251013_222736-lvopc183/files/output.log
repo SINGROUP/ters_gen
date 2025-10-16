@@ -1,0 +1,329 @@
+Exception in trial 2: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+wandb:
+wandb: 🚀 View run trial_2_bs64_lr4e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/uxtb5yi5
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251013_222736-uxtb5yi5/logs
+[I 2025-10-13 22:28:59,178] Trial 2 finished with value: 0.0 and parameters: {'batch_size': 64, 'lr': 4.029622912938401e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.0.
+wandb: Finishing previous runs because reinit is set to True.
+wandb:
+wandb: 🚀 View run trial_1_bs64_lr2e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/g9cor5dr
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251013_222736-g9cor5dr/logs
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251013_222859-7pom7fes
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_4_bs64_lr3e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/7pom7fes
+Exception in trial 1: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+[I 2025-10-13 22:29:01,796] Trial 1 finished with value: 0.0 and parameters: {'batch_size': 64, 'lr': 0.00017335403392656975, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.0.
+wandb: Finishing previous runs because reinit is set to True.
+Exception in trial 0: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+[W 2025-10-13 22:29:02,594] Trial 0 failed with parameters: {'batch_size': 32, 'lr': 0.00025839974668037766, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 16} because of the following error: UsageError('Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+[W 2025-10-13 22:29:02,605] Trial 0 failed with value None.
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0
+wandb:      trial 1
+wandb:
+wandb: 🚀 View run trial_4_bs64_lr3e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/7pom7fes
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251013_222859-7pom7fes/logs
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251013_222901-6v462v3t
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_5_bs16_lr1e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/6v462v3t
+Exception in trial 5: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0
+wandb:      trial 5
+wandb:
+wandb: 🚀 View run trial_5_bs16_lr1e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/6v462v3t
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251013_222901-6v462v3t/logs
+[I 2025-10-13 22:29:32,926] Trial 5 finished with value: 0.0 and parameters: {'batch_size': 16, 'lr': 0.0001453958356496152, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 16}. Best is trial 2 with value: 0.0.
+Exception in trial 4: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+[W 2025-10-13 22:29:42,559] Trial 4 failed with parameters: {'batch_size': 64, 'lr': 0.00025117495700452945, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32} because of the following error: Error('You must call wandb.init() before wandb.log()').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/lib/preinit.py", line 36, in preinit_wrapper
+    raise wandb.Error(f"You must call wandb.init() before {name}()")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.log()
+[W 2025-10-13 22:29:42,561] Trial 4 failed with value None.
+Exception in trial 3: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+[W 2025-10-13 22:30:07,054] Trial 3 failed with parameters: {'batch_size': 128, 'lr': 0.00031826392701285455, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 400, 'att_channels': 16} because of the following error: Error('You must call wandb.init() before wandb.log()').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/lib/preinit.py", line 36, in preinit_wrapper
+    raise wandb.Error(f"You must call wandb.init() before {name}()")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.log()
+[W 2025-10-13 22:30:07,055] Trial 3 failed with value None.
+wandb: ERROR Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (7pom7fes) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.

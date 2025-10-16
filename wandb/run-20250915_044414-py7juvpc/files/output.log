@@ -1,0 +1,9 @@
+Test Metrics:
+Accuracy: 0.9840
+Precision: 0.5799
+Recall: 0.6873
+F1 Score: 0.6290
+IoU: 0.4588
+Dice Coefficient: 0.6290
+[I 2025-09-15 04:44:17,799] Trial 34 finished with value: 0.6290363788106993 and parameters: {'batch_size': 16, 'lr': 0.00015336998685610426, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 32}. Best is trial 30 with value: 0.7575867922883212.
+wandb: Finishing previous runs because reinit is set to True.

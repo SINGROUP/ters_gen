@@ -18,7 +18,7 @@ model:
 training:
   epochs: 50
   batch_sizes: [16, 32, 64, 128]
-  learning_rates: [0.00001, 0.00005,  0.0001, 0.001]
+  learning_rates: [0.00001, 0.001] # , 0.00005,  0.0001, 0.001]
   loss_functions: [dice_loss] #focal_loss, MSELoss, L1Loss]
   n_trials: 48
   gpu_ids: [0,1,2,3]
@@ -30,7 +30,7 @@ data:
   val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
   split_by_id: 0
   circle_radius: 5
-  augmentation: [True, False]
+  augmentation: [True] #, False]
 
-save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all/augmented/config_hypopt_all/
-log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all/augmented/config_hypopt_all/
+save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug/augmented/config_hypopt_all/
+log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug/augmented/config_hypopt_all/

@@ -1,0 +1,16 @@
+{"time":"2025-08-26T00:25:24.92360275+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250826_002523-yo90my6d/logs/debug-core.log"}
+{"time":"2025-08-26T00:25:25.220849719+03:00","level":"INFO","msg":"stream: created new stream","id":"yo90my6d"}
+{"time":"2025-08-26T00:25:25.220882906+03:00","level":"INFO","msg":"stream: started","id":"yo90my6d"}
+{"time":"2025-08-26T00:25:25.220902334+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:25:25.220915319+03:00","level":"INFO","msg":"handler: started","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:25:25.220962168+03:00","level":"INFO","msg":"sender: started","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:25:25.461287371+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-26T00:35:52.069173677+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-26T00:35:52.069357594+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-26T00:35:53.072212577+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.795253395},{"desc":"uploading wandb-summary.json","runtime_seconds":0.795234114},{"desc":"uploading config.yaml","runtime_seconds":0.541003369}],"total_operations":3}}
+{"time":"2025-08-26T00:36:02.747541828+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-26T00:36:03.291330898+03:00","level":"INFO","msg":"stream: closing","id":"yo90my6d"}
+{"time":"2025-08-26T00:36:03.291354481+03:00","level":"INFO","msg":"handler: closed","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:36:03.291367117+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:36:03.291396585+03:00","level":"INFO","msg":"sender: closed","stream_id":"yo90my6d"}
+{"time":"2025-08-26T00:36:03.291879896+03:00","level":"INFO","msg":"stream: closed","id":"yo90my6d"}

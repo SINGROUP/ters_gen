@@ -1,0 +1,18 @@
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251013_232059-2spg0sgj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs128_lr9e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/2spg0sgj
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251013_232059-08d4g5xp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_2_bs32_lr3e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/08d4g5xp
+Epoch    1/50, time: 322.59 s, training_loss: 0.893
+Epoch    1/50, time: 324.00 s, training_loss: 0.876
+Epoch    1/50, time: 366.96 s, training_loss: 0.925
+Epoch    1/50, time: 49.73 s, val_loss: 0.809
+Epoch    1/50, time: 52.96 s, val_loss: 0.828
+Epoch    1/50, time: 36.39 s, val_loss: 0.914

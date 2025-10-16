@@ -1,0 +1,16 @@
+Exception in trial 1: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+[I 2025-10-13 22:29:01,796] Trial 1 finished with value: 0.0 and parameters: {'batch_size': 64, 'lr': 0.00017335403392656975, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.0.
+wandb: Finishing previous runs because reinit is set to True.

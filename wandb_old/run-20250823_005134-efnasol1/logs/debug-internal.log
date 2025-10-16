@@ -1,0 +1,16 @@
+{"time":"2025-08-23T00:51:35.184446331+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250823_005134-efnasol1/logs/debug-core.log"}
+{"time":"2025-08-23T00:51:35.477637457+03:00","level":"INFO","msg":"stream: created new stream","id":"efnasol1"}
+{"time":"2025-08-23T00:51:35.477669943+03:00","level":"INFO","msg":"stream: started","id":"efnasol1"}
+{"time":"2025-08-23T00:51:35.477684687+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"efnasol1"}
+{"time":"2025-08-23T00:51:35.477717938+03:00","level":"INFO","msg":"sender: started","stream_id":"efnasol1"}
+{"time":"2025-08-23T00:51:35.477691585+03:00","level":"INFO","msg":"handler: started","stream_id":"efnasol1"}
+{"time":"2025-08-23T00:51:35.720484576+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-23T01:03:42.65572746+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-23T01:03:42.655831549+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-23T01:03:43.315340554+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-23T01:03:43.534496311+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-23T01:03:43.536450268+03:00","level":"INFO","msg":"stream: closing","id":"efnasol1"}
+{"time":"2025-08-23T01:03:43.536461582+03:00","level":"INFO","msg":"handler: closed","stream_id":"efnasol1"}
+{"time":"2025-08-23T01:03:43.53647268+03:00","level":"INFO","msg":"sender: closed","stream_id":"efnasol1"}
+{"time":"2025-08-23T01:03:43.53646794+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"efnasol1"}
+{"time":"2025-08-23T01:03:43.536990555+03:00","level":"INFO","msg":"stream: closed","id":"efnasol1"}

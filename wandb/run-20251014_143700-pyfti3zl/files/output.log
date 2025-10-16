@@ -1,0 +1,6 @@
+Epoch    1/50, time: 375.48 s, training_loss: 0.858
+Epoch    1/50, time: 376.10 s, training_loss: 0.832
+Epoch    1/50, time: 376.27 s, training_loss: 0.900
+Epoch    1/50, time: 53.45 s, val_loss: 0.784
+Epoch    1/50, time: 53.34 s, val_loss: 0.893
+Epoch    1/50, time: 54.78 s, val_loss: 0.813

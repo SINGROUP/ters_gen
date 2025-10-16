@@ -1,0 +1,127 @@
+_allow_dotted_keys:
+    value: false
+_convert_dict:
+    value: true
+_fields:
+    value:
+        data: |
+            augmentation:
+            - true
+            circle_radius: 5
+            split_by_id: 0
+            train_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/train
+            val_path: /scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/val
+        log_path: /scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug/augmented/config_hypopt_all/
+        model: |
+            att_channels_options:
+            - 16
+            - 32
+            - 64
+            filters_options:
+            - - 16
+              - 32
+              - 64
+            - - 16
+              - 32
+              - 64
+              - 128
+            - - 16
+              - 32
+              - 64
+              - 128
+              - 256
+            - - 32
+              - 64
+              - 128
+              - 256
+              - 512
+            in_channels:
+            - 100
+            - 400
+            kernel_size_options:
+            - - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+              - 3
+              - 3
+            out_channels: 1
+            type: AttentionUNet
+        save_path: /scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug/augmented/config_hypopt_all/
+        training: |
+            batch_sizes:
+            - 16
+            - 32
+            - 64
+            - 128
+            epochs: 50
+            gpu_ids:
+            - 0
+            - 1
+            - 2
+            - 3
+            learning_rates:
+            - 1.0e-05
+            - 0.001
+            loss_functions:
+            - dice_loss
+            n_jobs: 4
+            n_trials: 48
+            use_parallel: true
+_locked:
+    value: false
+_sort_keys:
+    value: true
+_type_safe:
+    value: true
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.11.6
+        t:
+            "1":
+                - 1
+                - 5
+                - 35
+                - 41
+                - 49
+                - 53
+                - 80
+            "2":
+                - 1
+                - 5
+                - 35
+                - 41
+                - 49
+                - 53
+                - 80
+            "3":
+                - 2
+                - 13
+                - 16
+                - 55
+            "4": 3.11.6
+            "5": 0.20.1
+            "10":
+                - 20
+            "12": 0.20.1
+            "13": linux-x86_64
+batch_size:
+    value: 64
+loss_fn:
+    value: dice_loss
+lr:
+    value: 2.6023931588834355e-05

@@ -1,0 +1,17 @@
+{"time":"2025-09-14T17:58:11.934896556+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250914_175811-gpj5ugyg/logs/debug-core.log"}
+{"time":"2025-09-14T17:58:12.3423413+03:00","level":"INFO","msg":"stream: created new stream","id":"gpj5ugyg"}
+{"time":"2025-09-14T17:58:12.342365874+03:00","level":"INFO","msg":"stream: started","id":"gpj5ugyg"}
+{"time":"2025-09-14T17:58:12.342387318+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T17:58:12.342391976+03:00","level":"INFO","msg":"handler: started","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T17:58:12.342405579+03:00","level":"INFO","msg":"sender: started","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T17:58:12.497958045+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-09-14T17:58:14.877303507+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-14T20:08:30.784983588+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-09-14T20:08:30.785283242+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-09-14T20:08:31.449223089+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.417195021,"progress":"40.9KB/40.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.417163311,"progress":"27B/27B"},{"desc":"uploading config.yaml","runtime_seconds":0.176219284,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-09-14T20:08:31.523817011+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T20:08:31.924395044+03:00","level":"INFO","msg":"stream: closing","id":"gpj5ugyg"}
+{"time":"2025-09-14T20:08:31.924416302+03:00","level":"INFO","msg":"handler: closed","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T20:08:31.924427576+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T20:08:31.92444497+03:00","level":"INFO","msg":"sender: closed","stream_id":"gpj5ugyg"}
+{"time":"2025-09-14T20:08:31.924815935+03:00","level":"INFO","msg":"stream: closed","id":"gpj5ugyg"}

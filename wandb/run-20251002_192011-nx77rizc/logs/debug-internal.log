@@ -1,0 +1,17 @@
+{"time":"2025-10-02T19:20:11.828505483+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251002_192011-nx77rizc/logs/debug-core.log"}
+{"time":"2025-10-02T19:20:12.238625656+03:00","level":"INFO","msg":"stream: created new stream","id":"nx77rizc"}
+{"time":"2025-10-02T19:20:12.238646314+03:00","level":"INFO","msg":"stream: started","id":"nx77rizc"}
+{"time":"2025-10-02T19:20:12.238670527+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:12.238679872+03:00","level":"INFO","msg":"sender: started","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:12.238686734+03:00","level":"INFO","msg":"handler: started","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:12.409030934+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-10-02T19:20:15.042168471+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-02T19:20:31.573696255+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-02T19:20:31.573812685+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-02T19:20:32.303562502+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-02T19:20:33.156923035+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-02T19:20:33.159704643+03:00","level":"INFO","msg":"stream: closing","id":"nx77rizc"}
+{"time":"2025-10-02T19:20:33.159721169+03:00","level":"INFO","msg":"handler: closed","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:33.159728728+03:00","level":"INFO","msg":"sender: closed","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:33.159725294+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nx77rizc"}
+{"time":"2025-10-02T19:20:33.160217662+03:00","level":"INFO","msg":"stream: closed","id":"nx77rizc"}

@@ -1,0 +1,24 @@
+Training Metrics:
+Accuracy: 0.9000
+Precision: 0.1217
+Recall: 0.6581
+F1 Score: 0.2053
+IoU: 0.1144
+Dice Coefficient: 0.2053
+Validation Metrics:
+Accuracy: 0.9797
+Precision: 0.4718
+Recall: 0.5913
+F1 Score: 0.5248
+IoU: 0.3558
+Dice Coefficient: 0.5248
+Epoch   43/50, time: 126.35 s, training_loss: 0.234
+Test Metrics:
+Accuracy: 0.9797
+Precision: 0.4718
+Recall: 0.5913
+F1 Score: 0.5248
+IoU: 0.3558
+Dice Coefficient: 0.5248
+[I 2025-08-05 23:22:29,178] Trial 23 finished with value: 0.5248496507185604 and parameters: {'batch_size': 64, 'lr': 0.00016666071457288186, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 400, 'att_channels': 32}. Best is trial 8 with value: 0.7411194148943364.
+wandb: Finishing previous runs because reinit is set to True.

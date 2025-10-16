@@ -1,0 +1,852 @@
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/30, time: 42.99 s, training_loss: 0.517
+Epoch    1/30, time: 43.04 s, training_loss: 0.513Epoch    1/30, time: 43.04 s, training_loss: 0.665
+
+Epoch    1/30, time: 43.10 s, training_loss: 0.306
+Epoch    1/30, time: 7.37 s, val_loss: 0.710
+Epoch    1/30, time: 7.48 s, val_loss: 0.681
+Epoch    1/30, time: 7.39 s, val_loss: 0.243Epoch    1/30, time: 7.57 s, val_loss: 0.617
+
+Training Metrics:
+Accuracy: 0.8110
+Precision: 0.9569
+Recall: 0.0149
+F1 Score: 0.0293
+IoU: 0.0149
+Dice Coefficient: 0.0293
+Validation Metrics:
+Accuracy: 0.8146
+Precision: 0.9732
+Recall: 0.0320
+F1 Score: 0.0620
+IoU: 0.0320
+Dice Coefficient: 0.0620
+Training Metrics:
+Accuracy: 0.8173
+Precision: 0.9607
+Recall: 0.0488
+F1 Score: 0.0929
+IoU: 0.0487
+Dice Coefficient: 0.0929
+Validation Metrics:
+Accuracy: 0.8270
+Precision: 0.9715
+Recall: 0.0986
+F1 Score: 0.1790
+IoU: 0.0983
+Dice Coefficient: 0.1790
+Training Metrics:
+Accuracy: 0.9502
+Precision: 0.8467
+Recall: 0.9042
+F1 Score: 0.8745
+IoU: 0.7770
+Dice Coefficient: 0.8745
+Validation Metrics:
+Accuracy: 0.9514
+Precision: 0.8634
+Recall: 0.8865
+F1 Score: 0.8748
+IoU: 0.7774
+Dice Coefficient: 0.8748
+Epoch    2/30, time: 1.97 s, training_loss: 0.621
+Epoch    2/30, time: 2.21 s, training_loss: 0.377
+Training Metrics:
+Accuracy: 0.8694
+Precision: 0.9446
+Recall: 0.3387
+F1 Score: 0.4986
+IoU: 0.3321
+Dice Coefficient: 0.4986
+Validation Metrics:
+Accuracy: 0.9152
+Precision: 0.9494
+Recall: 0.5878
+F1 Score: 0.7261
+IoU: 0.5700
+Dice Coefficient: 0.7261
+Epoch    2/30, time: 0.82 s, val_loss: 0.678
+Epoch    2/30, time: 0.88 s, val_loss: 0.492
+Epoch    3/30, time: 2.38 s, training_loss: 0.590
+Epoch    3/30, time: 2.29 s, training_loss: 0.339
+Epoch    2/30, time: 4.34 s, training_loss: 0.182
+Epoch    3/30, time: 0.91 s, val_loss: 0.615
+Epoch    3/30, time: 0.84 s, val_loss: 0.393
+Epoch    2/30, time: 1.60 s, val_loss: 0.156
+Epoch    4/30, time: 2.23 s, training_loss: 0.561
+Epoch    2/30, time: 6.03 s, training_loss: 0.365
+Epoch    4/30, time: 2.43 s, training_loss: 0.309
+Epoch    4/30, time: 0.93 s, val_loss: 0.554
+Epoch    4/30, time: 0.80 s, val_loss: 0.338
+Epoch    2/30, time: 1.68 s, val_loss: 0.379
+Epoch    5/30, time: 2.15 s, training_loss: 0.538
+Epoch    5/30, time: 2.20 s, training_loss: 0.297
+Epoch    3/30, time: 4.66 s, training_loss: 0.131
+Epoch    5/30, time: 0.92 s, val_loss: 0.522
+Epoch    5/30, time: 0.89 s, val_loss: 0.302
+Epoch    3/30, time: 1.77 s, val_loss: 0.118
+Epoch    6/30, time: 2.32 s, training_loss: 0.523
+Epoch    6/30, time: 2.39 s, training_loss: 0.279
+Epoch    6/30, time: 0.90 s, val_loss: 0.505
+Epoch    6/30, time: 0.79 s, val_loss: 0.301
+Epoch    3/30, time: 6.03 s, training_loss: 0.321
+Epoch    7/30, time: 2.10 s, training_loss: 0.506
+Epoch    3/30, time: 1.56 s, val_loss: 0.351
+Epoch    4/30, time: 4.40 s, training_loss: 0.107
+Epoch    7/30, time: 0.80 s, val_loss: 0.493
+Epoch    7/30, time: 2.86 s, training_loss: 0.269
+Epoch    7/30, time: 0.70 s, val_loss: 0.287
+Epoch    4/30, time: 1.83 s, val_loss: 0.094
+Epoch    8/30, time: 2.17 s, training_loss: 0.490
+Epoch    8/30, time: 0.91 s, val_loss: 0.485
+Epoch    8/30, time: 2.44 s, training_loss: 0.258
+Epoch    8/30, time: 0.76 s, val_loss: 0.270
+Epoch    9/30, time: 2.28 s, training_loss: 0.477
+Epoch    4/30, time: 6.31 s, training_loss: 0.299
+Epoch    5/30, time: 4.58 s, training_loss: 0.096
+Epoch    9/30, time: 0.86 s, val_loss: 0.478
+Epoch    9/30, time: 2.54 s, training_loss: 0.246
+Epoch    4/30, time: 1.49 s, val_loss: 0.332
+Epoch    9/30, time: 0.88 s, val_loss: 0.234
+Epoch    5/30, time: 1.83 s, val_loss: 0.088
+Epoch   10/30, time: 2.33 s, training_loss: 0.468
+Epoch   10/30, time: 0.70 s, val_loss: 0.472
+Epoch   10/30, time: 2.08 s, training_loss: 0.241
+Epoch   10/30, time: 0.81 s, val_loss: 0.227
+Epoch   11/30, time: 2.12 s, training_loss: 0.457
+Epoch   11/30, time: 0.66 s, val_loss: 0.468
+Epoch    6/30, time: 4.47 s, training_loss: 0.087
+Epoch   11/30, time: 2.30 s, training_loss: 0.233
+Epoch    5/30, time: 5.85 s, training_loss: 0.278
+Epoch   11/30, time: 0.73 s, val_loss: 0.246
+Epoch    6/30, time: 1.49 s, val_loss: 0.082
+Epoch    5/30, time: 1.56 s, val_loss: 0.291
+Training Metrics:
+Accuracy: 0.8391
+Precision: 0.5441
+Recall: 0.9919
+F1 Score: 0.7027
+IoU: 0.5417
+Dice Coefficient: 0.7027
+Validation Metrics:
+Accuracy: 0.8149
+Precision: 0.5083
+Recall: 0.9914
+F1 Score: 0.6720
+IoU: 0.5060
+Dice Coefficient: 0.6720
+Training Metrics:
+Accuracy: 0.9584
+Precision: 0.8513
+Recall: 0.9489
+F1 Score: 0.8974
+IoU: 0.8139
+Dice Coefficient: 0.8974
+Validation Metrics:
+Accuracy: 0.9552
+Precision: 0.8342
+Recall: 0.9560
+F1 Score: 0.8909
+IoU: 0.8033
+Dice Coefficient: 0.8909
+Epoch   12/30, time: 2.66 s, training_loss: 0.445
+Epoch    7/30, time: 4.46 s, training_loss: 0.080
+Epoch   12/30, time: 0.89 s, val_loss: 0.464
+Epoch   12/30, time: 2.29 s, training_loss: 0.228
+Epoch   12/30, time: 0.69 s, val_loss: 0.224
+Epoch    7/30, time: 1.66 s, val_loss: 0.079
+Epoch    6/30, time: 5.89 s, training_loss: 0.260
+Epoch   13/30, time: 2.20 s, training_loss: 0.437
+Epoch   13/30, time: 0.82 s, val_loss: 0.458
+Epoch   13/30, time: 2.32 s, training_loss: 0.226
+Epoch    6/30, time: 1.80 s, val_loss: 0.309
+Epoch   13/30, time: 0.78 s, val_loss: 0.217
+Epoch   14/30, time: 2.17 s, training_loss: 0.435
+Epoch    8/30, time: 4.45 s, training_loss: 0.078
+Epoch   14/30, time: 0.88 s, val_loss: 0.455
+Epoch   14/30, time: 2.35 s, training_loss: 0.222
+Epoch   14/30, time: 0.67 s, val_loss: 0.212
+Epoch    8/30, time: 1.74 s, val_loss: 0.075
+Epoch   15/30, time: 2.12 s, training_loss: 0.424
+Epoch   15/30, time: 0.74 s, val_loss: 0.450
+Epoch   15/30, time: 2.18 s, training_loss: 0.210
+Epoch    7/30, time: 6.13 s, training_loss: 0.243
+Epoch   15/30, time: 0.82 s, val_loss: 0.221
+Epoch   16/30, time: 2.19 s, training_loss: 0.425
+Epoch    7/30, time: 1.65 s, val_loss: 0.248
+Epoch   16/30, time: 0.75 s, val_loss: 0.445
+Epoch    9/30, time: 4.75 s, training_loss: 0.074
+Epoch   16/30, time: 2.25 s, training_loss: 0.211
+Epoch   16/30, time: 0.74 s, val_loss: 0.188
+Epoch    9/30, time: 1.51 s, val_loss: 0.076
+Epoch   17/30, time: 2.23 s, training_loss: 0.414
+Epoch   17/30, time: 0.72 s, val_loss: 0.439
+Epoch   17/30, time: 2.19 s, training_loss: 0.203
+Epoch   17/30, time: 0.78 s, val_loss: 0.204
+Epoch   18/30, time: 2.16 s, training_loss: 0.412
+Epoch    8/30, time: 6.09 s, training_loss: 0.224
+Epoch   18/30, time: 0.91 s, val_loss: 0.436
+Epoch   18/30, time: 2.17 s, training_loss: 0.197
+Epoch   10/30, time: 4.85 s, training_loss: 0.071
+Epoch   18/30, time: 0.69 s, val_loss: 0.194
+Epoch    8/30, time: 1.76 s, val_loss: 0.238
+Epoch   19/30, time: 2.06 s, training_loss: 0.402
+Epoch   10/30, time: 1.75 s, val_loss: 0.087
+Epoch   19/30, time: 0.70 s, val_loss: 0.424
+Epoch   19/30, time: 2.30 s, training_loss: 0.192
+Epoch   19/30, time: 0.78 s, val_loss: 0.182
+Epoch   20/30, time: 2.21 s, training_loss: 0.395
+Epoch   20/30, time: 0.78 s, val_loss: 0.413
+Epoch   20/30, time: 2.12 s, training_loss: 0.189
+Epoch   11/30, time: 4.41 s, training_loss: 0.070
+Epoch   20/30, time: 0.84 s, val_loss: 0.189
+Epoch    9/30, time: 6.13 s, training_loss: 0.217
+Epoch   21/30, time: 2.18 s, training_loss: 0.395
+Epoch   11/30, time: 1.51 s, val_loss: 0.072
+Epoch   21/30, time: 0.73 s, val_loss: 0.412
+Epoch    9/30, time: 1.51 s, val_loss: 0.217
+Epoch   21/30, time: 2.30 s, training_loss: 0.187
+Epoch   21/30, time: 0.77 s, val_loss: 0.189
+Training Metrics:
+Accuracy: 0.8878
+Precision: 0.6343
+Recall: 0.9791
+F1 Score: 0.7698
+IoU: 0.6258
+Dice Coefficient: 0.7698
+Validation Metrics:
+Accuracy: 0.8599
+Precision: 0.5786
+Recall: 0.9855
+F1 Score: 0.7291
+IoU: 0.5737
+Dice Coefficient: 0.7291
+Training Metrics:
+Accuracy: 0.9652
+Precision: 0.8748
+Recall: 0.9553
+F1 Score: 0.9133
+IoU: 0.8404
+Dice Coefficient: 0.9133
+Validation Metrics:
+Accuracy: 0.9618
+Precision: 0.8541
+Recall: 0.9654
+F1 Score: 0.9064
+IoU: 0.8288
+Dice Coefficient: 0.9064
+Epoch   22/30, time: 2.17 s, training_loss: 0.387
+Training Metrics:
+Accuracy: 0.9772
+Precision: 0.9439
+Recall: 0.9366
+F1 Score: 0.9402
+IoU: 0.8872
+Dice Coefficient: 0.9402
+Validation Metrics:
+Accuracy: 0.9761
+Precision: 0.9508
+Recall: 0.9227
+F1 Score: 0.9365
+IoU: 0.8806
+Dice Coefficient: 0.9365
+Epoch   22/30, time: 0.92 s, val_loss: 0.406
+Epoch   10/30, time: 6.26 s, training_loss: 0.195
+Epoch   22/30, time: 2.17 s, training_loss: 0.180
+Epoch   22/30, time: 0.79 s, val_loss: 0.183
+Epoch   10/30, time: 1.54 s, val_loss: 0.215
+Epoch   23/30, time: 2.39 s, training_loss: 0.378
+Epoch   23/30, time: 0.71 s, val_loss: 0.399
+Epoch   23/30, time: 2.14 s, training_loss: 0.180
+Epoch   12/30, time: 4.50 s, training_loss: 0.068
+Epoch   23/30, time: 0.95 s, val_loss: 0.168
+Epoch   24/30, time: 2.19 s, training_loss: 0.375
+Epoch   12/30, time: 1.55 s, val_loss: 0.074
+Epoch   24/30, time: 0.80 s, val_loss: 0.393
+Epoch   24/30, time: 2.14 s, training_loss: 0.175
+Epoch   24/30, time: 0.96 s, val_loss: 0.170
+Epoch   11/30, time: 6.19 s, training_loss: 0.186
+Epoch   25/30, time: 2.31 s, training_loss: 0.380
+Epoch   25/30, time: 0.71 s, val_loss: 0.392
+Epoch   11/30, time: 1.59 s, val_loss: 0.182
+Epoch   25/30, time: 2.34 s, training_loss: 0.171
+Epoch   13/30, time: 4.58 s, training_loss: 0.069
+Epoch   25/30, time: 0.71 s, val_loss: 0.163
+Epoch   26/30, time: 2.14 s, training_loss: 0.363
+Epoch   13/30, time: 1.52 s, val_loss: 0.069
+Epoch   26/30, time: 0.93 s, val_loss: 0.387
+Epoch   26/30, time: 2.14 s, training_loss: 0.171
+Epoch   26/30, time: 0.83 s, val_loss: 0.166
+Epoch   27/30, time: 2.33 s, training_loss: 0.362
+Epoch   27/30, time: 0.68 s, val_loss: 0.383
+Epoch   27/30, time: 2.16 s, training_loss: 0.167
+Epoch   14/30, time: 4.28 s, training_loss: 0.066
+Epoch   27/30, time: 0.98 s, val_loss: 0.168
+Epoch   28/30, time: 2.08 s, training_loss: 0.363
+Epoch   14/30, time: 1.56 s, val_loss: 0.070
+Epoch   28/30, time: 0.78 s, val_loss: 0.383
+Training Metrics:
+Accuracy: 0.9682
+Precision: 0.8924
+Recall: 0.9487
+F1 Score: 0.9197
+IoU: 0.8513
+Dice Coefficient: 0.9197
+Validation Metrics:
+Accuracy: 0.9675
+Precision: 0.8933
+Recall: 0.9424
+F1 Score: 0.9172
+IoU: 0.8471
+Dice Coefficient: 0.9172
+Epoch   28/30, time: 2.23 s, training_loss: 0.161
+Epoch   28/30, time: 0.80 s, val_loss: 0.153
+Epoch   29/30, time: 2.33 s, training_loss: 0.358
+Epoch   29/30, time: 0.74 s, val_loss: 0.378
+Epoch   29/30, time: 2.16 s, training_loss: 0.163
+Epoch   15/30, time: 4.60 s, training_loss: 0.066
+Epoch   29/30, time: 0.73 s, val_loss: 0.153
+Epoch   30/30, time: 2.09 s, training_loss: 0.358
+Epoch   15/30, time: 1.50 s, val_loss: 0.067
+Epoch   30/30, time: 0.87 s, val_loss: 0.375
+Epoch   12/30, time: 6.03 s, training_loss: 0.171
+Epoch   30/30, time: 2.26 s, training_loss: 0.159
+Epoch   30/30, time: 0.78 s, val_loss: 0.165
+Epoch   12/30, time: 1.69 s, val_loss: 0.201
+Training Metrics:
+Accuracy: 0.9114
+Precision: 0.6914
+Recall: 0.9716
+F1 Score: 0.8079
+IoU: 0.6777
+Dice Coefficient: 0.8079
+Validation Metrics:
+Accuracy: 0.8898
+Precision: 0.6384
+Recall: 0.9780
+F1 Score: 0.7725
+IoU: 0.6293
+Dice Coefficient: 0.7725
+Epoch   16/30, time: 4.55 s, training_loss: 0.064
+Test Metrics:
+Accuracy: 0.8898
+Precision: 0.6384
+Recall: 0.9780
+F1 Score: 0.7725
+IoU: 0.6293
+Dice Coefficient: 0.7725
+Training Metrics:
+Accuracy: 0.9700
+Precision: 0.9182
+Recall: 0.9262
+F1 Score: 0.9222
+IoU: 0.8556
+Dice Coefficient: 0.9222
+Validation Metrics:
+Accuracy: 0.9684
+Precision: 0.9077
+Recall: 0.9292
+F1 Score: 0.9183
+IoU: 0.8489
+Dice Coefficient: 0.9183
+Epoch   16/30, time: 1.53 s, val_loss: 0.068
+wandb: uploading summary, console lines 324-359
+wandb:
+wandb: 🚀 View run trial_2_bs128_lr1e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/15joxw2k
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251003_063230-15joxw2k/logs
+[I 2025-10-03 06:35:13,892] Trial 2 finished with value: 0.7725054569216011 and parameters: {'batch_size': 128, 'lr': 1.4914006953393509e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 100, 'att_channels': 64}. Best is trial 2 with value: 0.7725054569216011.
+wandb: Finishing previous runs because reinit is set to True.
+Test Metrics:
+Accuracy: 0.9684
+Precision: 0.9077
+Recall: 0.9292
+F1 Score: 0.9183
+IoU: 0.8489
+Dice Coefficient: 0.9183
+[W 2025-10-03 06:35:14,006] Trial 3 failed with parameters: {'batch_size': 128, 'lr': 0.00010712764635524376, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32} because of the following error: UsageError('Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+[W 2025-10-03 06:35:14,059] Trial 3 failed with value None.
+wandb: uploading history steps 0-0, summary, console lines 306-361
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0.77251
+wandb:      trial 2
+wandb:
+wandb: 🚀 View run trial_3_bs128_lr1e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/g4jr1cnz
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251003_063230-g4jr1cnz/logs
+Epoch   13/30, time: 5.74 s, training_loss: 0.169
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251003_063513-ka9yx230
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_4_bs64_lr6e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/ka9yx230
+Epoch   13/30, time: 1.44 s, val_loss: 0.166
+Epoch    1/30, time: 1.74 s, training_loss: 0.420
+Epoch   17/30, time: 4.23 s, training_loss: 0.066
+Epoch    1/30, time: 0.72 s, val_loss: 0.424
+Epoch   17/30, time: 1.53 s, val_loss: 0.065
+Training Metrics:
+Accuracy: 0.8630
+Precision: 0.5841
+Recall: 0.9905
+F1 Score: 0.7349
+IoU: 0.5809
+Dice Coefficient: 0.7349
+Validation Metrics:
+Accuracy: 0.8733
+Precision: 0.6028
+Recall: 0.9892
+F1 Score: 0.7491
+IoU: 0.5989
+Dice Coefficient: 0.7491
+Epoch   14/30, time: 5.64 s, training_loss: 0.153
+Epoch    2/30, time: 1.78 s, training_loss: 0.293
+Epoch    2/30, time: 0.70 s, val_loss: 0.275
+Epoch   18/30, time: 4.47 s, training_loss: 0.063
+Epoch   14/30, time: 1.53 s, val_loss: 0.154
+Epoch    3/30, time: 1.77 s, training_loss: 0.242
+Epoch   18/30, time: 1.54 s, val_loss: 0.070
+Epoch    3/30, time: 0.75 s, val_loss: 0.219
+Epoch    4/30, time: 1.72 s, training_loss: 0.210
+Epoch    4/30, time: 0.68 s, val_loss: 0.188
+Epoch   19/30, time: 4.37 s, training_loss: 0.064
+Epoch   15/30, time: 5.95 s, training_loss: 0.144
+Epoch    5/30, time: 1.87 s, training_loss: 0.180
+Epoch    5/30, time: 0.69 s, val_loss: 0.167
+Epoch   19/30, time: 1.59 s, val_loss: 0.065
+Epoch   15/30, time: 1.60 s, val_loss: 0.163
+Epoch    6/30, time: 1.67 s, training_loss: 0.154
+Epoch    6/30, time: 0.72 s, val_loss: 0.152
+Epoch    7/30, time: 1.71 s, training_loss: 0.135
+Epoch   20/30, time: 4.25 s, training_loss: 0.064
+Epoch    7/30, time: 0.84 s, val_loss: 0.129
+Epoch   16/30, time: 5.43 s, training_loss: 0.141
+Epoch   20/30, time: 1.64 s, val_loss: 0.068
+Epoch    8/30, time: 1.78 s, training_loss: 0.123
+Epoch    8/30, time: 0.71 s, val_loss: 0.108
+Epoch   16/30, time: 1.62 s, val_loss: 0.142
+Epoch    9/30, time: 1.78 s, training_loss: 0.110
+Epoch    9/30, time: 0.72 s, val_loss: 0.110
+Epoch   21/30, time: 4.45 s, training_loss: 0.064
+Epoch   10/30, time: 1.62 s, training_loss: 0.104
+Epoch   21/30, time: 1.44 s, val_loss: 0.066
+Epoch   10/30, time: 0.72 s, val_loss: 0.102
+Epoch   17/30, time: 5.61 s, training_loss: 0.129
+Epoch   11/30, time: 1.75 s, training_loss: 0.099
+Epoch   11/30, time: 0.79 s, val_loss: 0.095
+Epoch   17/30, time: 1.54 s, val_loss: 0.128
+Training Metrics:
+Accuracy: 0.9791
+Precision: 0.9405
+Recall: 0.9513
+F1 Score: 0.9459
+IoU: 0.8973
+Dice Coefficient: 0.9459
+Validation Metrics:
+Accuracy: 0.9769
+Precision: 0.9331
+Recall: 0.9474
+F1 Score: 0.9402
+IoU: 0.8871
+Dice Coefficient: 0.9402
+Epoch   18/30, time: 5.63 s, training_loss: 0.123
+Training Metrics:
+Accuracy: 0.9747
+Precision: 0.9425
+Recall: 0.9242
+F1 Score: 0.9333
+IoU: 0.8749
+Dice Coefficient: 0.9333
+Validation Metrics:
+Accuracy: 0.9737
+Precision: 0.9428
+Recall: 0.9184
+F1 Score: 0.9304
+IoU: 0.8699
+Dice Coefficient: 0.9304
+Epoch   18/30, time: 1.45 s, val_loss: 0.131
+Epoch   22/30, time: 4.16 s, training_loss: 0.064
+Epoch   12/30, time: 1.68 s, training_loss: 0.092
+Epoch   22/30, time: 1.49 s, val_loss: 0.065
+Epoch   12/30, time: 0.98 s, val_loss: 0.089
+Epoch   13/30, time: 1.63 s, training_loss: 0.086
+Epoch   13/30, time: 0.81 s, val_loss: 0.084
+Epoch   19/30, time: 5.96 s, training_loss: 0.118
+Epoch   23/30, time: 4.41 s, training_loss: 0.063
+Epoch   14/30, time: 1.94 s, training_loss: 0.085
+Epoch   14/30, time: 0.66 s, val_loss: 0.089
+Epoch   19/30, time: 1.65 s, val_loss: 0.133
+Epoch   23/30, time: 1.66 s, val_loss: 0.067
+Epoch   15/30, time: 1.62 s, training_loss: 0.080
+Epoch   15/30, time: 0.73 s, val_loss: 0.080
+Epoch   16/30, time: 1.77 s, training_loss: 0.078
+Epoch   16/30, time: 0.70 s, val_loss: 0.078
+Epoch   24/30, time: 4.44 s, training_loss: 0.062
+Epoch   17/30, time: 1.59 s, training_loss: 0.077
+Epoch   20/30, time: 6.24 s, training_loss: 0.112
+Epoch   24/30, time: 1.85 s, val_loss: 0.065
+Epoch   17/30, time: 0.91 s, val_loss: 0.076
+Epoch   20/30, time: 1.73 s, val_loss: 0.123
+Epoch   18/30, time: 1.59 s, training_loss: 0.076
+Epoch   18/30, time: 0.72 s, val_loss: 0.078
+Epoch   25/30, time: 4.20 s, training_loss: 0.060
+Epoch   19/30, time: 1.93 s, training_loss: 0.074
+Epoch   19/30, time: 0.70 s, val_loss: 0.073
+Epoch   25/30, time: 1.55 s, val_loss: 0.066
+Epoch   20/30, time: 1.63 s, training_loss: 0.073
+Epoch   21/30, time: 6.19 s, training_loss: 0.111
+Epoch   20/30, time: 0.97 s, val_loss: 0.072
+Epoch   21/30, time: 1.44 s, val_loss: 0.113
+Epoch   21/30, time: 1.69 s, training_loss: 0.071
+Epoch   26/30, time: 4.34 s, training_loss: 0.061
+Epoch   21/30, time: 0.91 s, val_loss: 0.075
+Epoch   26/30, time: 1.54 s, val_loss: 0.065
+Training Metrics:
+Accuracy: 0.9755
+Precision: 0.9327
+Recall: 0.9398
+F1 Score: 0.9362
+IoU: 0.8801
+Dice Coefficient: 0.9362
+Validation Metrics:
+Accuracy: 0.9746
+Precision: 0.9274
+Recall: 0.9408
+F1 Score: 0.9341
+IoU: 0.8763
+Dice Coefficient: 0.9341
+Epoch   22/30, time: 1.65 s, training_loss: 0.070
+Epoch   22/30, time: 0.68 s, val_loss: 0.071
+Epoch   27/30, time: 4.35 s, training_loss: 0.061
+Training Metrics:
+Accuracy: 0.9739
+Precision: 0.9128
+Recall: 0.9552
+F1 Score: 0.9335
+IoU: 0.8753
+Dice Coefficient: 0.9335
+Validation Metrics:
+Accuracy: 0.9728
+Precision: 0.9082
+Recall: 0.9540
+F1 Score: 0.9305
+IoU: 0.8701
+Dice Coefficient: 0.9305
+Epoch   23/30, time: 1.76 s, training_loss: 0.071
+Epoch   27/30, time: 1.61 s, val_loss: 0.063
+Epoch   23/30, time: 0.95 s, val_loss: 0.070
+Epoch   24/30, time: 1.60 s, training_loss: 0.071
+Epoch   24/30, time: 0.68 s, val_loss: 0.071
+Epoch   28/30, time: 4.61 s, training_loss: 0.060
+Epoch   25/30, time: 1.76 s, training_loss: 0.068
+Epoch   22/30, time: 5.85 s, training_loss: 0.107
+Epoch   25/30, time: 0.79 s, val_loss: 0.070
+Epoch   28/30, time: 1.49 s, val_loss: 0.065
+Epoch   22/30, time: 1.45 s, val_loss: 0.111
+Epoch   26/30, time: 1.61 s, training_loss: 0.071
+Epoch   26/30, time: 0.65 s, val_loss: 0.068
+Epoch   27/30, time: 1.72 s, training_loss: 0.065
+Epoch   29/30, time: 4.31 s, training_loss: 0.059
+Epoch   27/30, time: 0.98 s, val_loss: 0.067
+Epoch   29/30, time: 1.46 s, val_loss: 0.064
+Epoch   28/30, time: 1.58 s, training_loss: 0.066
+Epoch   28/30, time: 0.67 s, val_loss: 0.064
+Epoch   23/30, time: 6.18 s, training_loss: 0.102
+Epoch   29/30, time: 1.62 s, training_loss: 0.064
+Epoch   23/30, time: 1.80 s, val_loss: 0.105
+Epoch   29/30, time: 0.74 s, val_loss: 0.070
+Epoch   30/30, time: 4.50 s, training_loss: 0.059
+Epoch   30/30, time: 1.65 s, training_loss: 0.064
+Epoch   30/30, time: 0.65 s, val_loss: 0.063
+Epoch   30/30, time: 1.62 s, val_loss: 0.064
+Training Metrics:
+Accuracy: 0.9781
+Precision: 0.9370
+Recall: 0.9496
+F1 Score: 0.9433
+IoU: 0.8927
+Dice Coefficient: 0.9433
+Validation Metrics:
+Accuracy: 0.9785
+Precision: 0.9419
+Recall: 0.9462
+F1 Score: 0.9440
+IoU: 0.8940
+Dice Coefficient: 0.9440
+Epoch   24/30, time: 6.11 s, training_loss: 0.101
+Test Metrics:
+Accuracy: 0.9785
+Precision: 0.9419
+Recall: 0.9462
+F1 Score: 0.9440
+IoU: 0.8940
+Dice Coefficient: 0.9440
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0.94403
+wandb:      trial 4
+wandb:
+wandb: 🚀 View run trial_4_bs64_lr6e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/ka9yx230
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251003_063513-ka9yx230/logs
+[I 2025-10-03 06:36:47,138] Trial 4 finished with value: 0.9440317510492949 and parameters: {'batch_size': 64, 'lr': 0.0006377155179367125, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 16}. Best is trial 4 with value: 0.9440317510492949.
+Epoch   24/30, time: 1.61 s, val_loss: 0.103
+Training Metrics:
+Accuracy: 0.9796
+Precision: 0.9372
+Recall: 0.9581
+F1 Score: 0.9475
+IoU: 0.9002
+Dice Coefficient: 0.9475
+Validation Metrics:
+Accuracy: 0.9777
+Precision: 0.9289
+Recall: 0.9564
+F1 Score: 0.9424
+IoU: 0.8912
+Dice Coefficient: 0.9424
+Test Metrics:
+Accuracy: 0.9777
+Precision: 0.9289
+Recall: 0.9564
+F1 Score: 0.9424
+IoU: 0.8912
+Dice Coefficient: 0.9424
+[W 2025-10-03 06:36:50,428] Trial 1 failed with parameters: {'batch_size': 32, 'lr': 0.0007782093354599691, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 400, 'att_channels': 64} because of the following error: Error('You must call wandb.init() before wandb.log()').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/lib/preinit.py", line 36, in preinit_wrapper
+    raise wandb.Error(f"You must call wandb.init() before {name}()")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.log()
+[W 2025-10-03 06:36:50,430] Trial 1 failed with value None.
+Epoch   25/30, time: 5.64 s, training_loss: 0.098
+Epoch   25/30, time: 1.34 s, val_loss: 0.101
+Epoch   26/30, time: 5.49 s, training_loss: 0.094
+Epoch   26/30, time: 1.40 s, val_loss: 0.103
+Epoch   27/30, time: 5.38 s, training_loss: 0.093
+Epoch   27/30, time: 1.34 s, val_loss: 0.095
+Epoch   28/30, time: 5.53 s, training_loss: 0.091
+Epoch   28/30, time: 1.33 s, val_loss: 0.096
+Epoch   29/30, time: 5.41 s, training_loss: 0.092
+Epoch   29/30, time: 1.34 s, val_loss: 0.099
+Epoch   30/30, time: 5.57 s, training_loss: 0.089
+Epoch   30/30, time: 1.31 s, val_loss: 0.090
+Training Metrics:
+Accuracy: 0.9758
+Precision: 0.9363
+Recall: 0.9375
+F1 Score: 0.9369
+IoU: 0.8813
+Dice Coefficient: 0.9369
+Validation Metrics:
+Accuracy: 0.9752
+Precision: 0.9357
+Recall: 0.9344
+F1 Score: 0.9351
+IoU: 0.8781
+Dice Coefficient: 0.9351
+Test Metrics:
+Accuracy: 0.9752
+Precision: 0.9357
+Recall: 0.9344
+F1 Score: 0.9351
+IoU: 0.8781
+Dice Coefficient: 0.9351
+[W 2025-10-03 06:37:37,085] Trial 0 failed with parameters: {'batch_size': 128, 'lr': 0.0004991124854502331, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 400, 'att_channels': 16} because of the following error: Error('You must call wandb.init() before wandb.log()').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/lib/preinit.py", line 36, in preinit_wrapper
+    raise wandb.Error(f"You must call wandb.init() before {name}()")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.log()
+[W 2025-10-03 06:37:37,086] Trial 0 failed with value None.
+wandb: ERROR Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 195, in <module>
+    main()
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 170, in main
+    study.optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 100, in _optimize
+    f.result()
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (g4jr1cnz) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.

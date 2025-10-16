@@ -1,0 +1,16 @@
+/home/sethih1/masque_new/ters_gen/model_performance_analysis.py:58: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+Number of samples: 146
+Eval Metrics:   0%|          | 0/5 [00:00<?, ?it/s]Eval Metrics:   0%|          | 0/5 [00:05<?, ?it/s]
+('100489', '10110', '101209', '101752', '10187', '10268', '10339', '10347', '10443', '104752', '105022', '105142', '10876', '110064', '11187', '11397', '11459', '11473', '115034', '118568', '119208', '120144', '12033', '12087', '121026', '123047', '123077', '123092', '123444', '124504', '12720', '12753')
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/model_performance_analysis.py", line 86, in <module>
+    coords, atomic_numbers = read_npz(filename)
+                             ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/notebooks/utils/read_files.py", line 36, in read_npz
+    with np.load(npz_file) as data:
+         ^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 459, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                                   ^^^^^^^^^^^^^^^
+TypeError: expected str, bytes or os.PathLike object, not tuple

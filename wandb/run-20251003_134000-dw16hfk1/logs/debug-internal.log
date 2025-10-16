@@ -1,0 +1,7 @@
+{"time":"2025-10-03T13:40:00.596832543+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251003_134000-dw16hfk1/logs/debug-core.log"}
+{"time":"2025-10-03T13:40:00.900123133+03:00","level":"INFO","msg":"stream: created new stream","id":"dw16hfk1"}
+{"time":"2025-10-03T13:40:00.900145287+03:00","level":"INFO","msg":"stream: started","id":"dw16hfk1"}
+{"time":"2025-10-03T13:40:00.900169095+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"dw16hfk1"}
+{"time":"2025-10-03T13:40:00.900176919+03:00","level":"INFO","msg":"handler: started","stream_id":"dw16hfk1"}
+{"time":"2025-10-03T13:40:00.900187879+03:00","level":"INFO","msg":"sender: started","stream_id":"dw16hfk1"}
+{"time":"2025-10-03T13:40:01.127491668+03:00","level":"INFO","msg":"Starting system monitor"}

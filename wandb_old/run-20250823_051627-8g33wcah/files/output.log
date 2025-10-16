@@ -1,0 +1,353 @@
+Epoch   16/50, time: 35.66 s, training_loss: 0.452
+Epoch   16/50, time: 13.91 s, val_loss: 0.424
+Epoch   20/50, time: 39.13 s, training_loss: 0.350
+Epoch   20/50, time: 13.86 s, val_loss: 0.340
+Epoch    1/50, time: 39.43 s, training_loss: 0.873
+Epoch    1/50, time: 13.71 s, val_loss: 0.901
+Epoch   17/50, time: 39.45 s, training_loss: 0.432
+Epoch   17/50, time: 14.25 s, val_loss: 0.427
+Epoch   21/50, time: 37.74 s, training_loss: 0.335
+Epoch   21/50, time: 14.34 s, val_loss: 0.319
+Epoch   18/50, time: 38.94 s, training_loss: 0.408
+Epoch   18/50, time: 12.63 s, val_loss: 0.459
+Training Metrics:
+Accuracy: 0.5160
+Precision: 0.0378
+Recall: 0.9676
+F1 Score: 0.0728
+IoU: 0.0378
+Dice Coefficient: 0.0728
+Validation Metrics:
+Accuracy: 0.5594
+Precision: 0.0396
+Recall: 0.9549
+F1 Score: 0.0760
+IoU: 0.0395
+Dice Coefficient: 0.0760
+Training Metrics:
+Accuracy: 0.9868
+Precision: 0.6418
+Recall: 0.7417
+F1 Score: 0.6881
+IoU: 0.5246
+Dice Coefficient: 0.6881
+Validation Metrics:
+Accuracy: 0.9871
+Precision: 0.6400
+Recall: 0.7315
+F1 Score: 0.6827
+IoU: 0.5183
+Dice Coefficient: 0.6827
+Epoch   19/50, time: 36.90 s, training_loss: 0.402
+Epoch    2/50, time: 37.49 s, training_loss: 0.799
+Epoch   19/50, time: 12.49 s, val_loss: 0.424
+Epoch    2/50, time: 12.73 s, val_loss: 0.773
+Epoch   22/50, time: 40.38 s, training_loss: 0.332
+Epoch   20/50, time: 39.92 s, training_loss: 0.396
+Epoch   22/50, time: 13.55 s, val_loss: 0.311
+Epoch    3/50, time: 40.12 s, training_loss: 0.754
+Epoch   20/50, time: 12.40 s, val_loss: 0.396
+Epoch    3/50, time: 12.41 s, val_loss: 0.742
+Epoch   23/50, time: 39.32 s, training_loss: 0.318
+Epoch   21/50, time: 39.94 s, training_loss: 0.381
+Epoch   23/50, time: 13.21 s, val_loss: 0.309
+Epoch    4/50, time: 40.71 s, training_loss: 0.731
+Epoch   21/50, time: 12.51 s, val_loss: 0.396
+Epoch    4/50, time: 12.51 s, val_loss: 0.709
+Epoch   24/50, time: 39.74 s, training_loss: 0.314
+Epoch   24/50, time: 13.59 s, val_loss: 0.313
+Epoch    5/50, time: 40.43 s, training_loss: 0.713
+Epoch    5/50, time: 11.91 s, val_loss: 0.691
+Training Metrics:
+Accuracy: 0.9824
+Precision: 0.5416
+Recall: 0.6856
+F1 Score: 0.6051
+IoU: 0.4338
+Dice Coefficient: 0.6051
+Validation Metrics:
+Accuracy: 0.9834
+Precision: 0.5487
+Recall: 0.6895
+F1 Score: 0.6111
+IoU: 0.4400
+Dice Coefficient: 0.6111
+Epoch   25/50, time: 36.31 s, training_loss: 0.304
+Epoch   25/50, time: 13.91 s, val_loss: 0.327
+Epoch    6/50, time: 37.88 s, training_loss: 0.691
+Epoch    6/50, time: 13.70 s, val_loss: 0.669
+Epoch   22/50, time: 39.85 s, training_loss: 0.373
+Epoch   22/50, time: 14.08 s, val_loss: 0.332
+Epoch   26/50, time: 38.15 s, training_loss: 0.299
+Epoch   26/50, time: 13.85 s, val_loss: 0.313
+Epoch    7/50, time: 39.53 s, training_loss: 0.652
+Epoch    7/50, time: 13.81 s, val_loss: 0.619
+Epoch   23/50, time: 40.03 s, training_loss: 0.360
+Epoch   23/50, time: 13.96 s, val_loss: 0.421
+Epoch   27/50, time: 38.59 s, training_loss: 0.297
+Epoch   27/50, time: 13.89 s, val_loss: 0.308
+Epoch    8/50, time: 39.14 s, training_loss: 0.618
+Epoch    8/50, time: 13.80 s, val_loss: 0.595
+Epoch   24/50, time: 40.57 s, training_loss: 0.347
+Epoch   24/50, time: 13.71 s, val_loss: 0.324
+Epoch   28/50, time: 38.59 s, training_loss: 0.300
+Epoch   28/50, time: 13.63 s, val_loss: 0.337
+Epoch    9/50, time: 39.34 s, training_loss: 0.587
+Epoch    9/50, time: 13.76 s, val_loss: 0.565
+Epoch   25/50, time: 39.06 s, training_loss: 0.347
+Epoch   25/50, time: 13.77 s, val_loss: 0.323
+Epoch   29/50, time: 39.74 s, training_loss: 0.290
+Epoch   29/50, time: 13.79 s, val_loss: 0.295
+Epoch   10/50, time: 38.59 s, training_loss: 0.546
+Epoch   10/50, time: 13.78 s, val_loss: 0.558
+Epoch   26/50, time: 38.51 s, training_loss: 0.333
+Epoch   26/50, time: 13.92 s, val_loss: 0.335
+Epoch   30/50, time: 38.94 s, training_loss: 0.281
+Epoch   30/50, time: 13.93 s, val_loss: 0.305
+Epoch   11/50, time: 37.76 s, training_loss: 0.524
+Epoch   11/50, time: 13.92 s, val_loss: 0.519
+Epoch   27/50, time: 39.59 s, training_loss: 0.325
+Epoch   27/50, time: 13.93 s, val_loss: 0.328
+Epoch   31/50, time: 38.49 s, training_loss: 0.273
+Epoch   31/50, time: 14.05 s, val_loss: 0.303
+Epoch   28/50, time: 38.48 s, training_loss: 0.316
+Training Metrics:
+Accuracy: 0.9747
+Precision: 0.4019
+Recall: 0.5971
+F1 Score: 0.4804
+IoU: 0.3162
+Dice Coefficient: 0.4804
+Validation Metrics:
+Accuracy: 0.9760
+Precision: 0.4103
+Recall: 0.6063
+F1 Score: 0.4894
+IoU: 0.3240
+Dice Coefficient: 0.4894
+Epoch   28/50, time: 12.35 s, val_loss: 0.301
+Training Metrics:
+Accuracy: 0.9889
+Precision: 0.6984
+Recall: 0.7653
+F1 Score: 0.7303
+IoU: 0.5752
+Dice Coefficient: 0.7303
+Validation Metrics:
+Accuracy: 0.9881
+Precision: 0.6760
+Recall: 0.7186
+F1 Score: 0.6967
+IoU: 0.5345
+Dice Coefficient: 0.6967
+Epoch   12/50, time: 37.04 s, training_loss: 0.501
+Epoch   29/50, time: 38.13 s, training_loss: 0.313
+Epoch   12/50, time: 12.84 s, val_loss: 0.476
+Epoch   29/50, time: 12.55 s, val_loss: 0.303
+Epoch   32/50, time: 40.48 s, training_loss: 0.281
+Epoch   32/50, time: 13.78 s, val_loss: 0.294
+Epoch   13/50, time: 40.36 s, training_loss: 0.481
+Epoch   30/50, time: 40.43 s, training_loss: 0.313
+Epoch   13/50, time: 12.74 s, val_loss: 0.473
+Epoch   30/50, time: 12.94 s, val_loss: 0.296
+Epoch   33/50, time: 38.42 s, training_loss: 0.271
+Epoch   33/50, time: 13.90 s, val_loss: 0.282
+Epoch   14/50, time: 40.87 s, training_loss: 0.452
+Epoch   31/50, time: 40.59 s, training_loss: 0.305
+Epoch   14/50, time: 12.78 s, val_loss: 0.413
+Epoch   31/50, time: 12.71 s, val_loss: 0.314
+Epoch   34/50, time: 41.12 s, training_loss: 0.268
+Epoch   34/50, time: 13.99 s, val_loss: 0.270
+Epoch   15/50, time: 40.20 s, training_loss: 0.416
+Epoch   15/50, time: 12.03 s, val_loss: 0.447
+Training Metrics:
+Accuracy: 0.9879
+Precision: 0.6808
+Recall: 0.7182
+F1 Score: 0.6990
+IoU: 0.5373
+Dice Coefficient: 0.6990
+Validation Metrics:
+Accuracy: 0.9880
+Precision: 0.6756
+Recall: 0.7070
+F1 Score: 0.6909
+IoU: 0.5278
+Dice Coefficient: 0.6909
+Epoch   35/50, time: 37.47 s, training_loss: 0.263
+Epoch   35/50, time: 13.41 s, val_loss: 0.292
+Epoch   16/50, time: 38.05 s, training_loss: 0.416
+Epoch   16/50, time: 19.17 s, val_loss: 0.395
+Epoch   32/50, time: 37.41 s, training_loss: 0.306
+Epoch   32/50, time: 13.84 s, val_loss: 0.316
+Epoch   36/50, time: 38.65 s, training_loss: 0.258
+Epoch   36/50, time: 14.00 s, val_loss: 0.281
+Epoch   17/50, time: 39.96 s, training_loss: 0.392
+Epoch   17/50, time: 13.75 s, val_loss: 0.373
+Epoch   33/50, time: 39.35 s, training_loss: 0.299
+Epoch   33/50, time: 13.78 s, val_loss: 0.310
+Epoch   37/50, time: 38.72 s, training_loss: 0.259
+Epoch   37/50, time: 14.23 s, val_loss: 0.323
+Epoch   18/50, time: 38.27 s, training_loss: 0.385
+Epoch   18/50, time: 14.18 s, val_loss: 0.418
+Epoch   34/50, time: 39.96 s, training_loss: 0.287
+Epoch   34/50, time: 13.96 s, val_loss: 0.289
+Epoch   38/50, time: 38.74 s, training_loss: 0.257
+Epoch   38/50, time: 13.96 s, val_loss: 0.280
+Epoch   19/50, time: 38.38 s, training_loss: 0.369
+Epoch   19/50, time: 14.00 s, val_loss: 0.421
+Epoch   35/50, time: 39.17 s, training_loss: 0.289
+Epoch   35/50, time: 13.63 s, val_loss: 0.289
+Epoch   39/50, time: 39.62 s, training_loss: 0.262
+Epoch   39/50, time: 13.97 s, val_loss: 0.273
+Epoch   20/50, time: 39.26 s, training_loss: 0.353
+Epoch   20/50, time: 13.97 s, val_loss: 0.353
+Epoch   36/50, time: 40.83 s, training_loss: 0.285
+Epoch   36/50, time: 13.52 s, val_loss: 0.302
+Epoch   40/50, time: 39.71 s, training_loss: 0.255
+Epoch   40/50, time: 14.01 s, val_loss: 0.273
+Epoch   21/50, time: 38.12 s, training_loss: 0.340
+Epoch   21/50, time: 13.97 s, val_loss: 0.371
+Epoch   37/50, time: 38.92 s, training_loss: 0.285
+Epoch   37/50, time: 13.72 s, val_loss: 0.288
+Epoch   41/50, time: 39.91 s, training_loss: 0.241
+Epoch   41/50, time: 14.09 s, val_loss: 0.256
+Epoch   38/50, time: 41.05 s, training_loss: 0.279
+Training Metrics:
+Accuracy: 0.9845
+Precision: 0.5896
+Recall: 0.6868
+F1 Score: 0.6345
+IoU: 0.4647
+Dice Coefficient: 0.6345
+Validation Metrics:
+Accuracy: 0.9852
+Precision: 0.5970
+Recall: 0.6708
+F1 Score: 0.6318
+IoU: 0.4618
+Dice Coefficient: 0.6318
+Epoch   38/50, time: 11.80 s, val_loss: 0.289
+Training Metrics:
+Accuracy: 0.9907
+Precision: 0.7462
+Recall: 0.7941
+F1 Score: 0.7694
+IoU: 0.6253
+Dice Coefficient: 0.7694
+Validation Metrics:
+Accuracy: 0.9902
+Precision: 0.7309
+Recall: 0.7671
+F1 Score: 0.7485
+IoU: 0.5981
+Dice Coefficient: 0.7485
+Epoch   22/50, time: 36.52 s, training_loss: 0.330
+Epoch   39/50, time: 36.13 s, training_loss: 0.268
+Epoch   22/50, time: 12.79 s, val_loss: 0.323
+Epoch   39/50, time: 12.86 s, val_loss: 0.276
+Epoch   42/50, time: 39.79 s, training_loss: 0.246
+Epoch   42/50, time: 13.84 s, val_loss: 0.269
+Epoch   23/50, time: 41.11 s, training_loss: 0.325
+Epoch   40/50, time: 39.94 s, training_loss: 0.268
+Epoch   23/50, time: 12.73 s, val_loss: 0.311
+Epoch   40/50, time: 12.79 s, val_loss: 0.270
+Epoch   43/50, time: 40.41 s, training_loss: 0.245
+Epoch   43/50, time: 13.66 s, val_loss: 0.278
+Epoch   24/50, time: 41.35 s, training_loss: 0.318
+Epoch   41/50, time: 40.55 s, training_loss: 0.267
+Epoch   24/50, time: 12.91 s, val_loss: 0.315
+Epoch   41/50, time: 12.97 s, val_loss: 0.269
+Epoch   44/50, time: 39.90 s, training_loss: 0.236
+Epoch   44/50, time: 13.83 s, val_loss: 0.260
+Epoch   25/50, time: 41.60 s, training_loss: 0.313
+Epoch   25/50, time: 12.32 s, val_loss: 0.321
+Training Metrics:
+Accuracy: 0.9898
+Precision: 0.7246
+Recall: 0.7715
+F1 Score: 0.7473
+IoU: 0.5966
+Dice Coefficient: 0.7473
+Validation Metrics:
+Accuracy: 0.9897
+Precision: 0.7183
+Recall: 0.7479
+F1 Score: 0.7328
+IoU: 0.5783
+Dice Coefficient: 0.7328
+Epoch   45/50, time: 37.97 s, training_loss: 0.243
+Epoch   45/50, time: 13.74 s, val_loss: 0.279
+Epoch   26/50, time: 39.29 s, training_loss: 0.308
+Epoch   26/50, time: 13.92 s, val_loss: 0.309
+Epoch   42/50, time: 38.97 s, training_loss: 0.268
+Epoch   42/50, time: 14.08 s, val_loss: 0.268
+Epoch   46/50, time: 40.74 s, training_loss: 0.245
+Epoch   27/50, time: 38.27 s, training_loss: 0.302
+Epoch   46/50, time: 13.80 s, val_loss: 0.250
+Epoch   27/50, time: 13.96 s, val_loss: 0.324
+Epoch   43/50, time: 41.21 s, training_loss: 0.272
+Epoch   43/50, time: 14.03 s, val_loss: 0.278
+Epoch   47/50, time: 39.35 s, training_loss: 0.233
+Epoch   28/50, time: 39.16 s, training_loss: 0.298
+Epoch   47/50, time: 13.72 s, val_loss: 0.265
+Epoch   28/50, time: 18.92 s, val_loss: 0.379
+Epoch   44/50, time: 39.45 s, training_loss: 0.258
+Epoch   44/50, time: 14.07 s, val_loss: 0.265
+Epoch   48/50, time: 38.16 s, training_loss: 0.236
+Epoch   48/50, time: 14.15 s, val_loss: 0.257
+Epoch   29/50, time: 39.96 s, training_loss: 0.306
+Epoch   29/50, time: 13.72 s, val_loss: 0.304
+Epoch   45/50, time: 39.74 s, training_loss: 0.255
+Epoch   45/50, time: 13.65 s, val_loss: 0.264
+Epoch   49/50, time: 42.31 s, training_loss: 0.231
+Epoch   49/50, time: 13.96 s, val_loss: 0.265
+Epoch   30/50, time: 40.27 s, training_loss: 0.284
+Epoch   30/50, time: 13.75 s, val_loss: 0.314
+Epoch   46/50, time: 38.82 s, training_loss: 0.251
+Epoch   46/50, time: 13.97 s, val_loss: 0.318
+Epoch   50/50, time: 38.34 s, training_loss: 0.234
+Epoch   50/50, time: 14.15 s, val_loss: 0.270
+Epoch   31/50, time: 39.69 s, training_loss: 0.279
+Epoch   31/50, time: 13.93 s, val_loss: 0.291
+Epoch   47/50, time: 39.37 s, training_loss: 0.257
+Epoch   47/50, time: 14.20 s, val_loss: 0.251
+Epoch   48/50, time: 34.37 s, training_loss: 0.256
+Training Metrics:
+Accuracy: 0.9900
+Precision: 0.7195
+Recall: 0.8061
+F1 Score: 0.7604
+IoU: 0.6134
+Dice Coefficient: 0.7604
+Validation Metrics:
+Accuracy: 0.9895
+Precision: 0.7038
+Recall: 0.7747
+F1 Score: 0.7375
+IoU: 0.5842
+Dice Coefficient: 0.7375
+Epoch   48/50, time: 11.70 s, val_loss: 0.273
+Training Metrics:
+Accuracy: 0.9892
+Precision: 0.7257
+Recall: 0.7239
+F1 Score: 0.7248
+IoU: 0.5684
+Dice Coefficient: 0.7248
+Validation Metrics:
+Accuracy: 0.9893
+Precision: 0.7197
+Recall: 0.7131
+F1 Score: 0.7164
+IoU: 0.5581
+Dice Coefficient: 0.7164
+Test Metrics:
+Accuracy: 0.9895
+Precision: 0.7038
+Recall: 0.7747
+F1 Score: 0.7375
+IoU: 0.5842
+Dice Coefficient: 0.7375
+[I 2025-08-23 05:48:30,853] Trial 35 finished with value: 0.737547998599849 and parameters: {'batch_size': 16, 'lr': 0.00033188466212159123, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 64}. Best is trial 27 with value: 0.7710798005055088.
+wandb: Finishing previous runs because reinit is set to True.

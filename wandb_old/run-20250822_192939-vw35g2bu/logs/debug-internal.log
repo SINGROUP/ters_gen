@@ -1,0 +1,16 @@
+{"time":"2025-08-22T19:29:39.492648262+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250822_192939-vw35g2bu/logs/debug-core.log"}
+{"time":"2025-08-22T19:29:39.784187621+03:00","level":"INFO","msg":"stream: created new stream","id":"vw35g2bu"}
+{"time":"2025-08-22T19:29:39.784218622+03:00","level":"INFO","msg":"stream: started","id":"vw35g2bu"}
+{"time":"2025-08-22T19:29:39.784228417+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T19:29:39.784249188+03:00","level":"INFO","msg":"handler: started","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T19:29:39.784234824+03:00","level":"INFO","msg":"sender: started","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T19:29:40.105435393+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-22T20:31:30.998074578+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-22T20:31:31.109041098+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-22T20:31:31.850333865+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.36527147,"progress":"11.4KB/11.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.297815362,"progress":"141B/141B"}],"total_operations":2}}
+{"time":"2025-08-22T20:31:32.172835351+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-22T20:31:32.481383495+03:00","level":"INFO","msg":"stream: closing","id":"vw35g2bu"}
+{"time":"2025-08-22T20:31:32.481868085+03:00","level":"INFO","msg":"handler: closed","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T20:31:32.489297894+03:00","level":"INFO","msg":"sender: closed","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T20:31:32.481487835+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vw35g2bu"}
+{"time":"2025-08-22T20:31:32.496709407+03:00","level":"INFO","msg":"stream: closed","id":"vw35g2bu"}

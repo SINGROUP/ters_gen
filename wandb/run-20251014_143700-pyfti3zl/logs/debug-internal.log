@@ -1,0 +1,7 @@
+{"time":"2025-10-14T14:37:00.485693208+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251014_143700-pyfti3zl/logs/debug-core.log"}
+{"time":"2025-10-14T14:37:00.92687349+03:00","level":"INFO","msg":"stream: created new stream","id":"pyfti3zl"}
+{"time":"2025-10-14T14:37:00.926897654+03:00","level":"INFO","msg":"stream: started","id":"pyfti3zl"}
+{"time":"2025-10-14T14:37:00.926911294+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"pyfti3zl"}
+{"time":"2025-10-14T14:37:00.926920219+03:00","level":"INFO","msg":"handler: started","stream_id":"pyfti3zl"}
+{"time":"2025-10-14T14:37:00.926935923+03:00","level":"INFO","msg":"sender: started","stream_id":"pyfti3zl"}
+{"time":"2025-10-14T14:37:01.654042168+03:00","level":"INFO","msg":"Starting system monitor"}

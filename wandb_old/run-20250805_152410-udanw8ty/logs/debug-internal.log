@@ -1,0 +1,16 @@
+{"time":"2025-08-05T15:24:11.942140756+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250805_152410-udanw8ty/logs/debug-core.log"}
+{"time":"2025-08-05T15:24:12.332535051+03:00","level":"INFO","msg":"stream: created new stream","id":"udanw8ty"}
+{"time":"2025-08-05T15:24:12.332567728+03:00","level":"INFO","msg":"stream: started","id":"udanw8ty"}
+{"time":"2025-08-05T15:24:12.332592368+03:00","level":"INFO","msg":"handler: started","stream_id":"udanw8ty"}
+{"time":"2025-08-05T15:24:12.332607607+03:00","level":"INFO","msg":"sender: started","stream_id":"udanw8ty"}
+{"time":"2025-08-05T15:24:12.332590753+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"udanw8ty"}
+{"time":"2025-08-05T15:24:12.587761636+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-05T16:00:29.087666904+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-05T16:00:29.087861485+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-05T16:00:30.089853654+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.4573795,"progress":"2.9KB/2.9KB"}],"total_operations":1}}
+{"time":"2025-08-05T16:00:30.301302838+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-05T16:00:30.566354263+03:00","level":"INFO","msg":"stream: closing","id":"udanw8ty"}
+{"time":"2025-08-05T16:00:30.566366921+03:00","level":"INFO","msg":"handler: closed","stream_id":"udanw8ty"}
+{"time":"2025-08-05T16:00:30.56637392+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"udanw8ty"}
+{"time":"2025-08-05T16:00:30.566388224+03:00","level":"INFO","msg":"sender: closed","stream_id":"udanw8ty"}
+{"time":"2025-08-05T16:00:30.567045904+03:00","level":"INFO","msg":"stream: closed","id":"udanw8ty"}

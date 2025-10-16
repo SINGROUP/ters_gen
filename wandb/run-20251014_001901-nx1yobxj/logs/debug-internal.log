@@ -1,0 +1,9 @@
+{"time":"2025-10-14T00:19:02.084140339+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251014_001901-nx1yobxj/logs/debug-core.log"}
+{"time":"2025-10-14T00:19:02.387247718+03:00","level":"INFO","msg":"stream: created new stream","id":"nx1yobxj"}
+{"time":"2025-10-14T00:19:02.38727032+03:00","level":"INFO","msg":"stream: started","id":"nx1yobxj"}
+{"time":"2025-10-14T00:19:02.387287965+03:00","level":"INFO","msg":"sender: started","stream_id":"nx1yobxj"}
+{"time":"2025-10-14T00:19:02.387289257+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"nx1yobxj"}
+{"time":"2025-10-14T00:19:02.387312743+03:00","level":"INFO","msg":"handler: started","stream_id":"nx1yobxj"}
+{"time":"2025-10-14T00:19:02.772347825+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-14T00:26:03.157047903+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-14T00:28:05.996901413+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/nx1yobxj/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

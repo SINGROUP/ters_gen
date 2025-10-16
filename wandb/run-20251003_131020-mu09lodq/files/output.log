@@ -1,0 +1,48 @@
+Epoch   28/30, time: 2.39 s, val_loss: 0.063
+Epoch   30/30, time: 2.48 s, training_loss: 0.081
+Epoch   30/30, time: 1.04 s, val_loss: 0.082
+Epoch   29/30, time: 2.46 s, training_loss: 0.059
+Training Metrics:
+Accuracy: 0.9716
+Precision: 0.9040
+Recall: 0.9530
+F1 Score: 0.9278
+IoU: 0.8654
+Dice Coefficient: 0.9278
+Validation Metrics:
+Accuracy: 0.9726
+Precision: 0.9221
+Recall: 0.9358
+F1 Score: 0.9289
+IoU: 0.8672
+Dice Coefficient: 0.9289
+Epoch   29/30, time: 1.24 s, val_loss: 0.057
+Test Metrics:
+Accuracy: 0.9726
+Precision: 0.9221
+Recall: 0.9358
+F1 Score: 0.9289
+IoU: 0.8672
+Dice Coefficient: 0.9289
+Epoch    1/30, time: 4.71 s, training_loss: 0.440
+Training Metrics:
+Accuracy: 0.9760
+Precision: 0.9410
+Recall: 0.9333
+F1 Score: 0.9371
+IoU: 0.8817
+Dice Coefficient: 0.9371
+Validation Metrics:
+Accuracy: 0.9755
+Precision: 0.9475
+Recall: 0.9232
+F1 Score: 0.9352
+IoU: 0.8783
+Dice Coefficient: 0.9352
+wandb:
+wandb: 🚀 View run trial_2_bs32_lr4e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/a07oaasa
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251003_130752-a07oaasa/logs
+[I 2025-10-03 13:10:27,727] Trial 2 finished with value: 0.9288721935878396 and parameters: {'batch_size': 32, 'lr': 3.768087969182294e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 16}. Best is trial 0 with value: 0.937823469351829.
+wandb: Finishing previous runs because reinit is set to True.

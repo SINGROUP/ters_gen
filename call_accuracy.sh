@@ -5,7 +5,7 @@
 #SBATCH -c 12
 # SBATCH --partition=gpu-v100-16g
 # SBATCH --partition=gpu-h100-80g-short
-# SBATCH --partition=gpu-debug
+#SBATCH --partition=gpu-debug
 #SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%j.out
 
 arg1=$1
@@ -23,7 +23,11 @@ vmstat -n 1 > resource_usage.log &
 RESOURCE_MONITOR_PID=$!
 
 # Run your main Python job
+
 python check_accuracy_dice.py 
+#python check_accuracy.py
+
+# python model_performance_analysis.py
 # After your job finishes, stop the monitoring processes
 kill $GPU_MONITOR_PID
 kill $RESOURCE_MONITOR_PID

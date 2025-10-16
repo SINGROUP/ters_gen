@@ -1,0 +1,80 @@
+wandb: creating run
+wandb: creating run
+wandb: creating run
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251002_192011-a0nbaxbz
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_2_bs64_lr2e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/a0nbaxbz
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251002_192011-nx77rizc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_0_bs16_lr9e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/nx77rizc
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251002_192011-la50yluv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs64_lr1e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/la50yluv
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+wandb: 500 encountered ({"errors":[{"message":"An internal error occurred. Please contact support.","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Exception in trial 2: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Exception in trial 0: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Exception in trial 1: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Exception in trial 3: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (65536) at non-singleton dimension 1

@@ -1,0 +1,27 @@
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251013_222736-lvopc183
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_3_bs128_lr3e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/lvopc183
+Exception in trial 2: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 117, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 74, in train
+    epoch_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 114, in train_epoch
+    loss = self.loss_fn(outputs, tgt_image)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/losses/losses.py", line 70, in dice_loss
+    intersection = (pred_flat * target_flat).sum(1)
+                    ~~~~~~~~~~^~~~~~~~~~~~~
+RuntimeError: The size of tensor a (65536) must match the size of tensor b (1024) at non-singleton dimension 1
+wandb:
+wandb: 🚀 View run trial_2_bs64_lr4e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/uxtb5yi5
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251013_222736-uxtb5yi5/logs
+[I 2025-10-13 22:28:59,178] Trial 2 finished with value: 0.0 and parameters: {'batch_size': 64, 'lr': 4.029622912938401e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.0.
+wandb: Finishing previous runs because reinit is set to True.

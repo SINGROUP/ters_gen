@@ -1,0 +1,12 @@
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251014_143700-pyfti3zl
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs16_lr2e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug_val_32x32/runs/pyfti3zl
+Epoch    1/50, time: 375.48 s, training_loss: 0.858
+Epoch    1/50, time: 376.10 s, training_loss: 0.832
+Epoch    1/50, time: 376.27 s, training_loss: 0.900
+Epoch    1/50, time: 53.45 s, val_loss: 0.784
+Epoch    1/50, time: 53.34 s, val_loss: 0.893
+Epoch    1/50, time: 54.78 s, val_loss: 0.813

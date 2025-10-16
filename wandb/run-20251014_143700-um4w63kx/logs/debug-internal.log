@@ -1,0 +1,7 @@
+{"time":"2025-10-14T14:37:00.479768837+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251014_143700-um4w63kx/logs/debug-core.log"}
+{"time":"2025-10-14T14:37:00.924969021+03:00","level":"INFO","msg":"stream: created new stream","id":"um4w63kx"}
+{"time":"2025-10-14T14:37:00.924996208+03:00","level":"INFO","msg":"stream: started","id":"um4w63kx"}
+{"time":"2025-10-14T14:37:00.925012834+03:00","level":"INFO","msg":"sender: started","stream_id":"um4w63kx"}
+{"time":"2025-10-14T14:37:00.925011648+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"um4w63kx"}
+{"time":"2025-10-14T14:37:00.925032032+03:00","level":"INFO","msg":"handler: started","stream_id":"um4w63kx"}
+{"time":"2025-10-14T14:37:01.470667458+03:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,16 @@
+{"time":"2025-08-25T11:23:32.760662531+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250825_112332-dll73uf1/logs/debug-core.log"}
+{"time":"2025-08-25T11:23:33.177150518+03:00","level":"INFO","msg":"stream: created new stream","id":"dll73uf1"}
+{"time":"2025-08-25T11:23:33.177172549+03:00","level":"INFO","msg":"stream: started","id":"dll73uf1"}
+{"time":"2025-08-25T11:23:33.177187416+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"dll73uf1"}
+{"time":"2025-08-25T11:23:33.177199577+03:00","level":"INFO","msg":"sender: started","stream_id":"dll73uf1"}
+{"time":"2025-08-25T11:23:33.177213165+03:00","level":"INFO","msg":"handler: started","stream_id":"dll73uf1"}
+{"time":"2025-08-25T11:23:33.671133604+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-25T13:54:19.274286308+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-25T13:54:19.27449042+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-25T13:54:20.276050611+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.791278674,"progress":"41.4KB/41.4KB"}],"total_operations":1}}
+{"time":"2025-08-25T13:54:20.297874361+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-25T13:54:20.575613306+03:00","level":"INFO","msg":"stream: closing","id":"dll73uf1"}
+{"time":"2025-08-25T13:54:20.575634662+03:00","level":"INFO","msg":"handler: closed","stream_id":"dll73uf1"}
+{"time":"2025-08-25T13:54:20.575649553+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dll73uf1"}
+{"time":"2025-08-25T13:54:20.575711821+03:00","level":"INFO","msg":"sender: closed","stream_id":"dll73uf1"}
+{"time":"2025-08-25T13:54:20.575964109+03:00","level":"INFO","msg":"stream: closed","id":"dll73uf1"}

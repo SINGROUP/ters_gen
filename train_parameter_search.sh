@@ -1,15 +1,15 @@
 #!/bin/bash
 #SBATCH --time=120:00:00
 #SBATCH --mem=512G
-#SBATCH --gpus=4
+#SBATCH --gpus=2
 #SBATCH -c 64
-# SBATCH --mem-per-cpu=8G
+# SBATCH --mem-per-cpu=10G
 #SBATCH --partition=gpu-h100-80g-short
 # SBATCH --partition=gpu-a100-80g
 # SBATCH --partition=gpu-debug
 #SBATCH --partition=gpu-h200-141g-short
 # SBATCH --partition=gpu-h200-141g-ellis
-#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%config_hypopt_all.out
+#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%config_hypopt_all_augmented_val.out
 
 arg1=$1
 

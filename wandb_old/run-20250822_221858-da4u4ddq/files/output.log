@@ -1,0 +1,117 @@
+Epoch   40/50, time: 39.50 s, training_loss: 0.351
+Epoch   40/50, time: 12.41 s, val_loss: 0.366
+Epoch   38/50, time: 121.23 s, training_loss: 0.371
+Epoch    1/50, time: 38.99 s, training_loss: 0.893
+Epoch    1/50, time: 12.96 s, val_loss: 0.866
+Epoch   38/50, time: 33.52 s, val_loss: 0.425
+Epoch   41/50, time: 38.44 s, training_loss: 0.351
+Epoch   41/50, time: 13.82 s, val_loss: 0.384
+Training Metrics:
+Accuracy: 0.8689
+Precision: 0.1229
+Recall: 0.9259
+F1 Score: 0.2171
+IoU: 0.1217
+Dice Coefficient: 0.2171
+Validation Metrics:
+Accuracy: 0.8797
+Precision: 0.1269
+Recall: 0.9083
+F1 Score: 0.2227
+IoU: 0.1253
+Dice Coefficient: 0.2227
+Training Metrics:
+Accuracy: 0.9841
+Precision: 0.5723
+Recall: 0.7485
+F1 Score: 0.6486
+IoU: 0.4800
+Dice Coefficient: 0.6486
+Validation Metrics:
+Accuracy: 0.9828
+Precision: 0.5343
+Recall: 0.7209
+F1 Score: 0.6137
+IoU: 0.4427
+Dice Coefficient: 0.6137
+Epoch    2/50, time: 38.14 s, training_loss: 0.852
+Epoch    2/50, time: 13.73 s, val_loss: 0.836
+Epoch   39/50, time: 114.09 s, training_loss: 0.367
+Epoch   42/50, time: 38.46 s, training_loss: 0.349
+Epoch   42/50, time: 12.76 s, val_loss: 0.363
+Epoch    3/50, time: 37.20 s, training_loss: 0.821
+Epoch   39/50, time: 33.68 s, val_loss: 0.426
+Epoch    3/50, time: 13.61 s, val_loss: 0.797
+Epoch   43/50, time: 38.66 s, training_loss: 0.346
+Epoch   43/50, time: 13.85 s, val_loss: 0.361
+Epoch    4/50, time: 40.74 s, training_loss: 0.794
+Epoch    4/50, time: 14.34 s, val_loss: 0.775
+Epoch   44/50, time: 40.94 s, training_loss: 0.340
+Epoch   44/50, time: 14.58 s, val_loss: 0.367
+Epoch    5/50, time: 40.63 s, training_loss: 0.768
+Epoch   40/50, time: 117.09 s, training_loss: 0.364
+Epoch    5/50, time: 12.55 s, val_loss: 0.753
+Epoch   45/50, time: 37.61 s, training_loss: 0.342
+Epoch   45/50, time: 12.14 s, val_loss: 0.353
+Epoch   40/50, time: 33.07 s, val_loss: 0.418
+Epoch    6/50, time: 39.61 s, training_loss: 0.748
+Epoch    6/50, time: 13.88 s, val_loss: 0.742
+Epoch   46/50, time: 40.11 s, training_loss: 0.336
+Epoch   46/50, time: 14.00 s, val_loss: 0.370
+Epoch    7/50, time: 40.83 s, training_loss: 0.724
+Epoch    7/50, time: 14.38 s, val_loss: 0.698
+Epoch   47/50, time: 40.72 s, training_loss: 0.334
+Epoch   47/50, time: 14.23 s, val_loss: 0.365
+Epoch   41/50, time: 116.42 s, training_loss: 0.356
+Epoch    8/50, time: 38.50 s, training_loss: 0.702
+Epoch    8/50, time: 13.22 s, val_loss: 0.689
+Epoch   48/50, time: 37.76 s, training_loss: 0.332
+Epoch   41/50, time: 32.77 s, val_loss: 0.421
+Epoch   48/50, time: 13.59 s, val_loss: 0.370
+Epoch    9/50, time: 37.37 s, training_loss: 0.672
+Epoch    9/50, time: 13.99 s, val_loss: 0.647
+Epoch   49/50, time: 41.21 s, training_loss: 0.324
+Epoch   49/50, time: 14.24 s, val_loss: 0.353
+Epoch   10/50, time: 39.88 s, training_loss: 0.646
+Epoch   10/50, time: 14.07 s, val_loss: 0.633
+Epoch   50/50, time: 41.24 s, training_loss: 0.322
+Epoch   50/50, time: 13.51 s, val_loss: 0.372
+Epoch   11/50, time: 39.48 s, training_loss: 0.626
+Epoch   11/50, time: 12.67 s, val_loss: 0.600
+Training Metrics:
+Accuracy: 0.9856
+Precision: 0.6189
+Recall: 0.6965
+F1 Score: 0.6554
+IoU: 0.4875
+Dice Coefficient: 0.6554
+Validation Metrics:
+Accuracy: 0.9835
+Precision: 0.5595
+Recall: 0.6121
+F1 Score: 0.5846
+IoU: 0.4131
+Dice Coefficient: 0.5846
+Training Metrics:
+Accuracy: 0.9837
+Precision: 0.5609
+Recall: 0.7708
+F1 Score: 0.6493
+IoU: 0.4808
+Dice Coefficient: 0.6493
+Validation Metrics:
+Accuracy: 0.9833
+Precision: 0.5434
+Recall: 0.7383
+F1 Score: 0.6260
+IoU: 0.4556
+Dice Coefficient: 0.6260
+Test Metrics:
+Accuracy: 0.9833
+Precision: 0.5434
+Recall: 0.7383
+F1 Score: 0.6260
+IoU: 0.4556
+Dice Coefficient: 0.6260
+[I 2025-08-22 22:30:53,513] Trial 17 finished with value: 0.6260013478273609 and parameters: {'batch_size': 16, 'lr': 0.00023966046961431772, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 64}. Best is trial 15 with value: 0.7636784016171164.
+wandb: Finishing previous runs because reinit is set to True.

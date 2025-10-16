@@ -1,0 +1,15 @@
+{"time":"2025-10-13T22:27:37.117934093+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251013_222736-8pizao8x/logs/debug-core.log"}
+{"time":"2025-10-13T22:27:37.521599458+03:00","level":"INFO","msg":"stream: created new stream","id":"8pizao8x"}
+{"time":"2025-10-13T22:27:37.521620094+03:00","level":"INFO","msg":"stream: started","id":"8pizao8x"}
+{"time":"2025-10-13T22:27:37.521634298+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:27:37.521641662+03:00","level":"INFO","msg":"sender: started","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:27:37.521658974+03:00","level":"INFO","msg":"handler: started","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:27:37.862962825+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-13T22:30:09.253832519+03:00","level":"INFO","msg":"stream: closing","id":"8pizao8x"}
+{"time":"2025-10-13T22:30:09.253866275+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-13T22:30:09.25395616+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-13T22:30:09.775579859+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-13T22:30:10.011114868+03:00","level":"INFO","msg":"handler: closed","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:30:10.011129757+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:30:10.011182118+03:00","level":"INFO","msg":"sender: closed","stream_id":"8pizao8x"}
+{"time":"2025-10-13T22:30:10.011716302+03:00","level":"INFO","msg":"stream: closed","id":"8pizao8x"}

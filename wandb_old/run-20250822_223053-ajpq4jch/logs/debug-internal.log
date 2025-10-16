@@ -1,0 +1,17 @@
+{"time":"2025-08-22T22:30:54.552283187+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250822_223053-ajpq4jch/logs/debug-core.log"}
+{"time":"2025-08-22T22:30:54.844238678+03:00","level":"INFO","msg":"stream: created new stream","id":"ajpq4jch"}
+{"time":"2025-08-22T22:30:54.844267974+03:00","level":"INFO","msg":"stream: started","id":"ajpq4jch"}
+{"time":"2025-08-22T22:30:54.844276703+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:30:54.84429013+03:00","level":"INFO","msg":"sender: started","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:30:54.844313694+03:00","level":"INFO","msg":"handler: started","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:30:55.144920776+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-22T22:44:10.38446641+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-08-22T22:56:44.487654902+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-22T22:56:44.487765931+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-22T22:56:45.390191344+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-22T22:56:45.489664088+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 218-226","runtime_seconds":0.099379119}],"total_operations":1}}
+{"time":"2025-08-22T22:56:45.656132933+03:00","level":"INFO","msg":"stream: closing","id":"ajpq4jch"}
+{"time":"2025-08-22T22:56:45.656162156+03:00","level":"INFO","msg":"handler: closed","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:56:45.65617514+03:00","level":"INFO","msg":"sender: closed","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:56:45.65617211+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ajpq4jch"}
+{"time":"2025-08-22T22:56:45.656811265+03:00","level":"INFO","msg":"stream: closed","id":"ajpq4jch"}

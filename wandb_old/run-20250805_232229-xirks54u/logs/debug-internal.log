@@ -1,0 +1,17 @@
+{"time":"2025-08-05T23:22:30.20730814+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250805_232229-xirks54u/logs/debug-core.log"}
+{"time":"2025-08-05T23:22:30.51983199+03:00","level":"INFO","msg":"stream: created new stream","id":"xirks54u"}
+{"time":"2025-08-05T23:22:30.519883504+03:00","level":"INFO","msg":"stream: started","id":"xirks54u"}
+{"time":"2025-08-05T23:22:30.519894026+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:22:30.519905503+03:00","level":"INFO","msg":"sender: started","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:22:30.519945101+03:00","level":"INFO","msg":"handler: started","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:22:30.77277472+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-05T23:29:00.93234824+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-05T23:47:19.951083443+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-05T23:47:19.951208673+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-05T23:47:20.696768136+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-05T23:47:20.938468516+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-05T23:47:20.940931504+03:00","level":"INFO","msg":"stream: closing","id":"xirks54u"}
+{"time":"2025-08-05T23:47:20.940941078+03:00","level":"INFO","msg":"handler: closed","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:47:20.940949502+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:47:20.940968934+03:00","level":"INFO","msg":"sender: closed","stream_id":"xirks54u"}
+{"time":"2025-08-05T23:47:20.941386932+03:00","level":"INFO","msg":"stream: closed","id":"xirks54u"}

@@ -1,0 +1,17 @@
+{"time":"2025-08-26T07:23:06.721660971+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250826_072305-gc70gha3/logs/debug-core.log"}
+{"time":"2025-08-26T07:23:07.013638013+03:00","level":"INFO","msg":"stream: created new stream","id":"gc70gha3"}
+{"time":"2025-08-26T07:23:07.013673542+03:00","level":"INFO","msg":"stream: started","id":"gc70gha3"}
+{"time":"2025-08-26T07:23:07.013681925+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"gc70gha3"}
+{"time":"2025-08-26T07:23:07.013701058+03:00","level":"INFO","msg":"sender: started","stream_id":"gc70gha3"}
+{"time":"2025-08-26T07:23:07.013689714+03:00","level":"INFO","msg":"handler: started","stream_id":"gc70gha3"}
+{"time":"2025-08-26T07:23:07.345793724+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-26T07:36:23.096568005+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Posnet_50epochs_just_aug/gc70gha3/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-26T08:13:22.018578173+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-26T08:13:22.018713997+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-26T08:13:22.682152111+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-26T08:13:22.920209673+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-26T08:13:22.922372593+03:00","level":"INFO","msg":"stream: closing","id":"gc70gha3"}
+{"time":"2025-08-26T08:13:22.922388331+03:00","level":"INFO","msg":"handler: closed","stream_id":"gc70gha3"}
+{"time":"2025-08-26T08:13:22.922394819+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gc70gha3"}
+{"time":"2025-08-26T08:13:22.922406268+03:00","level":"INFO","msg":"sender: closed","stream_id":"gc70gha3"}
+{"time":"2025-08-26T08:13:22.922670741+03:00","level":"INFO","msg":"stream: closed","id":"gc70gha3"}

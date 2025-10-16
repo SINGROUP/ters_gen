@@ -1,0 +1,96 @@
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_setup.py:_flush():81] Configure stats pid to 3370610
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_setup.py:_flush():81] Loading settings from /home/sethih1/.config/wandb/settings
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_setup.py:_flush():81] Loading settings from /home/sethih1/masque_new/ters_gen/wandb/settings
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/sethih1/masque_new/ters_gen/wandb/run-20251013_222736-lvopc183/logs/debug.log
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/sethih1/masque_new/ters_gen/wandb/run-20251013_222736-lvopc183/logs/debug-internal.log
+2025-10-13 22:27:36,674 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():831] calling init triggers
+2025-10-13 22:27:36,675 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'_fields': {'model': att_channels_options:
+- 16
+- 32
+- 64
+filters_options:
+- - 16
+  - 32
+  - 64
+- - 16
+  - 32
+  - 64
+  - 128
+- - 16
+  - 32
+  - 64
+  - 128
+  - 256
+- - 32
+  - 64
+  - 128
+  - 256
+  - 512
+in_channels:
+- 100
+- 400
+kernel_size_options:
+- - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+out_channels: 1
+type: AttentionUNet
+, 'training': batch_sizes:
+- 16
+- 32
+- 64
+- 128
+epochs: 50
+gpu_ids:
+- 0
+- 1
+- 2
+- 3
+learning_rates:
+- 1.0e-05
+- 0.001
+loss_functions:
+- dice_loss
+n_jobs: 4
+n_trials: 24
+use_parallel: true
+, 'data': augmentation:
+- true
+circle_radius: 5
+split_by_id: 0
+train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_npz_1.0_split/train
+val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_npz_1.0_split/val
+, 'save_path': '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_oct_2025/models', 'log_path': '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_oct_2025/run_logs'}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, 'batch_size': 128, 'lr': 0.00031826392701285455, 'loss_fn': 'dice_loss', '_wandb': {}}
+2025-10-13 22:27:36,675 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():872] starting backend
+2025-10-13 22:27:37,109 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():875] sending inform_init request
+2025-10-13 22:27:37,127 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():883] backend started and connected
+2025-10-13 22:27:37,129 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():956] updated telemetry
+2025-10-13 22:27:37,140 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-10-13 22:27:39,608 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():1032] starting run threads in backend
+2025-10-13 22:27:40,078 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_run.py:_console_start():2453] atexit reg
+2025-10-13 22:27:40,079 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-10-13 22:27:40,079 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-10-13 22:27:40,079 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-10-13 22:27:40,079 INFO    ThreadPoolExecutor-0_3:3370610 [wandb_init.py:init():1078] run started, returning control to user process
+2025-10-13 22:30:07,244 INFO    MsgRouterThr:3370610 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-10-13 22:30:08,089 INFO    MsgRouterThr:3370610 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-10-13 22:30:08,960 INFO    MsgRouterThr:3370610 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 3 handles.
+2025-10-13 22:30:09,253 INFO    MsgRouterThr:3370610 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

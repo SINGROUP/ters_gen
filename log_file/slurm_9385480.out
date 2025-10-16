@@ -1,0 +1,38 @@
+/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+Number of samples: 291
+6
+0 <class 'tuple'> 32
+1 <class 'torch.Tensor'> torch.Size([32])
+2 <class 'torch.Tensor'> torch.Size([32])
+3 <class 'torch.Tensor'> torch.Size([32, 100, 256, 256])
+4 <class 'torch.Tensor'> torch.Size([32, 1])
+5 <class 'torch.Tensor'> torch.Size([32, 1, 256, 256])
+Eval Metrics:   0%|          | 0/10 [00:00<?, ?it/s]Eval Metrics:  10%|█         | 1/10 [00:12<01:48, 12.01s/it]Eval Metrics:  20%|██        | 2/10 [00:18<01:11,  8.96s/it]Eval Metrics:  30%|███       | 3/10 [00:25<00:54,  7.75s/it]Eval Metrics:  40%|████      | 4/10 [00:32<00:45,  7.56s/it]Eval Metrics:  50%|█████     | 5/10 [00:39<00:36,  7.40s/it]Eval Metrics:  60%|██████    | 6/10 [00:46<00:28,  7.11s/it]Eval Metrics:  70%|███████   | 7/10 [00:52<00:20,  6.93s/it]Eval Metrics:  80%|████████  | 8/10 [00:59<00:13,  6.82s/it]Eval Metrics:  90%|█████████ | 9/10 [01:06<00:06,  6.90s/it]Eval Metrics: 100%|██████████| 10/10 [01:07<00:00,  5.15s/it]Eval Metrics: 100%|██████████| 10/10 [01:07<00:00,  6.75s/it]
+(256, 256) (256, 256)
+291 291
+Metrics:
+Accuracy: 0.9911
+Precision: 0.7505
+Recall: 0.7981
+F1 Score: 0.7736
+IoU: 0.6308
+Dice Coefficient: 0.7736
+Mean IoU over 291 samples: 0.6432
+Mean Dice Coefficient over 291 samples: 0.7695
+Saved up to 5 images per Dice Coefficient bin in 'dice_bins/'
+Saved 4 best samples in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/best_samples_val' (avg, ref, pred images separately)
+Saved 4 samples from 0.8–0.9 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/samples_dice_08_09'
+Saved 4 samples from 0.7–0.8 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/samples_dice_07_08'
+Saved 0 samples from 0.0–0.1 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/samples_dice_00_01'
+Saved 3 samples from 0.1–0.2 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/samples_dice_01_02'
+Saved 4 samples from 0.2–0.3 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/samples_dice_02_03'
+Saved 0 samples from 0.0–0.1 range in '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs/augmented/config_hypopt_all/dice_bins_val/group/samples_dice_00_01'
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/check_accuracy_dice.py", line 413, in <module>
+    with np.load(npz_file) as data:
+         ^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 459, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '38028'

@@ -10,8 +10,9 @@ from collections import defaultdict
 
 
 
+
 # ——— Dataset & model setup ———
-data_path = "/scratch/phys/sin/sethih1/data_files/planar_molecules_256"
+data_path = "/scratch/phys/sin/sethih1/data_files/combined_npz_images_32x32/val"
 num_channels = 400
 sg_ch = True
 
@@ -29,7 +30,8 @@ ters_loader = DataLoader(ters_set, batch_size=32, shuffle=False)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = torch.load(
-    '/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
+    #'/scratch/phys/sin/sethih1/models/planar_256/config7/seg_bs_32_lr_0.0001_loss_dice_loss.pt',
+    '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/32x32/posnet_hyperopt_all_50_epochs_just_aug_val/augmented/config_hypopt_all/best_model.pt',
     map_location=device
 )
 model.eval()
@@ -142,3 +144,5 @@ for bin_idx in range(10):
         plt.close()
 
 print("Saved up to 5 images per IoU bin in 'iou_bins/'")
+
+

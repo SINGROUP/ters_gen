@@ -1,0 +1,22 @@
+{"time":"2025-08-22T15:52:18.916263646+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250822_155218-rxhhqsih/logs/debug-core.log"}
+{"time":"2025-08-22T15:52:19.211304537+03:00","level":"INFO","msg":"stream: created new stream","id":"rxhhqsih"}
+{"time":"2025-08-22T15:52:19.211341877+03:00","level":"INFO","msg":"stream: started","id":"rxhhqsih"}
+{"time":"2025-08-22T15:52:19.211353893+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:52:19.211357029+03:00","level":"INFO","msg":"handler: started","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:52:19.211372834+03:00","level":"INFO","msg":"sender: started","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:52:37.409221492+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-22T15:52:59.431048657+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-08-22T15:53:53.77023886+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-22T15:53:53.770454708+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-22T15:53:54.771476005+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":30.749604782},{"desc":"uploading console lines 0-6","runtime_seconds":5.942876525}],"total_operations":2}}
+{"time":"2025-08-22T15:53:59.023336682+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-08-22T15:54:07.54303974+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-22T15:54:31.155546944+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-22T15:54:36.691332426+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-08-22T15:54:54.856461184+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":90.834591277,"error_status":"retrying: Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"},{"desc":"uploading data","runtime_seconds":6.026537744}],"total_operations":2}}
+{"time":"2025-08-22T15:55:18.351267246+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-22T15:55:21.238252403+03:00","level":"INFO","msg":"stream: closing","id":"rxhhqsih"}
+{"time":"2025-08-22T15:55:21.238267358+03:00","level":"INFO","msg":"handler: closed","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:55:21.238285142+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:55:21.238291504+03:00","level":"INFO","msg":"sender: closed","stream_id":"rxhhqsih"}
+{"time":"2025-08-22T15:55:21.238573824+03:00","level":"INFO","msg":"stream: closed","id":"rxhhqsih"}

@@ -1,0 +1,39 @@
+Epoch   34/50, time: 124.22 s, training_loss: 0.545
+Training Metrics:
+Accuracy: 0.9897
+Precision: 0.7188
+Recall: 0.7763
+F1 Score: 0.7465
+IoU: 0.5955
+Dice Coefficient: 0.7465
+Validation Metrics:
+Accuracy: 0.9880
+Precision: 0.6720
+Recall: 0.7227
+F1 Score: 0.6964
+IoU: 0.5342
+Dice Coefficient: 0.6964
+Epoch   34/50, time: 36.11 s, val_loss: 0.558
+Test Metrics:
+Accuracy: 0.9880
+Precision: 0.6720
+Recall: 0.7227
+F1 Score: 0.6964
+IoU: 0.5342
+Dice Coefficient: 0.6964
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0.24546
+wandb:      trial 0
+wandb:
+wandb: 🚀 View run trial_3_bs32_lr5e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs/runs/e150q64k
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250805_082815-e150q64k/logs
+[I 2025-08-05 11:23:44,175] Trial 3 finished with value: 0.6963865916698078 and parameters: {'batch_size': 32, 'lr': 0.0005055970514001917, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 64}. Best is trial 3 with value: 0.6963865916698078.
+wandb: Finishing previous runs because reinit is set to True.

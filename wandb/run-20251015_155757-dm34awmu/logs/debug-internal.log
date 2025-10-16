@@ -1,0 +1,15 @@
+{"time":"2025-10-15T15:57:58.103962129+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251015_155757-dm34awmu/logs/debug-core.log"}
+{"time":"2025-10-15T15:57:58.88696854+03:00","level":"INFO","msg":"stream: created new stream","id":"dm34awmu"}
+{"time":"2025-10-15T15:57:58.887008029+03:00","level":"INFO","msg":"stream: started","id":"dm34awmu"}
+{"time":"2025-10-15T15:57:58.887027794+03:00","level":"INFO","msg":"sender: started","stream_id":"dm34awmu"}
+{"time":"2025-10-15T15:57:58.887040972+03:00","level":"INFO","msg":"handler: started","stream_id":"dm34awmu"}
+{"time":"2025-10-15T15:57:58.887024479+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"dm34awmu"}
+{"time":"2025-10-15T15:57:59.229415584+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T19:21:08.942128668+03:00","level":"INFO","msg":"stream: closing","id":"dm34awmu"}
+{"time":"2025-10-15T19:21:09.063670478+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T19:21:09.079997665+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T19:21:10.51072999+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T19:21:10.768016713+03:00","level":"INFO","msg":"handler: closed","stream_id":"dm34awmu"}
+{"time":"2025-10-15T19:21:10.786142752+03:00","level":"INFO","msg":"sender: closed","stream_id":"dm34awmu"}
+{"time":"2025-10-15T19:21:10.767744014+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dm34awmu"}
+{"time":"2025-10-15T19:21:10.786165015+03:00","level":"INFO","msg":"stream: closed","id":"dm34awmu"}

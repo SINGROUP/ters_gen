@@ -60,7 +60,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
     run = None
     if use_wandb:
         run = wandb.init(
-            project="Posnet",
+            project="Posnet_50epochs_just_aug_val_32x32",
             name=run_name,
             config={
                 **vars(config),
@@ -71,6 +71,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
             reinit=True
         )
 
+    final_dice = None
     with gpu_queue.one_gpu_per_process() as gpu_idx:
         device = torch.device(f"cuda:{gpu_idx}" if gpu_idx is not None and torch.cuda.is_available() else "cpu")
         try:
@@ -107,7 +108,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
                 test_set=None,
                 save_path=config.save_path,
                 log_path=config.log_path,
-                dataloader_args={"batch_size": batch_size, "shuffle": True, "num_workers": 8},
+                dataloader_args={"batch_size": batch_size, "shuffle": True, "num_workers": 7},  # set to 0 for debug, increase later
                 device=device,
                 print_interval=0,
                 dataset_bonds=train_ds.unique_bonds
@@ -118,6 +119,11 @@ def objective(trial, config, gpu_queue, use_wandb=False):
             trainer.save_final_model(model_file)
             final_dice = trainer.final_metrics()
             trial.set_user_attr("model_path", model_file)
+        except Exception as e:
+            import traceback
+            print(f"Exception in trial {trial.number}: {e}")
+            traceback.print_exc()
+            final_dice = 0.0  # Penalize failed trials
         finally:
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
@@ -167,26 +173,23 @@ def main():
             n_jobs=args.n_gpus
         )
 
-        df = study.trials_dataframe()
-        os.makedirs(config.log_path, exist_ok=True)
-        df.to_csv(os.path.join(config.log_path, "optuna_trials.csv"), index=False)
-        print(f"Trials logged to {config.log_path}/optuna_trials.csv")
-        print("Best params:", study.best_params)
-        print("Best dice:", study.best_value)
+        print("Optuna results saving")
 
-        best_trial = study.best_trial
-        if "model_path" in best_trial.user_attrs:
-            best_model = best_trial.user_attrs["model_path"]
-            shutil.copy(
-                os.path.join(config.save_path, best_model),
-                os.path.join(config.save_path, "best_model.pt")
-            )
-            print("Best model saved to", os.path.join(config.save_path, "best_model.pt"))
-
-        visualize_study(study, os.path.join(config.log_path, "visualizations"))
-
-    if args.use_wandb:
-        wandb.finish()
+    df = study.trials_dataframe()
+    os.makedirs(config.log_path, exist_ok=True)
+    df.to_csv(os.path.join(config.log_path, "optuna_trials.csv"), index=False)
+    print(f"Trials logged to {config.log_path}/optuna_trials.csv")
+    print("Best params:", study.best_params)
+    print("Best dice:", study.best_value)
+    best_trial = study.best_trial
+    if "model_path" in best_trial.user_attrs:
+        best_model = best_trial.user_attrs["model_path"]
+        shutil.copy(
+            os.path.join(config.save_path, "seg" + best_model),  # fixed here: no "seg" prefix
+            os.path.join(config.save_path, "best_model.pt")
+        )
+        print("Best model saved to", os.path.join(config.save_path, "best_model.pt"))
+    visualize_study(study, os.path.join(config.log_path, "visualizations"))
 
 if __name__ == "__main__":
     main()

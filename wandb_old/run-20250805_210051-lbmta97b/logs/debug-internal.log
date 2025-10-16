@@ -1,0 +1,17 @@
+{"time":"2025-08-05T21:00:53.19347271+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250805_210051-lbmta97b/logs/debug-core.log"}
+{"time":"2025-08-05T21:00:53.496266986+03:00","level":"INFO","msg":"stream: created new stream","id":"lbmta97b"}
+{"time":"2025-08-05T21:00:53.496324564+03:00","level":"INFO","msg":"stream: started","id":"lbmta97b"}
+{"time":"2025-08-05T21:00:53.49638023+03:00","level":"INFO","msg":"sender: started","stream_id":"lbmta97b"}
+{"time":"2025-08-05T21:00:53.496378228+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lbmta97b"}
+{"time":"2025-08-05T21:00:53.496421807+03:00","level":"INFO","msg":"handler: started","stream_id":"lbmta97b"}
+{"time":"2025-08-05T21:00:53.763383813+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-05T22:09:39.710803614+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-05T23:11:53.18562117+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-05T23:11:53.467962732+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-05T23:11:54.031311856+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.126720644},{"desc":"uploading wandb-summary.json","runtime_seconds":0.08553468}],"total_operations":2}}
+{"time":"2025-08-05T23:11:54.709452213+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-05T23:11:55.039903282+03:00","level":"INFO","msg":"stream: closing","id":"lbmta97b"}
+{"time":"2025-08-05T23:11:55.040395887+03:00","level":"INFO","msg":"handler: closed","stream_id":"lbmta97b"}
+{"time":"2025-08-05T23:11:55.040024123+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lbmta97b"}
+{"time":"2025-08-05T23:11:55.052946976+03:00","level":"INFO","msg":"sender: closed","stream_id":"lbmta97b"}
+{"time":"2025-08-05T23:11:55.053031786+03:00","level":"INFO","msg":"stream: closed","id":"lbmta97b"}

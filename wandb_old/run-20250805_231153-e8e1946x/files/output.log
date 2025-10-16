@@ -1,0 +1,67 @@
+Epoch   41/50, time: 139.93 s, training_loss: 0.239
+Epoch   49/50, time: 135.12 s, training_loss: 0.217
+Epoch   41/50, time: 38.44 s, val_loss: 0.302
+Epoch   49/50, time: 36.69 s, val_loss: 0.270
+Epoch   49/50, time: 153.77 s, training_loss: 0.558
+Epoch    1/50, time: 131.83 s, training_loss: 0.885
+Epoch   49/50, time: 39.90 s, val_loss: 0.530
+Epoch    1/50, time: 40.80 s, val_loss: 0.804
+Epoch   50/50, time: 141.10 s, training_loss: 0.212
+Epoch   50/50, time: 37.27 s, val_loss: 0.274
+Training Metrics:
+Accuracy: 0.9903
+Precision: 0.7502
+Recall: 0.7605
+F1 Score: 0.7553
+IoU: 0.6068
+Dice Coefficient: 0.7553
+Validation Metrics:
+Accuracy: 0.9889
+Precision: 0.7069
+Recall: 0.7058
+F1 Score: 0.7064
+IoU: 0.5460
+Dice Coefficient: 0.7064
+Epoch   50/50, time: 151.20 s, training_loss: 0.542
+Epoch   50/50, time: 40.18 s, val_loss: 0.504
+Training Metrics:
+Accuracy: 0.6186
+Precision: 0.0380
+Recall: 0.7582
+F1 Score: 0.0724
+IoU: 0.0375
+Dice Coefficient: 0.0724
+Validation Metrics:
+Accuracy: 0.9357
+Precision: 0.1633
+Recall: 0.5796
+F1 Score: 0.2548
+IoU: 0.1460
+Dice Coefficient: 0.2548
+Epoch   42/50, time: 140.15 s, training_loss: 0.238
+Epoch   42/50, time: 38.53 s, val_loss: 0.300
+Training Metrics:
+Accuracy: 0.9916
+Precision: 0.7738
+Recall: 0.8093
+F1 Score: 0.7912
+IoU: 0.6545
+Dice Coefficient: 0.7912
+Validation Metrics:
+Accuracy: 0.9895
+Precision: 0.7161
+Recall: 0.7439
+F1 Score: 0.7297
+IoU: 0.5745
+Dice Coefficient: 0.7297
+Epoch    2/50, time: 135.70 s, training_loss: 0.844
+Epoch    2/50, time: 35.74 s, val_loss: 0.773
+Test Metrics:
+Accuracy: 0.9895
+Precision: 0.7161
+Recall: 0.7439
+F1 Score: 0.7297
+IoU: 0.5745
+Dice Coefficient: 0.7297
+[I 2025-08-05 23:21:07,204] Trial 25 finished with value: 0.7297422261754803 and parameters: {'batch_size': 16, 'lr': 0.00015866023254599898, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 16}. Best is trial 8 with value: 0.7411194148943364.
+wandb: Finishing previous runs because reinit is set to True.

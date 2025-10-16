@@ -1,0 +1,7 @@
+{"time":"2025-10-13T23:21:00.162440954+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251013_232059-wcdltoeg/logs/debug-core.log"}
+{"time":"2025-10-13T23:21:00.466377006+03:00","level":"INFO","msg":"stream: created new stream","id":"wcdltoeg"}
+{"time":"2025-10-13T23:21:00.466397062+03:00","level":"INFO","msg":"stream: started","id":"wcdltoeg"}
+{"time":"2025-10-13T23:21:00.466416519+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"wcdltoeg"}
+{"time":"2025-10-13T23:21:00.466422799+03:00","level":"INFO","msg":"handler: started","stream_id":"wcdltoeg"}
+{"time":"2025-10-13T23:21:00.466438393+03:00","level":"INFO","msg":"sender: started","stream_id":"wcdltoeg"}
+{"time":"2025-10-13T23:21:00.970782643+03:00","level":"INFO","msg":"Starting system monitor"}

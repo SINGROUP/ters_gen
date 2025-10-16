@@ -1,0 +1,17 @@
+{"time":"2025-08-22T23:22:15.191452231+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250822_232214-kl20hdan/logs/debug-core.log"}
+{"time":"2025-08-22T23:22:15.48699635+03:00","level":"INFO","msg":"stream: created new stream","id":"kl20hdan"}
+{"time":"2025-08-22T23:22:15.487030816+03:00","level":"INFO","msg":"stream: started","id":"kl20hdan"}
+{"time":"2025-08-22T23:22:15.487043021+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:22:15.487064434+03:00","level":"INFO","msg":"handler: started","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:22:15.487046221+03:00","level":"INFO","msg":"sender: started","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:22:15.798612049+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-22T23:37:01.504198755+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Posnet_50epochs_just_aug/kl20hdan/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-22T23:48:03.748645421+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-22T23:48:03.748757733+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-22T23:48:04.426014493+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-22T23:48:04.700226199+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-22T23:48:04.702897385+03:00","level":"INFO","msg":"stream: closing","id":"kl20hdan"}
+{"time":"2025-08-22T23:48:04.702912707+03:00","level":"INFO","msg":"handler: closed","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:48:04.702917737+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:48:04.702926057+03:00","level":"INFO","msg":"sender: closed","stream_id":"kl20hdan"}
+{"time":"2025-08-22T23:48:04.703394069+03:00","level":"INFO","msg":"stream: closed","id":"kl20hdan"}

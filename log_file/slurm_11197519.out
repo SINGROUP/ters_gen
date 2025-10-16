@@ -1,0 +1,19 @@
+/home/sethih1/masque_new/ters_gen/model_performance_analysis.py:58: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model = torch.load(
+Number of samples: 145
+Eval Metrics:   0%|          | 0/5 [00:00<?, ?it/s]Eval Metrics:  20%|██        | 1/5 [00:25<01:42, 25.64s/it]Eval Metrics:  40%|████      | 2/5 [00:32<00:44, 14.70s/it]Eval Metrics:  60%|██████    | 3/5 [00:39<00:22, 11.15s/it]Eval Metrics:  80%|████████  | 4/5 [00:46<00:09,  9.40s/it]Eval Metrics: 100%|██████████| 5/5 [00:49<00:00,  7.31s/it]Eval Metrics: 100%|██████████| 5/5 [00:49<00:00,  9.99s/it]
+   index filename  atom_count  ...  planarity_pca  planarity_rms      rmsd
+0      0   100650  tensor(23)  ...     100.000000      99.994308  0.000182
+1      1   100795  tensor(22)  ...      99.999898      99.898925  0.003136
+2      2   100816  tensor(26)  ...      99.999650      99.812865  0.006979
+3      3   101325  tensor(27)  ...      99.999998      99.985060  0.000547
+4      4    10141  tensor(20)  ...     100.000000      99.994640  0.000149
+
+[5 rows x 8 columns]
+Metrics:
+Accuracy: 0.9901
+Precision: 0.7317
+Recall: 0.7854
+F1 Score: 0.7576
+IoU: 0.6098
+Dice Coefficient: 0.7576

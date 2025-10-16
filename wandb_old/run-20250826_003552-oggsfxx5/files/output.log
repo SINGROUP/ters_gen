@@ -1,0 +1,76 @@
+Training Metrics:
+Accuracy: 0.9701
+Precision: 0.3538
+Recall: 0.6351
+F1 Score: 0.4544
+IoU: 0.2940
+Dice Coefficient: 0.4544
+Validation Metrics:
+Accuracy: 0.9719
+Precision: 0.3608
+Recall: 0.6243
+F1 Score: 0.4573
+IoU: 0.2965
+Dice Coefficient: 0.4573
+Epoch    1/50, time: 44.42 s, training_loss: 0.812
+Epoch    1/50, time: 11.47 s, val_loss: 0.793
+Epoch   50/50, time: 115.88 s, training_loss: 0.327
+Epoch   12/50, time: 38.87 s, training_loss: 0.523
+Epoch   12/50, time: 13.62 s, val_loss: 0.510
+Epoch   50/50, time: 31.67 s, val_loss: 0.340
+Epoch    8/50, time: 125.19 s, training_loss: 0.660
+Training Metrics:
+Accuracy: 0.9242
+Precision: 0.1638
+Recall: 0.6965
+F1 Score: 0.2652
+IoU: 0.1529
+Dice Coefficient: 0.2652
+Validation Metrics:
+Accuracy: 0.9226
+Precision: 0.1620
+Recall: 0.7386
+F1 Score: 0.2658
+IoU: 0.1533
+Dice Coefficient: 0.2658
+Epoch   13/50, time: 36.82 s, training_loss: 0.507
+Epoch   13/50, time: 13.30 s, val_loss: 0.520
+Epoch    8/50, time: 35.67 s, val_loss: 0.644
+Epoch    2/50, time: 34.98 s, training_loss: 0.741
+Epoch    2/50, time: 17.62 s, val_loss: 0.747
+Epoch   14/50, time: 42.04 s, training_loss: 0.476
+Epoch   14/50, time: 13.52 s, val_loss: 0.452
+Epoch    3/50, time: 39.05 s, training_loss: 0.725
+Epoch    3/50, time: 13.53 s, val_loss: 0.715
+Epoch   15/50, time: 40.40 s, training_loss: 0.453
+Epoch   15/50, time: 13.31 s, val_loss: 0.477
+Epoch    4/50, time: 36.44 s, training_loss: 0.724
+Epoch    9/50, time: 120.88 s, training_loss: 0.623
+Training Metrics:
+Accuracy: 0.9872
+Precision: 0.6393
+Recall: 0.7959
+F1 Score: 0.7090
+IoU: 0.5492
+Dice Coefficient: 0.7090
+Validation Metrics:
+Accuracy: 0.9871
+Precision: 0.6323
+Recall: 0.7688
+F1 Score: 0.6939
+IoU: 0.5313
+Dice Coefficient: 0.6939
+Epoch    4/50, time: 12.59 s, val_loss: 0.718
+Epoch   16/50, time: 33.38 s, training_loss: 0.419
+Epoch   16/50, time: 11.55 s, val_loss: 0.407
+Epoch    9/50, time: 35.15 s, val_loss: 0.584
+Epoch    5/50, time: 37.46 s, training_loss: 0.716
+Test Metrics:
+Accuracy: 0.9871
+Precision: 0.6323
+Recall: 0.7688
+F1 Score: 0.6939
+IoU: 0.5313
+Dice Coefficient: 0.6939
+[I 2025-08-26 00:41:38,548] Trial 15 finished with value: 0.6938857492171613 and parameters: {'batch_size': 32, 'lr': 7.283607463652086e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 400, 'att_channels': 64}. Best is trial 17 with value: 0.7281412342045154.
+wandb: Finishing previous runs because reinit is set to True.

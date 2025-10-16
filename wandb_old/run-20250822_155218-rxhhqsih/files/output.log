@@ -1,0 +1,16 @@
+Epoch   43/50, time: 11.74 s, val_loss: 0.906
+wandb: uploading data; updating run metadata
+wandb: updating run metadata; uploading summary, console lines 575-612
+wandb: uploading summary, console lines 575-612
+wandb: 500 encountered ({"errors":[{"message":"context deadline exceeded","path":["project","run"]}],"data":{"project":{"run":null}}}), retrying request
+wandb: uploading data
+Epoch   44/50, time: 50.48 s, training_loss: 0.893
+Epoch   44/50, time: 11.77 s, val_loss: 0.906
+Epoch   15/50, time: 161.98 s, training_loss: 0.853
+wandb:
+wandb: 🚀 View run trial_1_bs64_lr9e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug/runs/qf1eps7z
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Posnet_50epochs_just_aug
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250822_145047-qf1eps7z/logs
+[I 2025-08-22 15:53:53,760] Trial 1 finished with value: 0.6066247118568154 and parameters: {'batch_size': 64, 'lr': 0.0008742168364850377, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 16}. Best is trial 3 with value: 0.6408396720015458.
+wandb: Finishing previous runs because reinit is set to True.

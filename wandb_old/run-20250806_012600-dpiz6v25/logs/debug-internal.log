@@ -1,0 +1,17 @@
+{"time":"2025-08-06T01:26:02.29006715+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250806_012600-dpiz6v25/logs/debug-core.log"}
+{"time":"2025-08-06T01:26:02.6025553+03:00","level":"INFO","msg":"stream: created new stream","id":"dpiz6v25"}
+{"time":"2025-08-06T01:26:02.602589744+03:00","level":"INFO","msg":"stream: started","id":"dpiz6v25"}
+{"time":"2025-08-06T01:26:02.602611919+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:26:02.602619507+03:00","level":"INFO","msg":"handler: started","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:26:02.602642756+03:00","level":"INFO","msg":"sender: started","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:26:02.825534469+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-06T01:39:18.403603214+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-06T01:51:16.387582163+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-06T01:51:16.387913898+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-06T01:51:17.034440709+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-06T01:51:17.26697367+03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-06T01:51:17.270086009+03:00","level":"INFO","msg":"stream: closing","id":"dpiz6v25"}
+{"time":"2025-08-06T01:51:17.270108437+03:00","level":"INFO","msg":"handler: closed","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:51:17.270122959+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:51:17.270150128+03:00","level":"INFO","msg":"sender: closed","stream_id":"dpiz6v25"}
+{"time":"2025-08-06T01:51:17.270523272+03:00","level":"INFO","msg":"stream: closed","id":"dpiz6v25"}

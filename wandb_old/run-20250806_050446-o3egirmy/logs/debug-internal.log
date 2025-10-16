@@ -1,0 +1,16 @@
+{"time":"2025-08-06T05:04:47.709650654+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20250806_050446-o3egirmy/logs/debug-core.log"}
+{"time":"2025-08-06T05:04:48.005624476+03:00","level":"INFO","msg":"stream: created new stream","id":"o3egirmy"}
+{"time":"2025-08-06T05:04:48.005673291+03:00","level":"INFO","msg":"stream: started","id":"o3egirmy"}
+{"time":"2025-08-06T05:04:48.005685819+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:04:48.005707459+03:00","level":"INFO","msg":"handler: started","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:04:48.005740039+03:00","level":"INFO","msg":"sender: started","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:04:48.298657917+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-06T05:53:33.946055412+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-06T05:53:34.665108473+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-06T05:53:34.80144215+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 3-3, summary, console lines 465-485","runtime_seconds":0.973496434},{"desc":"updating run metadata","runtime_seconds":0.166261965}],"total_operations":2}}
+{"time":"2025-08-06T05:53:37.382668791+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-06T05:53:47.695394284+03:00","level":"INFO","msg":"stream: closing","id":"o3egirmy"}
+{"time":"2025-08-06T05:53:47.6956025+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:53:47.742281002+03:00","level":"INFO","msg":"handler: closed","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:53:47.730922788+03:00","level":"INFO","msg":"sender: closed","stream_id":"o3egirmy"}
+{"time":"2025-08-06T05:53:47.827395224+03:00","level":"INFO","msg":"stream: closed","id":"o3egirmy"}
