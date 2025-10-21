@@ -60,7 +60,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
     run = None
     if use_wandb:
         run = wandb.init(
-            project="Posnet_50epochs_just_aug_val_32x32",
+            project=config.wandb_project,
             name=run_name,
             config={
                 **vars(config),
