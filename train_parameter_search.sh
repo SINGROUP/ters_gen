@@ -9,7 +9,7 @@
 # SBATCH --partition=gpu-debug
 #SBATCH --partition=gpu-h200-141g-short
 # SBATCH --partition=gpu-h200-141g-ellis
-#SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%config_hypopt_all_augmented_val.out
+#SBATCH -o /scratch/work/sethih1/slurm_logs/slurm_%config_hypopt_all_augmented_val.out
 
 arg1=$1
 
@@ -18,11 +18,11 @@ source /scratch/phys/sin/sethih1/venv/masque_env/bin/activate
 
 # Start GPU monitoring: Log GPU usage every 2 seconds into gpu_usage.log
 nvidia-smi --query-gpu=timestamp,name,utilization.gpu,utilization.memory,temperature.gpu \
-         --format=csv -l 2 > gpu_usage.log &
+         --format=csv -l 2 > /scratch/work/sethih1/slurm_logs/gpu_usage.log &
 GPU_MONITOR_PID=$!
 
 # Optionally, start system resource monitoring: Log CPU, memory, etc. every 1 second
-vmstat -n 1 > resource_usage.log &
+vmstat -n 1 > /scratch/work/sethih1/slurm_logs/resource_usage.log &
 RESOURCE_MONITOR_PID=$!
 
 # Run your main Python job
