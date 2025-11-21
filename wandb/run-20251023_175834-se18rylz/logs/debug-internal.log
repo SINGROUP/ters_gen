@@ -1,0 +1,16 @@
+{"time":"2025-10-23T17:58:41.645875413+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251023_175834-se18rylz/logs/debug-core.log"}
+{"time":"2025-10-23T17:58:42.27086211+03:00","level":"INFO","msg":"stream: created new stream","id":"se18rylz"}
+{"time":"2025-10-23T17:58:42.270890659+03:00","level":"INFO","msg":"stream: started","id":"se18rylz"}
+{"time":"2025-10-23T17:58:42.270917392+03:00","level":"INFO","msg":"handler: started","stream_id":"se18rylz"}
+{"time":"2025-10-23T17:58:42.270910872+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"se18rylz"}
+{"time":"2025-10-23T17:58:42.270932895+03:00","level":"INFO","msg":"sender: started","stream_id":"se18rylz"}
+{"time":"2025-10-23T17:58:42.564712706+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-23T18:03:14.915152493+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-23T18:03:14.915232177+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-23T18:03:15.916649888+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.781308279,"progress":"139B/139B"},{"desc":"uploading config.yaml","runtime_seconds":0.541833428,"progress":"2.7KB/2.7KB"}],"total_operations":2}}
+{"time":"2025-10-23T18:03:15.932234907+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T18:03:16.228887097+03:00","level":"INFO","msg":"stream: closing","id":"se18rylz"}
+{"time":"2025-10-23T18:03:16.228904383+03:00","level":"INFO","msg":"handler: closed","stream_id":"se18rylz"}
+{"time":"2025-10-23T18:03:16.228917915+03:00","level":"INFO","msg":"sender: closed","stream_id":"se18rylz"}
+{"time":"2025-10-23T18:03:16.228914559+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"se18rylz"}
+{"time":"2025-10-23T18:03:16.229211653+03:00","level":"INFO","msg":"stream: closed","id":"se18rylz"}

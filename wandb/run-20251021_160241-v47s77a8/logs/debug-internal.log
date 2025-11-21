@@ -1,0 +1,6 @@
+{"time":"2025-10-21T16:02:42.374411858+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_160241-v47s77a8/logs/debug-core.log"}
+{"time":"2025-10-21T16:02:42.7800179+03:00","level":"INFO","msg":"stream: created new stream","id":"v47s77a8"}
+{"time":"2025-10-21T16:02:42.780040313+03:00","level":"INFO","msg":"stream: started","id":"v47s77a8"}
+{"time":"2025-10-21T16:02:42.780055361+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"v47s77a8"}
+{"time":"2025-10-21T16:02:42.780077235+03:00","level":"INFO","msg":"handler: started","stream_id":"v47s77a8"}
+{"time":"2025-10-21T16:02:42.780060245+03:00","level":"INFO","msg":"sender: started","stream_id":"v47s77a8"}

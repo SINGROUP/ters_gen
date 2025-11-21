@@ -1,0 +1,17 @@
+{"time":"2025-11-05T19:33:20.902370007+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251105_193320-uy4adimi/logs/debug-core.log"}
+{"time":"2025-11-05T19:33:21.306277813+02:00","level":"INFO","msg":"stream: created new stream","id":"uy4adimi"}
+{"time":"2025-11-05T19:33:21.306298944+02:00","level":"INFO","msg":"stream: started","id":"uy4adimi"}
+{"time":"2025-11-05T19:33:21.306315908+02:00","level":"INFO","msg":"sender: started","stream_id":"uy4adimi"}
+{"time":"2025-11-05T19:33:21.306329714+02:00","level":"INFO","msg":"handler: started","stream_id":"uy4adimi"}
+{"time":"2025-11-05T19:33:21.306314959+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"uy4adimi"}
+{"time":"2025-11-05T19:33:21.466850989+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-11-05T19:33:23.808493284+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-05T23:47:46.094988446+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-05T23:47:46.095173773+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-05T23:47:46.810788449+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-05T23:47:47.058595785+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 1198-1204","runtime_seconds":0.247719518}],"total_operations":1}}
+{"time":"2025-11-05T23:47:47.063542735+02:00","level":"INFO","msg":"stream: closing","id":"uy4adimi"}
+{"time":"2025-11-05T23:47:47.063557485+02:00","level":"INFO","msg":"handler: closed","stream_id":"uy4adimi"}
+{"time":"2025-11-05T23:47:47.063565675+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uy4adimi"}
+{"time":"2025-11-05T23:47:47.063575727+02:00","level":"INFO","msg":"sender: closed","stream_id":"uy4adimi"}
+{"time":"2025-11-05T23:47:47.063943982+02:00","level":"INFO","msg":"stream: closed","id":"uy4adimi"}

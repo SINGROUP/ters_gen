@@ -1,0 +1,16 @@
+{"time":"2025-11-07T11:53:33.378210295+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251107_115333-u58bbfpu/logs/debug-core.log"}
+{"time":"2025-11-07T11:53:33.769897985+02:00","level":"INFO","msg":"stream: created new stream","id":"u58bbfpu"}
+{"time":"2025-11-07T11:53:33.769947972+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T11:53:33.769987792+02:00","level":"INFO","msg":"sender: started","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T11:53:33.785599349+02:00","level":"INFO","msg":"handler: started","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T11:53:33.785614014+02:00","level":"INFO","msg":"stream: started","id":"u58bbfpu"}
+{"time":"2025-11-07T11:53:34.10599168+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-07T16:00:47.585516467+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-07T16:00:47.591010064+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-07T16:00:48.541228586+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.597194067,"progress":"8.5KB/8.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.569413928,"progress":"143B/143B"},{"desc":"uploading config.yaml","runtime_seconds":0.154315527,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-11-07T16:00:48.775816086+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-07T16:00:49.302181434+02:00","level":"INFO","msg":"stream: closing","id":"u58bbfpu"}
+{"time":"2025-11-07T16:00:49.302465286+02:00","level":"INFO","msg":"handler: closed","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T16:00:49.308599243+02:00","level":"INFO","msg":"sender: closed","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T16:00:49.3022796+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"u58bbfpu"}
+{"time":"2025-11-07T16:00:49.33659913+02:00","level":"INFO","msg":"stream: closed","id":"u58bbfpu"}

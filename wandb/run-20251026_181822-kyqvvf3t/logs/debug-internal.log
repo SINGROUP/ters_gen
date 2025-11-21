@@ -1,0 +1,16 @@
+{"time":"2025-10-26T18:18:23.342404768+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251026_181822-kyqvvf3t/logs/debug-core.log"}
+{"time":"2025-10-26T18:18:23.632809461+02:00","level":"INFO","msg":"stream: created new stream","id":"kyqvvf3t"}
+{"time":"2025-10-26T18:18:23.632838677+02:00","level":"INFO","msg":"stream: started","id":"kyqvvf3t"}
+{"time":"2025-10-26T18:18:23.632850568+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T18:18:23.632871714+02:00","level":"INFO","msg":"handler: started","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T18:18:23.63285612+02:00","level":"INFO","msg":"sender: started","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T18:18:23.932783452+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-26T19:45:41.400881602+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-26T19:45:41.530259084+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-26T19:45:42.342398723+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.451905955,"progress":"10.0KB/10.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.392592299,"progress":"140B/140B"},{"desc":"uploading config.yaml","runtime_seconds":0.084045232,"progress":"2.7KB/2.7KB"}],"total_operations":3}}
+{"time":"2025-10-26T19:45:42.881680865+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-26T19:45:43.1154024+02:00","level":"INFO","msg":"stream: closing","id":"kyqvvf3t"}
+{"time":"2025-10-26T19:45:43.115757442+02:00","level":"INFO","msg":"handler: closed","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T19:45:43.119960457+02:00","level":"INFO","msg":"sender: closed","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T19:45:43.115520824+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kyqvvf3t"}
+{"time":"2025-10-26T19:45:43.1204839+02:00","level":"INFO","msg":"stream: closed","id":"kyqvvf3t"}

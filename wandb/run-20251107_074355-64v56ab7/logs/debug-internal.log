@@ -1,0 +1,16 @@
+{"time":"2025-11-07T07:43:57.181506889+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251107_074355-64v56ab7/logs/debug-core.log"}
+{"time":"2025-11-07T07:43:57.588202289+02:00","level":"INFO","msg":"stream: created new stream","id":"64v56ab7"}
+{"time":"2025-11-07T07:43:57.588241369+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"64v56ab7"}
+{"time":"2025-11-07T07:43:57.588281887+02:00","level":"INFO","msg":"sender: started","stream_id":"64v56ab7"}
+{"time":"2025-11-07T07:43:57.615356911+02:00","level":"INFO","msg":"stream: started","id":"64v56ab7"}
+{"time":"2025-11-07T07:43:57.615360688+02:00","level":"INFO","msg":"handler: started","stream_id":"64v56ab7"}
+{"time":"2025-11-07T07:43:58.1077998+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-07T11:53:31.277106943+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-07T11:53:31.281547579+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-07T11:53:32.233552343+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.676787336,"progress":"143B/143B"},{"desc":"uploading config.yaml","runtime_seconds":0.438073661,"progress":"2.8KB/2.8KB"}],"total_operations":2}}
+{"time":"2025-11-07T11:53:32.373712851+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-07T11:53:32.650052671+02:00","level":"INFO","msg":"stream: closing","id":"64v56ab7"}
+{"time":"2025-11-07T11:53:32.650455611+02:00","level":"INFO","msg":"handler: closed","stream_id":"64v56ab7"}
+{"time":"2025-11-07T11:53:32.651132678+02:00","level":"INFO","msg":"sender: closed","stream_id":"64v56ab7"}
+{"time":"2025-11-07T11:53:32.650156943+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"64v56ab7"}
+{"time":"2025-11-07T11:53:32.652150382+02:00","level":"INFO","msg":"stream: closed","id":"64v56ab7"}

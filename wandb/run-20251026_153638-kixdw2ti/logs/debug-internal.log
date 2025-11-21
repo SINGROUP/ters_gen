@@ -1,0 +1,16 @@
+{"time":"2025-10-26T15:36:39.310021362+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251026_153638-kixdw2ti/logs/debug-core.log"}
+{"time":"2025-10-26T15:36:39.608024416+02:00","level":"INFO","msg":"stream: created new stream","id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:39.608054038+02:00","level":"INFO","msg":"stream: started","id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:39.60807334+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:39.608099183+02:00","level":"INFO","msg":"handler: started","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:39.608082356+02:00","level":"INFO","msg":"sender: started","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:39.871016801+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-26T15:36:44.054264649+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-26T15:36:44.05432365+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-26T15:36:44.718237139+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-26T15:36:44.953177034+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-26T15:36:44.95586486+02:00","level":"INFO","msg":"stream: closing","id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:44.955909385+02:00","level":"INFO","msg":"handler: closed","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:44.95593294+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:44.955981831+02:00","level":"INFO","msg":"sender: closed","stream_id":"kixdw2ti"}
+{"time":"2025-10-26T15:36:44.956477926+02:00","level":"INFO","msg":"stream: closed","id":"kixdw2ti"}

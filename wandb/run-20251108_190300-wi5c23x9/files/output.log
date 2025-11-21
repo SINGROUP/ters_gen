@@ -1,0 +1,109 @@
+Trial 17 using GPU 1
+Epoch   43/50, time: 63.64 s, val_loss: 0.488
+Epoch    1/50, time: 233.07 s, training_loss: 0.798
+Epoch    1/50, time: 28.66 s, val_loss: 0.778
+Training Metrics:
+Accuracy: 0.9020
+Precision: 0.1325
+Recall: 0.8257
+F1 Score: 0.2284
+IoU: 0.1289
+Dice Coefficient: 0.2284
+Validation Metrics:
+Accuracy: 0.9012
+Precision: 0.1347
+Recall: 0.8339
+F1 Score: 0.2320
+IoU: 0.1312
+Dice Coefficient: 0.2320
+Epoch   44/50, time: 616.74 s, training_loss: 0.483
+Epoch   44/50, time: 66.80 s, val_loss: 0.497
+Epoch    2/50, time: 213.01 s, training_loss: 0.773
+Epoch    2/50, time: 28.42 s, val_loss: 0.766
+Epoch    3/50, time: 208.75 s, training_loss: 0.768
+Epoch    3/50, time: 28.31 s, val_loss: 0.753
+Epoch    4/50, time: 207.54 s, training_loss: 0.765
+Epoch    4/50, time: 27.83 s, val_loss: 0.770
+Epoch   45/50, time: 616.43 s, training_loss: 0.479
+Epoch   45/50, time: 67.03 s, val_loss: 0.512
+Epoch    5/50, time: 204.48 s, training_loss: 0.751
+Epoch    5/50, time: 27.88 s, val_loss: 0.742
+Epoch    6/50, time: 209.11 s, training_loss: 0.737
+Epoch    6/50, time: 30.73 s, val_loss: 0.718
+Epoch    7/50, time: 225.88 s, training_loss: 0.723
+Epoch    7/50, time: 26.82 s, val_loss: 0.708
+Epoch   46/50, time: 635.88 s, training_loss: 0.481
+Epoch   46/50, time: 66.09 s, val_loss: 0.492
+Epoch    8/50, time: 205.50 s, training_loss: 0.711
+Epoch    8/50, time: 26.68 s, val_loss: 0.705
+Epoch    9/50, time: 207.54 s, training_loss: 0.702
+Epoch    9/50, time: 27.10 s, val_loss: 0.688
+Epoch   10/50, time: 207.76 s, training_loss: 0.695
+Epoch   10/50, time: 26.62 s, val_loss: 0.685
+Epoch   47/50, time: 620.77 s, training_loss: 0.481
+Epoch   47/50, time: 66.25 s, val_loss: 0.482
+Epoch   11/50, time: 203.97 s, training_loss: 0.687
+Epoch   11/50, time: 26.99 s, val_loss: 0.675
+Training Metrics:
+Accuracy: 0.9590
+Precision: 0.2335
+Recall: 0.5835
+F1 Score: 0.3336
+IoU: 0.2002
+Dice Coefficient: 0.3336
+Validation Metrics:
+Accuracy: 0.9582
+Precision: 0.2352
+Recall: 0.5930
+F1 Score: 0.3368
+IoU: 0.2025
+Dice Coefficient: 0.3368
+Epoch   48/50, time: 609.50 s, training_loss: 0.476
+Epoch   48/50, time: 66.06 s, val_loss: 0.497
+Epoch   12/50, time: 206.08 s, training_loss: 0.677
+Epoch   12/50, time: 27.56 s, val_loss: 0.688
+Epoch   13/50, time: 208.67 s, training_loss: 0.664
+Epoch   13/50, time: 27.11 s, val_loss: 0.642
+Epoch   14/50, time: 215.52 s, training_loss: 0.651
+Epoch   14/50, time: 30.12 s, val_loss: 0.643
+Epoch   49/50, time: 618.39 s, training_loss: 0.476
+Epoch   49/50, time: 68.08 s, val_loss: 0.478
+Epoch   15/50, time: 211.25 s, training_loss: 0.637
+Epoch   15/50, time: 27.07 s, val_loss: 0.630
+Epoch   16/50, time: 209.85 s, training_loss: 0.622
+Epoch   16/50, time: 27.93 s, val_loss: 0.624
+Epoch   17/50, time: 213.62 s, training_loss: 0.609
+Epoch   17/50, time: 27.63 s, val_loss: 0.578
+Epoch   50/50, time: 617.30 s, training_loss: 0.474
+Epoch   50/50, time: 65.66 s, val_loss: 0.498
+Epoch   18/50, time: 208.27 s, training_loss: 0.598
+Epoch   18/50, time: 27.60 s, val_loss: 0.565
+Epoch   19/50, time: 216.93 s, training_loss: 0.587
+Epoch   19/50, time: 27.97 s, val_loss: 0.553
+Epoch   20/50, time: 210.64 s, training_loss: 0.578
+Epoch   20/50, time: 37.83 s, val_loss: 0.577
+Epoch   21/50, time: 213.49 s, training_loss: 0.569
+Training Metrics:
+Accuracy: 0.9795
+Precision: 0.4458
+Recall: 0.6869
+F1 Score: 0.5407
+IoU: 0.3705
+Dice Coefficient: 0.5407
+Validation Metrics:
+Accuracy: 0.9783
+Precision: 0.4296
+Recall: 0.6432
+F1 Score: 0.5152
+IoU: 0.3469
+Dice Coefficient: 0.5152
+Epoch   21/50, time: 31.25 s, val_loss: 0.571
+Test Metrics:
+Accuracy: 0.9783
+Precision: 0.4296
+Recall: 0.6432
+F1 Score: 0.5152
+IoU: 0.3469
+Dice Coefficient: 0.5152
+[I 2025-11-08 20:38:34,469] Trial 14 finished with value: 0.5151519601843919 and parameters: {'batch_size': 16, 'lr': 0.0009984251186894953, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 32}. Best is trial 15 with value: 0.5710358780200379.
+wandb: Finishing previous runs because reinit is set to True.

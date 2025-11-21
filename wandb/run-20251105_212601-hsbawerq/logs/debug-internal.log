@@ -1,0 +1,21 @@
+{"time":"2025-11-05T21:26:02.00481771+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251105_212601-hsbawerq/logs/debug-core.log"}
+{"time":"2025-11-05T21:26:02.313460467+02:00","level":"INFO","msg":"stream: created new stream","id":"hsbawerq"}
+{"time":"2025-11-05T21:26:02.313502657+02:00","level":"INFO","msg":"stream: started","id":"hsbawerq"}
+{"time":"2025-11-05T21:26:02.313533669+02:00","level":"INFO","msg":"sender: started","stream_id":"hsbawerq"}
+{"time":"2025-11-05T21:26:02.313532609+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hsbawerq"}
+{"time":"2025-11-05T21:26:02.313564569+02:00","level":"INFO","msg":"handler: started","stream_id":"hsbawerq"}
+{"time":"2025-11-05T21:26:02.72458023+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-05T21:32:18.435353016+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_1.0/hsbawerq/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-11-06T00:17:22.041051435+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-06T02:57:52.544084102+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-06T12:28:09.544628311+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-11-06T13:16:09.518500394+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-11-06T17:20:47.202964273+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T17:20:47.23696863+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T17:20:47.716033965+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.209976602},{"desc":"uploading wandb-summary.json","runtime_seconds":0.169855048}],"total_operations":2}}
+{"time":"2025-11-06T17:20:48.068468727+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T17:20:48.381800387+02:00","level":"INFO","msg":"stream: closing","id":"hsbawerq"}
+{"time":"2025-11-06T17:20:48.382198452+02:00","level":"INFO","msg":"handler: closed","stream_id":"hsbawerq"}
+{"time":"2025-11-06T17:20:48.382214062+02:00","level":"INFO","msg":"sender: closed","stream_id":"hsbawerq"}
+{"time":"2025-11-06T17:20:48.381899176+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hsbawerq"}
+{"time":"2025-11-06T17:20:48.382672676+02:00","level":"INFO","msg":"stream: closed","id":"hsbawerq"}

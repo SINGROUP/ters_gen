@@ -1,0 +1,16 @@
+{"time":"2025-10-21T11:25:22.09391684+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_112522-jsrg1awc/logs/debug-core.log"}
+{"time":"2025-10-21T11:25:22.288683122+03:00","level":"INFO","msg":"stream: created new stream","id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:22.288708864+03:00","level":"INFO","msg":"stream: started","id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:22.288718276+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:22.288729286+03:00","level":"INFO","msg":"handler: started","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:22.288740219+03:00","level":"INFO","msg":"sender: started","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:22.546830091+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T11:25:22.764017079+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T11:25:22.764056835+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T11:25:23.727349156+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.604924528,"progress":"118B/118B"},{"desc":"uploading config.yaml","runtime_seconds":0.375940294,"progress":"2.8KB/2.8KB"},{"desc":"uploading wandb-metadata.json","runtime_seconds":0.230324397,"progress":"2.5KB/2.5KB"}],"total_operations":3}}
+{"time":"2025-10-21T11:25:24.08219837+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T11:25:24.327738445+03:00","level":"INFO","msg":"stream: closing","id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:24.327751345+03:00","level":"INFO","msg":"handler: closed","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:24.327755666+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:24.327763959+03:00","level":"INFO","msg":"sender: closed","stream_id":"jsrg1awc"}
+{"time":"2025-10-21T11:25:24.328448423+03:00","level":"INFO","msg":"stream: closed","id":"jsrg1awc"}

@@ -1,0 +1,16 @@
+{"time":"2025-10-23T16:51:02.885796932+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251023_165101-kyerukui/logs/debug-core.log"}
+{"time":"2025-10-23T16:51:03.186271658+03:00","level":"INFO","msg":"stream: created new stream","id":"kyerukui"}
+{"time":"2025-10-23T16:51:03.186311124+03:00","level":"INFO","msg":"stream: started","id":"kyerukui"}
+{"time":"2025-10-23T16:51:03.186341245+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:51:03.18634879+03:00","level":"INFO","msg":"sender: started","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:51:03.186365354+03:00","level":"INFO","msg":"handler: started","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:51:03.625986185+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-23T16:55:25.85011101+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-23T16:55:25.850261007+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-23T16:55:26.82708591+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T16:55:26.852072189+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 35-43","runtime_seconds":0.024883341}],"total_operations":1}}
+{"time":"2025-10-23T16:55:27.233265449+03:00","level":"INFO","msg":"stream: closing","id":"kyerukui"}
+{"time":"2025-10-23T16:55:27.233274273+03:00","level":"INFO","msg":"handler: closed","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:55:27.233280241+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:55:27.233304421+03:00","level":"INFO","msg":"sender: closed","stream_id":"kyerukui"}
+{"time":"2025-10-23T16:55:27.233540526+03:00","level":"INFO","msg":"stream: closed","id":"kyerukui"}

@@ -1,0 +1,50 @@
+Trial 11 using GPU 1
+Epoch   48/50, time: 56.20 s, training_loss: 0.344
+Epoch   48/50, time: 12.45 s, val_loss: 0.443
+Epoch    1/50, time: 59.35 s, training_loss: 0.878
+Epoch    1/50, time: 11.53 s, val_loss: 0.925
+Epoch   49/50, time: 59.45 s, training_loss: 0.321
+Epoch   18/50, time: 173.15 s, training_loss: 0.788
+Epoch   49/50, time: 11.85 s, val_loss: 0.319
+Epoch   18/50, time: 31.43 s, val_loss: 0.785
+Epoch   50/50, time: 57.98 s, training_loss: 0.307
+Training Metrics:
+Accuracy: 0.9577
+Precision: 0.1614
+Recall: 0.2167
+F1 Score: 0.1850
+IoU: 0.1019
+Dice Coefficient: 0.1850
+Validation Metrics:
+Accuracy: 0.9415
+Precision: 0.1600
+Recall: 0.4206
+F1 Score: 0.2318
+IoU: 0.1311
+Dice Coefficient: 0.2318
+Epoch   50/50, time: 11.68 s, val_loss: 0.341
+Epoch    2/50, time: 62.76 s, training_loss: 0.828
+Epoch    2/50, time: 13.84 s, val_loss: 0.869
+Training Metrics:
+Accuracy: 0.9748
+Precision: 0.4588
+Recall: 0.7496
+F1 Score: 0.5692
+IoU: 0.3978
+Dice Coefficient: 0.5692
+Validation Metrics:
+Accuracy: 0.9710
+Precision: 0.3960
+Recall: 0.7258
+F1 Score: 0.5124
+IoU: 0.3444
+Dice Coefficient: 0.5124
+Test Metrics:
+Accuracy: 0.9710
+Precision: 0.3960
+Recall: 0.7258
+F1 Score: 0.5124
+IoU: 0.3444
+Dice Coefficient: 0.5124
+[I 2025-10-23 18:03:14,903] Trial 10 finished with value: 0.5123918308432163 and parameters: {'batch_size': 128, 'lr': 0.00047891188587439895, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32}. Best is trial 1 with value: 0.6223141655216008.
+wandb: Finishing previous runs because reinit is set to True.

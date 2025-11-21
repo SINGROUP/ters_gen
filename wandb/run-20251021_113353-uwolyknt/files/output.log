@@ -1,0 +1,8 @@
+Trial 1 using GPU 0
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113353-y836qobn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_0_bs128_lr2e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data/runs/y836qobn
+Trial 0 using GPU 1

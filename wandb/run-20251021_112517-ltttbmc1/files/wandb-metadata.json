@@ -1,0 +1,21 @@
+{
+  "os": "Linux-5.14.0-570.32.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.11.6",
+  "startedAt": "2025-10-21T08:25:17.566254Z",
+  "args": [
+    "--config",
+    "config_hypopt_extended_data.yaml",
+    "--use_wandb"
+  ],
+  "program": "/home/sethih1/masque_new/ters_gen/hyperopt.py",
+  "codePath": "hyperopt.py",
+  "git": {
+    "remote": "git@github.com:sethih10/ters_gen.git",
+    "commit": "ef8cc5943feb390b349a6903ba5c17ac14b7f987"
+  },
+  "email": "sethih10@gmail.com",
+  "root": "/home/sethih1/masque_new/ters_gen",
+  "host": "gpu52.int.triton.aalto.fi",
+  "executable": "/scratch/phys/sin/sethih1/venv/masque_env/bin/python",
+  "codePathLocal": "hyperopt.py"
+}

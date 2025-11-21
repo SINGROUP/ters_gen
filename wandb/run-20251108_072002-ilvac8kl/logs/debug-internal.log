@@ -1,0 +1,16 @@
+{"time":"2025-11-08T07:20:03.767939766+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251108_072002-ilvac8kl/logs/debug-core.log"}
+{"time":"2025-11-08T07:20:04.067585768+02:00","level":"INFO","msg":"stream: created new stream","id":"ilvac8kl"}
+{"time":"2025-11-08T07:20:04.067610904+02:00","level":"INFO","msg":"stream: started","id":"ilvac8kl"}
+{"time":"2025-11-08T07:20:04.067625705+02:00","level":"INFO","msg":"sender: started","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T07:20:04.067623535+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T07:20:04.067644169+02:00","level":"INFO","msg":"handler: started","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T07:20:04.396944345+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-08T09:32:46.869106829+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-08T09:32:47.061662318+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-08T09:32:47.953465765+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.563013802},{"desc":"uploading wandb-summary.json","runtime_seconds":0.519654321},{"desc":"uploading config.yaml","runtime_seconds":0.124633373}],"total_operations":3}}
+{"time":"2025-11-08T09:32:48.716197727+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-08T09:32:49.18724999+02:00","level":"INFO","msg":"stream: closing","id":"ilvac8kl"}
+{"time":"2025-11-08T09:32:49.187363966+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T09:32:49.187794917+02:00","level":"INFO","msg":"handler: closed","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T09:32:49.200083179+02:00","level":"INFO","msg":"sender: closed","stream_id":"ilvac8kl"}
+{"time":"2025-11-08T09:32:49.200122112+02:00","level":"INFO","msg":"stream: closed","id":"ilvac8kl"}

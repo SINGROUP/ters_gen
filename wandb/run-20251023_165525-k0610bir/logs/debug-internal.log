@@ -1,0 +1,16 @@
+{"time":"2025-10-23T16:55:27.274867357+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251023_165525-k0610bir/logs/debug-core.log"}
+{"time":"2025-10-23T16:55:27.573576412+03:00","level":"INFO","msg":"stream: created new stream","id":"k0610bir"}
+{"time":"2025-10-23T16:55:27.573608335+03:00","level":"INFO","msg":"stream: started","id":"k0610bir"}
+{"time":"2025-10-23T16:55:27.573641341+03:00","level":"INFO","msg":"sender: started","stream_id":"k0610bir"}
+{"time":"2025-10-23T16:55:27.573657654+03:00","level":"INFO","msg":"handler: started","stream_id":"k0610bir"}
+{"time":"2025-10-23T16:55:27.573630279+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"k0610bir"}
+{"time":"2025-10-23T16:55:27.889137611+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-23T17:58:34.861330642+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-23T17:58:34.861494628+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-23T17:58:35.862602415+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.784576827},{"desc":"uploading wandb-summary.json","runtime_seconds":0.784551988},{"desc":"uploading config.yaml","runtime_seconds":0.468874071}],"total_operations":3}}
+{"time":"2025-10-23T17:58:40.855502599+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T17:58:41.577668216+03:00","level":"INFO","msg":"stream: closing","id":"k0610bir"}
+{"time":"2025-10-23T17:58:41.577681273+03:00","level":"INFO","msg":"handler: closed","stream_id":"k0610bir"}
+{"time":"2025-10-23T17:58:41.577700116+03:00","level":"INFO","msg":"sender: closed","stream_id":"k0610bir"}
+{"time":"2025-10-23T17:58:41.577687917+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"k0610bir"}
+{"time":"2025-10-23T17:58:41.578146978+03:00","level":"INFO","msg":"stream: closed","id":"k0610bir"}

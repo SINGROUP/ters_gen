@@ -1,0 +1,17 @@
+{"time":"2025-11-06T12:12:07.33672407+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251106_121205-i7kyloks/logs/debug-core.log"}
+{"time":"2025-11-06T12:12:07.643210317+02:00","level":"INFO","msg":"stream: created new stream","id":"i7kyloks"}
+{"time":"2025-11-06T12:12:07.643246406+02:00","level":"INFO","msg":"stream: started","id":"i7kyloks"}
+{"time":"2025-11-06T12:12:07.643258442+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"i7kyloks"}
+{"time":"2025-11-06T12:12:07.643270467+02:00","level":"INFO","msg":"handler: started","stream_id":"i7kyloks"}
+{"time":"2025-11-06T12:12:07.643307013+02:00","level":"INFO","msg":"sender: started","stream_id":"i7kyloks"}
+{"time":"2025-11-06T12:12:07.872233296+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-06T13:59:38.687624743+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-11-06T14:34:28.487131836+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T14:34:28.48728077+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T14:34:29.44594018+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T14:34:29.488717243+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 488-496","runtime_seconds":0.042670072}],"total_operations":1}}
+{"time":"2025-11-06T14:34:29.675077659+02:00","level":"INFO","msg":"stream: closing","id":"i7kyloks"}
+{"time":"2025-11-06T14:34:29.675095942+02:00","level":"INFO","msg":"handler: closed","stream_id":"i7kyloks"}
+{"time":"2025-11-06T14:34:29.675113104+02:00","level":"INFO","msg":"sender: closed","stream_id":"i7kyloks"}
+{"time":"2025-11-06T14:34:29.6751047+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"i7kyloks"}
+{"time":"2025-11-06T14:34:29.675479595+02:00","level":"INFO","msg":"stream: closed","id":"i7kyloks"}

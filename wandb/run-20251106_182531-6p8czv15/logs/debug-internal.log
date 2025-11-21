@@ -1,0 +1,17 @@
+{"time":"2025-11-06T18:25:33.010862438+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251106_182531-6p8czv15/logs/debug-core.log"}
+{"time":"2025-11-06T18:25:33.306942202+02:00","level":"INFO","msg":"stream: created new stream","id":"6p8czv15"}
+{"time":"2025-11-06T18:25:33.306990492+02:00","level":"INFO","msg":"stream: started","id":"6p8czv15"}
+{"time":"2025-11-06T18:25:33.307029061+02:00","level":"INFO","msg":"handler: started","stream_id":"6p8czv15"}
+{"time":"2025-11-06T18:25:33.307030249+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6p8czv15"}
+{"time":"2025-11-06T18:25:33.307049669+02:00","level":"INFO","msg":"sender: started","stream_id":"6p8czv15"}
+{"time":"2025-11-06T18:25:33.649616338+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-06T18:29:49.260286769+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-11-06T19:24:48.984558964+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T19:24:48.984675812+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T19:24:49.632307709+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T19:24:49.945530408+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-06T19:24:50.303476018+02:00","level":"INFO","msg":"stream: closing","id":"6p8czv15"}
+{"time":"2025-11-06T19:24:50.303491761+02:00","level":"INFO","msg":"handler: closed","stream_id":"6p8czv15"}
+{"time":"2025-11-06T19:24:50.303501331+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6p8czv15"}
+{"time":"2025-11-06T19:24:50.303523755+02:00","level":"INFO","msg":"sender: closed","stream_id":"6p8czv15"}
+{"time":"2025-11-06T19:24:50.304006587+02:00","level":"INFO","msg":"stream: closed","id":"6p8czv15"}

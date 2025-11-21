@@ -1,0 +1,17 @@
+{"time":"2025-10-22T17:04:32.975622433+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251022_170432-biggspz2/logs/debug-core.log"}
+{"time":"2025-10-22T17:04:33.793230168+03:00","level":"INFO","msg":"stream: created new stream","id":"biggspz2"}
+{"time":"2025-10-22T17:04:33.793252866+03:00","level":"INFO","msg":"stream: started","id":"biggspz2"}
+{"time":"2025-10-22T17:04:33.793269728+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"biggspz2"}
+{"time":"2025-10-22T17:04:33.793273452+03:00","level":"INFO","msg":"sender: started","stream_id":"biggspz2"}
+{"time":"2025-10-22T17:04:33.793295354+03:00","level":"INFO","msg":"handler: started","stream_id":"biggspz2"}
+{"time":"2025-10-22T17:04:34.384284735+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T17:36:37.739036097+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data/biggspz2/file_stream\": unexpected EOF"}
+{"time":"2025-10-22T21:01:21.149033499+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T21:01:21.149164776+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T21:01:22.111614335+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T21:01:22.150282282+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 378-384","runtime_seconds":0.038612279}],"total_operations":1}}
+{"time":"2025-10-22T21:01:22.362119697+03:00","level":"INFO","msg":"stream: closing","id":"biggspz2"}
+{"time":"2025-10-22T21:01:22.362130672+03:00","level":"INFO","msg":"handler: closed","stream_id":"biggspz2"}
+{"time":"2025-10-22T21:01:22.362140136+03:00","level":"INFO","msg":"sender: closed","stream_id":"biggspz2"}
+{"time":"2025-10-22T21:01:22.362136369+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"biggspz2"}
+{"time":"2025-10-22T21:01:22.362448429+03:00","level":"INFO","msg":"stream: closed","id":"biggspz2"}

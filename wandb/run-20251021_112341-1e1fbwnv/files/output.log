@@ -1,0 +1,100 @@
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251021_112341-snptfy66
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_3_bs16_lr1e-04_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data/runs/snptfy66
+wandb: Tracking run with wandb version 0.20.1
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251021_112341-q9wan3tr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251021_112341-f9rpdslq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs32_lr1e-04_dice_loss
+wandb: Syncing run trial_2_bs16_lr3e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data/runs/q9wan3tr
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data/runs/f9rpdslq
+Exception in trial 2: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 80, in objective
+    model = get_model(config.model.type, model_params).to(device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+
+Exception in trial 1: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 80, in objective
+    model = get_model(config.model.type, model_params).to(device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+           ^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+           ^^^^^
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[W 2025-10-21 11:23:42,897] Trial 1 failed with parameters: {'batch_size': 32, 'lr': 0.00014780611478383166, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 32} because of the following error: UsageError('Run (f9rpdslq) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.').
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 171, in <lambda>
+    lambda t: objective(t, config, gpu_queue, args.use_wandb),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 132, in objective
+    wandb.log({"final_dice": final_dice, "trial": trial.number})
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    raise UsageError(message)
+wandb.errors.errors.UsageError: Run (f9rpdslq) is finished. The call to `log` will be ignored. Please make sure that you are using an active run.
+[W 2025-10-21 11:23:42,914] Trial 1 failed with value None.
+wandb: uploading history steps 0-0, summary, console lines 0-47
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0
+wandb:      trial 2
+wandb:
+wandb: 🚀 View run trial_2_bs16_lr3e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data/runs/f9rpdslq
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251021_112341-f9rpdslq/logs
+[I 2025-10-21 11:23:44,005] Trial 2 finished with value: 0.0 and parameters: {'batch_size': 16, 'lr': 2.9463637001443088e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.0.

@@ -1,0 +1,7 @@
+{"time":"2025-10-21T11:12:52.470563394+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_111252-ronityi8/logs/debug-core.log"}
+{"time":"2025-10-21T11:12:52.773172391+03:00","level":"INFO","msg":"stream: created new stream","id":"ronityi8"}
+{"time":"2025-10-21T11:12:52.773206231+03:00","level":"INFO","msg":"stream: started","id":"ronityi8"}
+{"time":"2025-10-21T11:12:52.773227911+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ronityi8"}
+{"time":"2025-10-21T11:12:52.77323597+03:00","level":"INFO","msg":"handler: started","stream_id":"ronityi8"}
+{"time":"2025-10-21T11:12:52.77324337+03:00","level":"INFO","msg":"sender: started","stream_id":"ronityi8"}
+{"time":"2025-10-21T11:12:53.093967598+03:00","level":"INFO","msg":"Starting system monitor"}

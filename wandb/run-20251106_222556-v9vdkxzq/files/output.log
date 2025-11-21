@@ -1,0 +1,260 @@
+Trial 10 using GPU 1
+Epoch   19/50, time: 587.68 s, training_loss: 0.835
+Epoch   19/50, time: 65.45 s, val_loss: 0.875
+Epoch    1/50, time: 591.64 s, training_loss: 0.896
+Epoch    1/50, time: 64.94 s, val_loss: 0.893
+Epoch   20/50, time: 587.33 s, training_loss: 0.833
+Epoch   20/50, time: 66.29 s, val_loss: 0.888
+Training Metrics:
+Accuracy: 0.8246
+Precision: 0.0844
+Recall: 0.8719
+F1 Score: 0.1540
+IoU: 0.0834
+Dice Coefficient: 0.1540
+Validation Metrics:
+Accuracy: 0.7555
+Precision: 0.0628
+Recall: 0.9417
+F1 Score: 0.1178
+IoU: 0.0626
+Dice Coefficient: 0.1178
+Epoch   21/50, time: 783.88 s, training_loss: 0.832
+Epoch   21/50, time: 112.63 s, val_loss: 0.888
+Epoch    2/50, time: 731.53 s, training_loss: 0.861
+Epoch    2/50, time: 71.43 s, val_loss: 0.893
+Training Metrics:
+Accuracy: 0.7045
+Precision: 0.0522
+Recall: 0.8820
+F1 Score: 0.0985
+IoU: 0.0518
+Dice Coefficient: 0.0985
+Validation Metrics:
+Accuracy: 0.4771
+Precision: 0.0294
+Recall: 0.9122
+F1 Score: 0.0570
+IoU: 0.0293
+Dice Coefficient: 0.0570
+Epoch    3/50, time: 703.78 s, training_loss: 0.842
+Epoch    3/50, time: 65.15 s, val_loss: 0.873
+Epoch   22/50, time: 594.50 s, training_loss: 0.831
+Epoch   22/50, time: 66.10 s, val_loss: 0.871
+Epoch    4/50, time: 584.17 s, training_loss: 0.826
+Epoch    4/50, time: 65.58 s, val_loss: 0.869
+Epoch   23/50, time: 591.88 s, training_loss: 0.829
+Epoch   23/50, time: 67.31 s, val_loss: 0.879
+Epoch    5/50, time: 581.68 s, training_loss: 0.809
+Epoch    5/50, time: 65.39 s, val_loss: 0.815
+Epoch   24/50, time: 598.02 s, training_loss: 0.827
+Epoch   24/50, time: 70.00 s, val_loss: 0.879
+Epoch    6/50, time: 596.57 s, training_loss: 0.789
+Epoch    6/50, time: 64.19 s, val_loss: 0.805
+Epoch   25/50, time: 603.22 s, training_loss: 0.827
+Epoch   25/50, time: 67.28 s, val_loss: 0.868
+Epoch    7/50, time: 583.02 s, training_loss: 0.766
+Epoch    7/50, time: 68.15 s, val_loss: 0.762
+Epoch   26/50, time: 603.41 s, training_loss: 0.824
+Epoch   26/50, time: 65.73 s, val_loss: 0.882
+Epoch    8/50, time: 583.24 s, training_loss: 0.740
+Epoch    8/50, time: 65.51 s, val_loss: 0.711
+Epoch   27/50, time: 603.19 s, training_loss: 0.823
+Epoch   27/50, time: 66.90 s, val_loss: 0.877
+Epoch    9/50, time: 589.20 s, training_loss: 0.718
+Epoch    9/50, time: 63.84 s, val_loss: 0.729
+Epoch   28/50, time: 597.18 s, training_loss: 0.822
+Epoch   28/50, time: 68.87 s, val_loss: 0.879
+Epoch   10/50, time: 586.34 s, training_loss: 0.692
+Epoch   10/50, time: 64.20 s, val_loss: 0.705
+Epoch   29/50, time: 602.35 s, training_loss: 0.820
+Epoch   29/50, time: 69.12 s, val_loss: 0.874
+Epoch   11/50, time: 586.38 s, training_loss: 0.664
+Epoch   11/50, time: 63.69 s, val_loss: 0.655
+Epoch   30/50, time: 659.65 s, training_loss: 0.818
+Epoch   30/50, time: 136.78 s, val_loss: 0.885
+Training Metrics:
+Accuracy: 0.8743
+Precision: 0.0857
+Recall: 0.6061
+F1 Score: 0.1501
+IoU: 0.0811
+Dice Coefficient: 0.1501
+Validation Metrics:
+Accuracy: 0.8883
+Precision: 0.0894
+Recall: 0.5924
+F1 Score: 0.1553
+IoU: 0.0842
+Dice Coefficient: 0.1553
+Epoch   31/50, time: 999.07 s, training_loss: 0.817
+Epoch   31/50, time: 113.03 s, val_loss: 0.869
+Epoch   12/50, time: 818.27 s, training_loss: 0.638
+Epoch   12/50, time: 67.98 s, val_loss: 0.643
+Epoch   13/50, time: 688.39 s, training_loss: 0.622
+Training Metrics:
+Accuracy: 0.7184
+Precision: 0.0569
+Recall: 0.9229
+F1 Score: 0.1072
+IoU: 0.0566
+Dice Coefficient: 0.1072
+Validation Metrics:
+Accuracy: 0.5187
+Precision: 0.0333
+Recall: 0.9559
+F1 Score: 0.0644
+IoU: 0.0333
+Dice Coefficient: 0.0644
+Epoch   13/50, time: 65.31 s, val_loss: 0.629
+Epoch   32/50, time: 597.22 s, training_loss: 0.815
+Epoch   14/50, time: 586.70 s, training_loss: 0.611
+Epoch   32/50, time: 62.33 s, val_loss: 0.873
+Epoch   14/50, time: 64.14 s, val_loss: 0.613
+Epoch   33/50, time: 589.36 s, training_loss: 0.812
+Epoch   15/50, time: 594.18 s, training_loss: 0.588
+Epoch   33/50, time: 60.34 s, val_loss: 0.879
+Epoch   15/50, time: 65.60 s, val_loss: 0.599
+Epoch   34/50, time: 599.35 s, training_loss: 0.811
+Epoch   16/50, time: 590.81 s, training_loss: 0.579
+Epoch   34/50, time: 59.01 s, val_loss: 0.865
+Epoch   16/50, time: 65.78 s, val_loss: 0.605
+Epoch   35/50, time: 598.56 s, training_loss: 0.809
+Epoch   17/50, time: 596.96 s, training_loss: 0.567
+Epoch   35/50, time: 61.58 s, val_loss: 0.876
+Epoch   17/50, time: 65.01 s, val_loss: 0.585
+Epoch   36/50, time: 600.04 s, training_loss: 0.806
+Epoch   18/50, time: 588.61 s, training_loss: 0.565
+Epoch   36/50, time: 62.84 s, val_loss: 0.853
+Epoch   18/50, time: 63.99 s, val_loss: 0.580
+Epoch   37/50, time: 597.92 s, training_loss: 0.804
+Epoch   19/50, time: 584.33 s, training_loss: 0.556
+Epoch   37/50, time: 65.33 s, val_loss: 0.855
+Epoch   19/50, time: 63.28 s, val_loss: 0.586
+Epoch   38/50, time: 593.45 s, training_loss: 0.803
+Epoch   20/50, time: 579.45 s, training_loss: 0.541
+Epoch   38/50, time: 68.52 s, val_loss: 0.836
+Epoch   20/50, time: 61.45 s, val_loss: 0.601
+Epoch   39/50, time: 587.28 s, training_loss: 0.802
+Epoch   21/50, time: 579.95 s, training_loss: 0.548
+Epoch   39/50, time: 66.12 s, val_loss: 0.856
+Epoch   21/50, time: 61.74 s, val_loss: 0.568
+Epoch   40/50, time: 651.86 s, training_loss: 0.799
+Epoch   40/50, time: 118.47 s, val_loss: 0.853
+Training Metrics:
+Accuracy: 0.9514
+Precision: 0.2249
+Recall: 0.6768
+F1 Score: 0.3376
+IoU: 0.2031
+Dice Coefficient: 0.3376
+Validation Metrics:
+Accuracy: 0.9487
+Precision: 0.1999
+Recall: 0.6528
+F1 Score: 0.3060
+IoU: 0.1807
+Dice Coefficient: 0.3060
+Epoch   41/50, time: 1018.55 s, training_loss: 0.796
+Epoch   41/50, time: 118.65 s, val_loss: 0.831
+Epoch   22/50, time: 847.72 s, training_loss: 0.535
+Epoch   22/50, time: 66.29 s, val_loss: 0.614
+Epoch   23/50, time: 734.52 s, training_loss: 0.531
+Epoch   23/50, time: 85.91 s, val_loss: 0.562
+Training Metrics:
+Accuracy: 0.7415
+Precision: 0.0564
+Recall: 0.8338
+F1 Score: 0.1056
+IoU: 0.0558
+Dice Coefficient: 0.1056
+Validation Metrics:
+Accuracy: 0.6172
+Precision: 0.0375
+Recall: 0.8547
+F1 Score: 0.0718
+IoU: 0.0373
+Dice Coefficient: 0.0718
+Epoch   24/50, time: 626.49 s, training_loss: 0.534
+Epoch   42/50, time: 611.99 s, training_loss: 0.792
+Epoch   24/50, time: 64.36 s, val_loss: 0.569
+Epoch   42/50, time: 64.41 s, val_loss: 0.830
+Epoch   43/50, time: 593.97 s, training_loss: 0.788
+Epoch   25/50, time: 595.93 s, training_loss: 0.521
+Epoch   25/50, time: 63.38 s, val_loss: 0.568
+Epoch   43/50, time: 65.28 s, val_loss: 0.827
+Epoch   44/50, time: 594.82 s, training_loss: 0.785
+Epoch   26/50, time: 598.87 s, training_loss: 0.518
+Epoch   44/50, time: 65.34 s, val_loss: 0.821
+Epoch   26/50, time: 62.84 s, val_loss: 0.550
+Epoch   27/50, time: 587.63 s, training_loss: 0.519
+Epoch   45/50, time: 594.12 s, training_loss: 0.781
+Epoch   27/50, time: 64.95 s, val_loss: 0.560
+Epoch   45/50, time: 62.57 s, val_loss: 0.812
+Epoch   46/50, time: 587.46 s, training_loss: 0.778
+Epoch   28/50, time: 597.49 s, training_loss: 0.513
+Epoch   46/50, time: 66.21 s, val_loss: 0.824
+Epoch   28/50, time: 63.19 s, val_loss: 0.554
+Epoch   29/50, time: 587.82 s, training_loss: 0.509
+Epoch   47/50, time: 591.96 s, training_loss: 0.774
+Epoch   29/50, time: 63.81 s, val_loss: 0.545
+Epoch   47/50, time: 64.84 s, val_loss: 0.815
+Epoch   30/50, time: 587.28 s, training_loss: 0.507
+Epoch   48/50, time: 596.22 s, training_loss: 0.770
+Epoch   30/50, time: 64.74 s, val_loss: 0.558
+Epoch   48/50, time: 61.87 s, val_loss: 0.857
+Epoch   49/50, time: 586.70 s, training_loss: 0.767
+Epoch   31/50, time: 598.93 s, training_loss: 0.497
+Epoch   49/50, time: 64.95 s, val_loss: 0.815
+Epoch   31/50, time: 62.96 s, val_loss: 0.538
+Epoch   50/50, time: 652.46 s, training_loss: 0.762
+Epoch   50/50, time: 111.65 s, val_loss: 0.786
+Training Metrics:
+Accuracy: 0.9766
+Precision: 0.4087
+Recall: 0.6261
+F1 Score: 0.4945
+IoU: 0.3285
+Dice Coefficient: 0.4945
+Validation Metrics:
+Accuracy: 0.9756
+Precision: 0.3731
+Recall: 0.5959
+F1 Score: 0.4589
+IoU: 0.2977
+Dice Coefficient: 0.4589
+Exception in trial 8: DataLoader worker (pid(s) 4093545) exited unexpectedly
+Traceback (most recent call last):
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/scibuilder-spack/aalto-rhel9-prod/2024-01/software/linux-rhel9-haswell/gcc-12.3.0/python-3.11.6-nvttrbg/lib/python3.11/multiprocessing/queues.py", line 114, in get
+    raise Empty
+_queue.Empty
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 143, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 89, in train
+    self.evaluate_model_metrics(self.model, epoch)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 205, in evaluate_model_metrics
+    train_metrics = self.compute_metrics(model, train_loader)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 160, in compute_metrics
+    for batch in data_loader:
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/phys/sin/sethih1/venv/masque_env/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1256, in _try_get_data
+    raise RuntimeError(
+RuntimeError: DataLoader worker (pid(s) 4093545) exited unexpectedly
+[I 2025-11-07 16:06:09,434] Trial 8 finished with value: 0.0 and parameters: {'batch_size': 128, 'lr': 1.052221148390031e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 32}. Best is trial 9 with value: 0.561639224651604.
+wandb: Finishing previous runs because reinit is set to True.

@@ -1,0 +1,21 @@
+Trial 3 using GPU 1
+Epoch    1/50, time: 299.42 s, training_loss: 0.943
+Epoch    1/50, time: 27.97 s, val_loss: 0.938
+Epoch    1/50, time: 676.11 s, training_loss: 0.917
+Training Metrics:
+Accuracy: 0.7436
+Precision: 0.0629
+Recall: 0.9812
+F1 Score: 0.1183
+IoU: 0.0628
+Dice Coefficient: 0.1183
+Validation Metrics:
+Accuracy: 0.7126
+Precision: 0.0564
+Recall: 0.9890
+F1 Score: 0.1068
+IoU: 0.0564
+Dice Coefficient: 0.1068
+Epoch    1/50, time: 60.26 s, val_loss: 0.867
+Epoch    2/50, time: 305.65 s, training_loss: 0.928
+Epoch    2/50, time: 59.72 s, val_loss: 0.945

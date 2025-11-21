@@ -1,0 +1,7 @@
+{"time":"2025-10-21T11:33:54.05882006+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_113353-uwolyknt/logs/debug-core.log"}
+{"time":"2025-10-21T11:33:54.367793957+03:00","level":"INFO","msg":"stream: created new stream","id":"uwolyknt"}
+{"time":"2025-10-21T11:33:54.367816578+03:00","level":"INFO","msg":"stream: started","id":"uwolyknt"}
+{"time":"2025-10-21T11:33:54.367836105+03:00","level":"INFO","msg":"handler: started","stream_id":"uwolyknt"}
+{"time":"2025-10-21T11:33:54.367835583+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"uwolyknt"}
+{"time":"2025-10-21T11:33:54.367846067+03:00","level":"INFO","msg":"sender: started","stream_id":"uwolyknt"}
+{"time":"2025-10-21T11:33:54.688386469+03:00","level":"INFO","msg":"Starting system monitor"}

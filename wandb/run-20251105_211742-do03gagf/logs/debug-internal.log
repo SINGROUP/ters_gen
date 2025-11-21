@@ -1,0 +1,18 @@
+{"time":"2025-11-05T21:17:43.554225101+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251105_211742-do03gagf/logs/debug-core.log"}
+{"time":"2025-11-05T21:17:43.998125888+02:00","level":"INFO","msg":"stream: created new stream","id":"do03gagf"}
+{"time":"2025-11-05T21:17:43.998187377+02:00","level":"INFO","msg":"sender: started","stream_id":"do03gagf"}
+{"time":"2025-11-05T21:17:43.998198187+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"do03gagf"}
+{"time":"2025-11-05T21:17:44.015085474+02:00","level":"INFO","msg":"stream: started","id":"do03gagf"}
+{"time":"2025-11-05T21:17:44.015086807+02:00","level":"INFO","msg":"handler: started","stream_id":"do03gagf"}
+{"time":"2025-11-05T21:17:44.669016727+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-05T23:16:15.367818357+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/do03gagf/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-11-06T00:02:36.21485097+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/do03gagf/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-11-06T00:55:58.094784132+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T00:55:58.216763841+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T00:55:58.224068883+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.100035591}],"total_operations":1}}
+{"time":"2025-11-06T00:55:59.315848873+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T00:55:59.611394782+02:00","level":"INFO","msg":"stream: closing","id":"do03gagf"}
+{"time":"2025-11-06T00:55:59.61166658+02:00","level":"INFO","msg":"handler: closed","stream_id":"do03gagf"}
+{"time":"2025-11-06T00:55:59.623094342+02:00","level":"INFO","msg":"sender: closed","stream_id":"do03gagf"}
+{"time":"2025-11-06T00:55:59.611486386+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"do03gagf"}
+{"time":"2025-11-06T00:55:59.630261953+02:00","level":"INFO","msg":"stream: closed","id":"do03gagf"}

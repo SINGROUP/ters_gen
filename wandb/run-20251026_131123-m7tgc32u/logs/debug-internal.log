@@ -1,0 +1,16 @@
+{"time":"2025-10-26T13:11:24.653035034+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251026_131123-m7tgc32u/logs/debug-core.log"}
+{"time":"2025-10-26T13:11:24.953256425+02:00","level":"INFO","msg":"stream: created new stream","id":"m7tgc32u"}
+{"time":"2025-10-26T13:11:24.95328639+02:00","level":"INFO","msg":"stream: started","id":"m7tgc32u"}
+{"time":"2025-10-26T13:11:24.953310151+02:00","level":"INFO","msg":"sender: started","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T13:11:24.953306031+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T13:11:24.953326295+02:00","level":"INFO","msg":"handler: started","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T13:11:25.21410205+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-26T14:34:21.210731025+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-26T14:34:21.210903806+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-26T14:34:22.140357728+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-26T14:34:22.213032272+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 384-390","runtime_seconds":0.072572072}],"total_operations":1}}
+{"time":"2025-10-26T14:34:22.413185761+02:00","level":"INFO","msg":"stream: closing","id":"m7tgc32u"}
+{"time":"2025-10-26T14:34:22.413200794+02:00","level":"INFO","msg":"handler: closed","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T14:34:22.413208946+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T14:34:22.413219783+02:00","level":"INFO","msg":"sender: closed","stream_id":"m7tgc32u"}
+{"time":"2025-10-26T14:34:22.413694816+02:00","level":"INFO","msg":"stream: closed","id":"m7tgc32u"}

@@ -1,0 +1,17 @@
+{"time":"2025-11-05T19:33:20.913190036+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251105_193320-kwjfqolt/logs/debug-core.log"}
+{"time":"2025-11-05T19:33:21.311979661+02:00","level":"INFO","msg":"stream: created new stream","id":"kwjfqolt"}
+{"time":"2025-11-05T19:33:21.311999428+02:00","level":"INFO","msg":"stream: started","id":"kwjfqolt"}
+{"time":"2025-11-05T19:33:21.312011574+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T19:33:21.312022704+02:00","level":"INFO","msg":"handler: started","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T19:33:21.312035709+02:00","level":"INFO","msg":"sender: started","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T19:33:21.484673247+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-11-05T19:33:23.932469751+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-05T20:51:27.626587653+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-05T20:51:27.62677112+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-05T20:51:28.57016095+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-05T20:51:28.629012986+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 393-399","runtime_seconds":0.05875848}],"total_operations":1}}
+{"time":"2025-11-05T20:51:28.816494461+02:00","level":"INFO","msg":"stream: closing","id":"kwjfqolt"}
+{"time":"2025-11-05T20:51:28.816505444+02:00","level":"INFO","msg":"handler: closed","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T20:51:28.816512819+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T20:51:28.816526534+02:00","level":"INFO","msg":"sender: closed","stream_id":"kwjfqolt"}
+{"time":"2025-11-05T20:51:28.817154562+02:00","level":"INFO","msg":"stream: closed","id":"kwjfqolt"}

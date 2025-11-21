@@ -1,0 +1,16 @@
+{"time":"2025-11-06T09:32:13.020425883+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251106_093211-04wemift/logs/debug-core.log"}
+{"time":"2025-11-06T09:32:13.317358386+02:00","level":"INFO","msg":"stream: created new stream","id":"04wemift"}
+{"time":"2025-11-06T09:32:13.317402814+02:00","level":"INFO","msg":"stream: started","id":"04wemift"}
+{"time":"2025-11-06T09:32:13.317421994+02:00","level":"INFO","msg":"sender: started","stream_id":"04wemift"}
+{"time":"2025-11-06T09:32:13.317420968+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"04wemift"}
+{"time":"2025-11-06T09:32:13.317448573+02:00","level":"INFO","msg":"handler: started","stream_id":"04wemift"}
+{"time":"2025-11-06T09:32:13.603770127+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-06T09:42:43.463172348+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T09:42:43.575744498+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T09:42:44.031663111+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.410848903},{"desc":"uploading output.log","runtime_seconds":0.036511903},{"desc":"uploading wandb-summary.json","runtime_seconds":0.004964911}],"total_operations":3}}
+{"time":"2025-11-06T09:42:44.910357008+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T09:42:45.167278198+02:00","level":"INFO","msg":"stream: closing","id":"04wemift"}
+{"time":"2025-11-06T09:42:45.167666189+02:00","level":"INFO","msg":"handler: closed","stream_id":"04wemift"}
+{"time":"2025-11-06T09:42:45.189067484+02:00","level":"INFO","msg":"sender: closed","stream_id":"04wemift"}
+{"time":"2025-11-06T09:42:45.167400849+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"04wemift"}
+{"time":"2025-11-06T09:42:45.192327807+02:00","level":"INFO","msg":"stream: closed","id":"04wemift"}

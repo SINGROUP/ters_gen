@@ -1,0 +1,17 @@
+{"time":"2025-11-05T19:33:20.902652897+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251105_193320-ka3spfpz/logs/debug-core.log"}
+{"time":"2025-11-05T19:33:21.305350968+02:00","level":"INFO","msg":"stream: created new stream","id":"ka3spfpz"}
+{"time":"2025-11-05T19:33:21.305373112+02:00","level":"INFO","msg":"stream: started","id":"ka3spfpz"}
+{"time":"2025-11-05T19:33:21.305388949+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T19:33:21.305399816+02:00","level":"INFO","msg":"handler: started","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T19:33:21.305409575+02:00","level":"INFO","msg":"sender: started","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T19:33:21.485404782+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-11-05T19:33:24.23743829+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-05T22:51:12.338980817+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-05T22:51:12.339205478+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-05T22:51:12.982887261+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-05T22:51:13.214402076+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-05T22:51:13.217654611+02:00","level":"INFO","msg":"stream: closing","id":"ka3spfpz"}
+{"time":"2025-11-05T22:51:13.217666957+02:00","level":"INFO","msg":"handler: closed","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T22:51:13.217674048+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T22:51:13.217687758+02:00","level":"INFO","msg":"sender: closed","stream_id":"ka3spfpz"}
+{"time":"2025-11-05T22:51:13.218062699+02:00","level":"INFO","msg":"stream: closed","id":"ka3spfpz"}

@@ -1,0 +1,20 @@
+{"time":"2025-10-21T11:38:44.544863651+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/logs/debug-core.log"}
+{"time":"2025-10-21T11:38:44.845309201+03:00","level":"INFO","msg":"stream: created new stream","id":"5v0uwnu9"}
+{"time":"2025-10-21T11:38:44.845333032+03:00","level":"INFO","msg":"stream: started","id":"5v0uwnu9"}
+{"time":"2025-10-21T11:38:44.845347579+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"5v0uwnu9"}
+{"time":"2025-10-21T11:38:44.845351019+03:00","level":"INFO","msg":"handler: started","stream_id":"5v0uwnu9"}
+{"time":"2025-10-21T11:38:44.845365902+03:00","level":"INFO","msg":"sender: started","stream_id":"5v0uwnu9"}
+{"time":"2025-10-21T11:38:45.195843416+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T12:11:45.197637875+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't write proto: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:11:45.198908797+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:11:51.192585681+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:11:51.23384477+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:00.197546361+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:00.199335973+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:13.17937937+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:13.219854446+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:15.197123104+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:15.199046286+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:30.197154693+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:30.200751274+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/sethih1/masque_new/ters_gen/wandb/run-20251021_113844-5v0uwnu9/run-5v0uwnu9.wandb: disk quota exceeded"}
+{"time":"2025-10-21T12:12:45.197940659+03:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /

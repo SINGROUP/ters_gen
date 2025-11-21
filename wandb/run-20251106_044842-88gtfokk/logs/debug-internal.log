@@ -1,0 +1,16 @@
+{"time":"2025-11-06T04:48:43.576979139+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251106_044842-88gtfokk/logs/debug-core.log"}
+{"time":"2025-11-06T04:48:43.886850498+02:00","level":"INFO","msg":"stream: created new stream","id":"88gtfokk"}
+{"time":"2025-11-06T04:48:43.886887605+02:00","level":"INFO","msg":"stream: started","id":"88gtfokk"}
+{"time":"2025-11-06T04:48:43.886905484+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:48:43.88691706+02:00","level":"INFO","msg":"handler: started","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:48:43.886939325+02:00","level":"INFO","msg":"sender: started","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:48:44.229474123+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-06T04:55:51.316778082+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-06T04:55:51.316900347+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-06T04:55:52.252808881+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-06T04:55:52.436946969+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 83-92","runtime_seconds":0.184029244}],"total_operations":1}}
+{"time":"2025-11-06T04:55:52.511143846+02:00","level":"INFO","msg":"stream: closing","id":"88gtfokk"}
+{"time":"2025-11-06T04:55:52.51116882+02:00","level":"INFO","msg":"handler: closed","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:55:52.511177904+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:55:52.511185181+02:00","level":"INFO","msg":"sender: closed","stream_id":"88gtfokk"}
+{"time":"2025-11-06T04:55:52.511594228+02:00","level":"INFO","msg":"stream: closed","id":"88gtfokk"}

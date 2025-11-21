@@ -1,0 +1,17 @@
+{"time":"2025-10-21T11:12:52.472172099+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_111252-6l2yu577/logs/debug-core.log"}
+{"time":"2025-10-21T11:12:52.773162022+03:00","level":"INFO","msg":"stream: created new stream","id":"6l2yu577"}
+{"time":"2025-10-21T11:12:52.773197068+03:00","level":"INFO","msg":"stream: started","id":"6l2yu577"}
+{"time":"2025-10-21T11:12:52.773219492+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:52.773222359+03:00","level":"INFO","msg":"sender: started","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:52.773237069+03:00","level":"INFO","msg":"handler: started","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:52.932354492+03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-10-21T11:12:55.684801214+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T11:12:56.276041422+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T11:12:56.276078554+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T11:12:57.125058104+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T11:12:57.27787228+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-1, summary, console lines 1-48","runtime_seconds":0.152546022}],"total_operations":1}}
+{"time":"2025-10-21T11:12:57.407373792+03:00","level":"INFO","msg":"stream: closing","id":"6l2yu577"}
+{"time":"2025-10-21T11:12:57.407387781+03:00","level":"INFO","msg":"handler: closed","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:57.407393187+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:57.407399936+03:00","level":"INFO","msg":"sender: closed","stream_id":"6l2yu577"}
+{"time":"2025-10-21T11:12:57.407740573+03:00","level":"INFO","msg":"stream: closed","id":"6l2yu577"}

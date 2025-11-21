@@ -1,0 +1,16 @@
+{"time":"2025-11-08T15:10:38.610222446+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251108_151038-eevaeolm/logs/debug-core.log"}
+{"time":"2025-11-08T15:10:38.984583638+02:00","level":"INFO","msg":"stream: created new stream","id":"eevaeolm"}
+{"time":"2025-11-08T15:10:38.984618064+02:00","level":"INFO","msg":"stream: started","id":"eevaeolm"}
+{"time":"2025-11-08T15:10:38.984629918+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"eevaeolm"}
+{"time":"2025-11-08T15:10:38.984653097+02:00","level":"INFO","msg":"sender: started","stream_id":"eevaeolm"}
+{"time":"2025-11-08T15:10:38.98463558+02:00","level":"INFO","msg":"handler: started","stream_id":"eevaeolm"}
+{"time":"2025-11-08T15:10:39.537527157+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-08T19:02:58.262786426+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-08T19:02:58.423342312+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-08T19:02:58.945794893+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.104838254},{"desc":"uploading wandb-summary.json","runtime_seconds":0.071803154}],"total_operations":2}}
+{"time":"2025-11-08T19:02:59.382909586+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-08T19:02:59.678588697+02:00","level":"INFO","msg":"stream: closing","id":"eevaeolm"}
+{"time":"2025-11-08T19:02:59.678862771+02:00","level":"INFO","msg":"handler: closed","stream_id":"eevaeolm"}
+{"time":"2025-11-08T19:02:59.678978872+02:00","level":"INFO","msg":"sender: closed","stream_id":"eevaeolm"}
+{"time":"2025-11-08T19:02:59.678696753+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eevaeolm"}
+{"time":"2025-11-08T19:02:59.679739096+02:00","level":"INFO","msg":"stream: closed","id":"eevaeolm"}
