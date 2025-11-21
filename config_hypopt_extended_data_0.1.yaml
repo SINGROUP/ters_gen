@@ -17,22 +17,22 @@ model:
 
 training:
   epochs: 50
-  batch_sizes: [128]
+  batch_sizes: [16, 32, 64, 128]
   learning_rates: [0.00001, 0.001] # , 0.00005,  0.0001, 0.001]
   loss_functions: [dice_loss] #focal_loss, MSELoss, L1Loss]
-  n_trials: 20
+  n_trials: 48
   gpu_ids: [0, 1, 2, 3] # ,1,2,3]
   use_parallel: True
   n_jobs: 4
 
 data:
-  train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_npz_0.1/train
-  val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_npz_0.1/val
+  train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.1/train
+  val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.1/val
   split_by_id: 0
   circle_radius: 5
   augmentation: [True] #, False]
 
-save_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_0.1_oct_2025/models
-log_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_0.1_oct_2025/run_logs
+save_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.1/models
+log_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.1/run_logs
 
 wandb_project: Extended_TERS_data_0.1
