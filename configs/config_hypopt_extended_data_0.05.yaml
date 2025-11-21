@@ -1,0 +1,38 @@
+model:
+  type: AttentionUNet
+  in_channels: [100, 400]
+  out_channels: 1
+  filters_options:
+    - [16, 32, 64]
+    - [16, 32, 64, 128]
+    - [16, 32, 64, 128, 256]
+    - [32, 64, 128, 256, 512]
+  kernel_size_options:
+    - [3, 3, 3]
+    - [3, 3, 3, 3]
+    - [3, 3, 3, 3, 3]
+    - [3, 3, 3, 3, 3, 3]
+  att_channels_options: [16, 32, 64]
+  # activation_options: [relu] #, leaky_relu, gelu]
+
+training:
+  epochs: 50
+  batch_sizes: [16, 32, 64, 128]
+  learning_rates: [0.00001, 0.001] # , 0.00005,  0.0001, 0.001]
+  loss_functions: [dice_loss] #focal_loss, MSELoss, L1Loss]
+  n_trials: 48
+  gpu_ids: [0, 1, 2, 3] # ,1,2,3]
+  use_parallel: True
+  n_jobs: 4
+
+data:
+  train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.05/train
+  val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.05/val
+  split_by_id: 0
+  circle_radius: 5
+  augmentation: [True] #, False]
+
+save_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.05/models
+log_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.05/run_logs
+
+wandb_project: Extended_TERS_data_0.05
