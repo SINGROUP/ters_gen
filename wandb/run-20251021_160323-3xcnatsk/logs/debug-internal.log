@@ -1,9 +1,0 @@
-{"time":"2025-10-21T16:03:23.925391504+03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251021_160323-3xcnatsk/logs/debug-core.log"}
-{"time":"2025-10-21T16:03:24.226875646+03:00","level":"INFO","msg":"stream: created new stream","id":"3xcnatsk"}
-{"time":"2025-10-21T16:03:24.226900629+03:00","level":"INFO","msg":"stream: started","id":"3xcnatsk"}
-{"time":"2025-10-21T16:03:24.226921488+03:00","level":"INFO","msg":"sender: started","stream_id":"3xcnatsk"}
-{"time":"2025-10-21T16:03:24.226919709+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"3xcnatsk"}
-{"time":"2025-10-21T16:03:24.226934495+03:00","level":"INFO","msg":"handler: started","stream_id":"3xcnatsk"}
-{"time":"2025-10-21T16:03:24.477302663+03:00","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-10-21T16:19:25.141246724+03:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data/3xcnatsk/file_stream"}
-{"time":"2025-10-21T16:19:25.141542218+03:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/sethih10-epfl/Extended_TERS_data/3xcnatsk/file_stream: {\"error\":\"project sethih10-epfl/Extended_TERS_data not found while streaming file\"}"}
