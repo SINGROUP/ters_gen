@@ -18,14 +18,18 @@ from src.transforms import Normalize, MinimumToZero
 from src.configs.base import get_config
 
 class GpuQueue:
-    def __init__(self, n_gpus, manager):
-        self.n_gpus = n_gpus
+    def __init__(self, gpu_ids, manager):
+        """
+        Args:
+            gpu_ids: List of actual GPU device IDs (e.g., [0, 1] or [2, 3])
+                    If empty list, will use CPU
+        """
         self.queue = manager.Queue()
-        if n_gpus > 0:
-            for idx in range(n_gpus):
-                self.queue.put(idx)
+        if len(gpu_ids) > 0:
+            for gpu_id in gpu_ids:
+                self.queue.put(gpu_id)
         else:
-            self.queue.put(None)
+            self.queue.put(None)  # CPU mode
 
     @contextmanager
     def one_gpu_per_process(self):
@@ -34,6 +38,23 @@ class GpuQueue:
             yield gpu_idx
         finally:
             self.queue.put(gpu_idx)
+
+
+def get_available_gpus():
+    """Get list of GPU IDs visible to this process (set by SLURM or CUDA_VISIBLE_DEVICES)"""
+    if not torch.cuda.is_available():
+        print("CUDA not available, using CPU")
+        return []
+    
+    n_gpus = torch.cuda.device_count()
+    print(f"Number of available GPUs: {n_gpus}")
+    for i in range(n_gpus):
+        print(f"  GPU {i}: {torch.cuda.get_device_name(i)}")
+    
+    # When SLURM sets CUDA_VISIBLE_DEVICES, PyTorch sees them as 0, 1, 2...
+    # regardless of their actual device IDs
+    return list(range(n_gpus))
+
 
 def get_model(model_type, params):
     if model_type == "AttentionUNet":
@@ -60,7 +81,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
     run = None
     if use_wandb:
         run = wandb.init(
-            project="Posnet_50epochs_just_aug_val_32x32",
+            project=config.wandb_project,
             name=run_name,
             config={
                 **vars(config),
@@ -73,7 +94,12 @@ def objective(trial, config, gpu_queue, use_wandb=False):
 
     final_dice = None
     with gpu_queue.one_gpu_per_process() as gpu_idx:
-        device = torch.device(f"cuda:{gpu_idx}" if gpu_idx is not None and torch.cuda.is_available() else "cpu")
+        if gpu_idx is not None and torch.cuda.is_available():
+            device = torch.device(f"cuda:{gpu_idx}")
+            print(f"Trial {trial.number} using GPU {gpu_idx}")
+        else:
+            device = torch.device("cpu")
+            print(f"Trial {trial.number} using CPU")
         try:
             transform = transforms.Compose([Normalize(), MinimumToZero()])
             model_params = sample_model_params(trial, config)
@@ -164,14 +190,22 @@ def main():
     config = get_config(args.config)
     pprint.pprint(config)
 
+    # Get actual available GPUs (respects SLURM's CUDA_VISIBLE_DEVICES)
+    available_gpus = get_available_gpus()
+    n_workers = len(available_gpus) if len(available_gpus) > 0 else 1
+
+    print(f"\nRunning optimization with {n_workers} parallel workers")
+    print(f"GPU IDs: {available_gpus if available_gpus else 'CPU only'}\n")
+
     with multiprocessing.Manager() as manager:
-        gpu_queue = GpuQueue(args.n_gpus, manager)
+        gpu_queue = GpuQueue(available_gpus, manager)
         study = optuna.create_study(direction="maximize", pruner=optuna.pruners.MedianPruner())
         study.optimize(
             lambda t: objective(t, config, gpu_queue, args.use_wandb),
             n_trials=config.training.n_trials,
-            n_jobs=args.n_gpus
+            n_jobs=n_workers
         )
+
 
         print("Optuna results saving")
 
