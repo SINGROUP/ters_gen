@@ -72,7 +72,7 @@ def uniform_channels(spectrums, frequencies, num_channels=400):
 
     mean = np.mean(spectrums, axis = (0,1))
     std = np.std(spectrums, axis=(0,1))
-    spectrums = (spectrums - mean)/std
+    #spectrums = (spectrums - mean)/std
     
 
     count = 0 
