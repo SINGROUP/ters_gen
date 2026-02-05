@@ -1,0 +1,17 @@
+{"time":"2025-12-07T00:16:48.051340213+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_001647-vr14a0he/logs/debug-core.log"}
+{"time":"2025-12-07T00:16:48.45646666+02:00","level":"INFO","msg":"stream: created new stream","id":"vr14a0he"}
+{"time":"2025-12-07T00:16:48.456501932+02:00","level":"INFO","msg":"stream: started","id":"vr14a0he"}
+{"time":"2025-12-07T00:16:48.45652203+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vr14a0he"}
+{"time":"2025-12-07T00:16:48.456522452+02:00","level":"INFO","msg":"handler: started","stream_id":"vr14a0he"}
+{"time":"2025-12-07T00:16:48.45654538+02:00","level":"INFO","msg":"sender: started","stream_id":"vr14a0he"}
+{"time":"2025-12-07T00:16:48.707241347+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"project may already be created, please retry\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-12-07T00:16:51.066593537+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T04:06:11.013675129+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T04:06:11.013942652+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T04:06:11.937167319+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T04:06:12.00548516+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 1092-1100","runtime_seconds":0.068187207}],"total_operations":1}}
+{"time":"2025-12-07T04:06:12.197396387+02:00","level":"INFO","msg":"stream: closing","id":"vr14a0he"}
+{"time":"2025-12-07T04:06:12.197411841+02:00","level":"INFO","msg":"handler: closed","stream_id":"vr14a0he"}
+{"time":"2025-12-07T04:06:12.197426218+02:00","level":"INFO","msg":"sender: closed","stream_id":"vr14a0he"}
+{"time":"2025-12-07T04:06:12.197421167+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vr14a0he"}
+{"time":"2025-12-07T04:06:12.197836658+02:00","level":"INFO","msg":"stream: closed","id":"vr14a0he"}

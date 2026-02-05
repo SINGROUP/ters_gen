@@ -1,0 +1,27 @@
+Trial 18 using GPU 2
+Training Metrics:
+Accuracy: 0.9929
+Precision: 0.8189
+Recall: 0.8677
+F1 Score: 0.8426
+IoU: 0.7280
+Dice Coefficient: 0.8426
+Validation Metrics:
+Accuracy: 0.9918
+Precision: 0.8056
+Recall: 0.8533
+F1 Score: 0.8287
+IoU: 0.7075
+Dice Coefficient: 0.8287
+Epoch   26/50, time: 50.14 s, training_loss: 0.181
+Epoch    1/50, time: 53.67 s, training_loss: 0.868
+Epoch   26/50, time: 14.03 s, val_loss: 0.185
+Test Metrics:
+Accuracy: 0.9918
+Precision: 0.8056
+Recall: 0.8533
+F1 Score: 0.8287
+IoU: 0.7075
+Dice Coefficient: 0.8287
+[I 2025-12-06 10:08:36,836] Trial 16 finished with value: 0.8287260117538924 and parameters: {'batch_size': 16, 'lr': 0.0007104019498166825, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 100, 'att_channels': 64}. Best is trial 0 with value: 0.8426322885849499.
+wandb: Finishing previous runs because reinit is set to True.

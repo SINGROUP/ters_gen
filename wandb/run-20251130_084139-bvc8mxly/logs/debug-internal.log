@@ -1,0 +1,16 @@
+{"time":"2025-11-30T08:41:40.416174397+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251130_084139-bvc8mxly/logs/debug-core.log"}
+{"time":"2025-11-30T08:41:40.712901827+02:00","level":"INFO","msg":"stream: created new stream","id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:40.71292897+02:00","level":"INFO","msg":"stream: started","id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:40.712937376+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:40.712949746+02:00","level":"INFO","msg":"handler: started","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:40.712961826+02:00","level":"INFO","msg":"sender: started","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:41.093075685+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-30T08:41:52.465389359+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-30T08:41:52.465570526+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-30T08:41:53.406964357+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-30T08:41:53.458040381+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 1-9","runtime_seconds":0.050950668}],"total_operations":1}}
+{"time":"2025-11-30T08:41:53.656764537+02:00","level":"INFO","msg":"stream: closing","id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:53.65677691+02:00","level":"INFO","msg":"handler: closed","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:53.656782942+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:53.656802559+02:00","level":"INFO","msg":"sender: closed","stream_id":"bvc8mxly"}
+{"time":"2025-11-30T08:41:53.657480117+02:00","level":"INFO","msg":"stream: closed","id":"bvc8mxly"}

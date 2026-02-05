@@ -1,0 +1,17 @@
+{"time":"2025-12-07T00:16:48.05108652+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_001647-pcbx2vg2/logs/debug-core.log"}
+{"time":"2025-12-07T00:16:48.458630862+02:00","level":"INFO","msg":"stream: created new stream","id":"pcbx2vg2"}
+{"time":"2025-12-07T00:16:48.458658159+02:00","level":"INFO","msg":"stream: started","id":"pcbx2vg2"}
+{"time":"2025-12-07T00:16:48.458675152+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T00:16:48.458688208+02:00","level":"INFO","msg":"sender: started","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T00:16:48.458677012+02:00","level":"INFO","msg":"handler: started","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T00:16:48.707918663+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"project may already be created, please retry\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-12-07T00:16:51.513508145+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T01:36:14.210580768+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T01:36:14.21077813+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T01:36:14.887394895+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T01:36:15.209894372+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-12-07T01:36:15.214646659+02:00","level":"INFO","msg":"stream: closing","id":"pcbx2vg2"}
+{"time":"2025-12-07T01:36:15.214677903+02:00","level":"INFO","msg":"handler: closed","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T01:36:15.214729238+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T01:36:15.214751407+02:00","level":"INFO","msg":"sender: closed","stream_id":"pcbx2vg2"}
+{"time":"2025-12-07T01:36:15.215156169+02:00","level":"INFO","msg":"stream: closed","id":"pcbx2vg2"}

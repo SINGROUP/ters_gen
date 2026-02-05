@@ -1,0 +1,17 @@
+{"time":"2025-12-16T05:05:37.604307229+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251216_050536-x7n8a1tv/logs/debug-core.log"}
+{"time":"2025-12-16T05:05:37.91836596+02:00","level":"INFO","msg":"stream: created new stream","id":"x7n8a1tv"}
+{"time":"2025-12-16T05:05:37.918403123+02:00","level":"INFO","msg":"stream: started","id":"x7n8a1tv"}
+{"time":"2025-12-16T05:05:37.918414106+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T05:05:37.918423322+02:00","level":"INFO","msg":"sender: started","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T05:05:37.918462372+02:00","level":"INFO","msg":"handler: started","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T05:05:38.391180267+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-16T11:51:24.932589467+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-12-16T14:50:59.194293764+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-16T14:50:59.194436084+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-16T14:51:00.175919711+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-16T14:51:00.197225304+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 257-265","runtime_seconds":0.021188093}],"total_operations":1}}
+{"time":"2025-12-16T14:51:00.560960776+02:00","level":"INFO","msg":"stream: closing","id":"x7n8a1tv"}
+{"time":"2025-12-16T14:51:00.560977052+02:00","level":"INFO","msg":"handler: closed","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T14:51:00.560994928+02:00","level":"INFO","msg":"sender: closed","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T14:51:00.560985053+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x7n8a1tv"}
+{"time":"2025-12-16T14:51:00.56160518+02:00","level":"INFO","msg":"stream: closed","id":"x7n8a1tv"}

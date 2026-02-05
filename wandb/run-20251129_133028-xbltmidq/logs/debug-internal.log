@@ -1,0 +1,16 @@
+{"time":"2025-11-29T13:30:30.036986977+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251129_133028-xbltmidq/logs/debug-core.log"}
+{"time":"2025-11-29T13:30:30.47022876+02:00","level":"INFO","msg":"stream: created new stream","id":"xbltmidq"}
+{"time":"2025-11-29T13:30:30.470268943+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xbltmidq"}
+{"time":"2025-11-29T13:30:30.4702738+02:00","level":"INFO","msg":"sender: started","stream_id":"xbltmidq"}
+{"time":"2025-11-29T13:30:30.482099545+02:00","level":"INFO","msg":"handler: started","stream_id":"xbltmidq"}
+{"time":"2025-11-29T13:30:30.482108319+02:00","level":"INFO","msg":"stream: started","id":"xbltmidq"}
+{"time":"2025-11-29T13:30:31.144428965+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-29T15:34:18.381393757+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-29T15:34:18.482683975+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-29T15:34:19.330046982+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.413272846,"progress":"10.7KB/10.7KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.323178813,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.078322048,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-11-29T15:34:20.054617626+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-29T15:34:20.359345098+02:00","level":"INFO","msg":"stream: closing","id":"xbltmidq"}
+{"time":"2025-11-29T15:34:20.359625128+02:00","level":"INFO","msg":"handler: closed","stream_id":"xbltmidq"}
+{"time":"2025-11-29T15:34:20.37176982+02:00","level":"INFO","msg":"sender: closed","stream_id":"xbltmidq"}
+{"time":"2025-11-29T15:34:20.35944497+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xbltmidq"}
+{"time":"2025-11-29T15:34:20.37241518+02:00","level":"INFO","msg":"stream: closed","id":"xbltmidq"}

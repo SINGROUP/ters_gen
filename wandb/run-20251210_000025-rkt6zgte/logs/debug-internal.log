@@ -1,0 +1,18 @@
+{"time":"2025-12-10T00:00:26.323630307+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251210_000025-rkt6zgte/logs/debug-core.log"}
+{"time":"2025-12-10T00:00:26.639824428+02:00","level":"INFO","msg":"stream: created new stream","id":"rkt6zgte"}
+{"time":"2025-12-10T00:00:26.639852515+02:00","level":"INFO","msg":"stream: started","id":"rkt6zgte"}
+{"time":"2025-12-10T00:00:26.639862405+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T00:00:26.639883066+02:00","level":"INFO","msg":"handler: started","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T00:00:26.63986632+02:00","level":"INFO","msg":"sender: started","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T00:00:26.981066919+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-10T00:49:57.301281762+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-12-10T02:59:33.479279946+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/rkt6zgte/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-12-10T04:30:20.957851762+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-10T04:30:20.958009596+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-10T04:30:21.879837284+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-10T04:30:21.960173942+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 247-253","runtime_seconds":0.08024665}],"total_operations":1}}
+{"time":"2025-12-10T04:30:22.18277818+02:00","level":"INFO","msg":"stream: closing","id":"rkt6zgte"}
+{"time":"2025-12-10T04:30:22.18279327+02:00","level":"INFO","msg":"handler: closed","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T04:30:22.182811783+02:00","level":"INFO","msg":"sender: closed","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T04:30:22.182802643+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rkt6zgte"}
+{"time":"2025-12-10T04:30:22.183282491+02:00","level":"INFO","msg":"stream: closed","id":"rkt6zgte"}

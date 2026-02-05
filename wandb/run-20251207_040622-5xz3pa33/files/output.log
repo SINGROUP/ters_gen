@@ -1,0 +1,62 @@
+Trial 7 using GPU 1
+Epoch   50/50, time: 39.11 s, val_loss: 0.450
+Epoch   17/50, time: 39.96 s, val_loss: 0.481
+Epoch    5/50, time: 62.32 s, training_loss: 0.882
+Epoch    1/50, time: 59.31 s, training_loss: 0.840
+Epoch    5/50, time: 15.20 s, val_loss: 0.881
+Epoch    1/50, time: 15.10 s, val_loss: 0.794
+Epoch    6/50, time: 65.57 s, training_loss: 0.874
+Epoch    6/50, time: 15.08 s, val_loss: 0.872
+Training Metrics:
+Accuracy: 0.8897
+Precision: 0.1514
+Recall: 0.8598
+F1 Score: 0.2574
+IoU: 0.1477
+Dice Coefficient: 0.2574
+Validation Metrics:
+Accuracy: 0.8826
+Precision: 0.1487
+Recall: 0.8764
+F1 Score: 0.2542
+IoU: 0.1456
+Dice Coefficient: 0.2542
+Epoch    7/50, time: 65.21 s, training_loss: 0.867
+Epoch   18/50, time: 192.86 s, training_loss: 0.575
+Epoch    2/50, time: 60.07 s, training_loss: 0.772
+Epoch    7/50, time: 14.62 s, val_loss: 0.867
+Epoch    2/50, time: 15.19 s, val_loss: 0.743
+Epoch   18/50, time: 41.49 s, val_loss: 0.448
+Training Metrics:
+Accuracy: 0.9804
+Precision: 0.5451
+Recall: 0.7178
+F1 Score: 0.6196
+IoU: 0.4489
+Dice Coefficient: 0.6196
+Validation Metrics:
+Accuracy: 0.9826
+Precision: 0.5991
+Recall: 0.7180
+F1 Score: 0.6532
+IoU: 0.4850
+Dice Coefficient: 0.6532
+Epoch    8/50, time: 61.33 s, training_loss: 0.862
+Epoch    3/50, time: 62.87 s, training_loss: 0.724
+Epoch    8/50, time: 17.05 s, val_loss: 0.867
+Epoch    3/50, time: 14.84 s, val_loss: 0.694
+Test Metrics:
+Accuracy: 0.9826
+Precision: 0.5991
+Recall: 0.7180
+F1 Score: 0.6532
+IoU: 0.4850
+Dice Coefficient: 0.6532
+wandb: uploading output.log
+wandb:
+wandb: 🚀 View run trial_1_bs64_lr9e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/b5xleysk
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251207_001647-b5xleysk/logs
+[I 2025-12-07 04:12:08,188] Trial 1 finished with value: 0.6531975616674675 and parameters: {'batch_size': 64, 'lr': 8.757304667233571e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 400, 'att_channels': 64}. Best is trial 4 with value: 0.7630093662571463.
+wandb: Finishing previous runs because reinit is set to True.

@@ -1,0 +1,54 @@
+Trial 4 using GPU 0
+Epoch   47/50, time: 213.82 s, training_loss: 0.232
+Epoch   47/50, time: 27.79 s, val_loss: 0.249
+Epoch    1/50, time: 210.73 s, training_loss: 0.850
+Epoch    1/50, time: 26.30 s, val_loss: 0.802
+Epoch   48/50, time: 217.61 s, training_loss: 0.230
+Epoch   48/50, time: 28.59 s, val_loss: 0.261
+Training Metrics:
+Accuracy: 0.9032
+Precision: 0.1420
+Recall: 0.8944
+F1 Score: 0.2451
+IoU: 0.1397
+Dice Coefficient: 0.2451
+Validation Metrics:
+Accuracy: 0.8982
+Precision: 0.1396
+Recall: 0.9085
+F1 Score: 0.2420
+IoU: 0.1377
+Dice Coefficient: 0.2420
+Epoch   49/50, time: 213.85 s, training_loss: 0.230
+Epoch   49/50, time: 27.73 s, val_loss: 0.233
+Epoch    2/50, time: 209.63 s, training_loss: 0.778
+Epoch    2/50, time: 27.33 s, val_loss: 0.747
+Epoch   50/50, time: 217.32 s, training_loss: 0.228
+Epoch   50/50, time: 27.70 s, val_loss: 0.321
+Epoch    3/50, time: 205.86 s, training_loss: 0.723
+Epoch    3/50, time: 27.56 s, val_loss: 0.671
+Epoch    4/50, time: 205.65 s, training_loss: 0.653
+Training Metrics:
+Accuracy: 0.9912
+Precision: 0.7639
+Recall: 0.7238
+F1 Score: 0.7433
+IoU: 0.5914
+Dice Coefficient: 0.7433
+Validation Metrics:
+Accuracy: 0.9907
+Precision: 0.7664
+Recall: 0.6932
+F1 Score: 0.7280
+IoU: 0.5723
+Dice Coefficient: 0.7280
+Epoch    4/50, time: 27.02 s, val_loss: 0.615
+Test Metrics:
+Accuracy: 0.9907
+Precision: 0.7664
+Recall: 0.6932
+F1 Score: 0.7280
+IoU: 0.5723
+Dice Coefficient: 0.7280
+[I 2025-12-09 04:17:43,416] Trial 3 finished with value: 0.7280058454945081 and parameters: {'batch_size': 16, 'lr': 0.00012786313473585347, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.7709331645230934.
+wandb: Finishing previous runs because reinit is set to True.

@@ -1,0 +1,44 @@
+Trial 37 using GPU 0
+Epoch   49/50, time: 44.09 s, training_loss: 0.147
+Epoch   49/50, time: 12.11 s, val_loss: 0.161
+Epoch    1/50, time: 46.18 s, training_loss: 0.859
+Epoch    1/50, time: 11.11 s, val_loss: 0.822
+Epoch   50/50, time: 45.30 s, training_loss: 0.146
+Epoch   50/50, time: 11.85 s, val_loss: 0.164
+Training Metrics:
+Accuracy: 0.8820
+Precision: 0.1455
+Recall: 0.8984
+F1 Score: 0.2505
+IoU: 0.1432
+Dice Coefficient: 0.2505
+Validation Metrics:
+Accuracy: 0.8805
+Precision: 0.1496
+Recall: 0.8889
+F1 Score: 0.2560
+IoU: 0.1468
+Dice Coefficient: 0.2560
+Training Metrics:
+Accuracy: 0.9940
+Precision: 0.8525
+Recall: 0.8792
+F1 Score: 0.8656
+IoU: 0.7631
+Dice Coefficient: 0.8656
+Validation Metrics:
+Accuracy: 0.9927
+Precision: 0.8327
+Recall: 0.8591
+F1 Score: 0.8457
+IoU: 0.7326
+Dice Coefficient: 0.8457
+Test Metrics:
+Accuracy: 0.9927
+Precision: 0.8327
+Recall: 0.8591
+F1 Score: 0.8457
+IoU: 0.7326
+Dice Coefficient: 0.8457
+[I 2025-11-30 05:54:11,376] Trial 36 finished with value: 0.8456758540139804 and parameters: {'batch_size': 32, 'lr': 0.00022297856402468986, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 100, 'att_channels': 16}. Best is trial 28 with value: 0.8666606918802653.
+wandb: Finishing previous runs because reinit is set to True.

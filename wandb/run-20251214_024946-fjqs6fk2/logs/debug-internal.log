@@ -1,0 +1,16 @@
+{"time":"2025-12-14T02:49:47.524259094+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251214_024946-fjqs6fk2/logs/debug-core.log"}
+{"time":"2025-12-14T02:49:47.826329706+02:00","level":"INFO","msg":"stream: created new stream","id":"fjqs6fk2"}
+{"time":"2025-12-14T02:49:47.826368417+02:00","level":"INFO","msg":"stream: started","id":"fjqs6fk2"}
+{"time":"2025-12-14T02:49:47.826381375+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T02:49:47.826394657+02:00","level":"INFO","msg":"sender: started","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T02:49:47.826409647+02:00","level":"INFO","msg":"handler: started","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T02:49:48.135107289+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-14T06:36:56.989066317+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-14T06:36:57.113551629+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-14T06:36:57.770226134+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.313323666,"progress":"144B/144B"},{"desc":"uploading output.log","runtime_seconds":0.285609056,"progress":"8.5KB/8.5KB"}],"total_operations":2}}
+{"time":"2025-12-14T06:36:58.083241868+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-14T06:36:58.355267196+02:00","level":"INFO","msg":"stream: closing","id":"fjqs6fk2"}
+{"time":"2025-12-14T06:36:58.35554171+02:00","level":"INFO","msg":"handler: closed","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T06:36:58.364728613+02:00","level":"INFO","msg":"sender: closed","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T06:36:58.355354911+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fjqs6fk2"}
+{"time":"2025-12-14T06:36:58.378564357+02:00","level":"INFO","msg":"stream: closed","id":"fjqs6fk2"}

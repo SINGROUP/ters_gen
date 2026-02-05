@@ -1,0 +1,66 @@
+Trial 10 using GPU 1
+Epoch   44/50, time: 17.10 s, val_loss: 0.532
+Epoch   38/50, time: 221.12 s, training_loss: 0.230
+Epoch   45/50, time: 95.26 s, training_loss: 0.701
+Epoch   36/50, time: 193.50 s, training_loss: 0.376
+Epoch   38/50, time: 36.38 s, val_loss: 0.247
+Epoch   45/50, time: 21.33 s, val_loss: 0.524
+Epoch   36/50, time: 40.61 s, val_loss: 0.292
+Epoch   46/50, time: 79.53 s, training_loss: 0.694
+Epoch    1/50, time: 202.68 s, training_loss: 0.852
+Epoch   46/50, time: 19.23 s, val_loss: 0.522
+Epoch    1/50, time: 49.17 s, val_loss: 0.775
+Epoch   47/50, time: 105.17 s, training_loss: 0.688
+Epoch   39/50, time: 228.22 s, training_loss: 0.229
+Epoch   47/50, time: 19.22 s, val_loss: 0.497
+Epoch   37/50, time: 212.46 s, training_loss: 0.365
+Epoch   39/50, time: 37.46 s, val_loss: 0.244
+Epoch   37/50, time: 36.89 s, val_loss: 0.296
+Epoch   48/50, time: 65.85 s, training_loss: 0.685
+Epoch   48/50, time: 23.51 s, val_loss: 0.493
+Epoch   49/50, time: 87.55 s, training_loss: 0.682
+Epoch   49/50, time: 18.26 s, val_loss: 0.480
+Training Metrics:
+Accuracy: 0.7409
+Precision: 0.0710
+Recall: 0.8820
+F1 Score: 0.1315
+IoU: 0.0704
+Dice Coefficient: 0.1315
+Validation Metrics:
+Accuracy: 0.8801
+Precision: 0.1494
+Recall: 0.9057
+F1 Score: 0.2565
+IoU: 0.1471
+Dice Coefficient: 0.2565
+Epoch   40/50, time: 235.40 s, training_loss: 0.223
+Epoch   38/50, time: 215.26 s, training_loss: 0.358
+Epoch   50/50, time: 77.38 s, training_loss: 0.676
+Epoch   50/50, time: 14.61 s, val_loss: 0.473
+Epoch   40/50, time: 35.16 s, val_loss: 0.234
+Epoch   38/50, time: 38.25 s, val_loss: 0.281
+Epoch    2/50, time: 206.89 s, training_loss: 0.806
+Training Metrics:
+Accuracy: 0.6245
+Precision: 0.0472
+Recall: 0.8279
+F1 Score: 0.0893
+IoU: 0.0467
+Dice Coefficient: 0.0893
+Validation Metrics:
+Accuracy: 0.9817
+Precision: 0.5826
+Recall: 0.7038
+F1 Score: 0.6375
+IoU: 0.4679
+Dice Coefficient: 0.6375
+Test Metrics:
+Accuracy: 0.9817
+Precision: 0.5826
+Recall: 0.7038
+F1 Score: 0.6375
+IoU: 0.4679
+Dice Coefficient: 0.6375
+[I 2025-12-02 13:55:46,372] Trial 9 finished with value: 0.6374919841195501 and parameters: {'batch_size': 128, 'lr': 3.2358839678888606e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 64}. Best is trial 2 with value: 0.8421065928131799.
+wandb: Finishing previous runs because reinit is set to True.

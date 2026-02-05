@@ -1,0 +1,16 @@
+{"time":"2025-12-06T07:26:43.390187316+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251206_072642-suxwp806/logs/debug-core.log"}
+{"time":"2025-12-06T07:26:43.683849773+02:00","level":"INFO","msg":"stream: created new stream","id":"suxwp806"}
+{"time":"2025-12-06T07:26:43.683882762+02:00","level":"INFO","msg":"stream: started","id":"suxwp806"}
+{"time":"2025-12-06T07:26:43.683892935+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"suxwp806"}
+{"time":"2025-12-06T07:26:43.683912394+02:00","level":"INFO","msg":"sender: started","stream_id":"suxwp806"}
+{"time":"2025-12-06T07:26:43.683897401+02:00","level":"INFO","msg":"handler: started","stream_id":"suxwp806"}
+{"time":"2025-12-06T07:26:43.999847477+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-06T08:28:40.850541424+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-06T08:28:40.945541863+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-06T08:28:41.802991796+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.456238889,"progress":"142B/142B"},{"desc":"uploading output.log","runtime_seconds":0.41743918,"progress":"11.6KB/11.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.061095192,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-06T08:28:42.245585182+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-06T08:28:42.529804422+02:00","level":"INFO","msg":"stream: closing","id":"suxwp806"}
+{"time":"2025-12-06T08:28:42.530121095+02:00","level":"INFO","msg":"handler: closed","stream_id":"suxwp806"}
+{"time":"2025-12-06T08:28:42.543115383+02:00","level":"INFO","msg":"sender: closed","stream_id":"suxwp806"}
+{"time":"2025-12-06T08:28:42.529893506+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"suxwp806"}
+{"time":"2025-12-06T08:28:42.551583858+02:00","level":"INFO","msg":"stream: closed","id":"suxwp806"}

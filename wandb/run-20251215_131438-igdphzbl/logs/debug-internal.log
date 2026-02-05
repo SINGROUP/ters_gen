@@ -1,0 +1,16 @@
+{"time":"2025-12-15T13:14:39.90396882+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251215_131438-igdphzbl/logs/debug-core.log"}
+{"time":"2025-12-15T13:14:40.236474083+02:00","level":"INFO","msg":"stream: created new stream","id":"igdphzbl"}
+{"time":"2025-12-15T13:14:40.236502628+02:00","level":"INFO","msg":"stream: started","id":"igdphzbl"}
+{"time":"2025-12-15T13:14:40.236518764+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"igdphzbl"}
+{"time":"2025-12-15T13:14:40.236538837+02:00","level":"INFO","msg":"handler: started","stream_id":"igdphzbl"}
+{"time":"2025-12-15T13:14:40.236526791+02:00","level":"INFO","msg":"sender: started","stream_id":"igdphzbl"}
+{"time":"2025-12-15T13:14:40.584368481+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-16T00:10:49.018477238+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-16T00:10:49.086281498+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-16T00:10:49.943693315+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.423392071,"progress":"11.2KB/11.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.377391368,"progress":"143B/143B"},{"desc":"uploading config.yaml","runtime_seconds":0.057598379,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-16T00:10:50.115752997+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-16T00:10:50.375950858+02:00","level":"INFO","msg":"stream: closing","id":"igdphzbl"}
+{"time":"2025-12-16T00:10:50.376044479+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"igdphzbl"}
+{"time":"2025-12-16T00:10:50.376388269+02:00","level":"INFO","msg":"handler: closed","stream_id":"igdphzbl"}
+{"time":"2025-12-16T00:10:50.383783081+02:00","level":"INFO","msg":"sender: closed","stream_id":"igdphzbl"}
+{"time":"2025-12-16T00:10:50.400381849+02:00","level":"INFO","msg":"stream: closed","id":"igdphzbl"}

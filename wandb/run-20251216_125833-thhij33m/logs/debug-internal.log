@@ -1,0 +1,16 @@
+{"time":"2025-12-16T12:58:34.873115755+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251216_125833-thhij33m/logs/debug-core.log"}
+{"time":"2025-12-16T12:58:35.222696724+02:00","level":"INFO","msg":"stream: created new stream","id":"thhij33m"}
+{"time":"2025-12-16T12:58:35.222747745+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"thhij33m"}
+{"time":"2025-12-16T12:58:35.222764926+02:00","level":"INFO","msg":"sender: started","stream_id":"thhij33m"}
+{"time":"2025-12-16T12:58:35.233710107+02:00","level":"INFO","msg":"stream: started","id":"thhij33m"}
+{"time":"2025-12-16T12:58:35.233713472+02:00","level":"INFO","msg":"handler: started","stream_id":"thhij33m"}
+{"time":"2025-12-16T12:58:35.671727347+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-16T15:25:57.816357889+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-16T15:25:57.913786231+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-16T15:25:58.759383234+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.459889745,"progress":"5.1KB/5.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.416997297,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.153560798,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-16T15:25:58.951365854+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-16T15:25:59.210943722+02:00","level":"INFO","msg":"stream: closing","id":"thhij33m"}
+{"time":"2025-12-16T15:25:59.211264053+02:00","level":"INFO","msg":"handler: closed","stream_id":"thhij33m"}
+{"time":"2025-12-16T15:25:59.224280971+02:00","level":"INFO","msg":"sender: closed","stream_id":"thhij33m"}
+{"time":"2025-12-16T15:25:59.211063155+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"thhij33m"}
+{"time":"2025-12-16T15:25:59.225164495+02:00","level":"INFO","msg":"stream: closed","id":"thhij33m"}

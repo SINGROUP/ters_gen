@@ -1,0 +1,8 @@
+{"time":"2025-12-04T15:13:59.282758004+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251204_151359-57htw0hn/logs/debug-core.log"}
+{"time":"2025-12-04T15:13:59.589567048+02:00","level":"INFO","msg":"stream: created new stream","id":"57htw0hn"}
+{"time":"2025-12-04T15:13:59.589594382+02:00","level":"INFO","msg":"stream: started","id":"57htw0hn"}
+{"time":"2025-12-04T15:13:59.589615285+02:00","level":"INFO","msg":"handler: started","stream_id":"57htw0hn"}
+{"time":"2025-12-04T15:13:59.589608593+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"57htw0hn"}
+{"time":"2025-12-04T15:13:59.58963445+02:00","level":"INFO","msg":"sender: started","stream_id":"57htw0hn"}
+{"time":"2025-12-04T15:14:00.686915579+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-04T16:25:16.266410701+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.05/57htw0hn/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

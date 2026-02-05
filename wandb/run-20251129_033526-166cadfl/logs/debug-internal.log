@@ -1,0 +1,16 @@
+{"time":"2025-11-29T03:35:27.137282017+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251129_033526-166cadfl/logs/debug-core.log"}
+{"time":"2025-11-29T03:35:27.545819444+02:00","level":"INFO","msg":"stream: created new stream","id":"166cadfl"}
+{"time":"2025-11-29T03:35:27.545875411+02:00","level":"INFO","msg":"stream: started","id":"166cadfl"}
+{"time":"2025-11-29T03:35:27.545912011+02:00","level":"INFO","msg":"handler: started","stream_id":"166cadfl"}
+{"time":"2025-11-29T03:35:27.54592225+02:00","level":"INFO","msg":"sender: started","stream_id":"166cadfl"}
+{"time":"2025-11-29T03:35:27.545917038+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"166cadfl"}
+{"time":"2025-11-29T03:35:27.818284219+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-29T06:05:27.124531605+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-29T06:05:27.238026664+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-29T06:05:27.868060931+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.285437172,"progress":"11.6KB/11.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.258722316,"progress":"141B/141B"}],"total_operations":2}}
+{"time":"2025-11-29T06:05:28.579997833+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-29T06:05:29.092940068+02:00","level":"INFO","msg":"stream: closing","id":"166cadfl"}
+{"time":"2025-11-29T06:05:29.093444817+02:00","level":"INFO","msg":"handler: closed","stream_id":"166cadfl"}
+{"time":"2025-11-29T06:05:29.093041289+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"166cadfl"}
+{"time":"2025-11-29T06:05:29.093429042+02:00","level":"INFO","msg":"sender: closed","stream_id":"166cadfl"}
+{"time":"2025-11-29T06:05:29.115670179+02:00","level":"INFO","msg":"stream: closed","id":"166cadfl"}

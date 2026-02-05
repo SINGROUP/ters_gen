@@ -1,0 +1,19 @@
+{"time":"2025-12-03T19:25:01.598997094+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251203_192459-7v6je96c/logs/debug-core.log"}
+{"time":"2025-12-03T19:25:02.038778282+02:00","level":"INFO","msg":"stream: created new stream","id":"7v6je96c"}
+{"time":"2025-12-03T19:25:02.038822181+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7v6je96c"}
+{"time":"2025-12-03T19:25:02.038827174+02:00","level":"INFO","msg":"sender: started","stream_id":"7v6je96c"}
+{"time":"2025-12-03T19:25:02.051580933+02:00","level":"INFO","msg":"stream: started","id":"7v6je96c"}
+{"time":"2025-12-03T19:25:02.051575443+02:00","level":"INFO","msg":"handler: started","stream_id":"7v6je96c"}
+{"time":"2025-12-03T19:25:02.569970497+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-03T21:14:16.325145737+02:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-12-03T21:21:03.175541128+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-12-03T21:34:03.150131177+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-12-03T22:20:23.336580277+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-03T22:20:23.33673169+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-03T22:20:24.043001032+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-03T22:20:24.297216606+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-12-03T22:20:24.299625409+02:00","level":"INFO","msg":"stream: closing","id":"7v6je96c"}
+{"time":"2025-12-03T22:20:24.299636489+02:00","level":"INFO","msg":"handler: closed","stream_id":"7v6je96c"}
+{"time":"2025-12-03T22:20:24.299643777+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7v6je96c"}
+{"time":"2025-12-03T22:20:24.299664834+02:00","level":"INFO","msg":"sender: closed","stream_id":"7v6je96c"}
+{"time":"2025-12-03T22:20:24.300109338+02:00","level":"INFO","msg":"stream: closed","id":"7v6je96c"}

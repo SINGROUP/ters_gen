@@ -1,0 +1,17 @@
+{"time":"2025-12-08T20:16:50.283489716+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251208_201650-ykem2qyz/logs/debug-core.log"}
+{"time":"2025-12-08T20:16:50.734704821+02:00","level":"INFO","msg":"stream: created new stream","id":"ykem2qyz"}
+{"time":"2025-12-08T20:16:50.734743926+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ykem2qyz"}
+{"time":"2025-12-08T20:16:50.734785184+02:00","level":"INFO","msg":"sender: started","stream_id":"ykem2qyz"}
+{"time":"2025-12-08T20:16:50.745729912+02:00","level":"INFO","msg":"stream: started","id":"ykem2qyz"}
+{"time":"2025-12-08T20:16:50.745734485+02:00","level":"INFO","msg":"handler: started","stream_id":"ykem2qyz"}
+{"time":"2025-12-08T20:16:51.427612741+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-08T23:54:22.107495381+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_1.0/ykem2qyz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-12-09T00:22:46.582110054+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-09T00:22:46.582294864+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-09T00:22:47.277549231+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-09T00:22:47.584378514+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-12-09T00:22:47.58819766+02:00","level":"INFO","msg":"stream: closing","id":"ykem2qyz"}
+{"time":"2025-12-09T00:22:47.588207564+02:00","level":"INFO","msg":"handler: closed","stream_id":"ykem2qyz"}
+{"time":"2025-12-09T00:22:47.588223545+02:00","level":"INFO","msg":"sender: closed","stream_id":"ykem2qyz"}
+{"time":"2025-12-09T00:22:47.588213828+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ykem2qyz"}
+{"time":"2025-12-09T00:22:47.588641071+02:00","level":"INFO","msg":"stream: closed","id":"ykem2qyz"}

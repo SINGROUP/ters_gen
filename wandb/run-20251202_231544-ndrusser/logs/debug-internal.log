@@ -1,0 +1,16 @@
+{"time":"2025-12-02T23:15:46.755540915+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251202_231544-ndrusser/logs/debug-core.log"}
+{"time":"2025-12-02T23:15:47.115097643+02:00","level":"INFO","msg":"stream: created new stream","id":"ndrusser"}
+{"time":"2025-12-02T23:15:47.115152468+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:15:47.115193819+02:00","level":"INFO","msg":"sender: started","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:15:47.123128145+02:00","level":"INFO","msg":"stream: started","id":"ndrusser"}
+{"time":"2025-12-02T23:15:47.123141622+02:00","level":"INFO","msg":"handler: started","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:15:47.743084014+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-02T23:51:32.680403023+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-02T23:51:32.803868101+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-02T23:51:33.635158132+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.498173407,"progress":"5.1KB/5.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.464103981,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.204123524,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-02T23:51:33.769593996+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-02T23:51:34.080815299+02:00","level":"INFO","msg":"stream: closing","id":"ndrusser"}
+{"time":"2025-12-02T23:51:34.081127205+02:00","level":"INFO","msg":"handler: closed","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:51:34.081561021+02:00","level":"INFO","msg":"sender: closed","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:51:34.080939264+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ndrusser"}
+{"time":"2025-12-02T23:51:34.098857668+02:00","level":"INFO","msg":"stream: closed","id":"ndrusser"}

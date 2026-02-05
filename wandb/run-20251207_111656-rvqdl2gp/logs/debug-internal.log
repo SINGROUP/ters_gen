@@ -1,0 +1,7 @@
+{"time":"2025-12-07T11:16:56.306556746+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_111656-rvqdl2gp/logs/debug-core.log"}
+{"time":"2025-12-07T11:16:56.714815021+02:00","level":"INFO","msg":"stream: created new stream","id":"rvqdl2gp"}
+{"time":"2025-12-07T11:16:56.71484011+02:00","level":"INFO","msg":"stream: started","id":"rvqdl2gp"}
+{"time":"2025-12-07T11:16:56.714863336+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rvqdl2gp"}
+{"time":"2025-12-07T11:16:56.71486494+02:00","level":"INFO","msg":"sender: started","stream_id":"rvqdl2gp"}
+{"time":"2025-12-07T11:16:56.71487893+02:00","level":"INFO","msg":"handler: started","stream_id":"rvqdl2gp"}
+{"time":"2025-12-07T11:16:57.032729617+02:00","level":"INFO","msg":"Starting system monitor"}

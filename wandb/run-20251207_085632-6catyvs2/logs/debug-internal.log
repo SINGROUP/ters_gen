@@ -1,0 +1,16 @@
+{"time":"2025-12-07T08:56:34.561843107+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_085632-6catyvs2/logs/debug-core.log"}
+{"time":"2025-12-07T08:56:34.892771853+02:00","level":"INFO","msg":"stream: created new stream","id":"6catyvs2"}
+{"time":"2025-12-07T08:56:34.892839653+02:00","level":"INFO","msg":"sender: started","stream_id":"6catyvs2"}
+{"time":"2025-12-07T08:56:34.892841566+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6catyvs2"}
+{"time":"2025-12-07T08:56:34.90568994+02:00","level":"INFO","msg":"handler: started","stream_id":"6catyvs2"}
+{"time":"2025-12-07T08:56:34.905703595+02:00","level":"INFO","msg":"stream: started","id":"6catyvs2"}
+{"time":"2025-12-07T08:56:35.47299713+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T09:09:29.00525753+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T09:09:29.15729628+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T09:09:29.913336211+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.391121454,"progress":"2.3KB/2.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.34625836,"progress":"140B/140B"},{"desc":"uploading config.yaml","runtime_seconds":0.058926926,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-07T09:09:30.507567347+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T09:09:30.960240784+02:00","level":"INFO","msg":"stream: closing","id":"6catyvs2"}
+{"time":"2025-12-07T09:09:30.960672272+02:00","level":"INFO","msg":"handler: closed","stream_id":"6catyvs2"}
+{"time":"2025-12-07T09:09:30.971019893+02:00","level":"INFO","msg":"sender: closed","stream_id":"6catyvs2"}
+{"time":"2025-12-07T09:09:30.960343583+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6catyvs2"}
+{"time":"2025-12-07T09:09:30.985240758+02:00","level":"INFO","msg":"stream: closed","id":"6catyvs2"}

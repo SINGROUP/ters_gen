@@ -1,0 +1,10 @@
+Trial 11 using GPU 1
+Test Metrics:
+Accuracy: 0.9912
+Precision: 0.7922
+Recall: 0.8328
+F1 Score: 0.8120
+IoU: 0.6835
+Dice Coefficient: 0.8120
+[I 2025-12-06 09:42:42,433] Trial 9 finished with value: 0.8119947816401845 and parameters: {'batch_size': 16, 'lr': 3.964323359529184e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 32}. Best is trial 8 with value: 0.8316927726201506.
+wandb: Finishing previous runs because reinit is set to True.

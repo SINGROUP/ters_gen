@@ -1,0 +1,13 @@
+Trial 0 using GPU 0
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251208_153946-1lk6b9kd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs32_lr1e-03_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.5
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.5/runs/1lk6b9kd
+Trial 1 using GPU 1
+wandb: 409 encountered ({"errors":[{"message":"project may already be created, please retry","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/50, time: 720.78 s, training_loss: 0.843
+Epoch    1/50, time: 728.10 s, training_loss: 0.915
+Epoch    1/50, time: 91.76 s, val_loss: 0.885
+Epoch    1/50, time: 99.83 s, val_loss: 0.795

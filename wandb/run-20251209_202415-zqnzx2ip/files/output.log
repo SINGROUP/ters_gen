@@ -1,0 +1,120 @@
+Trial 9 using GPU 1
+Epoch   37/50, time: 702.38 s, training_loss: 0.227
+Epoch   37/50, time: 80.87 s, val_loss: 0.242
+Epoch    1/50, time: 687.82 s, training_loss: 0.862
+Epoch    1/50, time: 75.36 s, val_loss: 0.828
+Epoch   38/50, time: 692.00 s, training_loss: 0.225
+Epoch   38/50, time: 79.08 s, val_loss: 0.243
+Training Metrics:
+Accuracy: 0.8982
+Precision: 0.1322
+Recall: 0.8617
+F1 Score: 0.2293
+IoU: 0.1295
+Dice Coefficient: 0.2293
+Validation Metrics:
+Accuracy: 0.8883
+Precision: 0.1265
+Recall: 0.8882
+F1 Score: 0.2215
+IoU: 0.1245
+Dice Coefficient: 0.2215
+Epoch   39/50, time: 681.73 s, training_loss: 0.222
+Epoch   39/50, time: 76.98 s, val_loss: 0.331
+Epoch    2/50, time: 695.07 s, training_loss: 0.817
+Epoch    2/50, time: 77.59 s, val_loss: 0.803
+Epoch   40/50, time: 692.44 s, training_loss: 0.222
+Epoch   40/50, time: 78.21 s, val_loss: 0.249
+Epoch    3/50, time: 688.84 s, training_loss: 0.802
+Epoch    3/50, time: 77.66 s, val_loss: 0.789
+Epoch   41/50, time: 688.02 s, training_loss: 0.218
+Epoch   41/50, time: 77.20 s, val_loss: 0.243
+Epoch    4/50, time: 692.18 s, training_loss: 0.789
+Epoch    4/50, time: 81.17 s, val_loss: 0.774
+Training Metrics:
+Accuracy: 0.9932
+Precision: 0.8034
+Recall: 0.8147
+F1 Score: 0.8090
+IoU: 0.6793
+Dice Coefficient: 0.8090
+Validation Metrics:
+Accuracy: 0.9926
+Precision: 0.7904
+Recall: 0.7960
+F1 Score: 0.7932
+IoU: 0.6573
+Dice Coefficient: 0.7932
+Epoch    5/50, time: 702.36 s, training_loss: 0.773
+Epoch    5/50, time: 76.32 s, val_loss: 0.755
+Epoch   42/50, time: 687.62 s, training_loss: 0.222
+Epoch   42/50, time: 77.54 s, val_loss: 0.236
+Epoch    6/50, time: 690.94 s, training_loss: 0.756
+Epoch    6/50, time: 78.14 s, val_loss: 0.728
+Epoch   43/50, time: 690.50 s, training_loss: 0.218
+Epoch   43/50, time: 79.16 s, val_loss: 0.248
+Epoch    7/50, time: 686.55 s, training_loss: 0.728
+Epoch    7/50, time: 79.83 s, val_loss: 0.702
+Epoch   44/50, time: 684.72 s, training_loss: 0.216
+Epoch   44/50, time: 79.92 s, val_loss: 0.236
+Epoch    8/50, time: 674.60 s, training_loss: 0.685
+Epoch    8/50, time: 76.61 s, val_loss: 0.643
+Epoch   45/50, time: 682.37 s, training_loss: 0.216
+Epoch   45/50, time: 77.46 s, val_loss: 0.227
+Epoch    9/50, time: 680.11 s, training_loss: 0.649
+Epoch    9/50, time: 76.74 s, val_loss: 0.601
+Epoch   46/50, time: 671.28 s, training_loss: 0.211
+Epoch   46/50, time: 76.93 s, val_loss: 0.284
+Epoch   10/50, time: 681.51 s, training_loss: 0.607
+Epoch   10/50, time: 75.41 s, val_loss: 0.571
+Epoch   47/50, time: 672.10 s, training_loss: 0.213
+Epoch   47/50, time: 79.09 s, val_loss: 0.237
+Epoch   11/50, time: 673.48 s, training_loss: 0.571
+Epoch   11/50, time: 76.78 s, val_loss: 0.528
+Epoch   48/50, time: 674.06 s, training_loss: 0.210
+Epoch   48/50, time: 77.98 s, val_loss: 0.242
+Training Metrics:
+Accuracy: 0.8981
+Precision: 0.1159
+Recall: 0.7240
+F1 Score: 0.1998
+IoU: 0.1110
+Dice Coefficient: 0.1998
+Validation Metrics:
+Accuracy: 0.9040
+Precision: 0.1254
+Recall: 0.7307
+F1 Score: 0.2140
+IoU: 0.1198
+Dice Coefficient: 0.2140
+Epoch   49/50, time: 668.32 s, training_loss: 0.209
+Epoch   49/50, time: 77.04 s, val_loss: 0.236
+Epoch   12/50, time: 666.41 s, training_loss: 0.541
+Epoch   12/50, time: 76.08 s, val_loss: 0.495
+Epoch   50/50, time: 674.57 s, training_loss: 0.211
+Epoch   50/50, time: 75.53 s, val_loss: 0.228
+Epoch   13/50, time: 688.84 s, training_loss: 0.519
+Epoch   13/50, time: 78.66 s, val_loss: 0.478
+Training Metrics:
+Accuracy: 0.9933
+Precision: 0.7893
+Recall: 0.8464
+F1 Score: 0.8168
+IoU: 0.6904
+Dice Coefficient: 0.8168
+Validation Metrics:
+Accuracy: 0.9928
+Precision: 0.7798
+Recall: 0.8290
+F1 Score: 0.8036
+IoU: 0.6717
+Dice Coefficient: 0.8036
+Test Metrics:
+Accuracy: 0.9928
+Precision: 0.7798
+Recall: 0.8290
+F1 Score: 0.8036
+IoU: 0.6717
+Dice Coefficient: 0.8036
+[I 2025-12-09 23:42:37,742] Trial 7 finished with value: 0.8036330902747088 and parameters: {'batch_size': 16, 'lr': 0.00016490990914620697, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 16}. Best is trial 7 with value: 0.8036330902747088.
+wandb: Finishing previous runs because reinit is set to True.

@@ -1,0 +1,16 @@
+{"time":"2025-12-01T05:16:43.964493616+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251201_051643-jvm08t9k/logs/debug-core.log"}
+{"time":"2025-12-01T05:16:44.318850292+02:00","level":"INFO","msg":"stream: created new stream","id":"jvm08t9k"}
+{"time":"2025-12-01T05:16:44.318894723+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T05:16:44.3189311+02:00","level":"INFO","msg":"sender: started","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T05:16:44.32585499+02:00","level":"INFO","msg":"stream: started","id":"jvm08t9k"}
+{"time":"2025-12-01T05:16:44.325862913+02:00","level":"INFO","msg":"handler: started","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T05:16:44.930547968+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-01T09:00:11.991524833+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-01T09:00:12.148270526+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-01T09:00:12.904875652+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.386630869},{"desc":"uploading wandb-summary.json","runtime_seconds":0.331818257},{"desc":"uploading config.yaml","runtime_seconds":0.075934957}],"total_operations":3}}
+{"time":"2025-12-01T09:00:13.370652453+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-01T09:00:13.753314958+02:00","level":"INFO","msg":"stream: closing","id":"jvm08t9k"}
+{"time":"2025-12-01T09:00:13.753557368+02:00","level":"INFO","msg":"handler: closed","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T09:00:13.763511086+02:00","level":"INFO","msg":"sender: closed","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T09:00:13.753405252+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jvm08t9k"}
+{"time":"2025-12-01T09:00:13.773118272+02:00","level":"INFO","msg":"stream: closed","id":"jvm08t9k"}

@@ -1,0 +1,16 @@
+{"time":"2025-12-03T17:00:16.938943333+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251203_170015-rz16gb4k/logs/debug-core.log"}
+{"time":"2025-12-03T17:00:17.23379768+02:00","level":"INFO","msg":"stream: created new stream","id":"rz16gb4k"}
+{"time":"2025-12-03T17:00:17.233843475+02:00","level":"INFO","msg":"stream: started","id":"rz16gb4k"}
+{"time":"2025-12-03T17:00:17.233852157+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:00:17.233860035+02:00","level":"INFO","msg":"sender: started","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:00:17.233876611+02:00","level":"INFO","msg":"handler: started","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:00:18.191882649+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-03T17:32:24.131858802+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-03T17:32:24.132000821+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-03T17:32:24.908382662+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-03T17:32:25.134028215+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 175-183","runtime_seconds":0.225534053}],"total_operations":1}}
+{"time":"2025-12-03T17:32:25.224297237+02:00","level":"INFO","msg":"stream: closing","id":"rz16gb4k"}
+{"time":"2025-12-03T17:32:25.224309008+02:00","level":"INFO","msg":"handler: closed","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:32:25.224317678+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:32:25.224338576+02:00","level":"INFO","msg":"sender: closed","stream_id":"rz16gb4k"}
+{"time":"2025-12-03T17:32:25.224664843+02:00","level":"INFO","msg":"stream: closed","id":"rz16gb4k"}

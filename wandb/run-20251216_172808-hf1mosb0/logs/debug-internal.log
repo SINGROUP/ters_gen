@@ -1,0 +1,16 @@
+{"time":"2025-12-16T17:28:10.360304961+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251216_172808-hf1mosb0/logs/debug-core.log"}
+{"time":"2025-12-16T17:28:10.706458924+02:00","level":"INFO","msg":"stream: created new stream","id":"hf1mosb0"}
+{"time":"2025-12-16T17:28:10.706525772+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T17:28:10.70655127+02:00","level":"INFO","msg":"sender: started","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T17:28:10.710355397+02:00","level":"INFO","msg":"stream: started","id":"hf1mosb0"}
+{"time":"2025-12-16T17:28:10.710366819+02:00","level":"INFO","msg":"handler: started","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T17:28:11.162222801+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-16T19:35:32.914256362+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-16T19:35:33.040090539+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-16T19:35:33.864822951+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.477940592,"progress":"141B/141B"},{"desc":"uploading output.log","runtime_seconds":0.434936181,"progress":"6.8KB/6.8KB"},{"desc":"uploading config.yaml","runtime_seconds":0.143470913,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-16T19:35:34.132440014+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-16T19:35:34.400599036+02:00","level":"INFO","msg":"stream: closing","id":"hf1mosb0"}
+{"time":"2025-12-16T19:35:34.400990044+02:00","level":"INFO","msg":"handler: closed","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T19:35:34.400714609+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T19:35:34.412922627+02:00","level":"INFO","msg":"sender: closed","stream_id":"hf1mosb0"}
+{"time":"2025-12-16T19:35:34.412982174+02:00","level":"INFO","msg":"stream: closed","id":"hf1mosb0"}

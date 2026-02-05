@@ -1,0 +1,28 @@
+Trial 1 using GPU 2
+Trial 3 using GPU 3
+wandb: 409 encountered ({"errors":[{"message":"project may already be created, please retry","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+wandb: 409 encountered ({"errors":[{"message":"project may already be created, please retry","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
+Epoch    1/50, time: 419.23 s, training_loss: 0.877
+Epoch    1/50, time: 61.30 s, val_loss: 0.846
+Epoch    1/50, time: 851.90 s, training_loss: 0.856
+Epoch    1/50, time: 855.88 s, training_loss: 0.791
+Training Metrics:
+Accuracy: 0.7193
+Precision: 0.0537
+Recall: 0.9005
+F1 Score: 0.1013
+IoU: 0.0534
+Dice Coefficient: 0.1013
+Validation Metrics:
+Accuracy: 0.7888
+Precision: 0.0709
+Recall: 0.8929
+F1 Score: 0.1314
+IoU: 0.0703
+Dice Coefficient: 0.1314
+Epoch    1/50, time: 87.17 s, val_loss: 0.777
+Epoch    1/50, time: 87.91 s, val_loss: 0.764
+Epoch    2/50, time: 290.18 s, training_loss: 0.823
+Epoch    2/50, time: 37.45 s, val_loss: 0.797
+Epoch    3/50, time: 905.13 s, training_loss: 0.789
+Epoch    3/50, time: 164.88 s, val_loss: 0.765

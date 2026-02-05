@@ -1,0 +1,16 @@
+{"time":"2025-11-29T22:28:22.705215782+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251129_222821-fxxayr7b/logs/debug-core.log"}
+{"time":"2025-11-29T22:28:23.052066753+02:00","level":"INFO","msg":"stream: created new stream","id":"fxxayr7b"}
+{"time":"2025-11-29T22:28:23.05212603+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T22:28:23.052142017+02:00","level":"INFO","msg":"sender: started","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T22:28:23.060010097+02:00","level":"INFO","msg":"stream: started","id":"fxxayr7b"}
+{"time":"2025-11-29T22:28:23.060016581+02:00","level":"INFO","msg":"handler: started","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T22:28:23.588824107+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-29T23:21:43.290822532+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-29T23:21:43.388722143+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-29T23:21:43.995800551+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.266895234,"progress":"8.1KB/8.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.209866744,"progress":"142B/142B"}],"total_operations":2}}
+{"time":"2025-11-29T23:21:44.335176537+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-29T23:21:44.73421446+02:00","level":"INFO","msg":"stream: closing","id":"fxxayr7b"}
+{"time":"2025-11-29T23:21:44.734481901+02:00","level":"INFO","msg":"handler: closed","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T23:21:44.744486833+02:00","level":"INFO","msg":"sender: closed","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T23:21:44.734309113+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fxxayr7b"}
+{"time":"2025-11-29T23:21:44.744688387+02:00","level":"INFO","msg":"stream: closed","id":"fxxayr7b"}

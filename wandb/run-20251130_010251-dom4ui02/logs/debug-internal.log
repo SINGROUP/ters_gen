@@ -1,0 +1,16 @@
+{"time":"2025-11-30T01:02:51.102695386+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251130_010251-dom4ui02/logs/debug-core.log"}
+{"time":"2025-11-30T01:02:51.453986894+02:00","level":"INFO","msg":"stream: created new stream","id":"dom4ui02"}
+{"time":"2025-11-30T01:02:51.454031782+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"dom4ui02"}
+{"time":"2025-11-30T01:02:51.454037757+02:00","level":"INFO","msg":"sender: started","stream_id":"dom4ui02"}
+{"time":"2025-11-30T01:02:51.464904693+02:00","level":"INFO","msg":"stream: started","id":"dom4ui02"}
+{"time":"2025-11-30T01:02:51.464906036+02:00","level":"INFO","msg":"handler: started","stream_id":"dom4ui02"}
+{"time":"2025-11-30T01:02:51.933925735+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-30T10:02:21.286431131+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-30T10:02:21.389552283+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-30T10:02:22.257969769+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.511178604,"progress":"8.4KB/8.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.393204313,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.10272323,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-11-30T10:02:22.405729272+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-30T10:02:22.816543784+02:00","level":"INFO","msg":"stream: closing","id":"dom4ui02"}
+{"time":"2025-11-30T10:02:22.817024088+02:00","level":"INFO","msg":"handler: closed","stream_id":"dom4ui02"}
+{"time":"2025-11-30T10:02:22.827979415+02:00","level":"INFO","msg":"sender: closed","stream_id":"dom4ui02"}
+{"time":"2025-11-30T10:02:22.81665733+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dom4ui02"}
+{"time":"2025-11-30T10:02:22.828640059+02:00","level":"INFO","msg":"stream: closed","id":"dom4ui02"}

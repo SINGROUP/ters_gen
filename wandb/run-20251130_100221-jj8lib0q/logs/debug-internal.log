@@ -1,0 +1,16 @@
+{"time":"2025-11-30T10:02:22.909518903+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251130_100221-jj8lib0q/logs/debug-core.log"}
+{"time":"2025-11-30T10:02:23.428965687+02:00","level":"INFO","msg":"stream: created new stream","id":"jj8lib0q"}
+{"time":"2025-11-30T10:02:23.429019344+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T10:02:23.429044219+02:00","level":"INFO","msg":"sender: started","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T10:02:23.443528323+02:00","level":"INFO","msg":"stream: started","id":"jj8lib0q"}
+{"time":"2025-11-30T10:02:23.443523267+02:00","level":"INFO","msg":"handler: started","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T10:02:24.081459394+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-30T14:53:12.574324363+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-30T14:53:12.698895307+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-30T14:53:13.517655251+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.462238347,"progress":"9.0KB/9.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.435392245,"progress":"143B/143B"},{"desc":"uploading config.yaml","runtime_seconds":0.150746746,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-11-30T14:53:13.604647503+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-30T14:53:13.911208199+02:00","level":"INFO","msg":"stream: closing","id":"jj8lib0q"}
+{"time":"2025-11-30T14:53:13.911504113+02:00","level":"INFO","msg":"handler: closed","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T14:53:13.921316462+02:00","level":"INFO","msg":"sender: closed","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T14:53:13.911270877+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jj8lib0q"}
+{"time":"2025-11-30T14:53:13.922115627+02:00","level":"INFO","msg":"stream: closed","id":"jj8lib0q"}

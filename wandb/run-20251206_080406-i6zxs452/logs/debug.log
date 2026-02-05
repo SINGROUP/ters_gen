@@ -1,0 +1,94 @@
+2025-12-06 08:04:06,241 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/sethih1/masque_new/ters_gen/wandb/run-20251206_080406-i6zxs452/logs/debug.log
+2025-12-06 08:04:06,241 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/sethih1/masque_new/ters_gen/wandb/run-20251206_080406-i6zxs452/logs/debug-internal.log
+2025-12-06 08:04:06,241 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():831] calling init triggers
+2025-12-06 08:04:06,243 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'_fields': {'model': att_channels_options:
+- 16
+- 32
+- 64
+filters_options:
+- - 16
+  - 32
+  - 64
+- - 16
+  - 32
+  - 64
+  - 128
+- - 16
+  - 32
+  - 64
+  - 128
+  - 256
+- - 32
+  - 64
+  - 128
+  - 256
+  - 512
+in_channels:
+- 100
+- 400
+kernel_size_options:
+- - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+  - 3
+- - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+out_channels: 1
+type: AttentionUNet
+, 'training': batch_sizes:
+- 16
+- 32
+- 64
+- 128
+epochs: 50
+gpu_ids:
+- 0
+- 1
+- 2
+- 3
+learning_rates:
+- 1.0e-05
+- 0.001
+loss_functions:
+- dice_loss
+n_jobs: 4
+n_trials: 20
+use_parallel: true
+, 'data': augmentation:
+- true
+circle_radius: 5
+split_by_id: 0
+train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.1/train
+val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.1/val
+, 'save_path': '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.1/models', 'log_path': '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.1/run_logs', 'wandb_project': 'Extended_TERS_data_0.1'}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, 'batch_size': 16, 'lr': 1.0897749919901646e-05, 'loss_fn': 'dice_loss', '_wandb': {}}
+2025-12-06 08:04:07,716 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():872] starting backend
+2025-12-06 08:04:07,716 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():875] sending inform_init request
+2025-12-06 08:04:07,747 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():883] backend started and connected
+2025-12-06 08:04:07,754 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():956] updated telemetry
+2025-12-06 08:04:07,763 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-12-06 08:04:08,637 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():1032] starting run threads in backend
+2025-12-06 08:04:08,932 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_run.py:_console_start():2453] atexit reg
+2025-12-06 08:04:08,932 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-12-06 08:04:08,932 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-12-06 08:04:08,932 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-12-06 08:04:08,933 INFO    ThreadPoolExecutor-0_2:3577971 [wandb_init.py:init():1078] run started, returning control to user process
+2025-12-06 08:04:48,780 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_finish():2219] finishing run sethih10-epfl/Extended_TERS_data_0.1/i6zxs452
+2025-12-06 08:04:48,781 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2025-12-06 08:04:48,781 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_restore():2400] restore
+2025-12-06 08:04:48,781 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_restore():2406] restore done
+2025-12-06 08:04:50,008 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_footer_history_summary_info():4000] rendering history
+2025-12-06 08:04:50,009 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_footer_history_summary_info():4032] rendering summary
+2025-12-06 08:04:50,010 INFO    ThreadPoolExecutor-0_0:3577971 [wandb_run.py:_footer_sync_info():3961] logging synced files

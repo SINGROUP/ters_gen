@@ -1,0 +1,17 @@
+{"time":"2025-12-16T01:54:07.483079032+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251216_015406-aeuuwnii/logs/debug-core.log"}
+{"time":"2025-12-16T01:54:07.788361134+02:00","level":"INFO","msg":"stream: created new stream","id":"aeuuwnii"}
+{"time":"2025-12-16T01:54:07.78838827+02:00","level":"INFO","msg":"stream: started","id":"aeuuwnii"}
+{"time":"2025-12-16T01:54:07.788398263+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T01:54:07.788422458+02:00","level":"INFO","msg":"sender: started","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T01:54:07.788429539+02:00","level":"INFO","msg":"handler: started","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T01:54:08.110505692+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-16T11:51:24.592039597+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-12-16T12:58:33.744165353+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-16T12:58:33.749151276+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-16T12:58:34.547768837+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-16T12:58:34.734031214+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 297-305","runtime_seconds":0.177065449}],"total_operations":1}}
+{"time":"2025-12-16T12:58:34.830206829+02:00","level":"INFO","msg":"stream: closing","id":"aeuuwnii"}
+{"time":"2025-12-16T12:58:34.830484704+02:00","level":"INFO","msg":"handler: closed","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T12:58:34.830988495+02:00","level":"INFO","msg":"sender: closed","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T12:58:34.830507684+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"aeuuwnii"}
+{"time":"2025-12-16T12:58:34.831742161+02:00","level":"INFO","msg":"stream: closed","id":"aeuuwnii"}

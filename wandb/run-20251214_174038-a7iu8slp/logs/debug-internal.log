@@ -1,0 +1,16 @@
+{"time":"2025-12-14T17:40:39.779201536+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251214_174038-a7iu8slp/logs/debug-core.log"}
+{"time":"2025-12-14T17:40:40.284753298+02:00","level":"INFO","msg":"stream: created new stream","id":"a7iu8slp"}
+{"time":"2025-12-14T17:40:40.284820553+02:00","level":"INFO","msg":"sender: started","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T17:40:40.284807642+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T17:40:40.2958217+02:00","level":"INFO","msg":"handler: started","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T17:40:40.295837836+02:00","level":"INFO","msg":"stream: started","id":"a7iu8slp"}
+{"time":"2025-12-14T17:40:40.745436093+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-14T18:42:50.156828268+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-14T18:42:50.408898924+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-14T18:42:51.059810456+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.350970533},{"desc":"uploading wandb-summary.json","runtime_seconds":0.264357085},{"desc":"uploading config.yaml","runtime_seconds":0.009326549}],"total_operations":3}}
+{"time":"2025-12-14T18:42:51.747346381+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-14T18:42:52.060248479+02:00","level":"INFO","msg":"stream: closing","id":"a7iu8slp"}
+{"time":"2025-12-14T18:42:52.085923838+02:00","level":"INFO","msg":"handler: closed","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T18:42:52.086022889+02:00","level":"INFO","msg":"sender: closed","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T18:42:52.060341981+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a7iu8slp"}
+{"time":"2025-12-14T18:42:52.086847404+02:00","level":"INFO","msg":"stream: closed","id":"a7iu8slp"}

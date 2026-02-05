@@ -1,0 +1,15 @@
+Trial 12 using GPU 2
+Test Metrics:
+Accuracy: 0.9923
+Precision: 0.8221
+Recall: 0.8453
+F1 Score: 0.8335
+IoU: 0.7146
+Dice Coefficient: 0.8335
+wandb:
+wandb: 🚀 View run trial_3_bs32_lr3e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/eorn20f1
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251206_044154-eorn20f1/logs
+[I 2025-12-06 09:42:59,665] Trial 3 finished with value: 0.8335498242971887 and parameters: {'batch_size': 32, 'lr': 0.00025228861274929166, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 32}. Best is trial 3 with value: 0.8335498242971887.
+wandb: Finishing previous runs because reinit is set to True.

@@ -1,0 +1,30 @@
+Trial 2 using GPU 1
+Training Metrics:
+Accuracy: 0.9926
+Precision: 0.8131
+Recall: 0.7724
+F1 Score: 0.7922
+IoU: 0.6559
+Dice Coefficient: 0.7922
+Validation Metrics:
+Accuracy: 0.9925
+Precision: 0.8015
+Recall: 0.7516
+F1 Score: 0.7757
+IoU: 0.6336
+Dice Coefficient: 0.7757
+Test Metrics:
+Accuracy: 0.9925
+Precision: 0.8015
+Recall: 0.7516
+F1 Score: 0.7757
+IoU: 0.6336
+Dice Coefficient: 0.7757
+wandb: uploading summary, console lines 409-415
+wandb:
+wandb: 🚀 View run trial_1_bs128_lr9e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.5/runs/mkszvi2r
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.5
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251208_164914-mkszvi2r/logs
+[I 2025-12-08 21:21:53,722] Trial 1 finished with value: 0.775710065392582 and parameters: {'batch_size': 128, 'lr': 8.791253699458195e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 100, 'att_channels': 64}. Best is trial 0 with value: 0.7910574128991398.
+wandb: Finishing previous runs because reinit is set to True.

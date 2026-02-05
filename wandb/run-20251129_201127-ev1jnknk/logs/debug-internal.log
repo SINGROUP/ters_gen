@@ -1,0 +1,16 @@
+{"time":"2025-11-29T20:11:28.413364605+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251129_201127-ev1jnknk/logs/debug-core.log"}
+{"time":"2025-11-29T20:11:28.707269955+02:00","level":"INFO","msg":"stream: created new stream","id":"ev1jnknk"}
+{"time":"2025-11-29T20:11:28.707296926+02:00","level":"INFO","msg":"stream: started","id":"ev1jnknk"}
+{"time":"2025-11-29T20:11:28.707312836+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ev1jnknk"}
+{"time":"2025-11-29T20:11:28.707336424+02:00","level":"INFO","msg":"handler: started","stream_id":"ev1jnknk"}
+{"time":"2025-11-29T20:11:28.707320565+02:00","level":"INFO","msg":"sender: started","stream_id":"ev1jnknk"}
+{"time":"2025-11-29T20:11:28.995061502+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-30T01:02:49.035740857+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-30T01:02:49.142587439+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-30T01:02:49.736440076+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.258321423,"progress":"8.6KB/8.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.235854853,"progress":"143B/143B"}],"total_operations":2}}
+{"time":"2025-11-30T01:02:50.422278987+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-30T01:02:50.700285177+02:00","level":"INFO","msg":"stream: closing","id":"ev1jnknk"}
+{"time":"2025-11-30T01:02:50.700496292+02:00","level":"INFO","msg":"handler: closed","stream_id":"ev1jnknk"}
+{"time":"2025-11-30T01:02:50.700390518+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ev1jnknk"}
+{"time":"2025-11-30T01:02:50.714743157+02:00","level":"INFO","msg":"sender: closed","stream_id":"ev1jnknk"}
+{"time":"2025-11-30T01:02:50.714812086+02:00","level":"INFO","msg":"stream: closed","id":"ev1jnknk"}

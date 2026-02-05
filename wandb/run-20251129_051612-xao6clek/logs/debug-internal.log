@@ -1,0 +1,16 @@
+{"time":"2025-11-29T05:16:14.908884075+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251129_051612-xao6clek/logs/debug-core.log"}
+{"time":"2025-11-29T05:16:15.282040317+02:00","level":"INFO","msg":"stream: created new stream","id":"xao6clek"}
+{"time":"2025-11-29T05:16:15.28208371+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:15.282092171+02:00","level":"INFO","msg":"sender: started","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:15.28790795+02:00","level":"INFO","msg":"stream: started","id":"xao6clek"}
+{"time":"2025-11-29T05:16:15.287916033+02:00","level":"INFO","msg":"handler: started","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:16.12470558+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-29T05:16:31.558975023+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-29T05:16:31.559167285+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-29T05:16:32.560571211+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.656099392,"progress":"136B/136B"},{"desc":"uploading config.yaml","runtime_seconds":0.455274551,"progress":"2.8KB/2.8KB"}],"total_operations":2}}
+{"time":"2025-11-29T05:16:32.628030066+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-29T05:16:32.874685249+02:00","level":"INFO","msg":"stream: closing","id":"xao6clek"}
+{"time":"2025-11-29T05:16:32.874695978+02:00","level":"INFO","msg":"handler: closed","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:32.874702794+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:32.874713862+02:00","level":"INFO","msg":"sender: closed","stream_id":"xao6clek"}
+{"time":"2025-11-29T05:16:32.876748138+02:00","level":"INFO","msg":"stream: closed","id":"xao6clek"}

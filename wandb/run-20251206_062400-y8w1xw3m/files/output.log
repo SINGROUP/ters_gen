@@ -1,0 +1,16 @@
+Trial 5 using GPU 3
+Test Metrics:
+Accuracy: 0.9872
+Precision: 0.7037
+Recall: 0.7571
+F1 Score: 0.7295
+IoU: 0.5741
+Dice Coefficient: 0.7295
+wandb: uploading output.log
+wandb:
+wandb: 🚀 View run trial_0_bs16_lr1e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/gx87ko0y
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251206_044154-gx87ko0y/logs
+[I 2025-12-06 06:24:08,147] Trial 0 finished with value: 0.7294565587264216 and parameters: {'batch_size': 16, 'lr': 9.548254246705559e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 100, 'att_channels': 16}. Best is trial 2 with value: 0.7546476579242185.
+wandb: Finishing previous runs because reinit is set to True.

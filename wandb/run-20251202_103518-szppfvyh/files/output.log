@@ -1,0 +1,40 @@
+Trial 5 using GPU 3
+Epoch    2/50, time: 91.68 s, training_loss: 0.894
+Epoch    2/50, time: 19.52 s, val_loss: 0.902
+Epoch   48/50, time: 228.39 s, training_loss: 0.158
+Epoch   48/50, time: 41.20 s, val_loss: 0.181
+Epoch    3/50, time: 86.49 s, training_loss: 0.882
+Epoch    3/50, time: 14.90 s, val_loss: 0.887
+Epoch    1/50, time: 214.18 s, training_loss: 0.860
+Training Metrics:
+Accuracy: 0.9937
+Precision: 0.8506
+Recall: 0.8696
+F1 Score: 0.8600
+IoU: 0.7544
+Dice Coefficient: 0.8600
+Validation Metrics:
+Accuracy: 0.9927
+Precision: 0.8358
+Recall: 0.8485
+F1 Score: 0.8421
+IoU: 0.7273
+Dice Coefficient: 0.8421
+Epoch    4/50, time: 62.01 s, training_loss: 0.872
+Epoch    1/50, time: 35.99 s, val_loss: 0.869
+Epoch    4/50, time: 14.27 s, val_loss: 0.875
+Test Metrics:
+Accuracy: 0.9927
+Precision: 0.8358
+Recall: 0.8485
+F1 Score: 0.8421
+IoU: 0.7273
+Dice Coefficient: 0.8421
+wandb: uploading summary, console lines 819-825
+wandb:
+wandb: 🚀 View run trial_2_bs32_lr5e-04_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/077wf87a
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251202_065143-077wf87a/logs
+[I 2025-12-02 10:39:58,356] Trial 2 finished with value: 0.8421065928131799 and parameters: {'batch_size': 32, 'lr': 0.0005106081030332921, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 16}. Best is trial 2 with value: 0.8421065928131799.
+wandb: Finishing previous runs because reinit is set to True.

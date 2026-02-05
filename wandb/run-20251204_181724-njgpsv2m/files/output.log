@@ -1,0 +1,80 @@
+Trial 4 using GPU 2
+Epoch   47/50, time: 12.65 s, val_loss: 0.379
+Epoch   44/50, time: 14.63 s, val_loss: 0.676
+Epoch   48/50, time: 65.18 s, training_loss: 0.700
+Epoch    1/50, time: 61.84 s, training_loss: 0.855
+Epoch   48/50, time: 12.89 s, val_loss: 0.689
+Epoch   48/50, time: 66.20 s, training_loss: 0.556
+Epoch    1/50, time: 12.06 s, val_loss: 0.860
+Epoch   48/50, time: 13.36 s, val_loss: 0.396
+Epoch   45/50, time: 71.83 s, training_loss: 0.751
+Epoch   45/50, time: 17.47 s, val_loss: 0.671
+Epoch   49/50, time: 68.25 s, training_loss: 0.695
+Epoch   49/50, time: 12.81 s, val_loss: 0.685
+Epoch   49/50, time: 64.46 s, training_loss: 0.547
+Epoch   49/50, time: 13.13 s, val_loss: 0.385
+Training Metrics:
+Accuracy: 0.8349
+Precision: 0.1133
+Recall: 0.9554
+F1 Score: 0.2025
+IoU: 0.1127
+Dice Coefficient: 0.2025
+Validation Metrics:
+Accuracy: 0.8236
+Precision: 0.1139
+Recall: 0.9769
+F1 Score: 0.2040
+IoU: 0.1136
+Dice Coefficient: 0.2040
+Epoch   46/50, time: 64.22 s, training_loss: 0.748
+Epoch   46/50, time: 16.60 s, val_loss: 0.665
+Epoch   50/50, time: 64.52 s, training_loss: 0.687
+Epoch    2/50, time: 56.85 s, training_loss: 0.807
+Epoch   50/50, time: 12.74 s, val_loss: 0.666
+Epoch   50/50, time: 67.75 s, training_loss: 0.543
+Epoch    2/50, time: 12.46 s, val_loss: 0.794
+Epoch   50/50, time: 14.49 s, val_loss: 0.384
+Epoch   47/50, time: 69.83 s, training_loss: 0.744
+Epoch   47/50, time: 18.19 s, val_loss: 0.661
+Epoch    3/50, time: 61.57 s, training_loss: 0.783
+Epoch    3/50, time: 12.67 s, val_loss: 0.761
+Training Metrics:
+Accuracy: 0.9558
+Precision: 0.3186
+Recall: 0.8912
+F1 Score: 0.4694
+IoU: 0.3067
+Dice Coefficient: 0.4694
+Validation Metrics:
+Accuracy: 0.9583
+Precision: 0.3379
+Recall: 0.8370
+F1 Score: 0.4814
+IoU: 0.3170
+Dice Coefficient: 0.4814
+Epoch   48/50, time: 58.28 s, training_loss: 0.743
+Test Metrics:
+Accuracy: 0.9583
+Precision: 0.3379
+Recall: 0.8370
+F1 Score: 0.4814
+IoU: 0.3170
+Dice Coefficient: 0.4814
+wandb: uploading summary, console lines 749-756
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0.83003
+wandb:      trial 1
+wandb:
+wandb: 🚀 View run trial_0_bs64_lr4e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.05/runs/vtylkhs2
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.05
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251204_170750-vtylkhs2/logs
+[I 2025-12-04 18:23:04,352] Trial 0 finished with value: 0.4814004601947993 and parameters: {'batch_size': 64, 'lr': 3.789139814248878e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 1, 'in_channels': 100, 'att_channels': 32}. Best is trial 1 with value: 0.830031105490996.
+wandb: Finishing previous runs because reinit is set to True.

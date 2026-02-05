@@ -1,0 +1,42 @@
+Trial 15 using GPU 2
+Epoch   18/50, time: 44.72 s, val_loss: 0.429
+Epoch    1/50, time: 269.16 s, training_loss: 0.821
+Epoch   18/50, time: 278.62 s, training_loss: 0.268
+Epoch    1/50, time: 56.25 s, val_loss: 0.776
+Epoch   18/50, time: 67.43 s, val_loss: 0.272
+Epoch    1/50, time: 282.46 s, training_loss: 0.839
+Epoch   19/50, time: 298.78 s, training_loss: 0.522
+Epoch    1/50, time: 54.65 s, val_loss: 0.812
+Epoch   19/50, time: 46.83 s, val_loss: 0.430
+Epoch   19/50, time: 267.38 s, training_loss: 0.242
+Training Metrics:
+Accuracy: 0.9040
+Precision: 0.1503
+Recall: 0.7126
+F1 Score: 0.2482
+IoU: 0.1417
+Dice Coefficient: 0.2482
+Validation Metrics:
+Accuracy: 0.9024
+Precision: 0.1573
+Recall: 0.7513
+F1 Score: 0.2601
+IoU: 0.1495
+Dice Coefficient: 0.2601
+Epoch   19/50, time: 57.54 s, val_loss: 0.275
+Epoch   20/50, time: 281.51 s, training_loss: 0.502
+Training Metrics:
+Accuracy: 0.8632
+Precision: 0.1353
+Recall: 0.9560
+F1 Score: 0.2371
+IoU: 0.1345
+Dice Coefficient: 0.2371
+Validation Metrics:
+Accuracy: 0.8518
+Precision: 0.1303
+Recall: 0.9677
+F1 Score: 0.2297
+IoU: 0.1298
+Dice Coefficient: 0.2297
+Epoch   20/50, time: 48.46 s, val_loss: 0.388

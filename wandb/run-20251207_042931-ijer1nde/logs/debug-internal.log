@@ -1,0 +1,16 @@
+{"time":"2025-12-07T04:29:33.166737494+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_042931-ijer1nde/logs/debug-core.log"}
+{"time":"2025-12-07T04:29:33.462050302+02:00","level":"INFO","msg":"stream: created new stream","id":"ijer1nde"}
+{"time":"2025-12-07T04:29:33.462083032+02:00","level":"INFO","msg":"stream: started","id":"ijer1nde"}
+{"time":"2025-12-07T04:29:33.46209575+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ijer1nde"}
+{"time":"2025-12-07T04:29:33.462119574+02:00","level":"INFO","msg":"sender: started","stream_id":"ijer1nde"}
+{"time":"2025-12-07T04:29:33.462099751+02:00","level":"INFO","msg":"handler: started","stream_id":"ijer1nde"}
+{"time":"2025-12-07T04:29:33.808257048+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T05:48:58.957456897+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T05:48:59.11042119+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T05:48:59.900376181+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.449793004,"progress":"15.9KB/15.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.416379295,"progress":"141B/141B"},{"desc":"uploading config.yaml","runtime_seconds":0.172800968,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-07T05:49:00.459710569+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T05:49:00.756819166+02:00","level":"INFO","msg":"stream: closing","id":"ijer1nde"}
+{"time":"2025-12-07T05:49:00.757130522+02:00","level":"INFO","msg":"handler: closed","stream_id":"ijer1nde"}
+{"time":"2025-12-07T05:49:00.756928122+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ijer1nde"}
+{"time":"2025-12-07T05:49:00.766233372+02:00","level":"INFO","msg":"sender: closed","stream_id":"ijer1nde"}
+{"time":"2025-12-07T05:49:00.766291686+02:00","level":"INFO","msg":"stream: closed","id":"ijer1nde"}

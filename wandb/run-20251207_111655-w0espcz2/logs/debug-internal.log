@@ -1,0 +1,8 @@
+{"time":"2025-12-07T11:16:56.330854774+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_111655-w0espcz2/logs/debug-core.log"}
+{"time":"2025-12-07T11:16:56.734565509+02:00","level":"INFO","msg":"stream: created new stream","id":"w0espcz2"}
+{"time":"2025-12-07T11:16:56.734594075+02:00","level":"INFO","msg":"stream: started","id":"w0espcz2"}
+{"time":"2025-12-07T11:16:56.734610674+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"w0espcz2"}
+{"time":"2025-12-07T11:16:56.734613344+02:00","level":"INFO","msg":"handler: started","stream_id":"w0espcz2"}
+{"time":"2025-12-07T11:16:56.734627213+02:00","level":"INFO","msg":"sender: started","stream_id":"w0espcz2"}
+{"time":"2025-12-07T11:16:56.914537326+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"project may already be created, please retry\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-12-07T11:16:59.817302161+02:00","level":"INFO","msg":"Starting system monitor"}

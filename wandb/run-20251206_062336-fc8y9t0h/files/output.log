@@ -1,0 +1,39 @@
+Trial 4 using GPU 2
+Training Metrics:
+Accuracy: 0.9865
+Precision: 0.6846
+Recall: 0.7263
+F1 Score: 0.7048
+IoU: 0.5442
+Dice Coefficient: 0.7048
+Validation Metrics:
+Accuracy: 0.9872
+Precision: 0.7037
+Recall: 0.7571
+F1 Score: 0.7295
+IoU: 0.5741
+Dice Coefficient: 0.7295
+Test Metrics:
+Accuracy: 0.9878
+Precision: 0.6960
+Recall: 0.8241
+F1 Score: 0.7546
+IoU: 0.6060
+Dice Coefficient: 0.7546
+wandb: uploading summary, console lines 636-642
+wandb:
+wandb:
+wandb: Run history:
+wandb: final_dice ▁
+wandb:      trial ▁
+wandb:
+wandb: Run summary:
+wandb: final_dice 0.22697
+wandb:      trial 1
+wandb:
+wandb: 🚀 View run trial_2_bs16_lr3e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/qc8pzwqt
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251206_044154-qc8pzwqt/logs
+[I 2025-12-06 06:24:00,424] Trial 2 finished with value: 0.7546476579242185 and parameters: {'batch_size': 16, 'lr': 2.5188586244188025e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 2, 'in_channels': 100, 'att_channels': 64}. Best is trial 2 with value: 0.7546476579242185.
+wandb: Finishing previous runs because reinit is set to True.

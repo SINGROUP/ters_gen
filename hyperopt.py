@@ -14,7 +14,7 @@ import torchvision.transforms as transforms
 from src.models import AttentionUNet
 from src.trainer.trainer_image_to_image import Trainer
 from src.datasets.ters_image_to_image_sh import Ters_dataset_filtered_skip
-from src.transforms import Normalize, MinimumToZero
+from src.transforms import NormalizeVectorized, MinimumToZeroVectorized
 from src.configs.base import get_config
 
 class GpuQueue:
@@ -101,7 +101,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
             device = torch.device("cpu")
             print(f"Trial {trial.number} using CPU")
         try:
-            transform = transforms.Compose([Normalize(), MinimumToZero()])
+            transform = transforms.Compose([NormalizeVectorized(), MinimumToZeroVectorized()])
             model_params = sample_model_params(trial, config)
             model = get_model(config.model.type, model_params).to(device)
 
@@ -134,7 +134,7 @@ def objective(trial, config, gpu_queue, use_wandb=False):
                 test_set=None,
                 save_path=config.save_path,
                 log_path=config.log_path,
-                dataloader_args={"batch_size": batch_size, "shuffle": True, "num_workers": 7},  # set to 0 for debug, increase later
+                dataloader_args={"batch_size": batch_size, "shuffle": True, "num_workers": 7}, #, "persistent_workers" : True, "pin_memory": True, "prefetch_factor": 4},  # set to 0 for debug, increase later
                 device=device,
                 print_interval=0,
                 dataset_bonds=train_ds.unique_bonds

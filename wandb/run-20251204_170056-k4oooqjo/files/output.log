@@ -1,0 +1,49 @@
+Trial 3 using GPU 1
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in /home/sethih1/masque_new/ters_gen/wandb/run-20251204_170056-3q2uwcyf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run trial_1_bs64_lr4e-05_dice_loss
+wandb: ⭐️ View project at https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1
+wandb: 🚀 View run at https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.1/runs/3q2uwcyf
+Trial 0 using GPU 2
+Trial 1 using GPU 3
+Epoch    1/50, time: 110.20 s, training_loss: 0.920
+Epoch    1/50, time: 114.22 s, training_loss: 0.910
+Epoch    1/50, time: 21.44 s, val_loss: 0.926
+Epoch    1/50, time: 26.14 s, val_loss: 0.911
+Epoch    1/50, time: 205.12 s, training_loss: 0.850
+Epoch    1/50, time: 205.39 s, training_loss: 0.902
+Training Metrics:
+Accuracy: 0.0222
+Precision: 0.0222
+Recall: 1.0000
+F1 Score: 0.0435
+IoU: 0.0222
+Dice Coefficient: 0.0435
+Validation Metrics:
+Accuracy: 0.0228
+Precision: 0.0228
+Recall: 1.0000
+F1 Score: 0.0447
+IoU: 0.0228
+Dice Coefficient: 0.0447
+Training Metrics:
+Accuracy: 0.0222
+Precision: 0.0222
+Recall: 1.0000
+F1 Score: 0.0435
+IoU: 0.0222
+Dice Coefficient: 0.0435
+Validation Metrics:
+Accuracy: 0.0228
+Precision: 0.0228
+Recall: 1.0000
+F1 Score: 0.0447
+IoU: 0.0228
+Dice Coefficient: 0.0447
+Epoch    1/50, time: 31.03 s, val_loss: 0.811
+Epoch    1/50, time: 32.24 s, val_loss: 0.840
+Epoch    2/50, time: 73.73 s, training_loss: 0.891
+Epoch    2/50, time: 75.54 s, training_loss: 0.881
+Epoch    2/50, time: 15.51 s, val_loss: 0.931
+Epoch    2/50, time: 16.25 s, val_loss: 0.894

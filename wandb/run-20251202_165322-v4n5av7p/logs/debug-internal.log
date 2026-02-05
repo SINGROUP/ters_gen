@@ -1,0 +1,19 @@
+{"time":"2025-12-02T16:53:24.180450027+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251202_165322-v4n5av7p/logs/debug-core.log"}
+{"time":"2025-12-02T16:53:24.510633712+02:00","level":"INFO","msg":"stream: created new stream","id":"v4n5av7p"}
+{"time":"2025-12-02T16:53:24.510661519+02:00","level":"INFO","msg":"stream: started","id":"v4n5av7p"}
+{"time":"2025-12-02T16:53:24.510680026+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"v4n5av7p"}
+{"time":"2025-12-02T16:53:24.51068988+02:00","level":"INFO","msg":"sender: started","stream_id":"v4n5av7p"}
+{"time":"2025-12-02T16:53:24.510708899+02:00","level":"INFO","msg":"handler: started","stream_id":"v4n5av7p"}
+{"time":"2025-12-02T16:53:24.96696626+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-02T22:54:25.428985892+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/v4n5av7p/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-12-03T01:30:56.349975482+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-12-03T01:42:13.883541567+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/v4n5av7p/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-12-03T02:13:29.749458767+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-03T02:13:29.985815993+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-03T02:13:30.588261796+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.394053763}],"total_operations":1}}
+{"time":"2025-12-03T02:13:32.355164272+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-03T02:13:32.691764003+02:00","level":"INFO","msg":"stream: closing","id":"v4n5av7p"}
+{"time":"2025-12-03T02:13:32.70720437+02:00","level":"INFO","msg":"handler: closed","stream_id":"v4n5av7p"}
+{"time":"2025-12-03T02:13:32.69185142+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"v4n5av7p"}
+{"time":"2025-12-03T02:13:32.708425544+02:00","level":"INFO","msg":"sender: closed","stream_id":"v4n5av7p"}
+{"time":"2025-12-03T02:13:32.708442614+02:00","level":"INFO","msg":"stream: closed","id":"v4n5av7p"}

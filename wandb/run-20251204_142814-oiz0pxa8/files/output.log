@@ -1,0 +1,21 @@
+Trial 16 using GPU 2
+Exception in trial 11: softmax() received an invalid combination of arguments - got (Tensor), but expected one of:
+ * (Tensor input, int dim, torch.dtype dtype = None, *, Tensor out = None)
+ * (Tensor input, name dim, *, torch.dtype dtype = None)
+Traceback (most recent call last):
+  File "/home/sethih1/masque_new/ters_gen/hyperopt.py", line 143, in objective
+    trainer.train(epochs=config.training.epochs)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 89, in train
+    self.evaluate_model_metrics(self.model, epoch)
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 206, in evaluate_model_metrics
+    train_metrics = self.compute_metrics(model, train_loader)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sethih1/masque_new/ters_gen/src/trainer/trainer_image_to_image.py", line 172, in compute_metrics
+    outputs = torch.softmax(outputs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: softmax() received an invalid combination of arguments - got (Tensor), but expected one of:
+ * (Tensor input, int dim, torch.dtype dtype = None, *, Tensor out = None)
+ * (Tensor input, name dim, *, torch.dtype dtype = None)
+
+[I 2025-12-04 14:28:17,306] Trial 11 finished with value: 0.0 and parameters: {'batch_size': 64, 'lr': 0.00044134128883317573, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 400, 'att_channels': 32}. Best is trial 0 with value: 0.0.
+wandb: Finishing previous runs because reinit is set to True.

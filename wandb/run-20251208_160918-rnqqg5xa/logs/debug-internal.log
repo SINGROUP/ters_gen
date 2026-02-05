@@ -1,0 +1,17 @@
+{"time":"2025-12-08T16:09:19.034289712+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251208_160918-rnqqg5xa/logs/debug-core.log"}
+{"time":"2025-12-08T16:09:19.358974858+02:00","level":"INFO","msg":"stream: created new stream","id":"rnqqg5xa"}
+{"time":"2025-12-08T16:09:19.358996485+02:00","level":"INFO","msg":"stream: started","id":"rnqqg5xa"}
+{"time":"2025-12-08T16:09:19.359007777+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T16:09:19.359017576+02:00","level":"INFO","msg":"handler: started","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T16:09:19.359027855+02:00","level":"INFO","msg":"sender: started","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T16:09:19.565973491+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"project may already be created, please retry\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-12-08T16:09:22.024204673+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-08T20:16:42.750249027+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-08T20:16:42.824499805+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-08T20:16:42.962179401+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.169048979}],"total_operations":1}}
+{"time":"2025-12-08T20:16:49.318648313+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-08T20:16:49.648007063+02:00","level":"INFO","msg":"stream: closing","id":"rnqqg5xa"}
+{"time":"2025-12-08T20:16:49.648368278+02:00","level":"INFO","msg":"handler: closed","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T20:16:49.653932863+02:00","level":"INFO","msg":"sender: closed","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T20:16:49.648119065+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rnqqg5xa"}
+{"time":"2025-12-08T20:16:49.654104669+02:00","level":"INFO","msg":"stream: closed","id":"rnqqg5xa"}

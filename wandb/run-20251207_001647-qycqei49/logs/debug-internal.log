@@ -1,0 +1,17 @@
+{"time":"2025-12-07T00:16:48.030093561+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_001647-qycqei49/logs/debug-core.log"}
+{"time":"2025-12-07T00:16:48.439885283+02:00","level":"INFO","msg":"stream: created new stream","id":"qycqei49"}
+{"time":"2025-12-07T00:16:48.439906756+02:00","level":"INFO","msg":"stream: started","id":"qycqei49"}
+{"time":"2025-12-07T00:16:48.439919771+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qycqei49"}
+{"time":"2025-12-07T00:16:48.439931188+02:00","level":"INFO","msg":"sender: started","stream_id":"qycqei49"}
+{"time":"2025-12-07T00:16:48.439939392+02:00","level":"INFO","msg":"handler: started","stream_id":"qycqei49"}
+{"time":"2025-12-07T00:16:48.708541497+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"project may already be created, please retry\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-12-07T00:16:51.349053697+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T01:45:20.141579316+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T01:45:20.14182401+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T01:45:20.902112179+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T01:45:21.144800865+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 668-674","runtime_seconds":0.242572958}],"total_operations":1}}
+{"time":"2025-12-07T01:45:21.23547424+02:00","level":"INFO","msg":"stream: closing","id":"qycqei49"}
+{"time":"2025-12-07T01:45:21.235488898+02:00","level":"INFO","msg":"handler: closed","stream_id":"qycqei49"}
+{"time":"2025-12-07T01:45:21.235495784+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qycqei49"}
+{"time":"2025-12-07T01:45:21.23551037+02:00","level":"INFO","msg":"sender: closed","stream_id":"qycqei49"}
+{"time":"2025-12-07T01:45:21.235999698+02:00","level":"INFO","msg":"stream: closed","id":"qycqei49"}

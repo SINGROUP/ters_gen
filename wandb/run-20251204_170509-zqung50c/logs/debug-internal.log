@@ -1,0 +1,7 @@
+{"time":"2025-12-04T17:05:12.666555036+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251204_170509-zqung50c/logs/debug-core.log"}
+{"time":"2025-12-04T17:05:13.075203752+02:00","level":"INFO","msg":"stream: created new stream","id":"zqung50c"}
+{"time":"2025-12-04T17:05:13.075224065+02:00","level":"INFO","msg":"stream: started","id":"zqung50c"}
+{"time":"2025-12-04T17:05:13.075236069+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zqung50c"}
+{"time":"2025-12-04T17:05:13.075251663+02:00","level":"INFO","msg":"sender: started","stream_id":"zqung50c"}
+{"time":"2025-12-04T17:05:13.075263552+02:00","level":"INFO","msg":"handler: started","stream_id":"zqung50c"}
+{"time":"2025-12-04T17:05:14.5370618+02:00","level":"INFO","msg":"Starting system monitor"}

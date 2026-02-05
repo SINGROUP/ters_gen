@@ -1,0 +1,18 @@
+{"time":"2025-12-01T21:13:36.370449706+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251201_211334-erlo1fwn/logs/debug-core.log"}
+{"time":"2025-12-01T21:13:36.857765814+02:00","level":"INFO","msg":"stream: created new stream","id":"erlo1fwn"}
+{"time":"2025-12-01T21:13:36.857813064+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T21:13:36.857820771+02:00","level":"INFO","msg":"sender: started","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T21:13:36.868042376+02:00","level":"INFO","msg":"stream: started","id":"erlo1fwn"}
+{"time":"2025-12-01T21:13:36.868047811+02:00","level":"INFO","msg":"handler: started","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T21:13:37.537874533+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-01T21:37:37.943123439+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-12-01T21:38:08.338088121+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sethih10-epfl/Extended_TERS_data_0.5/erlo1fwn/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-12-01T22:13:08.944801495+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-01T22:13:08.944926654+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-01T22:13:09.657744777+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-01T22:13:09.926488175+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-12-01T22:13:09.928512955+02:00","level":"INFO","msg":"stream: closing","id":"erlo1fwn"}
+{"time":"2025-12-01T22:13:09.928525544+02:00","level":"INFO","msg":"handler: closed","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T22:13:09.928531605+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T22:13:09.928541732+02:00","level":"INFO","msg":"sender: closed","stream_id":"erlo1fwn"}
+{"time":"2025-12-01T22:13:09.92890844+02:00","level":"INFO","msg":"stream: closed","id":"erlo1fwn"}

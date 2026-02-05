@@ -1,0 +1,16 @@
+{"time":"2025-11-30T10:28:51.673723516+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251130_102850-m2hfwojy/logs/debug-core.log"}
+{"time":"2025-11-30T10:28:51.973131204+02:00","level":"INFO","msg":"stream: created new stream","id":"m2hfwojy"}
+{"time":"2025-11-30T10:28:51.973156959+02:00","level":"INFO","msg":"stream: started","id":"m2hfwojy"}
+{"time":"2025-11-30T10:28:51.97316725+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T10:28:51.973174479+02:00","level":"INFO","msg":"sender: started","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T10:28:51.973186043+02:00","level":"INFO","msg":"handler: started","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T10:28:52.324128217+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-30T11:18:07.199334705+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-30T11:18:07.199530427+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-30T11:18:08.178366333+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.753427351,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.510039963,"progress":"2.8KB/2.8KB"}],"total_operations":2}}
+{"time":"2025-11-30T11:18:08.203313381+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-30T11:18:08.448462298+02:00","level":"INFO","msg":"stream: closing","id":"m2hfwojy"}
+{"time":"2025-11-30T11:18:08.448472495+02:00","level":"INFO","msg":"handler: closed","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T11:18:08.448485174+02:00","level":"INFO","msg":"sender: closed","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T11:18:08.448478354+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"m2hfwojy"}
+{"time":"2025-11-30T11:18:08.448904805+02:00","level":"INFO","msg":"stream: closed","id":"m2hfwojy"}

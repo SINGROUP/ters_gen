@@ -1,0 +1,16 @@
+{"time":"2025-12-07T07:48:54.294222311+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251207_074854-fi8neaoc/logs/debug-core.log"}
+{"time":"2025-12-07T07:48:54.589431549+02:00","level":"INFO","msg":"stream: created new stream","id":"fi8neaoc"}
+{"time":"2025-12-07T07:48:54.5894617+02:00","level":"INFO","msg":"stream: started","id":"fi8neaoc"}
+{"time":"2025-12-07T07:48:54.589473208+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T07:48:54.589478052+02:00","level":"INFO","msg":"handler: started","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T07:48:54.589497203+02:00","level":"INFO","msg":"sender: started","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T07:48:54.896657322+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-07T08:56:32.75950861+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-07T08:56:32.939321469+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-07T08:56:33.694082201+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.374539923,"progress":"11.4KB/11.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.329298365,"progress":"140B/140B"},{"desc":"uploading config.yaml","runtime_seconds":0.033465858,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-07T08:56:33.93427073+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-07T08:56:34.253166415+02:00","level":"INFO","msg":"stream: closing","id":"fi8neaoc"}
+{"time":"2025-12-07T08:56:34.254082288+02:00","level":"INFO","msg":"handler: closed","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T08:56:34.253259412+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T08:56:34.262914247+02:00","level":"INFO","msg":"sender: closed","stream_id":"fi8neaoc"}
+{"time":"2025-12-07T08:56:34.263582412+02:00","level":"INFO","msg":"stream: closed","id":"fi8neaoc"}

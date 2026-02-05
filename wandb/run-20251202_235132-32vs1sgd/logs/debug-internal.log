@@ -1,0 +1,16 @@
+{"time":"2025-12-02T23:51:34.133822256+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251202_235132-32vs1sgd/logs/debug-core.log"}
+{"time":"2025-12-02T23:51:34.485805072+02:00","level":"INFO","msg":"stream: created new stream","id":"32vs1sgd"}
+{"time":"2025-12-02T23:51:34.485907732+02:00","level":"INFO","msg":"sender: started","stream_id":"32vs1sgd"}
+{"time":"2025-12-02T23:51:34.485905938+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"32vs1sgd"}
+{"time":"2025-12-02T23:51:34.495495516+02:00","level":"INFO","msg":"stream: started","id":"32vs1sgd"}
+{"time":"2025-12-02T23:51:34.495488529+02:00","level":"INFO","msg":"handler: started","stream_id":"32vs1sgd"}
+{"time":"2025-12-02T23:51:35.109681423+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-03T00:57:00.100367284+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-03T00:57:00.225132589+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-03T00:57:01.048428544+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.440618705,"progress":"8.8KB/8.8KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.407836678,"progress":"142B/142B"},{"desc":"uploading config.yaml","runtime_seconds":0.002429814,"progress":"2.8KB/2.8KB"}],"total_operations":3}}
+{"time":"2025-12-03T00:57:01.620635321+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-03T00:57:01.908410887+02:00","level":"INFO","msg":"stream: closing","id":"32vs1sgd"}
+{"time":"2025-12-03T00:57:01.909073044+02:00","level":"INFO","msg":"handler: closed","stream_id":"32vs1sgd"}
+{"time":"2025-12-03T00:57:01.908559051+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"32vs1sgd"}
+{"time":"2025-12-03T00:57:01.908988066+02:00","level":"INFO","msg":"sender: closed","stream_id":"32vs1sgd"}
+{"time":"2025-12-03T00:57:01.909369179+02:00","level":"INFO","msg":"stream: closed","id":"32vs1sgd"}

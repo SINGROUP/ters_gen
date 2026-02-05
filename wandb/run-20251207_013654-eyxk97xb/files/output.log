@@ -1,0 +1,74 @@
+Trial 4 using GPU 3
+Epoch   46/50, time: 19.05 s, val_loss: 0.632
+Epoch   46/50, time: 70.66 s, training_loss: 0.449
+Epoch   46/50, time: 20.57 s, val_loss: 0.290
+Epoch   18/50, time: 191.22 s, training_loss: 0.759
+Epoch    1/50, time: 75.70 s, training_loss: 0.901
+Epoch   47/50, time: 71.27 s, training_loss: 0.449
+Epoch    1/50, time: 15.20 s, val_loss: 0.901
+Epoch   47/50, time: 16.07 s, val_loss: 0.307
+Epoch   18/50, time: 40.35 s, val_loss: 0.692
+Epoch   47/50, time: 65.59 s, training_loss: 0.450
+Epoch   47/50, time: 22.78 s, val_loss: 0.308
+Epoch   48/50, time: 75.85 s, training_loss: 0.414
+Epoch   48/50, time: 17.03 s, val_loss: 0.298
+Training Metrics:
+Accuracy: 0.8308
+Precision: 0.1076
+Recall: 0.9194
+F1 Score: 0.1926
+IoU: 0.1066
+Dice Coefficient: 0.1926
+Validation Metrics:
+Accuracy: 0.8018
+Precision: 0.1012
+Recall: 0.9609
+F1 Score: 0.1832
+IoU: 0.1008
+Dice Coefficient: 0.1832
+Epoch   48/50, time: 69.84 s, training_loss: 0.444
+Epoch   48/50, time: 21.73 s, val_loss: 0.302
+Epoch   49/50, time: 77.55 s, training_loss: 0.405
+Epoch    2/50, time: 74.54 s, training_loss: 0.868
+Epoch   49/50, time: 16.62 s, val_loss: 0.289
+Epoch    2/50, time: 16.24 s, val_loss: 0.865
+Epoch   19/50, time: 189.15 s, training_loss: 0.751
+Epoch   49/50, time: 67.30 s, training_loss: 0.431
+Epoch   49/50, time: 19.18 s, val_loss: 0.297
+Epoch   19/50, time: 43.66 s, val_loss: 0.685
+Epoch   50/50, time: 67.33 s, training_loss: 0.404
+Epoch    3/50, time: 68.79 s, training_loss: 0.855
+Epoch   50/50, time: 16.77 s, val_loss: 0.295
+Epoch    3/50, time: 17.42 s, val_loss: 0.840
+Epoch   50/50, time: 71.85 s, training_loss: 0.427
+Epoch   50/50, time: 19.63 s, val_loss: 0.310
+Epoch    4/50, time: 73.04 s, training_loss: 0.841
+Epoch    4/50, time: 17.20 s, val_loss: 0.824
+Training Metrics:
+Accuracy: 0.8039
+Precision: 0.0919
+Recall: 0.8940
+F1 Score: 0.1667
+IoU: 0.0909
+Dice Coefficient: 0.1667
+Validation Metrics:
+Accuracy: 0.9889
+Precision: 0.7288
+Recall: 0.8319
+F1 Score: 0.7769
+IoU: 0.6352
+Dice Coefficient: 0.7769
+Test Metrics:
+Accuracy: 0.9889
+Precision: 0.7288
+Recall: 0.8319
+F1 Score: 0.7769
+IoU: 0.6352
+Dice Coefficient: 0.7769
+wandb:
+wandb: 🚀 View run trial_0_bs64_lr4e-05_dice_loss at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.05/runs/qycqei49
+wandb: ⭐️ View project at: https://wandb.ai/sethih10-epfl/Extended_TERS_data_0.05
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251207_001647-qycqei49/logs
+[I 2025-12-07 01:45:21,350] Trial 0 finished with value: 0.7769415419845794 and parameters: {'batch_size': 64, 'lr': 3.6011900321320525e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 3, 'in_channels': 100, 'att_channels': 16}. Best is trial 0 with value: 0.7769415419845794.
+wandb: Finishing previous runs because reinit is set to True.

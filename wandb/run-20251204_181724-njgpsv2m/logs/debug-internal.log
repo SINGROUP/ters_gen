@@ -1,0 +1,16 @@
+{"time":"2025-12-04T18:17:25.625566216+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251204_181724-njgpsv2m/logs/debug-core.log"}
+{"time":"2025-12-04T18:17:25.92159076+02:00","level":"INFO","msg":"stream: created new stream","id":"njgpsv2m"}
+{"time":"2025-12-04T18:17:25.921633475+02:00","level":"INFO","msg":"stream: started","id":"njgpsv2m"}
+{"time":"2025-12-04T18:17:25.921646128+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:17:25.921656635+02:00","level":"INFO","msg":"sender: started","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:17:25.921677818+02:00","level":"INFO","msg":"handler: started","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:17:26.303492823+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-12-04T18:23:04.3631446+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-12-04T18:23:04.363295811+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-12-04T18:23:05.097715506+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-04T18:23:05.364276482+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 55-79","runtime_seconds":0.266432754}],"total_operations":1}}
+{"time":"2025-12-04T18:23:05.436280783+02:00","level":"INFO","msg":"stream: closing","id":"njgpsv2m"}
+{"time":"2025-12-04T18:23:05.436303133+02:00","level":"INFO","msg":"handler: closed","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:23:05.436313436+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:23:05.436325495+02:00","level":"INFO","msg":"sender: closed","stream_id":"njgpsv2m"}
+{"time":"2025-12-04T18:23:05.436815591+02:00","level":"INFO","msg":"stream: closed","id":"njgpsv2m"}

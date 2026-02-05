@@ -1,0 +1,60 @@
+Trial 6 using GPU 0
+Epoch   42/50, time: 275.46 s, training_loss: 0.451
+Epoch   42/50, time: 31.72 s, val_loss: 0.431
+Epoch   43/50, time: 242.13 s, training_loss: 0.447
+Epoch   43/50, time: 30.79 s, val_loss: 0.420
+Epoch   44/50, time: 241.38 s, training_loss: 0.447
+Epoch    1/50, time: 749.30 s, training_loss: 0.810
+Epoch   44/50, time: 29.79 s, val_loss: 0.423
+Epoch    1/50, time: 81.62 s, val_loss: 0.744
+Epoch   45/50, time: 240.73 s, training_loss: 0.444
+Epoch   45/50, time: 31.08 s, val_loss: 0.418
+Epoch   46/50, time: 251.66 s, training_loss: 0.443
+Epoch   46/50, time: 32.47 s, val_loss: 0.444
+Epoch   47/50, time: 243.49 s, training_loss: 0.443
+Epoch   47/50, time: 50.57 s, val_loss: 0.418
+Training Metrics:
+Accuracy: 0.9311
+Precision: 0.1642
+Recall: 0.7141
+F1 Score: 0.2670
+IoU: 0.1541
+Dice Coefficient: 0.2670
+Validation Metrics:
+Accuracy: 0.9318
+Precision: 0.1674
+Recall: 0.7069
+F1 Score: 0.2707
+IoU: 0.1565
+Dice Coefficient: 0.2707
+Epoch   48/50, time: 537.24 s, training_loss: 0.439
+Epoch   48/50, time: 29.52 s, val_loss: 0.428
+Epoch   49/50, time: 244.71 s, training_loss: 0.438
+Epoch   49/50, time: 29.48 s, val_loss: 0.415
+Epoch    2/50, time: 753.49 s, training_loss: 0.690
+Epoch   50/50, time: 233.05 s, training_loss: 0.436
+Epoch   50/50, time: 28.04 s, val_loss: 0.415
+Epoch    2/50, time: 77.17 s, val_loss: 0.594
+Training Metrics:
+Accuracy: 0.9853
+Precision: 0.5782
+Recall: 0.6074
+F1 Score: 0.5924
+IoU: 0.4209
+Dice Coefficient: 0.5924
+Validation Metrics:
+Accuracy: 0.9856
+Precision: 0.5904
+Recall: 0.6398
+F1 Score: 0.6141
+IoU: 0.4431
+Dice Coefficient: 0.6141
+Test Metrics:
+Accuracy: 0.9856
+Precision: 0.5904
+Recall: 0.6398
+F1 Score: 0.6141
+IoU: 0.4431
+Dice Coefficient: 0.6141
+[I 2025-12-14 23:11:04,735] Trial 5 finished with value: 0.6140970868849686 and parameters: {'batch_size': 32, 'lr': 4.240987109146781e-05, 'loss_fn': 'dice_loss', 'augmentation': True, 'filters_idx': 0, 'in_channels': 100, 'att_channels': 16}. Best is trial 4 with value: 0.7916711654642907.
+wandb: Finishing previous runs because reinit is set to True.

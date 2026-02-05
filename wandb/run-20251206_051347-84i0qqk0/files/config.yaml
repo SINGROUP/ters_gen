@@ -1,0 +1,128 @@
+_allow_dotted_keys:
+    value: false
+_convert_dict:
+    value: true
+_fields:
+    value:
+        data: |
+            augmentation:
+            - true
+            circle_radius: 5
+            split_by_id: 0
+            train_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.05/train
+            val_path: /scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_0.05/val
+        log_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.05/run_logs
+        model: |
+            att_channels_options:
+            - 16
+            - 32
+            - 64
+            filters_options:
+            - - 16
+              - 32
+              - 64
+            - - 16
+              - 32
+              - 64
+              - 128
+            - - 16
+              - 32
+              - 64
+              - 128
+              - 256
+            - - 32
+              - 64
+              - 128
+              - 256
+              - 512
+            in_channels:
+            - 100
+            - 400
+            kernel_size_options:
+            - - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+              - 3
+            - - 3
+              - 3
+              - 3
+              - 3
+              - 3
+              - 3
+            out_channels: 1
+            type: AttentionUNet
+        save_path: /scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.05/models
+        training: |
+            batch_sizes:
+            - 16
+            - 32
+            - 64
+            - 128
+            epochs: 50
+            gpu_ids:
+            - 0
+            - 1
+            - 2
+            - 3
+            learning_rates:
+            - 1.0e-05
+            - 0.001
+            loss_functions:
+            - dice_loss
+            n_jobs: 4
+            n_trials: 20
+            use_parallel: true
+        wandb_project: Extended_TERS_data_0.05
+_locked:
+    value: false
+_sort_keys:
+    value: true
+_type_safe:
+    value: true
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.11.6
+        t:
+            "1":
+                - 1
+                - 5
+                - 35
+                - 41
+                - 49
+                - 53
+                - 80
+            "2":
+                - 1
+                - 5
+                - 35
+                - 41
+                - 49
+                - 53
+                - 80
+            "3":
+                - 2
+                - 13
+                - 16
+                - 55
+            "4": 3.11.6
+            "5": 0.20.1
+            "10":
+                - 20
+            "12": 0.20.1
+            "13": linux-x86_64
+batch_size:
+    value: 128
+loss_fn:
+    value: dice_loss
+lr:
+    value: 0.00015254036965517748

@@ -224,7 +224,9 @@ class Ters_dataset_filtered_skip(Dataset):
 
         #selected_images = [torch.from_numpy(images[:,:, i]).float() for i in range(images.shape[2])]
 
-        selected_images = [torch.from_numpy(filtered_spectrums[:,:, i]).float() for i in range(filtered_spectrums.shape[2])]
+        #selected_images = [torch.from_numpy(filtered_spectrums[:,:, i]).float() for i in range(filtered_spectrums.shape[2])]
+
+        selected_images = torch.from_numpy(filtered_spectrums).float().permute(2, 0, 1).contiguous()
 
 
         #selected_images = [images[:,:, i] for i in range(images.shape[2])]
@@ -232,16 +234,12 @@ class Ters_dataset_filtered_skip(Dataset):
         #selected_frequencies = torch.tensor(filtered_frequencies).float()
 
         # Applying transformations to the images (and frequencies)
+        # Now works on full (C, H, W) tensor - use NormalizeVectorized and MinimumToZeroVectorized
         if self.t_image:
-            selected_images = [self.t_image(image) for image in selected_images]
+            selected_images = self.t_image(selected_images)
 
         #if self.t_freq:
         #    selected_frequencies = self.t_freq(selected_frequencies)
-
-        
-
-        
-        selected_images  = torch.stack(selected_images, dim = 0)
 
         if self.train_aug:
             selected_images, target_image = self.aug_image(img=selected_images, mask = target_image)
