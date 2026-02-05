@@ -236,6 +236,8 @@ def overlay_molecule_on_image(atom_pos, atomic_numbers, image, axes, grid_size=1
     center_x = np.mean(positions[:, 0])
     center_y = np.mean(positions[:, 1])
     centered_pos = positions - [center_x, center_y, 0]  # Center in x-y plane
+    print(center_x, center_y)
+    centered_pos = positions
 
     # Draw bonds
     num_atoms = len(centered_pos)
