@@ -69,6 +69,9 @@ def molecule_circular_image(xyz_string, flag=True, circle_radius=5):
         # Convert physical coordinates to grid indices
         x_idx = np.clip(((pos[:, 0] - x_min) / (x_max - x_min) * grid_size).astype(int), 0, grid_size - 1)
         y_idx = np.clip(((pos[:, 1] - y_min) / (y_max - y_min) * grid_size).astype(int), 0, grid_size - 1)
+
+        x_idx = np.clip((((pos[:, 0] + 9)/ 18) * grid_size).astype(int), 0, grid_size - 1)
+        y_idx = np.clip((((pos[:, 1] + 9)/ 18) * grid_size).astype(int), 0, grid_size - 1)
     
         # For each atom, add a circular disk to the image
         for x, y in zip(x_idx, y_idx):
