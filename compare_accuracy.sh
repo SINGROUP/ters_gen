@@ -1,13 +1,15 @@
 #!/bin/bash
-#SBATCH --time=2:00:00
-#SBATCH --mem=256G
+#SBATCH --time=8:00:00
+#SBATCH --mem=1024G
 #SBATCH --gpus=1
 #SBATCH -c 12
 # SBATCH --partition=gpu-v100-16g
-#SBATCH --partition=gpu-h100-80g-short
+# SBATCH --partition=gpu-h100-80g-short
 #SBATCH --partition=gpu-h200-141g-short
 # SBATCH --partition=gpu-debug
-# SBATCH --partition=gpu-a100-80g
+# SBATCH --partition=gpu-a100-80g 
+# SBATCH --partition=gpu-amd
+# SBATCH --gres=gpu-vram:64g
 #SBATCH -o /home/sethih1/masque_new/ters_gen/log_file/slurm_%j.out
 
 arg1=$1

@@ -169,6 +169,7 @@ class Trainer():
                 outputs = model(images)
                 #preds = torch.argmax(outputs, dim=1)
 
+                outputs = torch.sigmoid(outputs)
                 preds = (outputs > 0.5).int()
 
                 # Collect inputs, ground truths, and predictions

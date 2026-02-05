@@ -26,6 +26,8 @@ import random
 
 # ——— Dataset & model setup ———
 suffix = 'test'
+
+rms = 0.05
 # data_path = f"/scratch/phys/sin/sethih1/data_files/final_data_used/{suffix}/"
 # model_path = '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug_val/augmented/config_hypopt_all/best_model.pt'
 # dir_viz = '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/posnet_hyperopt_all_50_epochs_just_aug_val/augmented/config_hypopt_all/'
@@ -33,6 +35,12 @@ suffix = 'test'
 data_path = f"/scratch/phys/sin/sethih1/data_files/combined_npz_images_32x32/{suffix}/"
 model_path = '/scratch/phys/sin/sethih1/models/all_group_plane_fchk_split_images_ters/32x32/posnet_hyperopt_all_50_epochs_just_aug_val/augmented/config_hypopt_all/best_model.pt'
 dir_viz = '/scratch/phys/sin/sethih1/runs_ters/all_group_plane_fchk_split_images_ters/32x32/posnet_hyperopt_all_50_epochs_just_aug_val/augmented/config_hypopt_all/'
+
+
+data_path = f"/scratch/phys/sin/sethih1/Extended_TERS_data/planar_oct_2025/planar_again/planar_npz_{rms}/{suffix}/"
+model_path = '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/run_planar_npz_0.05/models/seg_trial8_bs16_lr7e-04_lossdice_loss.pt'
+dir_viz = '/scratch/phys/sin/sethih1/Extended_TERS_data/run_planar_again/planar_comparison_viz/dice/'
+           
 
 #data_path = f"/scratch/phys/sin/sethih1/data_files/all_group_plane_fchk_split_images_ters/{suffix}/"
 
@@ -103,7 +111,7 @@ with torch.no_grad():
 
 
         probs = model(images)                            # → (B,1,H,W)
-        #probs  = torch.sigmoid(logits)
+        probs  = torch.sigmoid(probs)
         preds  = (probs > 0.5).long().squeeze(1)          # → (B,H,W)
 
         for i in range(masks.size(0)):

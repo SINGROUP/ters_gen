@@ -17,7 +17,7 @@ from tqdm import tqdm
 from src.datasets import Ters_dataset_filtered_skip
 from notebooks.utils.read_files import read_npz
 from notebooks.utils.planarity import pca, planarity
-from src.transforms import Normalize, MinimumToZero
+from src.transforms import Normalize, MinimumToZero, NormalizeVectorized, MinimumToZeroVectorized
 from src.models import AttentionUNet
 
 
@@ -34,6 +34,7 @@ data_transform = torch.nn.Sequential()  # placeholder; we'll use transforms.Comp
 data_transform = torch.nn.Sequential()  # placeholder to avoid mismatched imports if torch.nn.Sequential used
 from torchvision import transforms as _transforms
 data_transform = _transforms.Compose([Normalize(), MinimumToZero()])
+data_transform = _transforms.Compose([NormalizeVectorized(), MinimumToZeroVectorized()])
 
 
 def safe_mkdir(p: Path):
@@ -178,6 +179,9 @@ def evaluate_experiment(data_path: str, model_path: str, out_root: str, suffix: 
     model.to(device)
     model.eval()
 
+
+    num_channels = model.conv.weight.shape[1]
+
     # dataset + loader (use your transforms and class)
     dataset = Ters_dataset_filtered_skip(
         filename=str(data_path),
@@ -189,7 +193,7 @@ def evaluate_experiment(data_path: str, model_path: str, out_root: str, suffix: 
         t_freq=None,
         flag=True
     )
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=False)
+    loader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers = 1, pin_memory=False, persistent_workers=True)
 
     # accumulators
     ious = []
@@ -217,6 +221,8 @@ def evaluate_experiment(data_path: str, model_path: str, out_root: str, suffix: 
             masks_b  = masks_b.to(device)
 
             probs = model(images_b)              # (B,1,H,W) or (B,1,H,W)like
+
+            probs = torch.sigmoid(probs)
             preds_b = (probs > 0.5).long().squeeze(1)   # (B,H,W)
 
             B = masks_b.size(0)
@@ -229,8 +235,11 @@ def evaluate_experiment(data_path: str, model_path: str, out_root: str, suffix: 
 
                 inter = torch.logical_and(pred_flat==1, mask_flat==1).sum().float()
                 union = torch.logical_or(pred_flat==1, mask_flat==1).sum().float()
-                iou   = (inter / (union + 1e-6)).item()
-                dice  = (2 * inter / (torch.sum(pred_flat) + torch.sum(mask_flat) + 1e-6)).item()
+                #iou   = (inter / (union + 1e-6)).item() 
+                iou   = (inter / (union)).item() if union.item() != 0 else 0
+                #dice  = (2 * inter / (torch.sum(pred_flat) + torch.sum(mask_flat) + 1e-6)).item()
+
+                dice  = (2 * inter / (torch.sum(pred_flat) + torch.sum(mask_flat))).item() if (torch.sum(pred_flat) + torch.sum(mask_flat)).item() != 0 else 0
 
                 ious.append(iou)
                 dice_coeffs.append(dice)

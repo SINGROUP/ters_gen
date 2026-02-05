@@ -111,7 +111,7 @@ def bce_loss(pred, target, smooth=1e-6):
     smooth: small constant to prevent log(0)
     """
     # Apply sigmoid to convert logits to probabilities
-    pred = torch.sigmoid(pred)
+    #pred = torch.sigmoid(pred)
     
     # Flatten per channel
     pred_flat = pred.view(pred.size(0), pred.size(1), -1)
@@ -124,7 +124,10 @@ def bce_loss(pred, target, smooth=1e-6):
     loss = -(target_flat * torch.log(pred_flat) + (1. - target_flat) * torch.log(1. - pred_flat))
     
     # Average over all dimensions (pixels, channels, and batch)
-    return loss.mean()
+    #return loss.mean()
+
+    target = target.float()
+    return F.binary_cross_entropy_with_logits(pred, target, reduction='mean')
 
 def get_loss_function(loss_fn:str):
 

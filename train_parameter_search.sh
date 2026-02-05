@@ -9,7 +9,7 @@
 # SBATCH --partition=gpu-debug
 #SBATCH --partition=gpu-h200-141g-short
 # SBATCH --partition=gpu-h200-141g-ellis
-#SBATCH -o /scratch/work/sethih1/slurm_logs_planar_again/slurm_0.5.out
+#SBATCH -o /scratch/work/sethih1/slurm_logs_planar_again/norm_slurm_1.0.out
 
 arg1=$1
 
