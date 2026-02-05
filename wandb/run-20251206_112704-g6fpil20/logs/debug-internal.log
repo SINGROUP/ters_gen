@@ -1,7 +1,0 @@
-{"time":"2025-12-06T11:27:05.014826328+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251206_112704-g6fpil20/logs/debug-core.log"}
-{"time":"2025-12-06T11:27:05.320360432+02:00","level":"INFO","msg":"stream: created new stream","id":"g6fpil20"}
-{"time":"2025-12-06T11:27:05.320393023+02:00","level":"INFO","msg":"stream: started","id":"g6fpil20"}
-{"time":"2025-12-06T11:27:05.320436325+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"g6fpil20"}
-{"time":"2025-12-06T11:27:05.320474096+02:00","level":"INFO","msg":"handler: started","stream_id":"g6fpil20"}
-{"time":"2025-12-06T11:27:05.320440633+02:00","level":"INFO","msg":"sender: started","stream_id":"g6fpil20"}
-{"time":"2025-12-06T11:27:05.633833848+02:00","level":"INFO","msg":"Starting system monitor"}

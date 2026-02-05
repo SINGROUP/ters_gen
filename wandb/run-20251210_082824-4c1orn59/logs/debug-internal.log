@@ -1,7 +1,0 @@
-{"time":"2025-12-10T08:28:26.085964954+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/sethih1/masque_new/ters_gen/wandb/run-20251210_082824-4c1orn59/logs/debug-core.log"}
-{"time":"2025-12-10T08:28:26.43836473+02:00","level":"INFO","msg":"stream: created new stream","id":"4c1orn59"}
-{"time":"2025-12-10T08:28:26.438412194+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4c1orn59"}
-{"time":"2025-12-10T08:28:26.438423143+02:00","level":"INFO","msg":"sender: started","stream_id":"4c1orn59"}
-{"time":"2025-12-10T08:28:26.45073356+02:00","level":"INFO","msg":"stream: started","id":"4c1orn59"}
-{"time":"2025-12-10T08:28:26.450738555+02:00","level":"INFO","msg":"handler: started","stream_id":"4c1orn59"}
-{"time":"2025-12-10T08:28:27.047672249+02:00","level":"INFO","msg":"Starting system monitor"}

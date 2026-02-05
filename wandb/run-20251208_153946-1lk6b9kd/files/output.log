@@ -1,6 +1,0 @@
-Trial 1 using GPU 1
-wandb: 409 encountered ({"errors":[{"message":"project may already be created, please retry","path":["upsertBucket"]}],"data":{"upsertBucket":null}}), retrying request
-Epoch    1/50, time: 720.78 s, training_loss: 0.843
-Epoch    1/50, time: 728.10 s, training_loss: 0.915
-Epoch    1/50, time: 91.76 s, val_loss: 0.885
-Epoch    1/50, time: 99.83 s, val_loss: 0.795
