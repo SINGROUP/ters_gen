@@ -39,11 +39,6 @@ ters_img_simulator/
 │   ├── load_molecule.py
 │   ├── read_gaussian.py
 │   └── spectrum_real.py
-├── jobs/
-│   ├── generalized_run.sh
-│   ├── multiple_run_generation.bash
-│   ├── run_generation.sh
-│   └── third_group.sh
 ├── scripts/
 │   ├── log_reading.py
 │   └── point_spectrum_generation.py
