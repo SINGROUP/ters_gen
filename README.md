@@ -1,32 +1,29 @@
 # TERS-to-Structure Pipeline (`ters_gen`)
 
-Tools for:
+This repository provides a reproducible pipeline for:
 - Simulating TERS images from Gaussian `.fchk` files
-- Training an image-to-image segmentation model (Attention U-Net) to recover molecular structure masks
-- Evaluating and comparing model performance
+- Training an Attention U-Net model for molecular-structure mask prediction
+- Evaluating trained checkpoints on held-out `.npz` datasets
 
-## Repository Layout
+## Repository Contents
 
 ```text
 .
-├── ters_img_simulator/          # TERS simulation pipeline (.fchk -> .npz)
+├── configs/                     # YAML configs for hyperparameter search/training
+├── model_checkpoints/           # Provided pretrained checkpoints
+├── notebooks/                   # Inference notebook and notebook utilities
 ├── src/                         # Models, datasets, trainer, metrics, transforms
-├── configs/                     # Hyperparameter search YAML configs
-├── notebooks/                   # Analysis and visualization notebooks/scripts
-├── hyperopt.py                  # Main training + Optuna hyperparameter search
-├── evaluate_model.py            # Evaluate one trained model on one dataset folder
-├── check_accuracy_dice.py       # Detailed dice/IoU analysis and plots
-├── compare_accuracy.py          # Cross-condition comparison plots/tables
-├── model_checkpoints/           # Pretrained checkpoints
-├── train_parameter_search.sh    # SLURM wrapper for hyperopt.py
-└── run_evaluate.sh              # SLURM wrapper for evaluate_model.py
+├── ters_img_simulator/          # TERS simulation pipeline (.fchk -> .npz)
+├── evaluate_model.py            # Single-model evaluation entrypoint
+├── hyperopt.py                  # Training + Optuna hyperparameter search entrypoint
+├── requirements.txt             # Python dependency pins
+├── run_evaluate.sh              # SLURM wrapper for evaluate_model.py
+└── train_parameter_search.sh    # SLURM wrapper for hyperopt.py
 ```
 
 ## Environment Setup
 
-Dependencies are pinned in `requirements.txt`.
-
-Example:
+Install dependencies from `requirements.txt`:
 
 ```bash
 python -m venv .venv
@@ -35,18 +32,19 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Note: `requirements.txt` currently contains two `PyYAML` pins. Depending on the resolver, this may cause an install conflict and should be harmonized in your local environment.
+
 ## Data Format
 
-The model training/evaluation dataset expects directories containing `.npz` files.
+Training and evaluation expect directories of `.npz` files.
 
-Each file should contain at least:
+Required keys per `.npz`:
 - `atom_pos`
 - `atomic_numbers`
 - `frequencies`
-- `spectrums` (TERS intensity tensor on an `(x, y, mode)` grid)
+- `spectrums`
 
-The training dataset class is implemented in:
-- `src/datasets/ters_image_to_image_sh.py`
+The simulator additionally writes `x_pos` and `y_pos`.
 
 Typical split layout:
 
@@ -57,39 +55,12 @@ Typical split layout:
 └── test/*.npz
 ```
 
-## 1) Generate Simulated TERS Data
+Dataset implementation:
+- `src/datasets/ters_image_to_image_sh.py`
 
-From repo root:
+## Training
 
-```bash
-python ters_img_simulator/scripts/point_spectrum_generation.py \
-  <fchk_dir> \
-  <output_npz_dir> \
-  <log_file_or_log_dir>
-```
-
-Optional args:
-
-```bash
---molecule_rotation PHI THETA PSI
---plot_spectrum W1 W2 W3 ...
-```
-
-Notes:
-- If `--molecule_rotation` is omitted, PCA-based auto-rotation is used.
-- Output is one `.npz` per input `.fchk`.
-- Log parsing helper:
-
-```bash
-python ters_img_simulator/scripts/log_reading.py 0 <log_file>   # unfinished
-python ters_img_simulator/scripts/log_reading.py 1 <log_file>   # errors
-```
-
-See also: [`ters_img_simulator/README.md`](/scratch/work/sethih1/ters_gen/ters_img_simulator/README.md)
-
-## 2) Hyperparameter Search + Training
-
-Main entry point:
+Canonical training command:
 
 ```bash
 python hyperopt.py --config configs/config_hypopt_all_val.yaml
@@ -101,26 +72,18 @@ With Weights & Biases logging:
 python hyperopt.py --config configs/config_hypopt_all_val.yaml --use_wandb
 ```
 
-SLURM wrapper:
+SLURM wrapper usage:
 
 ```bash
 export WANDB_API_KEY=<your_wandb_key>
 sbatch train_parameter_search.sh configs/config_hypopt_all_val.yaml
 ```
 
-Notes:
-- `train_parameter_search.sh` requires `WANDB_API_KEY` to be set by the user (no hard-coded key in repo).
-- You can also run without W&B by omitting `--use_wandb` when calling `hyperopt.py` directly.
+Training outputs are controlled by YAML keys such as `save_path` and `log_path`.
 
-What it does:
-- Loads YAML config via `src/configs/base.py`
-- Runs Optuna trials with `AttentionUNet`
-- Trains per trial with `src/trainer/trainer_image_to_image.py`
-- Saves trial models to `save_path`
-- Writes trial table and Optuna HTML plots to `log_path`
-- Copies best model to `<save_path>/best_model.pt`
+## Evaluation
 
-## 3) Evaluate a Single Model
+Canonical evaluation command:
 
 ```bash
 python evaluate_model.py \
@@ -129,9 +92,7 @@ python evaluate_model.py \
   --batch_size 32
 ```
 
-This computes the same global metrics pipeline used during training (Dice/IoU/precision/recall/F1 from `src/metrics/metrics.py`).
-
-SLURM wrapper:
+SLURM wrapper usage:
 
 ```bash
 sbatch run_evaluate.sh <model_path> <data_path> [batch_size]
@@ -143,16 +104,21 @@ Example:
 sbatch run_evaluate.sh model_checkpoints/best_model_0.05.pt /path/to/val 32
 ```
 
-## Pretrained Checkpoints
+`evaluate_model.py` computes global Accuracy, Precision, Recall, F1, IoU, and Dice via `src/metrics/metrics.py`.
 
-Pretrained models are in `model_checkpoints/`.
+## Checkpoints
 
-Naming convention:
-- `best_model_0.05.pt` means the model was trained on dataset variant with `0.05` RMSD.
-- `best_model_0.1.pt` means the model was trained on dataset variant with `0.1` RMSD.
-- `best_model_0.5.pt` means the model was trained on dataset variant with `0.5` RMSD.
+Provided checkpoints are in `model_checkpoints/`:
+- `best_model_0.05.pt`
+- `best_model_0.1.pt`
+- `best_model_0.5.pt`
 
-Example evaluation:
+Suffix convention:
+- `0.05` means trained on the dataset variant with `0.05` RMSD
+- `0.1` means trained on the dataset variant with `0.1` RMSD
+- `0.5` means trained on the dataset variant with `0.5` RMSD
+
+Example:
 
 ```bash
 python evaluate_model.py \
@@ -161,37 +127,45 @@ python evaluate_model.py \
   --batch_size 32
 ```
 
-## 4) Analysis Scripts
+## Simulation Pipeline
 
-- `check_accuracy_dice.py`: per-sample IoU/Dice analysis and visualization outputs.
-- `compare_accuracy.py`: compares performance across different dataset settings (e.g., RMS/noise conditions).
+Generate `.npz` TERS samples from Gaussian `.fchk` files:
 
-These scripts currently include hard-coded paths; update paths near the top of each file before running.
+```bash
+python ters_img_simulator/scripts/point_spectrum_generation.py \
+  <directory_path> \
+  <save_path> \
+  <log_file_or_log_dir>
+```
 
-## Config File Reference
+Optional arguments:
 
-Example config: `configs/config_hypopt_all_val.yaml`
+```bash
+--molecule_rotation PHI THETA PSI
+--plot_spectrum W1 W2 W3 ...
+```
 
-Main sections:
-- `model`: architecture search space (`in_channels`, `filters_options`, `att_channels_options`, etc.)
-- `training`: epochs, trial count, batch sizes, LR range, loss options
-- `data`: train/val directories, augmentation, label generation options
-- `save_path`: where model checkpoints are written
-- `log_path`: where TensorBoard and Optuna logs are written
+Log inspection:
 
-## SLURM Wrappers
+```bash
+python ters_img_simulator/scripts/log_reading.py 0 <log_file>   # unfinished
+python ters_img_simulator/scripts/log_reading.py 1 <log_file>   # errors
+```
 
-Provided job scripts:
-- `train_parameter_search.sh`
-- `run_evaluate.sh`
-- `call_accuracy.sh`
-- `compare_accuracy.sh`
+See simulator details in [`ters_img_simulator/README.md`](ters_img_simulator/README.md).
 
-They are cluster-specific (partition names, env paths, log directories). Update these for your cluster before running.
+## Notebooks
 
-## Common Issues
+- `notebooks/inference.ipynb`: single-molecule inference and visualization workflow
+- `notebooks/utils/`: notebook utility modules (data reading, planarity, visualization)
 
-- `ModuleNotFoundError`: run commands from repository root so local imports resolve.
-- Empty dataset: verify `<dir>/*.npz` exists and keys are present.
-- Slow runs: simulation uses dense 256x256 grids by default; reduce grid constants in `ters_img_simulator/scripts/point_spectrum_generation.py` for faster experiments.
-- W&B auth errors: use `wandb login` or disable `--use_wandb`.
+## Reproducibility Notes
+
+- Run commands from repository root to ensure local imports resolve correctly.
+- SLURM scripts are cluster-specific and may require adaptation (partitions, environment activation paths, log directories).
+- Config-driven experiments should be tracked by saving both the YAML config and resulting checkpoint/metrics artifacts.
+
+## Known Constraints
+
+- `train_parameter_search.sh` currently launches `hyperopt.py` using an absolute local path. For portability, prefer running `hyperopt.py` directly (or adapt the script to your checkout path).
+- Dependency installation may fail until duplicate pins in `requirements.txt` are resolved in your environment.
