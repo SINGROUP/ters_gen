@@ -124,7 +124,3 @@ Defined in `scripts/point_spectrum_generation.py`:
 python ters_img_simulator/scripts/log_reading.py 0 <log_file>  # unfinished
 python ters_img_simulator/scripts/log_reading.py 1 <log_file>  # errors
 ```
-
-## Known limitations
-
-- Job scripts under `jobs/` are environment-specific (hard-coded paths) and may require local edits before use.
