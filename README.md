@@ -45,7 +45,7 @@ Run:
 jupyter lab notebooks/inference.ipynb
 ```
 
-The notebook is the primary interactive entrypoint for single-molecule inference and visualization (input spectrum, ground truth, prediction, and IoU/Dice summary).
+The notebook is the primary interactive entrypoint for single-molecule inference and visualization (TERS visualization, ground truth, prediction, and IoU/Dice score).
 
 ## Data Format
 
