@@ -10,6 +10,13 @@ Arguments:
     rotation_angles: list -- list of rotation angles of the molecule. Default is [0].
 """
 # python point_spectrum_generation.py /scratch/phys/sin/sethih1/data_files/all_group /scratch/phys/sin/sethih1/data_files/all_group_images_freq /scratch/phys/sin/sethih1/data_files/all_group_freq_log
+
+# Ensure the project root is in sys.path for module imports
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+
 import numpy as np
 from ters_img_simulator.core.load_molecule import load_molecule
 from ters_img_simulator.core.analytic_field import analytic_field
@@ -17,13 +24,12 @@ from ters_img_simulator.core.spectrum_real import spectrum_real
 import time as time
 from pathlib import Path
 import multiprocessing
-import os
 from tqdm import tqdm
 import logging
 import argparse
 from datetime import datetime
 
-from utils.utils import *
+from ters_img_simulator.utils.utils import *
 
 
 # Defining constants
