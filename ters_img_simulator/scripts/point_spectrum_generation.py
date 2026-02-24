@@ -135,17 +135,16 @@ def process_fchk_file(args):
 
     
     if file_path.is_file():
-
-
+        current_rotation = molecule_rotation
         coords, atomic_numbers = read_fchk(file_path)
-        eigvals, eigvecs, X = pca(coords)
-        normal = eigvecs[:,0]
-        molecule_rotation = normal_to_zyz_ters(normal)
-        #_, R = rotation(normal, X)
-        #molecule_rotation = rotation_to_zyz_euler(R)
-        
+        if current_rotation is None:
+            eigvals, eigvecs, X = pca(coords)
+            normal = eigvecs[:, 0]
+            current_rotation = normal_to_zyz_ters(normal)
+            #_, R = rotation(normal, X)
+            #current_rotation = rotation_to_zyz_euler(R)
 
-        image_data = generate_ters_data(file_path, molecule_rotation, plot_spectrum)
+        image_data = generate_ters_data(file_path, current_rotation, plot_spectrum)
     else:
         image_data = None
         log_status(f"File {file_path.name} does not exist.")
@@ -222,7 +221,14 @@ if __name__ == "__main__":
     parser.add_argument("directory_path", type=str, help="The path to the directory containing the .fchk files.")
     parser.add_argument("save_path", type=str, help="The path to the directory to save the image data.")
     parser.add_argument("log_file", type=str, help="The path of the log file.")
-    parser.add_argument("--molecule_rotation", type=float, nargs='+', default=[0, 0, 0], help="List of angles that defines the rotation of the molecule. Default is [0, 0, 0].")
+    parser.add_argument(
+        "--molecule_rotation",
+        type=float,
+        nargs=3,
+        default=None,
+        metavar=("PHI", "THETA", "PSI"),
+        help="Euler angles in degrees. If omitted, PCA-based auto-rotation is used.",
+    )
     parser.add_argument("--plot_spectrum", type=float, nargs='+', default=None, help="List of wavenumbers to plot the spectrum. Using default value calculates spectrum at normal modes of the molecule.")
     args = parser.parse_args()
 
