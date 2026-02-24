@@ -149,3 +149,18 @@ Use the same Python environment defined in this top-level README (`pip install -
 - `notebooks/inference.ipynb`: single-molecule inference and visualization workflow
 - `notebooks/utils/`: notebook utility modules (data reading, planarity, visualization)
 
+## Citation
+
+If you use this repository, models, or generated data in your research, please cite:
+
+```bibtex
+@misc{sethi2026automatedstructurediscoverytip,
+      title={Automated structure discovery for Tip Enhanced Raman Spectroscopy},
+      author={Harshit Sethi and Markus Junttila and Orlando J Silveira and Adam S Foster},
+      year={2026},
+      eprint={2602.19932},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+      url={https://arxiv.org/abs/2602.19932},
+}
+```
