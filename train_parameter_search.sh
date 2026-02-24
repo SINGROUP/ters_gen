@@ -1,17 +1,18 @@
 #!/bin/bash
+set -euo pipefail
+
 #SBATCH --time=120:00:00
 #SBATCH --mem=1400G
 #SBATCH --gpus=2
 #SBATCH -c 64
 # SBATCH --mem-per-cpu=10G
-#SBATCH --partition=gpu-h100-80g-short
-# SBATCH --partition=gpu-a100-80g
-# SBATCH --partition=gpu-debug
-#SBATCH --partition=gpu-h200-141g-short
-# SBATCH --partition=gpu-h200-141g-ellis
-#SBATCH -o /scratch/work/sethih1/slurm_logs_planar_again/norm_slurm_1.0.out
 
-arg1=$1
+if [[ $# -lt 1 ]]; then
+  echo "Usage: sbatch train_parameter_search.sh <config_path>"
+  exit 1
+fi
+
+arg1="$1"
 
 
 echo $CUDA_VISIBLE_DEVICES
@@ -30,10 +31,17 @@ vmstat -n 1 > /scratch/work/sethih1/slurm_logs_0.1/resource_usage.log &
 RESOURCE_MONITOR_PID=$!
 
 # Run your main Python job
-# python parameter_search.py --config $arg1
+# python parameter_search.py --config "$arg1"
 
-export WANDB_API_KEY=8e4e0db2307a46c329b7d30d5f7ab11a176ba158
-python /home/sethih1/masque_new/ters_gen/hyperopt.py --config $arg1 --use_wandb 
+if [[ -z "${WANDB_API_KEY:-}" ]]; then
+  echo "Error: WANDB_API_KEY is not set."
+  echo "Set your own key before submitting:"
+  echo "  export WANDB_API_KEY=<your_wandb_key>"
+  echo "  sbatch train_parameter_search.sh <config_path>"
+  exit 1
+fi
+
+python /home/sethih1/masque_new/ters_gen/hyperopt.py --config "$arg1" --use_wandb 
 # python check_train.py --config $arg1
 
 # After your job finishes, stop the monitoring processes

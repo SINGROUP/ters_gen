@@ -101,6 +101,17 @@ With Weights & Biases logging:
 python hyperopt.py --config configs/config_hypopt_all_val.yaml --use_wandb
 ```
 
+SLURM wrapper:
+
+```bash
+export WANDB_API_KEY=<your_wandb_key>
+sbatch train_parameter_search.sh configs/config_hypopt_all_val.yaml
+```
+
+Notes:
+- `train_parameter_search.sh` requires `WANDB_API_KEY` to be set by the user (no hard-coded key in repo).
+- You can also run without W&B by omitting `--use_wandb` when calling `hyperopt.py` directly.
+
 What it does:
 - Loads YAML config via `src/configs/base.py`
 - Runs Optuna trials with `AttentionUNet`
@@ -120,6 +131,18 @@ python evaluate_model.py \
 
 This computes the same global metrics pipeline used during training (Dice/IoU/precision/recall/F1 from `src/metrics/metrics.py`).
 
+SLURM wrapper:
+
+```bash
+sbatch run_evaluate.sh <model_path> <data_path> [batch_size]
+```
+
+Example:
+
+```bash
+sbatch run_evaluate.sh model_checkpoints/best_model_0.05.pt /path/to/val 32
+```
+
 ## Pretrained Checkpoints
 
 Pretrained models are in `model_checkpoints/`.
@@ -133,7 +156,7 @@ Example evaluation:
 
 ```bash
 python evaluate_model.py \
-  --model model_checkpoints/by_rmsd/best_model_0.05.pt \
+  --model model_checkpoints/best_model_0.05.pt \
   --data <path/to/npz_dir> \
   --batch_size 32
 ```
