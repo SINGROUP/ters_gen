@@ -1,94 +1,135 @@
-# Raman Spectral Image Generator
+# TERS Image Simulator
+
+Python tools for generating simulated TERS image data from Gaussian `.fchk` files.
 
 ## Overview
-The repository provides python code converted from original MATLAB based code[J Raman Spectrosc. 52:296–309 (2021)]
 
-The repository can be used to simulate the off-Resonant Stokes Raman spectra of a single-molecule in any inhomogeneous field, typically in a field whose spatial distribution is approximated by a Gaussian function. Thus, it is also an approximate model to simulate tip-enhanced Raman scattering (TERS) spectra of a single-molecule in a nanocavity plasmon (NCP) field induced by the tip-substrate system. 
+This package reads vibrational and polarizability information from Gaussian formatted checkpoint files, computes spatially resolved Raman intensity on an `(x, y)` grid, and writes one `.npz` output per molecule.
+
+This implementation is adapted from an original MATLAB workflow for single-molecule Raman/TERS simulation[J Raman Spectrosc. 52:296–309 (2021)].
+
+The simulator targets off-resonant Stokes Raman response in an inhomogeneous near field and is commonly used as an approximate TERS image generator for tip-substrate nanocavity conditions.
+
+The current model combines:
+
+- Vibrational normal mode and polarizability-derivative data parsed from Gaussian `.fchk` files.
+- A near-field treatment driven by `analytic_field.py` with `E_TYPE`-controlled behavior (default in current script: `E_TYPE=2`).
+- Spectrum construction through mode intensities and broadening in `spectrum_real.py`.
+
+Important assumptions/scope in current implementation:
+
+- Near-field spatial dependence is approximated in code through the selected field model and `TIP_WIDTH`.
+- Scattering/radiation handling is simplified relative to full electrodynamic far-field Green-function treatments.
+
+## What this package can do
+
+- Batch process folders of Gaussian `.fchk` files.
+- Generate dense spatial spectral tensors on a configurable `(x, y)` grid.
+- Save per-molecule simulation outputs in `.npz` for downstream ML/data-analysis pipelines.
+- Run in parallel across molecules via multiprocessing (`SLURM_CPUS_PER_TASK` aware).
 
 
-In this program, the inhomogeneous field can be described by a Gaussian function or any other user-defined real field. It should be noticed that the scattered field is processed in a simple way following the optical reciprocity theorem, and the "true" radiation process can be introduced through the farfield Green's function, which will be included in future versions of the program. 
+## Current project structure
 
-The necessary information on the single-molecule vibrations is read from the output file (.fch or .fchk) calculated by the Gaussian package. The program reads molecular data files, computes Raman spectra over a spatial grid, and saves the resulting spectral images. 
-
-## Features
-
-- **Molecular Spectral Analysis**: Compute Raman spectra using atomic polarizabilities and vibrational frequencies
-- **Grid Mapping**: Generate spectral data over a configurable spatial grid
-- **Batch Processing**: Automatically process multiple molecular files in a directory
-- **Visualization**: Save spectral data as contour plots for each vibrational frequency
-- **Customizable Parameters**: Easily adjust grid size, spatial resolution, and peak widths
-
-## File Structure
-
-```
-.
-├── core/                        # Core simulation logic
-│   ├── analytic_field.py        # Computes vibrational mode intensities
-│   ├── generate_spectrum.py     # Wrapper for spectrum generation
-│   ├── load_molecule.py         # Loads molecular attributes
-│   ├── read_gaussian.py         # Module to parse molecular data from .fchk files
-│   └── spectrum_real.py         # Calculates Raman spectra
-├── scripts/                     # Executable Python scripts
-│   ├── point_spectrum_generation.py # Main script for generating spectral images
-│   └── log_reading.py           # Utility to parse log files
-├── jobs/                        # Shell scripts for batch execution
+```text
+ters_img_simulator/
+├── core/
+│   ├── analytic_field.py
+│   ├── generate_spectrum.py
+│   ├── load_molecule.py
+│   ├── read_gaussian.py
+│   └── spectrum_real.py
+├── jobs/
 │   ├── generalized_run.sh
 │   ├── multiple_run_generation.bash
-│   └── ...
-├── notebooks/                   # Jupyter notebooks for analysis and testing
-│   └── testing.ipynb
-├── extra_functions/             # Additional utilities and notebooks
-│   ├── molecule_rotation.py
-│   └── ...
-└── utils/                       # Shared utilities
+│   ├── run_generation.sh
+│   └── third_group.sh
+├── scripts/
+│   ├── log_reading.py
+│   └── point_spectrum_generation.py
+└── utils/
     └── utils.py
 ```
 
+
 ## Usage
 
-### 1. Prepare Input Files
-
-Store molecular `.fchk` files in a directory.
-
-### 2. Run the Script
-
-Execute the main script from the `scripts` directory:
+Run from repository root (`/scratch/work/sethih1/ters_gen`):
 
 ```bash
-python scripts/point_spectrum_generation.py <directory_path> <save_path> <log_file>
+python ters_img_simulator/scripts/point_spectrum_generation.py \
+  <directory_path> \
+  <save_path> \
+  <log_file_or_log_dir>
 ```
 
 Arguments:
-- `directory_path`: Path to the directory containing the `.fchk` files.
-- `save_path`: Path to the directory to save the image data.
-- `log_file`: Name of the log file (not the whole path).
+- `directory_path`: folder containing `.fchk` files.
+- `save_path`: folder where `.npz` outputs are written.
+- `log_file`: either
+  - a log filename (e.g. `run.log`),
+  - a full/relative log path (e.g. `logs/run.log`), or
+  - a directory path (e.g. `logs/`) to auto-create timestamped log files.
 
-### 3. Output
+Optional arguments:
 
-The script generates data that can be used to create simulated TERS images.
+```bash
+--molecule_rotation <phi theta psi>
+--plot_spectrum <w1 w2 w3 ...>
+```
 
-## Customization
+Rotation behavior:
 
-You can adjust parameters in the `core/` modules or the `scripts/point_spectrum_generation.py` file.
+- If `--molecule_rotation` is provided, those Euler angles are used directly.
+- If `--molecule_rotation` is omitted, the script computes a PCA-based normal from atomic coordinates and auto-rotates the molecule so that normal aligns with the tip-axis convention used by the simulator.
 
-| Parameter | Default Value | Description |
-|-----------|---------------|-------------|
-| `x_count` | 51 | Number of grid points along the x-axis |
-| `y_count` | 51 | Number of grid points along the y-axis |
-| `x_width` | 18 | Spatial extent (Å) along the x-axis |
-| `y_width` | 18 | Spatial extent (Å) along the y-axis |
-| `peak_width` | 5 | Width of spectral peaks |
-| `lambda_0` | 532 | Wavelength of the incident light (nm) |
-| `T` | 1e-6 | Temperature in Kelvin |
+Example:
 
-## Performance Optimization
+```bash
+python ters_img_simulator/scripts/point_spectrum_generation.py \
+  /path/to/fchk_dir \
+  /path/to/output_npz \
+  /path/to/logs/
+```
 
-### Parallel Processing
+## Output format
 
-The code supports parallelizing grid computations.
+For each input `<name>.fchk`, the script writes:
 
-### Logging
+- `<save_path>/<name>.npz`
 
-For better control over output, replace `print` statements with the `logging` module.
+Each `.npz` contains:
+- `atom_pos`: rotated atomic positions
+- `atomic_numbers`
+- `x_pos`
+- `y_pos`
+- `frequencies`
+- `spectrums` (shape: `X_COUNT x Y_COUNT x N_modes`)
 
+## Simulation defaults (current code)
 
+Defined in `scripts/point_spectrum_generation.py`:
+
+- `X_COUNT, Y_COUNT = 256, 256`
+- `X_WIDTH, Y_WIDTH = 18, 18` (Angstrom)
+- `TIP_WIDTH = [5, 5, 5]`
+- `PEAK_WIDTH = 5`
+- `LAMBDA_0 = 532`
+- `T = 1e-6`
+- `E_TYPE = 2`
+- Multiprocessing workers:
+  - `SLURM_CPUS_PER_TASK` when available
+  - otherwise `os.cpu_count()`
+
+## Logging and troubleshooting
+
+- Use `scripts/log_reading.py` to inspect unfinished or failed files:
+
+```bash
+python ters_img_simulator/scripts/log_reading.py 0 <log_file>  # unfinished
+python ters_img_simulator/scripts/log_reading.py 1 <log_file>  # errors
+```
+
+## Known limitations
+
+- Job scripts under `jobs/` are environment-specific (hard-coded paths) and may require local edits before use.
