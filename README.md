@@ -34,6 +34,19 @@ pip install -r requirements.txt
 
 Note: `requirements.txt` currently contains two `PyYAML` pins. Depending on the resolver, this may cause an install conflict and should be harmonized in your local environment.
 
+## Quick Inference (Notebook)
+
+For most users, the fastest way to inspect model behavior is:
+- `notebooks/inference.ipynb`
+
+Run:
+
+```bash
+jupyter lab notebooks/inference.ipynb
+```
+
+The notebook is the primary interactive entrypoint for single-molecule inference and visualization (input spectrum, ground truth, prediction, and IoU/Dice summary).
+
 ## Data Format
 
 Training and evaluation expect directories of `.npz` files.
@@ -136,13 +149,3 @@ Use the same Python environment defined in this top-level README (`pip install -
 - `notebooks/inference.ipynb`: single-molecule inference and visualization workflow
 - `notebooks/utils/`: notebook utility modules (data reading, planarity, visualization)
 
-## Reproducibility Notes
-
-- Run commands from repository root to ensure local imports resolve correctly.
-- SLURM scripts are cluster-specific and may require adaptation (partitions, environment activation paths, log directories).
-- Config-driven experiments should be tracked by saving both the YAML config and resulting checkpoint/metrics artifacts.
-
-## Known Constraints
-
-- `train_parameter_search.sh` currently launches `hyperopt.py` using an absolute local path. For portability, prefer running `hyperopt.py` directly (or adapt the script to your checkout path).
-- Dependency installation may fail until duplicate pins in `requirements.txt` are resolved in your environment.
