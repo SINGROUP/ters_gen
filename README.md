@@ -1,9 +1,13 @@
-# TERS-to-Structure Pipeline (`ters_gen`)
+# SMARTERS
 
-This repository provides a reproducible pipeline for:
+**SMARTERS** is the method introduced in:  
+*Automated structure discovery for Tip Enhanced Raman Spectroscopy*.
+
+This repository contains the reference implementation of SMARTERS and provides a reproducible pipeline for:
 - Simulating TERS images from Gaussian `.fchk` files
 - Training an Attention U-Net model for molecular-structure mask prediction
 - Evaluating trained checkpoints on held-out `.npz` datasets
+
 
 ## Repository Contents
 
