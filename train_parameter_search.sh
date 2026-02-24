@@ -41,7 +41,7 @@ if [[ -z "${WANDB_API_KEY:-}" ]]; then
   exit 1
 fi
 
-python /home/sethih1/masque_new/ters_gen/hyperopt.py --config "$arg1" --use_wandb 
+python ./hyperopt.py --config "$arg1" --use_wandb 
 # python check_train.py --config $arg1
 
 # After your job finishes, stop the monitoring processes

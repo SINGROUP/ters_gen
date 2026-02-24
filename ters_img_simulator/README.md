@@ -49,7 +49,7 @@ ters_img_simulator/
 
 ## Usage
 
-Run from repository root (`/scratch/work/sethih1/ters_gen`):
+Run from repository root:
 
 ```bash
 python ters_img_simulator/scripts/point_spectrum_generation.py \
