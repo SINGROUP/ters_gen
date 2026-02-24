@@ -44,7 +44,6 @@ Required keys per `.npz`:
 - `frequencies`
 - `spectrums`
 
-The simulator additionally writes `x_pos` and `y_pos`.
 
 Typical split layout:
 
@@ -129,30 +128,8 @@ python evaluate_model.py \
 
 ## Simulation Pipeline
 
-Generate `.npz` TERS samples from Gaussian `.fchk` files:
-
-```bash
-python ters_img_simulator/scripts/point_spectrum_generation.py \
-  <directory_path> \
-  <save_path> \
-  <log_file_or_log_dir>
-```
-
-Optional arguments:
-
-```bash
---molecule_rotation PHI THETA PSI
---plot_spectrum W1 W2 W3 ...
-```
-
-Log inspection:
-
-```bash
-python ters_img_simulator/scripts/log_reading.py 0 <log_file>   # unfinished
-python ters_img_simulator/scripts/log_reading.py 1 <log_file>   # errors
-```
-
-See simulator details in [`ters_img_simulator/README.md`](ters_img_simulator/README.md).
+The simulator is documented in [`ters_img_simulator/README.md`](ters_img_simulator/README.md).  
+Use the same Python environment defined in this top-level README (`pip install -r requirements.txt`), then follow simulator-specific usage and options in the simulator README.
 
 ## Notebooks
 
