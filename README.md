@@ -1,7 +1,4 @@
-# SMARTERS
-
-**SMARTERS** is the method introduced in:  
-*Automated structure discovery for Tip Enhanced Raman Spectroscopy*.
+# SMARTERS (Structural Machine Learning for High-Resolution Tip-Enhanced Raman Spectroscopy)
 
 This repository contains the reference implementation of SMARTERS and provides a reproducible pipeline for:
 - Simulating TERS images from Gaussian `.fchk` files
